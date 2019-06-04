@@ -1,14 +1,3 @@
-# A Blank PhoneGap App
+# CSD Guidelines App
 
-## Usage
-
-### PhoneGap CLI
-
-    $ phonegap create my-app --template blank
-
-### Desktop
-
-In your browser, open the file:
-
-    /www/index.html
-
+This app is designed to provide quick offline access to the clinical guidelines of the Clinical Services Department of the MRC Unit The Gambia at LSHTM.
