@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MRCG Clinical Guidelines</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=1">
+  
+	<<meta name=Generator content="Microsoft Word 14 (filtered)">
+	<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
+	<script src="jquery-1.11.1.min.js"></script>
+	<script src="jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="cordova.js"></script>      
+	<style>
+	.show {display: block;}
+  .tablist-left {
+    width: 25%;
+    display: inline-block;
+  }
+  .tablist-content {
+    width: 60%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 5%;
+    }
+    body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+.footer-button-left,
+.footer-button-right {
+    position: absolute;
+    margin: 0;
+    top: auto;
+    bottom: 0.24em;
+}
+.footer-button-left {
+    left: 0.4em;
+}
+.footer-button-right {
+    right: 0.4em;
+}
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;}
+@font-face
+	{font-family:"MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"Lucida Grande";}
+@font-face
+	{font-family:"\@MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:18.0pt;
+	margin-left:0cm;
+	font-size:14.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:12.0pt;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:9.0pt;
+	margin-left:0cm;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+h4
+	{mso-style-link:"Heading 4 Char";
+	margin-top:2.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	color:#365F91;
+	font-weight:normal;
+	font-style:italic;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Header Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Footer Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{mso-style-link:"Body Text Indent 3 Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:14.15pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balloon Text Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	font-size:9.0pt;
+	font-family:"Lucida Grande","sans-serif";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:36.0pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:36.0pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-link:"Balloon Text";
+	font-family:"Lucida Grande","sans-serif";}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-link:Header;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-link:Footer;}
+span.BodyTextIndent3Char
+	{mso-style-name:"Body Text Indent 3 Char";
+	mso-style-link:"Body Text Indent 3";
+	font-family:"Arial","sans-serif";}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-link:"Heading 4";
+	font-family:"Calibri","sans-serif";
+	color:#365F91;
+	font-style:italic;}
+span.UnresolvedMention
+	{mso-style-name:"Unresolved Mention";
+	color:#605E5C;
+	background:#E1DFDD;}
+.MsoChpDefault
+	{font-size:10.0pt;
+	font-family:"Tahoma","sans-serif";}
+ /* Page Definitions */
+ @page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+   .tableCont {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+  </style>
+  	  	<script>
+		$(function(){
+			$( "[data-role='header'], [data-role='footer']" ).toolbar();
+			$('input[data-type="search"]').val("");			
+		});
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			document.getElementById("myBtn").style.display = "block";
+		  } else {
+			document.getElementById("myBtn").style.display = "none";
+		  }
+		}
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0; // For Safari
+		  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}
+	</script>
+
+</head>
+<body lang=EN-GB link=blue vlink=purple>
+	<div data-role="header" data-tap-toggle="false" data-id="persistent-header" data-position="fixed" data-theme="a">
+		<h2 style="font-size:0.75em;"><br><br><br>MRCG<br>Clinical Guidelines</h2>
+		<a data-rel="back" class="ui-btn ui-corner-all ui-btn-inline ui-mini header-button-left ui-btn-icon-left ui-icon-carat-l">Back</a>
+		<a href="#leftpanel1" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-mini header-button-left ui-icon-info ui-btn-icon-notext">About this app</a>
+		<a href="#popupNested"  data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-bars ui-btn-icon-right ui-btn-b header-button-right" data-transition="pop">Choose a guideline...</a>
+		<div data-role="popup" id="popupNested" data-theme="a"><ul data-role="listview" data-filter="true"data-filter-placeholder="Type to search names..." data-inset="true">
+			<li><a href="Acute_kidney_injury_MeG-CLS-071.html">Acute kidney injury</a></li>
+			<li><a href="Acute_rheumatic_fever__MeG-CLS-048.html">Acute rheumatic fever </a></li>
+			<li><a href="Animal_bites_MeG-CLS-049.html">Animal bites</a></li>
+			<li><a href="Asthma_MeG-CLS-001.html">Asthma</a></li>
+			<li><a href="Bone_and_joint_infections_guidelines_MeG-CLS-050.html">Bone and joint infections guidelines</a></li>
+			<li><a href="Cellulitis_MeG-CLS-051.html">Cellulitis</a></li>
+			<li><a href="Chest_pain_and_Acute_Coronary_Syndrome_MeG-CLS-052.html">Chest pain and Acute Coronary Syndrome</a></li>
+			<li><a href="Chronic_kidney_disease_MeG-CLS-053.html">Chronic kidney disease</a></li>
+			<li><a href="Congenital_heart_disease_MeG-CLS-039.html">Congenital heart disease</a></li>
+			<li><a href="Constipation_MeG-CLS-003.html">Constipation</a></li>
+			<li><a href="COPD_MeG-CLS-032.html">Chronic Obstructive Pulmonary Disease</a></li>
+			<li><a href="Croup_MeG-CLS-059.html">Croup</a></li>
+			<li><a href="Deep_venous_thombosis_and_pulmonary_embolism_MeG-CLS-055.html">Deep venous thombosis and pulmonary embolism</a></li>
+			<li><a href="Depression_MeG-CLS-075.html">Depression</a></li>
+			<li><a href="Developmental_delay_MeG-CLS-054.html">Developmental delay</a></li>
+			<li><a href="Diabetes_Mellitus_MeG-CLS-004.html">Diabetes Mellitus</a></li>
+			<li><a href="DKA_MeG-CLS-021.html">Diabetic ketoacidosis</a></li>
+			<li><a href="Dyspepsia_MeG-CLS-034.html">Dyspepsia</a></li>
+			<li><a href="Ear_pain_MeG-CLS-070.html">Ear pain</a></li>
+			<li><a href="Epiglottitis_MeG-CLS-063.html">Epiglottitis</a></li>
+			<li><a href="Epilepsy_MeG-CLS-056.html">Epilepsy</a></li>
+			<li><a href="Fungal_Skin_Infections_MeG-CLS-057.html">Fungal Skin Infections</a></li>
+			<li><a href="Gastroenteritis_MeG-CLS-033.html">Gastroenteritis</a></li>
+			<li><a href="General_Body_Pain_MeG-CLS-007.html">General Body Pain</a></li>
+			<li><a href="Headache_MeG-CLS-045.html">Headache</a></li>
+			<li><a href="Heart_failure_adults_MeG-CLS-040.html">Heart failure adults</a></li>
+			<li><a href="HHS_MeG-CLS-046.html">Hyperosmolar Hyperglycaemic State</a></li>
+			<li><a href="HIV_MeG-CLS-035.html">HIV</a></li>
+			<li><a href="Hypertension_MeG-CLS-010.html">Hypertension</a></li>
+			<li><a href="Hyperthyroidism_and_goitre_MeG-CLS-027.html">Hyperthyroidism and goitre</a></li>
+			<li><a href="Hypocalcaemia_and_hypercalcaemia_MeG-CLS-074.html">Hypocalcaemia and hypercalcaemia</a></li>
+			<li><a href="Hypokalaemia_hyperkalaemia_hypermagnesaemia_MeG-CLS-073.html">Hypokalaemia, hyperkalaemia, hypermagnesaemia</a></li>
+			<li><a href="Hyponatraemia_and_hypernatraemia_MeG-CLS-072.html">Hyponatraemia and hypernatraemia</a></li>
+			<li><a href="Hypothyroidism_MeG-CLS-036.html">Hypothyroidism</a></li>
+			<li><a href="Infective_Endocarditis_MeG-CLS-058.html">Infective Endocarditis</a></li>
+			<li><a href="Inflammatory_arthritis_and_connective_tissue_disease_MeG-CLS-041.html">Inflammatory arthritis and connective tissue disease</a></li>
+			<li><a href="Intestinal_helminths_MeG-CLS-009.html">Intestinal helminths</a></li>
+			<li><a href="Liver_disease_MeG-CLS-031.html">Liver disease</a></li>
+			<li><a href="Lower_back_pain_MeG-CLS-022.html">Lower back pain</a></li>
+			<li><a href="LRI_MeG-CLS-011.html">Lower Respiratory Infections</a></li>
+			<li><a href="Malaria_MeG-CLS-012.html">Malaria</a></li>
+			<li><a href="Malnutrition_MeG-CLS-037.html">Malnutrition</a></li>
+			<li><a href="Meningitis_MeG-CLS-028.html">Meningitis</a></li>
+			<li><a href="Neonatal_jaundice_MeG-CLS-060.html">Neonatal jaundice</a></li>
+			<li><a href="Nephrotic_Syndrome_MeG-CLS-061.html">Nephrotic Syndrome</a></li>
+			<li><a href="Osteoarthritis_MeG-CLS-042.html">Osteoarthritis</a></li>
+			<li><a href="Otitis_media_MeG-CLS-023.html">Otitis media</a></li>
+			<li><a href="Palliative_Care_MeG-CLS-064.html">Palliative Care</a></li>
+			<li><a href="Rectal_prolapse_MeG-CLS-015.html">Rectal prolapse</a></li>
+			<li><a href="Rheumatic_heart_disease_MeG-CLS-065.html">Rheumatic heart disease</a></li>
+			<li><a href="Scabies_MeG-CLS-066.html">Scabies</a></li>
+			<li><a href="Sepsis_in_adults_MeG-CLS-043.html">Sepsis in adults</a></li>
+			<li><a href="Sinusitis_MeG-CLS-062.html">Sinusitis</a></li>
+			<li><a href="Stevens-Johnsons_syndrome_MeG-CLS-067.html">Stevens-Johnsons syndrome</a></li>
+			<li><a href="STI_MeG-CLS-038.html">Sexually Transmitted Infections</a></li>
+			<li><a href="Stroke_MeG-CLS-020.html">Stroke</a></li>
+			<li><a href="TB_MeG-CLS-044.html">TB</a></li>
+			<li><a href="Tonsillitis_and_pharyngitis_MeG-CLS-024.html">Tonsillitis and pharyngitis</a></li>
+			<li><a href="Trauma_MeG-CLS-068.html">Trauma</a></li>
+			<li><a href="Upper_respiratory_tract_infections_MeG-CLS-018.html">Upper respiratory tract infections</a></li>
+			<li><a href="UTI_MeG-CLS-019.html">Urinary tract infections</a></li>
+</ul>
+	  </div>
+	  </div>
+	 
+    </div><!-- /header -->
+<div data-role="page">
+	<div role="main" class="ui-content">
+<div class=WordSection1>
+<h1 style='margin-bottom:12.0pt'><span lang=EN-US>General Body Pain</span></h1>
+<h2><i><span lang=EN-US>Executive summary</span></i></h2>
+<h2><span lang=EN-US>Introduction</span></h2>
+<p class=MsoNormal><span lang=EN-US>This is a very common presentation. </span><span
+lang=EN>Everyone at some point in their life suffers from general body aches
+and pain. It is your body’s way of letting you know it is time to make some
+changes and slow down.</span></p>
+<p class=MsoNormal><span lang=EN>The human body is under constant gravity and
+movement pressure as demanded by our lifestyle: work activities, posture, home
+duties, shopping, carrying, lifting, bending over, farming, gardening, exercise
+etc. All these activities require body movement and can cause General Body
+Aches &amp; Pains.</span></p>
+<p class=MsoNormal><span lang=EN>Usually, when general body aches and pain are
+felt,  it is caused by life stress, fatigue, restless/ poor sleep, muscle
+strain, poor eating habits, lack of exercise, poor posture, an injury or
+over-use. Today’s lifestyle, family and work are all demanding on our body. </span></p>
+<p class=MsoNormal><span lang=EN-US>It may also reflect the presence of a very
+severe illness, such as sepsis or rheumatoid arthritis, </span><span lang=EN>joint
+inflammation, ligament trauma</span><span lang=EN-US>, or it may indicate
+something milder, like a fresh cold. It is not unusual for mental illness,
+especially depression, to present this way.</span></p>
+<p class=MsoNormal><span lang=EN>Thankfully, many general body aches and pains
+are treatable.</span></p>
+<h2><span lang=EN-US>Target users</span></h2>
+<p class=MsoListParagraph style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Nurses</span></p>
+<h2><span lang=EN-US>Target area of use </span></h2>
+<p class=MsoListParagraph style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Gate clinic</span></p>
+<h2><span lang=EN-US>Key areas of focus / New additions / Changes </span></h2>
+<p class=MsoNormal><span lang=EN-US>This guideline is intended to help nurses
+think about the possible causes of general body pain.</span></p>
+<h2><span lang=EN-US>Limitations</span></h2>
+<p class=MsoNormal><span lang=EN-US>None.</span></p>
+<span lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+lang=EN-US style='font-size:12.0pt'>&nbsp;</span></b></p>
+<h2><span lang=EN-US>Presenting symptoms and signs</span></h2>
+<p class=MsoNormal><span lang=EN-US>Ask the patient how long the general body
+pain has been present. Is it present at all times? Are there parts of the body
+that are more painful than others?</span></p>
+<p class=MsoNormal><span lang=EN-US>Are there any associated symptoms, such as
+fever, joint pain or swelling, cough, diarrhoea, nausea and vomiting, weight
+loss, reduced appetite, difficulty sleeping?</span></p>
+<p class=MsoNormal><span lang=EN-US>How does the patient present themselves? Do
+they make eye contact with you? Are they able to talk comfortably?</span></p>
+<h2><span lang=EN-US>Management</span></h2>
+<p class=MsoNormal><span lang=EN-US>If the patient is able to describe other
+symptoms, then treat them according to the diagnosis that these suggest.
+Consider the possibility of malaria, fresh cold or another infection. </span></p>
+<p class=MsoNormal><span lang=EN-US>If you are unable to make a diagnosis and
+the symptoms seem severe, refer the patient to the doctor. </span></p>
+<p class=MsoNormal><span lang=EN-US>If the patient does not seem to be severely
+unwell, consider treating with 3 days of paracetamol 15-20 mg/kg (max 1g) TDS
+for 3 days. Ask the patient to return if they are not better. </span></p>
+<p class=MsoNormal><span lang=EN-US>For patients with persisting general body
+pains, conditions to consider include:</span></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>Stress</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>Dehydration</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>Lack of refreshing sleep</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>Anaemia</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>Vitamin D Deficiency</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>Arthritis</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US>7.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>Depression</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US>8.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>Anxiety disorder</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US>9.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>Lupus</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US>10.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=EN-US>Neurological pathologies like Multiple Sclerosis</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US>11.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=EN-US>Fibromyalgia</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US>12.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span lang=EN-US>Chronic
+Fatigue Syndrome</span></p>
+<h2><span lang=EN-US>Suggested Treatment Modalities</span></h2>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span lang=EN>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN>Physiotherapy Treatments methods- To promote relaxation include </span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-indent:-18.0pt'><span
+lang=EN>a.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN>Manipulation: Spine, joints etc </span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-indent:-18.0pt'><span
+lang=EN>b.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN>Mobilisation- Joints basically</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-indent:-18.0pt'><span
+lang=EN>c.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN>Massage (deep tissue massage) </span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-indent:-18.0pt'><span
+lang=EN>d.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN>Exercises to strengthen the muscles that support the spine and vital
+organs.</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN>Rheumatologist- Need to refer to Dakar, Senegal</span></p>
+<h2><span lang=EN-US>When to refer to Dr in OPD</span></h2>
+<p class=MsoNormal><i><span lang=EN-US>Refer</span></i><span lang=EN-US> to the
+doctor </span></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>if you are unable to make a diagnosis</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>if the patient is severely unwell</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>if you make a diagnosis needing a doctors review</span></p>
+<p class=MsoNormal><b><span lang=EN-US style='font-size:14.0pt'>References</span></b></p>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>‘General Body
+Aches &amp; Pains-101 Physio’ Australian Physiotherapy Association. Accessed at
+</span><span lang=EN-US><a
+href="http://101physio.com.au/101-physio-general-body-pain-therapy"><span
+style='font-size:10.0pt'>http://101physio.com.au/101-physio-general-body-pain-therapy</span></a></span></p>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>&nbsp;</span></p>
+<div class="tableCont">
+  <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Written by:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Name: Babatunde Awokola</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Date: 12 May 2018</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Reviewed by:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Name: Karen Forrest</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Date: 31 July 2018</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Version:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Change history:</span></b></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Review due date:</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>1.0</span></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>New document</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>2.0</span></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Transferred to new template and revised</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>31 July 2020</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>2.1</span></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Executive summary added</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>31 July 2020</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Review Comments (<i>if applicable)</i></span></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>&nbsp;</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>&nbsp;</span></b></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+</div>
+</div><!-- /content -->
+<div data-role="panel" data-position="right" data-display="overlay" data-position-fixed="true" data-theme="b" id="leftpanel1">
+	<a href="#" data-rel="close" data-theme="b" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+  <h1>About this app</h1>
+  <div>
+    This app is designed to provide doctors and nurses with quick access to the clinical guidelines of the Clinical Services Department of the MRC Unit The Gambia at LSHTM. <br>Users will be notified of updates via departmental email. <br>For feedback or support, email fakemokwe@mrc.gm
+  </div>
+</div>
+</div>
+<div data-role="footer" data-tap-toggle="false" data-id="persistent-footer" data-position="fixed" data-theme="a">
+  <a href="index.html" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-home">Home</a>
+  <a href="#" onclick="topFunction()" id="myBtn" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-u">Top</a>  
+</div>
+</body>
+</html>

@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MRCG Clinical Guidelines</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=1">
+	<meta name=Generator content="Microsoft Word 14 (filtered)">
+	<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
+	<script src="jquery-1.11.1.min.js"></script>
+	<script src="jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="cordova.js"></script>      
+	<style>
+	.show {display: block;}
+	.tablist-left {
+    width: 25%;
+    display: inline-block;
+  }
+  .tablist-content {
+    width: 60%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 5%;
+    }
+    body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+.footer-button-left,
+.footer-button-right {
+    position: absolute;
+    margin: 0;
+    top: auto;
+    bottom: 0.24em;
+}
+.footer-button-left {
+    left: 0.4em;
+}
+.footer-button-right {
+    right: 0.4em;
+}
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;}
+@font-face
+	{font-family:"MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"Lucida Grande";}
+@font-face
+	{font-family:"\@MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:18.0pt;
+	margin-left:0cm;
+	font-size:14.0pt;
+	font-family:"Arial","sans-serif";}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:12.0pt;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Arial","sans-serif";}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:9.0pt;
+	margin-left:0cm;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";
+	text-decoration:underline;}
+h4
+	{mso-style-link:"Heading 4 Char";
+	margin-top:2.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	color:#365F91;
+	font-weight:normal;
+	font-style:italic;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Header Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Footer Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{mso-style-link:"Body Text Indent 3 Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:14.15pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balloon Text Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	font-size:9.0pt;
+	font-family:"Lucida Grande","sans-serif";}
+span.MsoPlaceholderText
+	{color:gray;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:36.0pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:36.0pt;
+	font-size:11.0pt;
+	font-family:"Arial","sans-serif";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-link:"Balloon Text";
+	font-family:"Lucida Grande","sans-serif";}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Arial","sans-serif";
+	font-weight:bold;
+	text-decoration:underline;}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-link:Header;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-link:Footer;}
+span.BodyTextIndent3Char
+	{mso-style-name:"Body Text Indent 3 Char";
+	mso-style-link:"Body Text Indent 3";
+	font-family:"Arial","sans-serif";}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-link:"Heading 4";
+	font-family:"Calibri","sans-serif";
+	color:#365F91;
+	font-style:italic;}
+span.UnresolvedMention1
+	{mso-style-name:"Unresolved Mention1";
+	color:#605E5C;
+	background:#E1DFDD;}
+.MsoChpDefault
+	{font-size:10.0pt;
+	font-family:"Tahoma","sans-serif";}
+ /* Page Definitions */
+ @page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+ .tableCont {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+  </style>
+  	<script>
+		$(function(){
+			$( "[data-role='header'], [data-role='footer']" ).toolbar();
+			$('input[data-type="search"]').val("");			
+		});
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			document.getElementById("myBtn").style.display = "block";
+		  } else {
+			document.getElementById("myBtn").style.display = "none";
+		  }
+		}
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0; // For Safari
+		  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}
+	</script>
+
+</head>
+<body lang=EN-GB link=blue vlink=purple>
+	<div data-role="header" data-tap-toggle="false" data-id="persistent-header" data-position="fixed" data-theme="a">
+		<h2 style="font-size:0.75em;">MRCG<br>Clinical Guidelines<br></h2>
+		<a data-rel="back" class="ui-btn ui-corner-all ui-btn-inline ui-mini header-button-left ui-btn-icon-left ui-icon-carat-l">Back</a>
+<a href="#leftpanel1" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-mini header-button-left ui-icon-info ui-btn-icon-notext">About this app</a>
+		<a href="#popupNested"  data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-bars ui-btn-icon-right ui-btn-b header-button-right" data-transition="pop">Choose a guideline...</a>
+		<div data-role="popup" id="popupNested" data-theme="a"><ul data-role="listview" data-filter="true"data-filter-placeholder="Type to search names..." data-inset="true">
+			<li><a href="Acute_kidney_injury_MeG-CLS-071.html">Acute kidney injury</a></li>
+			<li><a href="Acute_rheumatic_fever__MeG-CLS-048.html">Acute rheumatic fever </a></li>
+			<li><a href="Animal_bites_MeG-CLS-049.html">Animal bites</a></li>
+			<li><a href="Asthma_MeG-CLS-001.html">Asthma</a></li>
+			<li><a href="Bone_and_joint_infections_guidelines_MeG-CLS-050.html">Bone and joint infections guidelines</a></li>
+			<li><a href="Cellulitis_MeG-CLS-051.html">Cellulitis</a></li>
+			<li><a href="Chest_pain_and_Acute_Coronary_Syndrome_MeG-CLS-052.html">Chest pain and Acute Coronary Syndrome</a></li>
+			<li><a href="Chronic_kidney_disease_MeG-CLS-053.html">Chronic kidney disease</a></li>
+			<li><a href="Congenital_heart_disease_MeG-CLS-039.html">Congenital heart disease</a></li>
+			<li><a href="Constipation_MeG-CLS-003.html">Constipation</a></li>
+			<li><a href="COPD_MeG-CLS-032.html">Chronic Obstructive Pulmonary Disease</a></li>
+			<li><a href="Croup_MeG-CLS-059.html">Croup</a></li>
+			<li><a href="Deep_venous_thombosis_and_pulmonary_embolism_MeG-CLS-055.html">Deep venous thombosis and pulmonary embolism</a></li>
+			<li><a href="Depression_MeG-CLS-075.html">Depression</a></li>
+			<li><a href="Developmental_delay_MeG-CLS-054.html">Developmental delay</a></li>
+			<li><a href="Diabetes_Mellitus_MeG-CLS-004.html">Diabetes Mellitus</a></li>
+			<li><a href="DKA_MeG-CLS-021.html">Diabetic ketoacidosis</a></li>
+			<li><a href="Dyspepsia_MeG-CLS-034.html">Dyspepsia</a></li>
+			<li><a href="Ear_pain_MeG-CLS-070.html">Ear pain</a></li>
+			<li><a href="Epiglottitis_MeG-CLS-063.html">Epiglottitis</a></li>
+			<li><a href="Epilepsy_MeG-CLS-056.html">Epilepsy</a></li>
+			<li><a href="Fungal_Skin_Infections_MeG-CLS-057.html">Fungal Skin Infections</a></li>
+			<li><a href="Gastroenteritis_MeG-CLS-033.html">Gastroenteritis</a></li>
+			<li><a href="General_Body_Pain_MeG-CLS-007.html">General Body Pain</a></li>
+			<li><a href="Headache_MeG-CLS-045.html">Headache</a></li>
+			<li><a href="Heart_failure_adults_MeG-CLS-040.html">Heart failure adults</a></li>
+			<li><a href="HHS_MeG-CLS-046.html">Hyperosmolar Hyperglycaemic State</a></li>
+			<li><a href="HIV_MeG-CLS-035.html">HIV</a></li>
+			<li><a href="Hypertension_MeG-CLS-010.html">Hypertension</a></li>
+			<li><a href="Hyperthyroidism_and_goitre_MeG-CLS-027.html">Hyperthyroidism and goitre</a></li>
+			<li><a href="Hypocalcaemia_and_hypercalcaemia_MeG-CLS-074.html">Hypocalcaemia and hypercalcaemia</a></li>
+			<li><a href="Hypokalaemia_hyperkalaemia_hypermagnesaemia_MeG-CLS-073.html">Hypokalaemia, hyperkalaemia, hypermagnesaemia</a></li>
+			<li><a href="Hyponatraemia_and_hypernatraemia_MeG-CLS-072.html">Hyponatraemia and hypernatraemia</a></li>
+			<li><a href="Hypothyroidism_MeG-CLS-036.html">Hypothyroidism</a></li>
+			<li><a href="Infective_Endocarditis_MeG-CLS-058.html">Infective Endocarditis</a></li>
+			<li><a href="Inflammatory_arthritis_and_connective_tissue_disease_MeG-CLS-041.html">Inflammatory arthritis and connective tissue disease</a></li>
+			<li><a href="Intestinal_helminths_MeG-CLS-009.html">Intestinal helminths</a></li>
+			<li><a href="Liver_disease_MeG-CLS-031.html">Liver disease</a></li>
+			<li><a href="Lower_back_pain_MeG-CLS-022.html">Lower back pain</a></li>
+			<li><a href="LRI_MeG-CLS-011.html">Lower Respiratory Infections</a></li>
+			<li><a href="Malaria_MeG-CLS-012.html">Malaria</a></li>
+			<li><a href="Malnutrition_MeG-CLS-037.html">Malnutrition</a></li>
+			<li><a href="Meningitis_MeG-CLS-028.html">Meningitis</a></li>
+			<li><a href="Neonatal_jaundice_MeG-CLS-060.html">Neonatal jaundice</a></li>
+			<li><a href="Nephrotic_Syndrome_MeG-CLS-061.html">Nephrotic Syndrome</a></li>
+			<li><a href="Osteoarthritis_MeG-CLS-042.html">Osteoarthritis</a></li>
+			<li><a href="Otitis_media_MeG-CLS-023.html">Otitis media</a></li>
+			<li><a href="Palliative_Care_MeG-CLS-064.html">Palliative Care</a></li>
+			<li><a href="Rectal_prolapse_MeG-CLS-015.html">Rectal prolapse</a></li>
+			<li><a href="Rheumatic_heart_disease_MeG-CLS-065.html">Rheumatic heart disease</a></li>
+			<li><a href="Scabies_MeG-CLS-066.html">Scabies</a></li>
+			<li><a href="Sepsis_in_adults_MeG-CLS-043.html">Sepsis in adults</a></li>
+			<li><a href="Sinusitis_MeG-CLS-062.html">Sinusitis</a></li>
+			<li><a href="Stevens-Johnsons_syndrome_MeG-CLS-067.html">Stevens-Johnsons syndrome</a></li>
+			<li><a href="STI_MeG-CLS-038.html">Sexually Transmitted Infections</a></li>
+			<li><a href="Stroke_MeG-CLS-020.html">Stroke</a></li>
+			<li><a href="TB_MeG-CLS-044.html">TB</a></li>
+			<li><a href="Tonsillitis_and_pharyngitis_MeG-CLS-024.html">Tonsillitis and pharyngitis</a></li>
+			<li><a href="Trauma_MeG-CLS-068.html">Trauma</a></li>
+			<li><a href="Upper_respiratory_tract_infections_MeG-CLS-018.html">Upper respiratory tract infections</a></li>
+			<li><a href="UTI_MeG-CLS-019.html">Urinary tract infections</a></li>
+</ul>
+	  </div>
+	  </div>
+	 
+    </div><!-- /header -->
+<div data-role="page">
+	<div role="main" class="ui-content">
+<div class=WordSection1>
+<h1><span lang=EN-US>Acute Kidney Injury </span></h1>
+<h2><i><span lang=EN-US>Executive summary</span></i></h2>
+<h2><span lang=EN-US>Introduction</span></h2>
+<p class=MsoNormal><span lang=EN-US>Acute kidney injury (AKI) is an abrupt
+decline in renal function usually taking place over hours to days. It is
+defined by a reduction in urine output and / or a laboratory diagnosis of a
+decline in renal function i.e. increased serum creatinine (Cr) or reduced 
+glomerular filtration rate (GFR). Acute kidney is a significant risk factor for
+morbidity and mortality – a moderate elevation of serum creatinine is an
+independent risk factor for mortality. The causes of AKI in adults are not
+significantly different from the causes in children, however, different
+criteria are used to determine the severity of AKI in each age group. AKI may
+progress to chronic kidney disease(CKD) and may occur in the presence of CKD.
+It is important to distinguish between the two conditions as interventions and
+prognosis are very different. The difference is usually temporal.</span></p>
+<h3><span lang=EN-US style='font-size:12.0pt;text-decoration:none'>Target User</span></h3>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Doctors </span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Nurses</span></p>
+<h3><span lang=EN-US style='font-size:12.0pt;text-decoration:none'>Target area
+of use </span></h3>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Ward</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Outpatient department</span></p>
+<h3><span lang=EN-US style='font-size:12.0pt;text-decoration:none'>Key areas of
+focus </span></h3>
+<p class=MsoNormal><span lang=EN-US>The main focus of this guideline is to
+stimulate doctors to recognize and manage AKI promptly. It is necessary to
+follow up the patients with AKI and those at risk of AKI to reduce morbidity.
+Furosemide use in the management of AKI is restricted to patients with signs of
+fluid overload.</span></p>
+<h3><span lang=EN-US style='font-size:12.0pt;text-decoration:none'>Limitations </span></h3>
+<h2><span lang=EN-US style='font-size:11.0pt;font-weight:normal'>Management of
+stage 3 AKI (an indication for renal replacement therapy) is not available at
+CSD. These patients must be referred to EFSTH. Patients at Keneba who are
+suspected to have AKI should be referred for adequate management.</span></h2>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>&nbsp;</span></p>
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+<span lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+lang=EN-US style='font-size:12.0pt'>&nbsp;</span></b></p>
+<h2><span lang=EN-US>Common causes: </span></h2>
+<p class=MsoNormal><span lang=EN-US>The following are common causes of AKI in
+this region. </span></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Gastroenteritis </span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Sepsis</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Malaria </span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Haemorrhage </span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Glomerulonephritis, especially in children </span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Use of nephrotoxins – NSAIDs, aminoglycosides,
+ACEi / ARBs, diuretics overuse, metformin, herbal medications, contrast dyes</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Heart failure </span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Liver failure </span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Urinary tract obstruction - stones, tumours </span></p>
+<h2><span lang=EN-US>Risk factors for AKI </span></h2>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Patients older than 65 years of age</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>CKD</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Heart failure</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Liver disease</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Diabetes</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Haematological malignancy</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>History of AKI</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Neurological/cognitive impairment</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Reliance on carers for fluids </span></p>
+<h2><span lang=EN-US>Presenting symptoms and signs</span></h2>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Reduced urine volume or absent urine </span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Features suggestive of uraemia including
+epigastric pain, haematemesis, haematochezia, chest pain, confusion,
+obtundation, loss of consciousness, increased somnolence, dyspnea, abnormal
+bleeding and bruising, generalised body weakness</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Features of the underlying causes: fever,
+vomiting, diarrhoea, haematuria</span></p>
+<h2><span lang=EN-US>Examination findings</span></h2>
+<p class=MsoNormal><span lang=EN-US>This includes features of AKI (oliguria or
+anuria) as well as those of the underlying cause or complications.</span></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Oliguria or anuria </span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Fever or hypothermia </span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Pallor </span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Dehydration</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Jaundice </span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Oedema </span></p>
+<span lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+lang=EN-US style='font-size:12.0pt'>&nbsp;</span></b></p>
+<h2><span lang=EN-US>Investigations</span></h2>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Urinalysis</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Urine microscopy </span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Serum electrolytes, urea, creatinine, calcium
+and phosphate</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>FBC and blood film</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Renal ultrasound</span></p>
+<p class=MsoNormal><b><span lang=EN-US style='font-size:12.0pt'>Diagnosis of
+AKI  </span></b></p>
+<p class=MsoNormal><span lang=EN-US>The diagnosis of AKI is made if any<u> ONE</u>
+of the following criteria is fulfilled:</span></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Increase in Cr by 26.5 µmol/l within 48 hours;
+or</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Increase in Cr ≥ 1.5 times baseline, which is
+known or presumed to have occurred within the prior 7 days; or</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Urine volume of ˂ 0.5 ml/kg/h for 6 hours
+(adults) or 8 hours (children); or</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>25% of greater fall in eGFR in children within
+past 7 days.</span></p>
+<p class=MsoNormal><span lang=EN-US>The staging of AKI severity is determined
+by creatinine levels in adults and by creatinine clearance in children as well
+as urine output in both age groups </span></p>
+<p class=MsoNormal><span lang=EN-US> </span></p>
+<div class="tableCont">
+  <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width=728
+ style='width:546.05pt;margin-left:-43.05pt;border-collapse:collapse;
+ border:none'>
+ <tr>
+  <td width=56 rowspan=2 valign=top style='width:42.3pt;border:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US>Stage </span></b></p>
+  </td>
+  <td width=289 colspan=2 valign=top style='width:216.6pt;border-top:solid windowtext 1.5pt;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  lang=EN-US>Children</span></b></p>
+  </td>
+  <td width=383 colspan=2 valign=top style='width:287.15pt;border:solid windowtext 1.5pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  lang=EN-US>Adults</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=161 valign=top style='width:120.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US>eGFR criteria</span></b></p>
+  </td>
+  <td width=128 valign=top style='width:96.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US>Urine output criteria </span></b></p>
+  </td>
+  <td width=222 valign=top style='width:166.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US>Creatinine criteria</span></b></p>
+  </td>
+  <td width=161 valign=top style='width:121.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US>Urine output criteria</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=56 valign=top style='width:42.3pt;border-top:none;border-left:solid windowtext 1.5pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US>1</span></p>
+  </td>
+  <td width=161 valign=top style='width:120.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US>eGFR decreased by 25%</span></p>
+  </td>
+  <td width=128 valign=top style='width:96.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US>&lt; 0.5ml/kg/hr x 8 hours</span></p>
+  </td>
+  <td width=222 valign=top style='width:166.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US>1.5 – 1.9 times base line Cr OR  </span></p>
+  <p class=MsoNormal><span lang=EN-US>Cr ≥ 26.5µmol from base line</span></p>
+  </td>
+  <td width=161 valign=top style='width:121.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US>&lt; 0.5 ml/kg/hr x 6 hours </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=56 valign=top style='width:42.3pt;border-top:none;border-left:solid windowtext 1.5pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US>2</span></p>
+  </td>
+  <td width=161 valign=top style='width:120.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US>eGFR decreased by 50%</span></p>
+  </td>
+  <td width=128 valign=top style='width:96.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US>&lt;0.5ml/kg/hr x16 hours</span></p>
+  </td>
+  <td width=222 valign=top style='width:166.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US>2.0-2.9 times baseline Cr</span></p>
+  </td>
+  <td width=161 valign=top style='width:121.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US>&lt;0.5 ml/kg/hr x12 hours</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=56 valign=top style='width:42.3pt;border:solid windowtext 1.5pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US>3</span></p>
+  </td>
+  <td width=161 valign=top style='width:120.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US>eGFR decreased by 75% OR</span></p>
+  <p class=MsoNormal><span lang=EN-US>eGFR &lt; 35 ml/min/1.73m<sup>2</sup></span></p>
+  </td>
+  <td width=128 valign=top style='width:96.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US>&lt;0.3 ml/kg/hr x 24 hours OR anuria
+  (≤100ml) for 12 hours</span></p>
+  </td>
+  <td width=222 valign=top style='width:166.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US>≥ 3.0 times baseline Cr </span></p>
+  <p class=MsoNormal><span lang=EN-US> OR</span></p>
+  <p class=MsoNormal><span lang=EN-US>Cr ≥ 353.6µmol/L</span></p>
+  <p class=MsoNormal><span lang=EN-US>OR </span></p>
+  <p class=MsoNormal><span lang=EN-US>Initiation of renal replacement therapy </span></p>
+  </td>
+  <td width=161 valign=top style='width:121.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US>&lt;0.3 ml/kg/hr x 24 hours or anuria
+  (≤100 ml) for 12 hours</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+<p class=MsoNormal><span lang=EN-US>For children, the eGFR is calculated using
+the Bedside Schwartz formula which can be found on this link <a
+href="http://nephron.com/bedside_peds_nic.cgi">http://nephron.com/bedside_peds_nic.cgi</a>.</span></p>
+<span lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+lang=EN-US style='font-size:12.0pt'>&nbsp;</span></b></p>
+<h2><span lang=EN-US>Management </span></h2>
+<p class=MsoNormal><span lang=EN-US>Management of AKI is similar for both
+adults and children </span></p>
+<h3><span lang=EN-US>Patients at risk:</span></h3>
+<p class=MsoNormal><span lang=EN-US>Serum creatinine levels should be done at
+baseline and  this should be repeated periodically. While on admission, creatinine
+levels should be done at least on a weekly basis (more often depending on the
+patient’s clinical status). Urine output should be monitored throughout
+admission. </span></p>
+<h3><span lang=EN-US>Conservative management: </span></h3>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Treat underlying cause e.g. antibiotics for
+sepsis, antimalarials for malaria etc.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Replace fluid losses (insensible water loss plus
+fluid loss from vomiting or diarrhea) with colloids, preferably containing
+saline.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Monitor input and output. Use urethral catheter
+only if it will be difficult to estimate urine volume or if a urethral
+obstruction is suspected. </span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Ensure patient is feeding well: High caloric
+intake with low to normal protein. </span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Manage electrolyte disturbances such as
+hyperkalaemia and metabolic acidosis using the guidelines on the management of
+electrolyte disturbances.</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><u><span lang=EN-US>Note</span></u><span lang=EN-US>: The use of
+diuretics is restricted to conditions in which there is fluid overload e.g.
+peripheral and pulmonary oedema. They should not be used routinely. </span></p>
+<h3><span lang=EN-US>Indications for renal replacement therapy (referral to
+EFSTH):</span></h3>
+<p class=MsoNormal><b><span lang=EN-US>Biochemical </span></b></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Refractory hyperkalaemia of  ≥ 6.5 mmol/L or 6 mmol/L
+with ECG changes or a daily rise of 1 mmol/L/ day </span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Refractory metabolic acidosis : Bicarbonate
+levels ≤ 12 mmol/L </span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Urea level of &gt; 25 mmol/L or increase of
+&gt;10 mmol/L/day </span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Stage 3 AKI (Serum creatinine ≥ 353.6 µmol/L) or
+daily rise of ≥ 100 mmol/L/ day </span></p>
+<p class=MsoNormal><b><span lang=EN-US>Clinical </span></b></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Refractory pulmonary oedema</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Uraemic gastritis with persistent symptoms</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Uraemic pericarditis</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Uraemic encephalopathy </span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Bleeding diathesis </span></p>
+<h3><span lang=EN-US>Follow up:</span></h3>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Counsel patient on the prognosis of AKI and the
+need for follow up care. </span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Serum creatinine levels should be measured at
+least 90 days after recovery from AKI. Monitoring can be as frequent as monthly
+</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Follow up in clinic may be extended to the next
+2-3 years to check for progression of the disease, even if creatinine levels
+are normal and stabilised. </span></p>
+<span lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+lang=EN-US style='font-size:12.0pt'>&nbsp;</span></b></p>
+<h2><span lang=EN-US>Key Issues for Nursing care</span></h2>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Strict monitoring of patient’s input and output
+on the fluid balance chart with escalation of care where necessary.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Ensure adherence to the management protocol<b>.</b></span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-size:12.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Restrict potassium-rich foods e.g. bananas, oranges,
+cooked spinach and potatoes.</span></p>
+<h2><span lang=EN-US>References</span></h2>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>KDIGO A. K. I.
+Work Group (2012). KDIGO clinical practice guideline for acute kidney injury.
+Kidney Int Suppl, 2(1), 1-138. </span></p>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Soler, Y. A.,
+Nieves-Plaza, M., Prieto, M., García-De Jesús, R., &amp; Suárez-Rivera, M.
+(2013). pRIFLE (Pediatric Risk, Injury, Failure, Loss, End Stage Renal Disease)
+score identifies Acute Kidney Injury and predicts mortality in critically ill
+children: a prospective study. Pediatric critical care medicine: a journal of
+the Society of Critical Care Medicine and the World Federation of Pediatric
+Intensive and Critical Care Societies, 14(4), e189.</span></p>
+<p class=MsoNormal><span lang=EN-US><a
+href="https://www.nice.org.uk/guidance/cg169/evidence/acute-kidney-injury-full-guideline-pdf-191530621"><span
+style='font-size:10.0pt'>https://www.nice.org.uk/guidance/cg169/evidence/acute-kidney-injury-full-guideline-pdf-191530621</span></a></span></p>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Rahman, M., Shad,
+F., &amp; Smith, M. C. (2012). Acute kidney injury: a guide to diagnosis and
+management. American family physician, 86(7).</span></p>
+<div class="tableCont">
+  <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Written by:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Orighomisan Agboghoroma</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Date: 04 April 2019</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Reviewed by:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Karen Forrest</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Date: 07 May 2019</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Version:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Change history:</span></b></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Review due date:</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>1.0</span></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>New document</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>31 May 2021</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Review Comments (<i>if applicable)</i></span></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>&nbsp;</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>&nbsp;</span></b></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class=MsoNormal><span style='color:black'>&nbsp;</span></p>
+</div>
+</div><!-- /content -->
+<div data-role="panel" data-position="right" data-display="overlay" data-position-fixed="true" data-theme="b" id="leftpanel1">
+	<a href="#" data-rel="close" data-theme="b" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+  <h1>About this app</h1>
+  <div>
+    This app is designed to provide doctors and nurses with quick access to the clinical guidelines of the Clinical Services Department of the MRC Unit The Gambia at LSHTM. <br>Users will be notified of updates via departmental email. <br>For feedback or support, email fakemokwe@mrc.gm
+  </div>
+</div>
+</div>
+<div data-role="footer" data-tap-toggle="false" data-id="persistent-footer" data-position="fixed" data-theme="a">
+  <a href="index.html" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-home">Home</a>
+  <a href="#" onclick="topFunction()" id="myBtn" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-u">Top</a>  
+</div>
+</body>
+</html>
