@@ -257,9 +257,10 @@ ul
 			$( "[data-role='header'], [data-role='footer']" ).toolbar();
 			$('input[data-type="search"]').val("");			
 		});
-		$("#main").load('guideList.html', function(){
-			$(this).trigger('create');
-		})
+			$("#main").load('guideList.html', function(){
+			$("#popupNested").trigger('create');
+		});
+
 		// When the user scrolls down 20px from the top of the document, show the button
 		window.onscroll = function() {scrollFunction()};
 		function scrollFunction() {
