@@ -3,8 +3,9 @@
   "short_name": "CSD Guidelines",
   "theme_color": "#1375c3",
   "background_color": "#b4b4b4",
-  "display": "fullscreen",
-  "start_url": "index.html?launcher=true",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/index.html",
   "description": "Designed for quick offline access when added to home screen",
   "lang": "en-GB",
   "icons": [
