@@ -1,267 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html manifest="manifest.manifest">
 <head>
+	<meta http-equiv=Content-Type content="text/html; charset=utf-8">
 	<title>MRCG Clinical Guidelines</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=1">
   
-	<<meta name=Generator content="Microsoft Word 14 (filtered)">
-	<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
+	<meta name=Generator content="Microsoft Word 14 (filtered)">
+		<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="mystyle.css" />
 	<script src="jquery-1.11.1.min.js"></script>
 	<script src="jquery.mobile-1.4.5.min.js"></script>
-	<script type="text/javascript" src="cordova.js"></script>      
-	<style>
-	.show {display: block;}
-  .tablist-left {
-    width: 25%;
-    display: inline-block;
-  }
-  .tablist-content {
-    width: 60%;
-    display: inline-block;
-    vertical-align: top;
-    margin-left: 5%;
-    }
-    body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-}
-.footer-button-left,
-.footer-button-right {
-    position: absolute;
-    margin: 0;
-    top: auto;
-    bottom: 0.24em;
-}
-.footer-button-left {
-    left: 0.4em;
-}
-.footer-button-right {
-    right: 0.4em;
-}
-<!--
- /* Font Definitions */
- @font-face
-	{font-family:Wingdings;
-	panose-1:5 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"MS Mincho";
-	panose-1:2 2 6 9 4 2 5 8 3 4;}
-@font-face
-	{font-family:"MS Mincho";
-	panose-1:2 2 6 9 4 2 5 8 3 4;}
-@font-face
-	{font-family:Tahoma;
-	panose-1:2 11 6 4 3 5 4 4 2 4;}
-@font-face
-	{font-family:"Lucida Grande";}
-@font-face
-	{font-family:"\@MS Mincho";
-	panose-1:2 2 6 9 4 2 5 8 3 4;}
- /* Style Definitions */
- p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:6.0pt;
-	margin-left:0cm;
-	font-size:11.0pt;
-	font-family:"Arial","sans-serif";}
-h1
-	{mso-style-link:"Heading 1 Char";
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:18.0pt;
-	margin-left:0cm;
-	font-size:14.0pt;
-	font-family:"Arial","sans-serif";}
-h2
-	{mso-style-link:"Heading 2 Char";
-	margin-top:6.0pt;
-	margin-right:0cm;
-	margin-bottom:12.0pt;
-	margin-left:0cm;
-	font-size:12.0pt;
-	font-family:"Arial","sans-serif";}
-h3
-	{mso-style-link:"Heading 3 Char";
-	margin-top:6.0pt;
-	margin-right:0cm;
-	margin-bottom:9.0pt;
-	margin-left:0cm;
-	font-size:11.0pt;
-	font-family:"Arial","sans-serif";}
-h4
-	{mso-style-link:"Heading 4 Char";
-	margin-top:2.0pt;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:0cm;
-	margin-bottom:.0001pt;
-	page-break-after:avoid;
-	font-size:11.0pt;
-	font-family:"Calibri","sans-serif";
-	color:#365F91;
-	font-weight:normal;
-	font-style:italic;}
-p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
-	{mso-style-link:"Comment Text Char";
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:6.0pt;
-	margin-left:0cm;
-	font-size:10.0pt;
-	font-family:"Arial","sans-serif";}
-p.MsoHeader, li.MsoHeader, div.MsoHeader
-	{mso-style-link:"Header Char";
-	margin:0cm;
-	margin-bottom:.0001pt;
-	font-size:10.0pt;
-	font-family:"Arial","sans-serif";}
-p.MsoFooter, li.MsoFooter, div.MsoFooter
-	{mso-style-link:"Footer Char";
-	margin:0cm;
-	margin-bottom:.0001pt;
-	font-size:10.0pt;
-	font-family:"Arial","sans-serif";}
-p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
-	{mso-style-link:"Body Text Indent 3 Char";
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:6.0pt;
-	margin-left:14.15pt;
-	font-size:11.0pt;
-	font-family:"Arial","sans-serif";}
-a:link, span.MsoHyperlink
-	{color:blue;
-	text-decoration:underline;}
-a:visited, span.MsoHyperlinkFollowed
-	{color:purple;
-	text-decoration:underline;}
-p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject
-	{mso-style-link:"Comment Subject Char";
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:6.0pt;
-	margin-left:0cm;
-	font-size:10.0pt;
-	font-family:"Arial","sans-serif";
-	font-weight:bold;}
-p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
-	{mso-style-link:"Balloon Text Char";
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:6.0pt;
-	margin-left:0cm;
-	font-size:9.0pt;
-	font-family:"Lucida Grande","sans-serif";}
-p.MsoRMPane, li.MsoRMPane, div.MsoRMPane
-	{margin:0cm;
-	margin-bottom:.0001pt;
-	font-size:11.0pt;
-	font-family:"Arial","sans-serif";}
-p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:6.0pt;
-	margin-left:36.0pt;
-	font-size:11.0pt;
-	font-family:"Arial","sans-serif";}
-p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:36.0pt;
-	margin-bottom:.0001pt;
-	font-size:11.0pt;
-	font-family:"Arial","sans-serif";}
-p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:36.0pt;
-	margin-bottom:.0001pt;
-	font-size:11.0pt;
-	font-family:"Arial","sans-serif";}
-p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:6.0pt;
-	margin-left:36.0pt;
-	font-size:11.0pt;
-	font-family:"Arial","sans-serif";}
-span.Heading1Char
-	{mso-style-name:"Heading 1 Char";
-	mso-style-link:"Heading 1";
-	font-family:"Arial","sans-serif";
-	font-weight:bold;}
-span.Heading2Char
-	{mso-style-name:"Heading 2 Char";
-	mso-style-link:"Heading 2";
-	font-family:"Arial","sans-serif";
-	font-weight:bold;}
-span.BalloonTextChar
-	{mso-style-name:"Balloon Text Char";
-	mso-style-link:"Balloon Text";
-	font-family:"Lucida Grande","sans-serif";}
-span.Heading3Char
-	{mso-style-name:"Heading 3 Char";
-	mso-style-link:"Heading 3";
-	font-family:"Arial","sans-serif";
-	font-weight:bold;}
-span.HeaderChar
-	{mso-style-name:"Header Char";
-	mso-style-link:Header;}
-span.FooterChar
-	{mso-style-name:"Footer Char";
-	mso-style-link:Footer;}
-span.BodyTextIndent3Char
-	{mso-style-name:"Body Text Indent 3 Char";
-	mso-style-link:"Body Text Indent 3";
-	font-family:"Arial","sans-serif";}
-span.Heading4Char
-	{mso-style-name:"Heading 4 Char";
-	mso-style-link:"Heading 4";
-	font-family:"Calibri","sans-serif";
-	color:#365F91;
-	font-style:italic;}
-span.UnresolvedMention
-	{mso-style-name:"Unresolved Mention";
-	color:#605E5C;
-	background:#E1DFDD;}
-span.CommentTextChar
-	{mso-style-name:"Comment Text Char";
-	mso-style-link:"Comment Text";
-	font-family:"Arial","sans-serif";}
-span.CommentSubjectChar
-	{mso-style-name:"Comment Subject Char";
-	mso-style-link:"Comment Subject";
-	font-family:"Arial","sans-serif";
-	font-weight:bold;}
-.MsoChpDefault
-	{font-size:10.0pt;
-	font-family:"Tahoma","sans-serif";}
- /* Page Definitions */
- @page WordSection1
-	{size:612.0pt 792.0pt;
-	margin:72.0pt 90.0pt 72.0pt 90.0pt;}
-div.WordSection1
-	{page:WordSection1;}
- /* List Definitions */
- ol
-	{margin-bottom:0cm;}
-ul
-	{margin-bottom:0cm;}
--->
-   .tableCont {
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
-}
-  </style>
-  	  	<script>
-		$(function(){
-			$( "[data-role='header'], [data-role='footer']" ).toolbar();
-			$('input[data-type="search"]').val("");			
+	<script type="text/javascript" src="cordova.js"></script>
+	<script>
+	    		$(function(){
+			$("[data-role='header'], [data-role='footer']").toolbar();
 		});
-		// When the user scrolls down 20px from the top of the document, show the button
+  	  $(document).one('pagebeforecreate', function () {
+	        $('input[data-type="search"]').val("");
+	    	        $.get("panel.html", function (data2) {
+            $.mobile.pageContainer.prepend(data2);
+              $("[data-role=panel]").panel().enhanceWithin();
+        }, "html");
+	           $.get("header.html", function (data) {
+      $.mobile.pageContainer.prepend(data);
+      $("[data-role='header']").toolbar().enhanceWithin();
+    }, "html");
+    $.get("footer.html", function (data) {
+      $.mobile.pageContainer.append(data);
+      $("[data-role='footer']").toolbar().enhanceWithin();
+    }, "html");
+        $('.WordSection1').wrap('<div role="main" class="ui-content">');
+        $('table').wrap('<div class="tableCont"></div>');
+        $('img').wrap('<div class="tableCont"></div>');
+        $.mobile.pageContainer.enhanceWithin();
+	  });
+	        $(document).bind( "pagechange", function( ) {
+        $('table').wrap('<div class="tableCont"></div>');
+        $('img').wrap('<div class="tableCont"></div>');
+        $('.tableCont').enhanceWithin();
+      } );
+			// When the user scrolls down 20px from the top of the document, show the button
 		window.onscroll = function() {scrollFunction()};
 		function scrollFunction() {
 		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -274,83 +52,30 @@ ul
 		function topFunction() {
 		  document.body.scrollTop = 0; // For Safari
 		  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-		}
-	</script>
+		}</script>      
+	
 
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+  
+  
+  	
 </head>
 <body lang=EN-GB link=blue vlink=purple>
-	<div data-role="header" data-tap-toggle="false" data-id="persistent-header" data-position="fixed" data-theme="a">
-		<h2 style="font-size:0.75em;"><br><br><br>MRCG<br>Clinical Guidelines</h2>
-		<a data-rel="back" class="ui-btn ui-corner-all ui-btn-inline ui-mini header-button-left ui-btn-icon-left ui-icon-carat-l">Back</a>
-		<a href="#leftpanel1" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-mini header-button-left ui-icon-info ui-btn-icon-notext">About this app</a>
-		<a href="#popupNested"  data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-bars ui-btn-icon-right ui-btn-b header-button-right" data-transition="pop">Choose a guideline...</a>
-		<div data-role="popup" id="popupNested" data-theme="a"><ul data-role="listview" data-filter="true"data-filter-placeholder="Type to search names..." data-inset="true">
-			<li><a href="Acute_kidney_injury_MeG-CLS-071.html">Acute kidney injury</a></li>
-			<li><a href="Acute_rheumatic_fever__MeG-CLS-048.html">Acute rheumatic fever </a></li>
-			<li><a href="Animal_bites_MeG-CLS-049.html">Animal bites</a></li>
-			<li><a href="Asthma_MeG-CLS-001.html">Asthma</a></li>
-			<li><a href="Bone_and_joint_infections_guidelines_MeG-CLS-050.html">Bone and joint infections guidelines</a></li>
-			<li><a href="Cellulitis_MeG-CLS-051.html">Cellulitis</a></li>
-			<li><a href="Chest_pain_and_Acute_Coronary_Syndrome_MeG-CLS-052.html">Chest pain and Acute Coronary Syndrome</a></li>
-			<li><a href="Chronic_kidney_disease_MeG-CLS-053.html">Chronic kidney disease</a></li>
-			<li><a href="Congenital_heart_disease_MeG-CLS-039.html">Congenital heart disease</a></li>
-			<li><a href="Constipation_MeG-CLS-003.html">Constipation</a></li>
-			<li><a href="COPD_MeG-CLS-032.html">Chronic Obstructive Pulmonary Disease</a></li>
-			<li><a href="Croup_MeG-CLS-059.html">Croup</a></li>
-			<li><a href="Deep_venous_thombosis_and_pulmonary_embolism_MeG-CLS-055.html">Deep venous thombosis and pulmonary embolism</a></li>
-			<li><a href="Depression_MeG-CLS-075.html">Depression</a></li>
-			<li><a href="Developmental_delay_MeG-CLS-054.html">Developmental delay</a></li>
-			<li><a href="Diabetes_Mellitus_MeG-CLS-004.html">Diabetes Mellitus</a></li>
-			<li><a href="DKA_MeG-CLS-021.html">Diabetic ketoacidosis</a></li>
-			<li><a href="Dyspepsia_MeG-CLS-034.html">Dyspepsia</a></li>
-			<li><a href="Ear_pain_MeG-CLS-070.html">Ear pain</a></li>
-			<li><a href="Epiglottitis_MeG-CLS-063.html">Epiglottitis</a></li>
-			<li><a href="Epilepsy_MeG-CLS-056.html">Epilepsy</a></li>
-			<li><a href="Fungal_Skin_Infections_MeG-CLS-057.html">Fungal Skin Infections</a></li>
-			<li><a href="Gastroenteritis_MeG-CLS-033.html">Gastroenteritis</a></li>
-			<li><a href="General_Body_Pain_MeG-CLS-007.html">General Body Pain</a></li>
-			<li><a href="Headache_MeG-CLS-045.html">Headache</a></li>
-			<li><a href="Heart_failure_adults_MeG-CLS-040.html">Heart failure adults</a></li>
-			<li><a href="HHS_MeG-CLS-046.html">Hyperosmolar Hyperglycaemic State</a></li>
-			<li><a href="HIV_MeG-CLS-035.html">HIV</a></li>
-			<li><a href="Hypertension_MeG-CLS-010.html">Hypertension</a></li>
-			<li><a href="Hyperthyroidism_and_goitre_MeG-CLS-027.html">Hyperthyroidism and goitre</a></li>
-			<li><a href="Hypocalcaemia_and_hypercalcaemia_MeG-CLS-074.html">Hypocalcaemia and hypercalcaemia</a></li>
-			<li><a href="Hypokalaemia_hyperkalaemia_hypermagnesaemia_MeG-CLS-073.html">Hypokalaemia, hyperkalaemia, hypermagnesaemia</a></li>
-			<li><a href="Hyponatraemia_and_hypernatraemia_MeG-CLS-072.html">Hyponatraemia and hypernatraemia</a></li>
-			<li><a href="Hypothyroidism_MeG-CLS-036.html">Hypothyroidism</a></li>
-			<li><a href="Infective_Endocarditis_MeG-CLS-058.html">Infective Endocarditis</a></li>
-			<li><a href="Inflammatory_arthritis_and_connective_tissue_disease_MeG-CLS-041.html">Inflammatory arthritis and connective tissue disease</a></li>
-			<li><a href="Intestinal_helminths_MeG-CLS-009.html">Intestinal helminths</a></li>
-			<li><a href="Liver_disease_MeG-CLS-031.html">Liver disease</a></li>
-			<li><a href="Lower_back_pain_MeG-CLS-022.html">Lower back pain</a></li>
-			<li><a href="LRI_MeG-CLS-011.html">Lower Respiratory Infections</a></li>
-			<li><a href="Malaria_MeG-CLS-012.html">Malaria</a></li>
-			<li><a href="Malnutrition_MeG-CLS-037.html">Malnutrition</a></li>
-			<li><a href="Meningitis_MeG-CLS-028.html">Meningitis</a></li>
-			<li><a href="Neonatal_jaundice_MeG-CLS-060.html">Neonatal jaundice</a></li>
-			<li><a href="Nephrotic_Syndrome_MeG-CLS-061.html">Nephrotic Syndrome</a></li>
-			<li><a href="Osteoarthritis_MeG-CLS-042.html">Osteoarthritis</a></li>
-			<li><a href="Otitis_media_MeG-CLS-023.html">Otitis media</a></li>
-			<li><a href="Palliative_Care_MeG-CLS-064.html">Palliative Care</a></li>
-			<li><a href="Rectal_prolapse_MeG-CLS-015.html">Rectal prolapse</a></li>
-			<li><a href="Rheumatic_heart_disease_MeG-CLS-065.html">Rheumatic heart disease</a></li>
-			<li><a href="Scabies_MeG-CLS-066.html">Scabies</a></li>
-			<li><a href="Sepsis_in_adults_MeG-CLS-043.html">Sepsis in adults</a></li>
-			<li><a href="Sinusitis_MeG-CLS-062.html">Sinusitis</a></li>
-			<li><a href="Stevens-Johnsons_syndrome_MeG-CLS-067.html">Stevens-Johnsons syndrome</a></li>
-			<li><a href="STI_MeG-CLS-038.html">Sexually Transmitted Infections</a></li>
-			<li><a href="Stroke_MeG-CLS-020.html">Stroke</a></li>
-			<li><a href="TB_MeG-CLS-044.html">TB</a></li>
-			<li><a href="Tonsillitis_and_pharyngitis_MeG-CLS-024.html">Tonsillitis and pharyngitis</a></li>
-			<li><a href="Trauma_MeG-CLS-068.html">Trauma</a></li>
-			<li><a href="Upper_respiratory_tract_infections_MeG-CLS-018.html">Upper respiratory tract infections</a></li>
-			<li><a href="UTI_MeG-CLS-019.html">Urinary tract infections</a></li>
-</ul>
-	  </div>
-	  </div>
-	 
-    </div><!-- /header -->
+	
 <div data-role="page">
 	<div role="main" class="ui-content">
 <div class=WordSection1>
@@ -544,7 +269,7 @@ may be needed in SA.</span></p>
 <p class=MsoNormal><b><span lang=EN-US>Empirical antibiotic therapy </span></b></p>
 <div class="tableCont">
   <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width=605
- style='width:453.65pt;margin-left:-14.45pt;border-collapse:collapse;
+ style='width:453.65pt;margin-left:5pt;border-collapse:collapse;
  border:none'>
  <tr>
   <td width=132 valign=top style='width:99.25pt;border:solid windowtext 1.0pt;
@@ -775,17 +500,8 @@ lang=EN-US>.</span></p>
 <p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
 </div>
 </div><!-- /content -->
-<div data-role="panel" data-position="right" data-display="overlay" data-position-fixed="true" data-theme="b" id="leftpanel1">
-	<a href="#" data-rel="close" data-theme="b" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-  <h1>About this app</h1>
-  <div>
-    This app is designed to provide doctors and nurses with quick access to the clinical guidelines of the Clinical Services Department of the MRC Unit The Gambia at LSHTM. <br>Users will be notified of updates via departmental email. <br>For feedback or support, email fakemokwe@mrc.gm
-  </div>
+
 </div>
-</div>
-<div data-role="footer" data-tap-toggle="false" data-id="persistent-footer" data-position="fixed" data-theme="a">
-  <a href="index.html" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-home">Home</a>
-  <a href="#" onclick="topFunction()" id="myBtn" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-u">Top</a>  
-</div>
+
 </body>
 </html>
