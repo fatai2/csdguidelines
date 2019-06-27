@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html manifest="manifest.manifest">
+<head>
+	<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+	<title>MRCG Clinical Guidelines</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=1">
+  
+	<meta name=Generator content="Microsoft Word 14 (filtered)">
+	<link rel="manifest" href="/manifest.json">	
+<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="mystyle.css" />
+	<script src="jquery-1.11.1.min.js"></script>
+	<script src="jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="cordova.js"></script>
+	<script>
+	    		$(function(){
+			$("[data-role='header'], [data-role='footer']").toolbar();
+		});
+  	  $(document).one('pagebeforecreate', function () {
+	        $('input[data-type="search"]').val("");
+	    	        $.get("panel.html", function (data2) {
+            $.mobile.pageContainer.prepend(data2);
+              $("[data-role=panel]").panel().enhanceWithin();
+        }, "html");
+	           $.get("header.html", function (data) {
+      $.mobile.pageContainer.prepend(data);
+      $("[data-role='header']").toolbar().enhanceWithin();
+    }, "html");
+    $.get("footer.html", function (data) {
+      $.mobile.pageContainer.append(data);
+      $("[data-role='footer']").toolbar().enhanceWithin();
+    }, "html");
+        $('.WordSection1').wrap('<div role="main" class="ui-content">');
+        $('table').wrap('<div class="tableCont"></div>');
+        $('img').wrap('<div class="tableCont"></div>');
+        $.mobile.pageContainer.enhanceWithin();
+	  });
+	        $(document).bind( "pagechange", function( ) {
+        $('table').wrap('<div class="tableCont"></div>');
+        $('img').wrap('<div class="tableCont"></div>');
+        $('.tableCont').enhanceWithin();
+      } );
+			// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			document.getElementById("myBtn").style.display = "block";
+		  } else {
+			document.getElementById("myBtn").style.display = "none";
+		  }
+		}
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0; // For Safari
+		  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}</script>      
+	
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+  
+  
+  	
+</head>
+<body lang=EN-GB link=blue vlink=purple>
+	
+<div data-role="page">
+	<div role="main" class="ui-content">
+<div class=WordSection1>
+<h1><span lang=EN-US>Meningitis</span></h1>
+<h2><i><span lang=EN-US>Executive summary</span></i></h2>
+<h2><span lang=EN-US>Introduction</span></h2>
+<h2><span lang=EN-US style='font-size:11.0pt;font-weight:normal'>Meningitis is
+defined as inflammation of the pia and arachnoid meninges and the cerebrospinal
+fluid (CSF) that surrounds the brain and spinal cord. The main infectious
+causes are viral, bacterial and fungal. </span></h2>
+<h2 style='margin:0cm;margin-bottom:.0001pt'><span lang=EN-US style='font-size:
+11.0pt;font-weight:normal'>Meningitis is classified clinically as either acute
+or chronic. Acute meningitis occurs within hours or days, whereas chronic
+meningitis evolves over weeks. Acute meningitis is classified as </span></h2>
+<h2 style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:36.0pt;
+margin-bottom:.0001pt;text-indent:-18.0pt'><span lang=EN-US style='font-size:
+11.0pt;font-family:Symbol;font-weight:normal'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:11.0pt;font-weight:normal'>aseptic
+(which is mostly viral in origin) or </span></h2>
+<h2 style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:36.0pt;
+margin-bottom:.0001pt;text-indent:-18.0pt'><span lang=EN-US style='font-size:
+11.0pt;font-family:Symbol;font-weight:normal'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:11.0pt;font-weight:normal'>septic
+or pyogenic which is caused by bacteria. </span></h2>
+<h2><span lang=EN-US style='font-size:11.0pt;font-weight:normal'>Chronic
+meningitis is a complex entity with both infectious and noninfectious causes.</span></h2>
+<h3><span lang=EN-US style='font-size:12.0pt;text-decoration:none'>Target users</span></h3>
+<p class=MsoListParagraph style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Doctors </span></p>
+<h3><span lang=EN-US style='font-size:12.0pt;text-decoration:none'>Target area
+of use </span></h3>
+<p class=MsoListParagraph style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Ward</span></p>
+<h3><span lang=EN-US style='font-size:12.0pt;text-decoration:none'>Key areas of
+focus / New additions / Changes </span></h3>
+<p class=MsoNormal><span lang=EN-US>This guideline addresses the management of
+the infective causes of meningitis<b> </b>in children and in adults. It
+provides advice on empirical antibiotic therapy.</span></p>
+<p class=MsoNormal><span lang=EN-US>The treatment of infective chronic
+meningitis has been added to this guideline and the management of meningitis in
+the immunocompromised has been adopted in this new version. </span></p>
+<p class=MsoNormal><span lang=EN-US>Antibiotic therapy is for two weeks at
+least.</span></p>
+<h2><span lang=EN-US>Limitations</span></h2>
+<h2><span lang=EN-US style='font-size:11.0pt;font-weight:normal'>None.</span></h2>
+<span lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+lang=EN-US style='font-size:12.0pt'>&nbsp;</span></b></p>
+<h2><span lang=EN-US>Pathogens</span></h2>
+<p class=MsoNormal style='text-indent:5.5pt'><b><span lang=EN-US>1) Bacterial:</span></b></p>
+<div class="tableCont">
+  <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width=576
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=113 valign=bottom style='width:84.8pt;border:solid windowtext 1.0pt;
+  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:10.0pt'>Age range</span></b></p>
+  </td>
+  <td width=113 valign=bottom style='width:84.8pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:10.0pt'>Organism</span></b></p>
+  </td>
+  <td width=132 valign=bottom style='width:99.25pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:10.0pt'>Site of entry</span></b></p>
+  </td>
+  <td width=217 valign=bottom style='width:163.0pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:10.0pt'>Predisposing
+  conditions</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=113 valign=top style='width:84.8pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>All ages</span></p>
+  </td>
+  <td width=113 valign=top style='width:84.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><i><span lang=EN-US style='font-size:10.0pt'>Neisseria
+  meningitidis</span></i></p>
+  </td>
+  <td width=132 valign=top style='width:99.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Nasopharynx</span></p>
+  </td>
+  <td width=217 valign=top style='width:163.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Usually none,
+  rarely complement deficiency</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=113 valign=top style='width:84.8pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>All ages</span></p>
+  </td>
+  <td width=113 valign=top style='width:84.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><i><span lang=EN-US style='font-size:10.0pt'>Streptococcus
+  pneumoniae</span></i></p>
+  </td>
+  <td width=132 valign=top style='width:99.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Nasopharynx, </span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>direct extension
+  across skull fracture, or from contiguous or distant foci of infection</span></p>
+  </td>
+  <td width=217 valign=top style='width:163.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt;color:black;
+  background:white'>All conditions that predispose to pneumococcal bacteremia,
+  fracture of cribriform plate, cochlear implants, cerebrospinal fluid otorrhea
+  from basilar skull fracture, defects of the ear ossicle </span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=113 valign=top style='width:84.8pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>All ages</span></p>
+  </td>
+  <td width=113 valign=top style='width:84.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><i><span lang=EN-US style='font-size:10.0pt'>Coagulase-negative
+  staphylococci</span></i></p>
+  </td>
+  <td width=132 valign=top style='width:99.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Foreign body</span></p>
+  </td>
+  <td width=217 valign=top style='width:163.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt;color:black;
+  background:white'>Surgery and foreign body, especially ventricular drains</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=113 valign=top style='width:84.8pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>All ages</span></p>
+  </td>
+  <td width=113 valign=top style='width:84.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><i><span lang=EN-US style='font-size:10.0pt'>Staphylococcus
+  aureus</span></i></p>
+  </td>
+  <td width=132 valign=top style='width:99.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Bacteremia,
+  foreign body, skin</span></p>
+  </td>
+  <td width=217 valign=top style='width:163.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt;color:black;
+  background:white'>Endocarditis, surgery and foreign body, especially
+  ventricular drains; cellulitis, decubitus ulcer</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=113 valign=top style='width:84.8pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Older adult
+  (&gt;50yrs) and neonates</span></p>
+  </td>
+  <td width=113 valign=top style='width:84.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><i><span lang=EN-US style='font-size:10.0pt'>Listeria
+  monocytogenes</span></i></p>
+  </td>
+  <td width=132 valign=top style='width:99.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Gastrointestinal
+  tract, placenta</span></p>
+  </td>
+  <td width=217 valign=top style='width:163.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt;color:black;
+  background:white'>Glucocorticoids, Transplantation (especially renal
+  transplantation)</span><span lang=EN-US style='font-size:10.0pt;color:black;
+  background:white'>, </span><span lang=EN-US style='font-size:10.0pt;
+  color:black;background:white'>Pregnancy, Liver disease, Alcoholism,
+  Malignancy</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=113 valign=top style='width:84.8pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Older adults and
+  neonates</span></p>
+  </td>
+  <td width=113 valign=top style='width:84.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><i><span lang=EN-US style='font-size:10.0pt'>Gram-negative
+  bacilli</span></i></p>
+  </td>
+  <td width=132 valign=top style='width:99.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Various</span></p>
+  </td>
+  <td width=217 valign=top style='width:163.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt;color:black;
+  background:white'>Advanced medical illness, neurosurgery, ventricular drains,
+  disseminated strongyloidiasis</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=113 valign=top style='width:84.8pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Adults; infants
+  and children if not vaccinated</span></p>
+  </td>
+  <td width=113 valign=top style='width:84.8pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><i><span lang=EN-US style='font-size:10.0pt'>Haemophilus
+  influenzae</span></i></p>
+  </td>
+  <td width=132 valign=top style='width:99.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Nasopharynx, contiguous
+  spread from local infection</span></p>
+  </td>
+  <td width=217 valign=top style='width:163.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt;color:black;
+  background:white'>Diminished humoral immunity</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class=MsoNormal><b><span lang=EN-US>2)</span></b><b><span lang=EN-US
+style='color:black;background:white'> Viral:</span></b></p>
+<p class=MsoNormal><span lang=EN-US style='color:black;background:white'>A
+number of viruses produce aseptic meningitis including enteroviruses, herpes
+simplex virus (HSV), human immunodeficiency virus (HIV), West Nile virus (WNV),
+varicella-zoster virus (VZV), mumps, and lymphocytic choriomeningitis virus
+(LCM).</span></p>
+<p class=MsoNormal><b><span lang=EN-US>3) Chronic meningitis:</span></b></p>
+<div class="tableCont">
+  <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width=617
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=123 valign=bottom style='width:91.9pt;border:solid windowtext 1.0pt;
+  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:10.0pt'>Age range</span></b></p>
+  </td>
+  <td width=123 valign=bottom style='width:91.9pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:10.0pt'>Organism</span></b></p>
+  </td>
+  <td width=150 valign=bottom style='width:112.2pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:10.0pt'>Site of entry</span></b></p>
+  </td>
+  <td width=222 valign=bottom style='width:166.45pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:10.0pt'>Predisposing
+  conditions</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=123 valign=top style='width:91.9pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>All ages</span></p>
+  </td>
+  <td width=123 valign=top style='width:91.9pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><em><span lang=EN-US style='font-size:10.0pt;font-family:
+  "Arial","sans-serif";color:black;background:white'>Mycobacterium tuberculosis</span></em></p>
+  </td>
+  <td width=150 valign=top style='width:112.2pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Pulmonary TB</span></p>
+  </td>
+  <td width=222 valign=top style='width:166.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Acute
+  complication of pulmonary TB or as a reactivation of extra pulmonary TB.</span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>HIV
+  significantly increases the risk.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=123 valign=top style='width:91.9pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>All ages</span></p>
+  </td>
+  <td width=123 valign=top style='width:91.9pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><em><span lang=EN-US style='font-size:10.0pt;font-family:
+  "Arial","sans-serif";color:black;background:white'>Cryptococcus neoformans</span></em></p>
+  </td>
+  <td width=150 valign=top style='width:112.2pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>&nbsp;</span></p>
+  </td>
+  <td width=222 valign=top style='width:166.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>CD4 counts
+  &lt;100 cells/mm<sup>3</sup>.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+<span lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+lang=EN-US style='font-size:12.0pt'>&nbsp;</span></b></p>
+<h2><span lang=EN-US>Presenting symptoms and signs</span></h2>
+<p class=MsoNormal><span lang=EN-US>The main clinical features of acute
+bacterial meningitis are headache, fever and meningism. When this triad is
+accompanied by alteration in consciousness or seizures, the diagnosis is
+usually not in doubt. Other symptoms include photophobia, nausea, vomiting,
+backache and lethargy. Progression occurs rapidly over 1-3 days but a smaller
+number may have an acute fulminant course lasting hours. However patients with
+HIV infection may present with only one or two of these main features.</span></p>
+<p class=MsoNormal><span lang=EN-US>TB Meningitis is a difficult condition to
+diagnose and confirm clinically. The clinical features are those of slowly
+progressive. Constitutional TB symptoms including fever, night sweats, weight
+loss and malaise may be present for a week or more early on but these may also
+be absent or are not specific for TB. The main neurological symptoms suggestive
+of TB meningitis are headache, nausea, vomiting, irritability, behaviour change
+and meningism of gradual onset usually for a period of one week or usually
+longer in adults. However, headaches may be less prominent in children, fever
+may be absent in 10-20% of adults and the signs of meningitis are generally
+less prominent as compared to acute bacterial meningitis.</span></p>
+<h2><span lang=EN-US>Examination findings</span></h2>
+<h2><span lang=EN-US>Management </span></h2>
+<p class=MsoNormal><b><span lang=EN-US>Investigations</span></b><span
+lang=EN-US>:</span></p>
+<p class=MsoNormal><b><span lang=EN-US>1) Blood culture</span></b><span
+lang=EN-US> are often positive and can be useful in the event that cerebrospinal
+fluid (CSF) cannot be obtained before the administration of antimicrobials.
+Approximately 50 to 90 percent of patients with bacterial meningitis have
+positive blood cultures.</span></p>
+<p class=MsoNormal><b><span lang=EN-US>2) Lumbar puncture (LP)</span></b><span
+lang=EN-US> is the key investigation and is an overall simple and very safe
+test.</span></p>
+<p class=MsoNormal><span lang=EN-US style='color:black;background:white'>*CONTRAINDICATIONS-
+Increased intracranial pressure; Thrombocytopenia or other bleeding diathesis;
+Cardiopulmonary instability; Soft tissue infection at the puncture site.</span></p>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+lang=EN-US style='color:black;background:white'>&nbsp;</span></p>
+<div class="tableCont">
+  <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width=604
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=126 valign=bottom style='width:94.6pt;border:solid windowtext 1.0pt;
+  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:10.0pt'>&nbsp;</span></b></p>
+  </td>
+  <td width=120 valign=bottom style='width:89.65pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:10.0pt'>Acute
+  bacterial meningitis</span></b></p>
+  </td>
+  <td width=120 valign=bottom style='width:89.7pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:10.0pt'>Tuberculous</span></b></p>
+  </td>
+  <td width=120 valign=bottom style='width:89.7pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:10.0pt'>Cryptococcal</span></b></p>
+  </td>
+  <td width=120 valign=bottom style='width:89.7pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:10.0pt'>Viral</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=126 valign=top style='width:94.6pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:10.0pt'>Appearance</span></b></p>
+  </td>
+  <td width=120 valign=top style='width:89.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>cloudy, purulent</span></p>
+  </td>
+  <td width=120 valign=top style='width:89.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>yellow/cloudy</span></p>
+  </td>
+  <td width=120 valign=top style='width:89.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>clear/cloudy</span></p>
+  </td>
+  <td width=120 valign=top style='width:89.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Clear (cloudy)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=126 valign=top style='width:94.6pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:10.0pt'>Cell/mm<sup>3</sup></span></b></p>
+  </td>
+  <td width=120 valign=top style='width:89.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>high</span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>&gt;2000/mm<sup>3</sup></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>neutrophils</span></p>
+  </td>
+  <td width=120 valign=top style='width:89.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>increased</span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>50-500/mm<sup>3</sup></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>lymphocytes</span></p>
+  </td>
+  <td width=120 valign=top style='width:89.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>normal/increased</span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>0-100/mm<sup>3</sup></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>lymphocytes</span></p>
+  </td>
+  <td width=120 valign=top style='width:89.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>normal/increased</span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>0-500/mm<sup>3</sup></span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>lymphocytes</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=126 valign=top style='width:94.6pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:10.0pt'>Glucose</span></b></p>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:10.0pt'>(n=&gt; 50%
+  of plasma level)</span></b></p>
+  </td>
+  <td width=120 valign=top style='width:89.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>very low/absent</span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>&lt;1mmol/L</span></p>
+  </td>
+  <td width=120 valign=top style='width:89.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>low</span></p>
+  </td>
+  <td width=120 valign=top style='width:89.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>normal/low</span></p>
+  </td>
+  <td width=120 valign=top style='width:89.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>normal</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=126 valign=top style='width:94.6pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:10.0pt'>Protein</span></b></p>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:10.0pt'>(n=&lt; 0.5 mg/l)</span></b></p>
+  </td>
+  <td width=120 valign=top style='width:89.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>elevated</span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>1-2 mg/L</span></p>
+  </td>
+  <td width=120 valign=top style='width:89.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>high/very high</span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>1-5 mg/L</span></p>
+  </td>
+  <td width=120 valign=top style='width:89.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>normal/elevated</span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>0.5-2 mg/L</span></p>
+  </td>
+  <td width=120 valign=top style='width:89.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>normal/elevated</span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>0.5-1 mg/L</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=126 valign=top style='width:94.6pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:10.0pt'>Diagnosis
+  confirmed</span></b></p>
+  </td>
+  <td width=120 valign=top style='width:89.65pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Gram stain &amp;
+  culture</span></p>
+  </td>
+  <td width=120 valign=top style='width:89.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>ZN stain &amp;
+  culture</span></p>
+  </td>
+  <td width=120 valign=top style='width:89.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>India ink stain/
+  Cryptococcal Antigen/Culture</span></p>
+  </td>
+  <td width=120 valign=top style='width:89.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>PCR</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class=MsoNormal><b><span lang=EN-US>Treatment:</span></b></p>
+<p class=MsoNormal><b><span lang=EN-US>Bacterial </span></b><span lang=EN-US>— The
+mainstay of management of ABM is prompt diagnosis and early treatment with
+antimicrobials. It is important that antimicrobials should be given straight
+away (within 20-30 mins of first seeing the patient) and not to delay treatment
+because of ongoing investigations including a LP. In adults ceftriaxone is now
+the drug of first choice. In adult, the dose is 4g/day while in children, </span><span
+lang=EN-US style='color:black;background:white'>100 <span class=nowrap>mg/kg</span>/day
+IV (maximum dose 4 <span class=nowrap>g/day)</span> in 1 or 2 divided doses.</span><span
+lang=EN-US> The use of steroids in the treatment of ABM in adults is currently
+not recommended in Africa.</span></p>
+<p class=MsoNormal><b><span lang=EN-US>Viral</span></b><span lang=EN-US> </span><span
+lang=EN-US>—</span><span lang=EN-US> Most patients with viral meningitis
+require only supportive care. </span><span lang=EN-US>Patients who are elderly,
+immunocompromised, or have received antibiotics prior to presentation may be
+considered for empiric antibacterial therapy for 48 hours, even if viral
+meningitis is the suspected diagnosis.</span></p>
+<p class=MsoNormal><span lang=EN-US>If HIV is a diagnostic consideration, then
+blood testing for HIV RNA and HIV antibody should be performed. </span></p>
+<p class=MsoNormal><span lang=EN-US>If aseptic meningitis due to HSV is
+suspected, empiric therapy with intravenous acyclovir (for adult and children: 10-15
+mg/kg every 8 hours, for neonates: 60 mg/kg per day </span><span lang=EN-US
+style='color:black;background:white'>divided every 8 hours</span><span
+lang=EN-US>) can be considered for hospitalized patients.</span></p>
+<p class=MsoNormal><b><span lang=EN-US>TB</span></b><span lang=EN-US> </span><span
+lang=EN-US>—</span><span lang=EN-US> </span><span lang=EN-US>All four TB drugs are
+given for the first 2 months after which isoniazid and rifampicin are continued
+usually for another 10 months. In practice the standard total period of
+treatment is 12 months for tuberculous meningitis and longer for tuberculoma. </span></p>
+<p class=MsoNormal><span lang=EN-US style='color:black;background:white'>In
+general, glucocorticoid therapy is warranted for all patients (including those
+with HIV) with convincing epidemiologic or clinical evidence for tuberculous
+meningitis.</span><span lang=EN-US> </span><span lang=EN-US style='color:black;
+background:white'>The regimen consists of</span><span lang=EN-US> oral
+prednisolone</span><span lang=EN-US style='color:black;background:white'>: children:
+2 to 4 <span class=nowrap>mg/kg</span> per day; adolescents and adults: 60 <span
+class=nowrap>mg/day</span>. Administer initial dose for two weeks, then taper
+gradually over the next six weeks (ie, reduce daily dose by 10 mg each week);
+total duration is approximately eight weeks.</span></p>
+<p class=MsoNormal><span lang=EN-US>Starting ART is recommended after the first
+2 weeks of TB meningitis treatment in HIV. </span></p>
+<p class=MsoNormal><b><span lang=EN-US>Cryptococcal</span></b><span lang=EN-US>
+</span><span lang=EN-US>—</span><span lang=EN-US> </span><span lang=EN-US>The
+treatment of Cryptococcal meningitis in Africa is mostly based on fluconazole
+alone. There are three phases: induction phase, consolidation phase and
+maintenance phase. In the induction phase, fluconazole (1200 mg orally per day)
+may be administered for at least 10 weeks or until CSF culture results are
+negative, followed by consolidation therapy with fluconazole (400 mg orally
+daily). The maintenance or prophylaxis phase uses fluconazole 200 mg daily
+until the CD4 count is &gt;200/mm3 for &gt;6 months. Multiple lumbar punctures
+may be needed to relieve raised ICP.</span></p>
+<p class=MsoNormal><span lang=EN-US>A delay in initiation of ART until at least
+4 weeks after the start of the treatment phase appears to have a better outcome
+in fluconazole treated patients. Long-term mortality in CM is high (&gt;50%)
+even with ART.</span></p>
+<p class=MsoNormal><b><span lang=EN-US>Unclear etiology</span></b><span
+lang=EN-US> — When it is not clear whether the patient has a viral or bacterial
+process, we recommend empirical antibiotics after obtaining blood and CSF
+cultures or observation with repeat lumbar puncture in 6 to 24 hours. If the
+patient is symptomatically improved and culture results are negative, then
+antibiotics can generally be stopped without a repeat LP. However, repeat LPs
+may be indicated in patients with persistent symptoms who do not have a clear
+diagnosis.</span></p>
+<span lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+lang=EN-US>&nbsp;</span></p>
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+<div class="tableCont">
+  <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width=604
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=85 valign=bottom style='width:63.55pt;border:solid windowtext 1.0pt;
+  background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:10.0pt'>&nbsp;</span></b></p>
+  </td>
+  <td width=113 valign=bottom style='width:3.0cm;border:solid windowtext 1.0pt;
+  border-left:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:10.0pt'>Acute
+  bacterial meningitis</span></b></p>
+  </td>
+  <td width=123 valign=bottom style='width:92.15pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:10.0pt'>Tuberculous</span></b></p>
+  </td>
+  <td width=161 valign=bottom style='width:120.5pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:10.0pt'>Cryptococcal</span></b></p>
+  </td>
+  <td width=123 valign=bottom style='width:92.1pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#D9D9D9;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:10.0pt'>HSV</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=85 valign=top style='width:63.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:10.0pt'>Medication
+  dose</span></b></p>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:10.0pt'>(<i>in
+  children</i>)</span></b></p>
+  </td>
+  <td width=113 valign=top style='width:3.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Ceftriaxone </span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>4 g <i>(100 mg/kg</i>)
+  OD</span></p>
+  </td>
+  <td width=123 valign=top style='width:92.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><sup><span lang=EN-US style='font-size:10.0pt'>1)</span></sup><span
+  lang=EN-US style='font-size:10.0pt'>TB4</span></p>
+  <p class=MsoNormal><sup><span lang=EN-US style='font-size:10.0pt'>2)</span></sup><span
+  lang=EN-US style='font-size:10.0pt'>Prednisolone<br>
+  60 mg <i>(2-4 mg/kg) </i>OD</span></p>
+  </td>
+  <td width=161 valign=top style='width:120.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Fluconazole</span></p>
+  <p class=MsoNormal><sup><span lang=EN-US style='font-size:10.0pt'>1)</span></sup><span
+  lang=EN-US style='font-size:10.0pt'>1200 mg <i>(18 mg/kg)</i> OD</span></p>
+  <p class=MsoNormal><sup><span lang=EN-US style='font-size:10.0pt'>2)</span></sup><span
+  lang=EN-US style='font-size:10.0pt'>400 mg <i>(6 mg/k</i>g) OD</span></p>
+  <p class=MsoNormal><sup><span lang=EN-US style='font-size:10.0pt'>3)</span></sup><span
+  lang=EN-US style='font-size:10.0pt'>200 mg <i>(3 mg/kg)</i> OD</span></p>
+  </td>
+  <td width=123 valign=top style='width:92.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Acyclovir </span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>10-15 mg/kg TDS</span></p>
+  <p class=MsoNormal><i><span lang=EN-US style='font-size:10.0pt'>(neonate: 60 mg/kg
+  </span></i><i><span lang=EN-US style='font-size:10.0pt;color:black;
+  background:white'>divided every 8 hours</span></i><span lang=EN-US
+  style='font-size:10.0pt'>)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=85 valign=top style='width:63.55pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:10.0pt'>Duration</span></b></p>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:10.0pt'>(<i>in
+  children</i>)</span></b></p>
+  </td>
+  <td width=113 valign=top style='width:3.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>2 weeks</span></p>
+  <p class=MsoNormal><i><span lang=EN-US style='font-size:10.0pt'>(3 weeks)</span></i></p>
+  </td>
+  <td width=123 valign=top style='width:92.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><sup><span lang=EN-US style='font-size:10.0pt'>1) </span></sup><span
+  lang=EN-US style='font-size:10.0pt'>12 months</span></p>
+  <p class=MsoNormal><sup><span lang=EN-US style='font-size:10.0pt'>2) </span></sup><span
+  lang=EN-US style='font-size:10.0pt'>2 weeks, then taper gradually over the
+  next six weeks</span></p>
+  </td>
+  <td width=161 valign=top style='width:120.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><sup><span lang=EN-US style='font-size:10.0pt'>1)</span></sup><span
+  lang=EN-US style='font-size:10.0pt'>10 weeks</span></p>
+  <p class=MsoNormal><sup><span lang=EN-US style='font-size:10.0pt'>2)</span></sup><span
+  lang=EN-US style='font-size:10.0pt'>8 weeks</span></p>
+  <p class=MsoNormal><sup><span lang=EN-US style='font-size:10.0pt'>3)</span></sup><span
+  lang=EN-US style='font-size:10.0pt'>until the CD4 count is &gt;200/mm3 for
+  &gt; 6 months</span></p>
+  </td>
+  <td width=123 valign=top style='width:92.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>2 weeks</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class=MsoNormal style='text-indent:5.5pt'><span lang=EN-US>&nbsp;</span></p>
+<h2><span lang=EN-US>Key Issues for Nursing care</span></h2>
+<h2 style='margin-left:36.0pt;text-indent:-18.0pt'><span lang=EN-US
+style='font-size:11.0pt;font-family:Symbol;font-weight:normal'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:11.0pt;font-weight:normal'>Deterioration
+in clinical status can occur rapidly, so frequently assess the patient's
+neurologic status, especially level of consciousness and vital signs. Report
+new focal signs immediately.</span></h2>
+<h2 style='margin-left:36.0pt;text-indent:-18.0pt'><span lang=EN-US
+style='font-size:11.0pt;font-family:Symbol;font-weight:normal'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:11.0pt;font-weight:normal'>Try
+to minimize increases in the patient's ICP. Appropriate measures may include
+keeping the patient's head of bed elevated to 30 degrees, keeping the head
+midline, minimizing suctioning, using sedation, keeping the room quiet and
+dark, and avoiding hypercapnia.</span></h2>
+<h2 style='margin-left:36.0pt;text-indent:-18.0pt'><span lang=EN-US
+style='font-size:11.0pt;font-family:Symbol;font-weight:normal'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:11.0pt;font-weight:normal'>Patients
+with bacterial meningitis may develop dehydration, shock, syndrome of
+inappropriate secretion of antidiuretic hormone, and/or intracranial
+hypertension. Closely monitor for fluid and electrolyte imbalances.</span></h2>
+<h2 style='margin-left:36.0pt;text-indent:-18.0pt'><span lang=EN-US
+style='font-size:11.0pt;font-family:Symbol;font-weight:normal'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:11.0pt;font-weight:normal'>Analgesics
+may be required to treat headache. Darkening the room may help if the patient
+complains of photophobia. </span></h2>
+<h2 style='margin-left:36.0pt;text-indent:-18.0pt'><span lang=EN-US
+style='font-size:11.0pt;font-family:Symbol;font-weight:normal'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:11.0pt;font-weight:normal'>The
+patient's hearing should be assessed before discharge because hearing loss is a
+common late complication of bacterial meningitis.</span></h2>
+<h2 style='margin-left:36.0pt;text-indent:-18.0pt'><span lang=EN-US
+style='font-size:11.0pt;font-family:Symbol;font-weight:normal'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:11.0pt;font-weight:normal'>Keep
+in mind that because <i>N. meningitidis </i>is easily spread from person to
+person, secondary cases need to be prevented. Suspected meningococcal disease
+should be reported to the local public health department. People in close contact
+with an infected person should receive chemoprophylaxis with single dose of oral
+ciprofloxacin 500 mg daily (adults only) or oral rifampicin 10 mg/kg twice
+daily (up to 1200 mg/day) for 4 days </span></h2>
+<span lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+lang=EN-US style='font-size:12.0pt'>&nbsp;</span></b></p>
+<h2><span lang=EN-US>References</span></h2>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>NEUROLOGY IN
+AFRICA; William Howlett: Updated Oct 17,.2018 (First published: Aug 16, 2012)</span></p>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Up To Date: Central
+nervous system tuberculosis: last updated: Oct 26, 2018.</span></p>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Up To Date: Epidemiology
+of bacterial meningitis in adults: last updated: Sep 26, 2018.</span></p>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Up To Date: Lumbar
+puncture: Indications, contraindications, technique, and complications: last
+updated: Sep 26, 2018.</span></p>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Up To Date: Fluconazole:
+Drug information</span></p>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Up To Date: Aseptic
+meningitis in adults: last updated: Sep 26, 2018.</span></p>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Up To Date: Clinical
+features and diagnosis of acute bacterial meningitis: This topic last updated:
+Aug 30, 2018</span></p>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Fire up to beat
+the threat of bacterial meningitis; </span><span lang=EN-US style='font-size:
+10.5pt;color:#333333;background:white'>Miller A, </span><span lang=EN-US
+style='font-size:10.0pt'>Nursing2013: December 2013 - Volume 43 - Issue 12 - p
+52,58–58</span></p>
+<div class="tableCont">
+  <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Written by:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Name: Eriko Ikeda</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Date: 29 October 2018</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Reviewed by:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Name: Fatai Akemokwe</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Date: 07 November 2018</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Version:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Change history:</span></b></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Review due date:</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>1.0</span></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>New document</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>2.0</span></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Rewritten to include the management of chronic meningitis and
+  adapted to the new template </span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>31 January 2021</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>2.1</span></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Executive summary added</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>31 January 2021</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Review Comments (if applicable)</span></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>&nbsp;</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>&nbsp;</span></b></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+</div>
+</div><!-- /content -->
+
+</div>
+
+</body>
+</html>

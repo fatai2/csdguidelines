@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html manifest="manifest.manifest">
+<head>
+	<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+	<title>MRCG Clinical Guidelines</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=1">
+  
+	<meta name=Generator content="Microsoft Word 14 (filtered)">
+	<link rel="manifest" href="/manifest.json">	
+<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="mystyle.css" />
+	<script src="jquery-1.11.1.min.js"></script>
+	<script src="jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="cordova.js"></script>
+	<script>
+	    		$(function(){
+			$("[data-role='header'], [data-role='footer']").toolbar();
+		});
+  	  $(document).one('pagebeforecreate', function () {
+	        $('input[data-type="search"]').val("");
+	    	        $.get("panel.html", function (data2) {
+            $.mobile.pageContainer.prepend(data2);
+              $("[data-role=panel]").panel().enhanceWithin();
+        }, "html");
+	           $.get("header.html", function (data) {
+      $.mobile.pageContainer.prepend(data);
+      $("[data-role='header']").toolbar().enhanceWithin();
+    }, "html");
+    $.get("footer.html", function (data) {
+      $.mobile.pageContainer.append(data);
+      $("[data-role='footer']").toolbar().enhanceWithin();
+    }, "html");
+        $('.WordSection1').wrap('<div role="main" class="ui-content">');
+        $('table').wrap('<div class="tableCont"></div>');
+        $('img').wrap('<div class="tableCont"></div>');
+        $.mobile.pageContainer.enhanceWithin();
+	  });
+	        $(document).bind( "pagechange", function( ) {
+        $('table').wrap('<div class="tableCont"></div>');
+        $('img').wrap('<div class="tableCont"></div>');
+        $('.tableCont').enhanceWithin();
+      } );
+			// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			document.getElementById("myBtn").style.display = "block";
+		  } else {
+			document.getElementById("myBtn").style.display = "none";
+		  }
+		}
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0; // For Safari
+		  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}</script>      
+	
+
+
+
+
+
+	
+
+
+
+
+
+
+
+  
+  
+  	
+</head>
+<body lang=EN-GB link=blue vlink=purple>
+	
+<div data-role="page">
+	<div role="main" class="ui-content">
+<div class=WordSection1>
+<h1><span lang=EN-US>Liver disease</span></h1>
+<h2><i><span lang=EN-US>Executive summary</span></i></h2>
+<h2><span lang=EN-US>Introduction</span></h2>
+<p class=MsoNormal><span lang=EN-US>The liver is responsible for many critical
+functions within the body and should it become diseased or injured, the loss of
+those functions can cause significant damage to the body. Liver disease is a
+broad term that covers all the potential problems that cause the liver to fail
+to perform its designated functions. Usually, more than 75% or three quarters
+of liver tissue needs to be affected before a decrease in function occurs.</span></p>
+<p class=MsoNormal><span lang=EN-US>Management of these patients is divided
+into the assessment and treatment of patients with a new diagnosis of liver
+disease and that of those with established chronic liver disease (CLD) who have
+decompensated. </span></p>
+<h2><span lang=EN-US>Target User</span></h2>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Doctors</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Nurses</span></p>
+<h2><span lang=EN-US>Target area of use </span></h2>
+<p class=MsoListParagraph style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Ward</span></p>
+<h2><span lang=EN-US>Key areas of focus/new additions/changes</span></h2>
+<p class=MsoNormal><span lang=EN-US>This guideline outlines the initial
+diagnosis of liver disease in our setting as well as the management of patients
+with established disease who decompensate.</span></p>
+<h2><span lang=EN-US>Limitations</span></h2>
+<p class=MsoNormal><span lang=EN-US>We have limited access to most of the
+diagnostic tests for causes of liver disease. </span></p>
+<p class=MsoNormal><span lang=EN-US>Access to higher level care is largely not
+available – except for dialysis, which might be possible at the teaching
+hospital.</span></p>
+<span lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+lang=EN-US style='font-size:12.0pt'>&nbsp;</span></b></p>
+<h2><span lang=EN-US>Presenting symptoms and signs</span></h2>
+<p class=MsoNormal><span lang=EN-US>If the patient is in extremis, they should
+be resuscitated prior to any other intervention – the most likely causes are an
+acute GI bleed or bacterial septicaemia.</span></p>
+<p class=MsoNormal><span lang=EN-US>Patients with liver disease can present
+with many different symptoms including: </span></p>
+<p class=MsoListParagraphCxSpFirst style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-indent:-18.0pt'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Weakness and fatigue</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-indent:-18.0pt'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Jaundice</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-indent:-18.0pt'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Nausea</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-indent:-18.0pt'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Vomiting</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-indent:-18.0pt'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Weight loss</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-indent:-18.0pt'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Right upper quadrant pain</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-indent:-18.0pt'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Confusion</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-indent:-18.0pt'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Reduced GCS</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-indent:-18.0pt'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Clubbing</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Hematemesis.</span></p>
+<p class=MsoNormal><span lang=EN-US>They may present with signs of anaemia,
+sepsis, acute liver disease or chronic liver disease.</span></p>
+<p class=MsoNormal><span lang=EN-US>The patient’s background history must be
+taken in order to establish the cause of the underlying liver disease. This may
+affect the treatment given.</span></p>
+<p class=MsoNormal><span lang=EN-US>The history of the current event must also
+be taken with particular note of any gastrointestinal bleeding, change in girth
+size, pain, confusion, difficulty breathing, increase in jaundice, recent
+medications and traditional treatments taken.</span></p>
+<h2><span lang=EN-US>Examination findings</span></h2>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span lang=EN
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN>General findings: anaemia, fever, tachycardia,
+altered level of consciousness or confusion, peripheral oedema.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span lang=EN
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN>Signs of chronic liver disease: liver flap,
+clubbing, palmar erythema, bruising, spider naevi, gynaecomastia, testicular
+atrophy, ascites, venous collaterals.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span lang=EN
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN>Liver: small in cirrhosis, large in acute hepatitis
+or neoplasm.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span lang=EN
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN>Splenomegaly: suggests portal hypertension.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span lang=EN
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN>PR: this is essential if there is any suggestion of
+a GI bleed.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span lang=EN
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN>Signs of excess alcohol – Dupuytren’s contracture –
+parotid enlargement.</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN>Stigmata of HIV: Oral thrush, Herpes Zoster scar.</span></p>
+<h2><span lang=EN-US>Investigations</span></h2>
+<p class=MsoNormal><span lang=EN-US>Tests which may be appropriate to assess
+patient’s current condition include:</span></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>FBC, LFTs, albumin, INR, U&amp;Es, blood glucose</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Urinary dipstick</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Blood cultures and chest X-ray</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Ascitic tap (if ascites is present this is
+essential) – send for MC&amp;S, albumin, AFBs.</span></p>
+<p class=MsoNormal><span lang=EN-US>Note that FBC, INR, U&amp;Es, LFTs and
+ascitic tap microscopy and albumin are all urgent tests and <b><i>the results
+should be reviewed within 4 hours of admission</i></b> to the ward in any
+acutely unwell patient. </span></p>
+<p class=MsoNormal><span lang=EN-US>Tests to identify possible causes include:</span></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Viral serology: HIV, HBsAg (HCV, HAV when available)</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Hb genotype</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Ultrasound – for jaundiced patients ask directly
+about duct dilatation.</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Consider autoantibodies, ferritin and AFP when
+available. </span></p>
+<h2><span lang=EN-US>Causes of decompensation in CLD</span></h2>
+<p class=MsoNormal><span lang=EN-US>For patients with chronic liver disease,
+management will depend on the cause of the decompensation. </span><span
+lang=EN-US>Patients with CLD may decompensate because of a complication of
+their underlying liver disease or because of a second insult to the liver or
+their overall system.</span></p>
+<p class=MsoNormal><span lang=EN-US>Complications of CLD are:</span></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Variceal haemorrhage</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Portal vein thrombosis</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Ascites</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Spontaneous bacterial peritonitis</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Hepatic encephalopathy</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Hepatorenal syndrome</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Hepatopulmonary syndrome</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Hepatocellular carcinoma</span></p>
+<p class=MsoNormal><span lang=EN-US>Common causes of a second insult are:</span></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Acute viral hepatitis</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Drug-induced liver injury (which may be caused
+by traditional treatment as well as prescribed medications)</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Bacterial infection (UTI, LRI etc)</span></p>
+<span lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+lang=EN-US style='font-size:12.0pt'>&nbsp;</span></b></p>
+<h2><span lang=EN-US>Management</span></h2>
+<h3><span lang=EN-US>Newly diagnosed liver disease</span></h3>
+<p class=MsoNormal><span lang=EN-US>Treat precipitants and possible causes.</span></p>
+<p class=MsoNormal><span lang=EN-US>Ensure adequate hydration and nutrition
+(give e-pap if there is any doubt). </span></p>
+<p class=MsoNormal><span lang=EN-US>Avoid hepatotoxic drugs. </span></p>
+<p class=MsoNormal><span lang=EN-US>Manage according to particular
+complications (hepatic encephalopathy is common). </span></p>
+<p class=MsoNormal><span lang=EN-US>Seek specialist support if acute liver
+disease is suspected. </span></p>
+<h3><span lang=EN-US>All patients with CLD</span></h3>
+<p class=MsoNormal><span lang=EN-US>All patients admitted with CLD should have
+their Child-Pugh score calculated in order to provide prognostic information.</span></p>
+<p class=MsoNormal><span lang=EN-US>Use the table below to assign a score for
+each item:</span></p>
+<div class="tableCont">
+  <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=101 valign=top style='width:75.4pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:10.0pt'>Points</span></b></p>
+  </td>
+  <td width=101 valign=top style='width:75.4pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:10.0pt'>1</span></b></p>
+  </td>
+  <td width=101 valign=top style='width:75.4pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:10.0pt'>2</span></b></p>
+  </td>
+  <td width=101 valign=top style='width:75.4pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:10.0pt'>3</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=101 valign=top style='width:75.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Ascites</span></p>
+  </td>
+  <td width=101 valign=top style='width:75.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>None</span></p>
+  </td>
+  <td width=101 valign=top style='width:75.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Slight</span></p>
+  </td>
+  <td width=101 valign=top style='width:75.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Moderate or
+  above</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=101 valign=top style='width:75.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Bilirubin</span></p>
+  </td>
+  <td width=101 valign=top style='width:75.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>&lt;34.2</span></p>
+  </td>
+  <td width=101 valign=top style='width:75.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>34.2-51.3</span></p>
+  </td>
+  <td width=101 valign=top style='width:75.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>&gt;51.3</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=101 valign=top style='width:75.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Serum albumin</span></p>
+  </td>
+  <td width=101 valign=top style='width:75.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>&gt;35</span></p>
+  </td>
+  <td width=101 valign=top style='width:75.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>28-35</span></p>
+  </td>
+  <td width=101 valign=top style='width:75.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>&lt;28</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=101 valign=top style='width:75.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>INR</span></p>
+  </td>
+  <td width=101 valign=top style='width:75.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>&lt;1.7</span></p>
+  </td>
+  <td width=101 valign=top style='width:75.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>1.7-2.3</span></p>
+  </td>
+  <td width=101 valign=top style='width:75.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>&gt;2.3</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=101 valign=top style='width:75.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Encephalopathy</span></p>
+  </td>
+  <td width=101 valign=top style='width:75.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>None</span></p>
+  </td>
+  <td width=101 valign=top style='width:75.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Grade 1-2</span></p>
+  </td>
+  <td width=101 valign=top style='width:75.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Grade 3-4</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+<p class=MsoNormal><span lang=EN-US>Add the score and interpret the findings
+according to this table:</span></p>
+<div class="tableCont">
+  <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=101 valign=top style='width:75.4pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:10.0pt'>Class</span></b></p>
+  </td>
+  <td width=101 valign=top style='width:75.4pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:10.0pt'>Score</span></b></p>
+  </td>
+  <td width=101 valign=top style='width:75.4pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:10.0pt'>1 year
+  survival rate</span></b></p>
+  </td>
+  <td width=101 valign=top style='width:75.4pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='font-size:10.0pt'>2 year
+  survival rate</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=101 valign=top style='width:75.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>A</span></p>
+  </td>
+  <td width=101 valign=top style='width:75.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>5-6</span></p>
+  </td>
+  <td width=101 valign=top style='width:75.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>100%</span></p>
+  </td>
+  <td width=101 valign=top style='width:75.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>85%</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=101 valign=top style='width:75.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>B</span></p>
+  </td>
+  <td width=101 valign=top style='width:75.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>7-9</span></p>
+  </td>
+  <td width=101 valign=top style='width:75.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>80%</span></p>
+  </td>
+  <td width=101 valign=top style='width:75.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>60%</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=101 valign=top style='width:75.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>C</span></p>
+  </td>
+  <td width=101 valign=top style='width:75.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>10-15</span></p>
+  </td>
+  <td width=101 valign=top style='width:75.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>45%</span></p>
+  </td>
+  <td width=101 valign=top style='width:75.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>35%</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+<p class=MsoNormal><span lang=EN-US>In the rare cases where the patient can
+control a cause of deterioration (especially alcoholic liver disease), if they
+remove this risk factor (i.e. stop drinking) they can improve their prognosis
+significantly.</span></p>
+<p class=MsoNormal><span lang=EN-US>If the INR is greater than 3.5, then
+vitamin K should be prescribed. In most cases, 10 mg OD orally for 3 days is
+adequate.</span></p>
+<h3 style='margin-bottom:6.0pt'><span lang=EN-US>Variceal haemorrhage</span></h3>
+<p class=MsoNormal><span lang=EN-US>This should be suspected whenever there is
+GI bleeding. It may present with either haematemesis or melaena.</span></p>
+<p class=MsoNormal><span lang=EN-US>Other causes of GI haemorrhage are
+possible, but are less serious. Only 50% of bleeding varices will stop bleeding
+spontaneously. The outlook is even worse for patients with Child-Pugh Class C
+disease.</span></p>
+<p class=MsoNormal><span lang=EN-US>Re-bleeding is also very common and is more
+likely for older patients, those with encephalopathy, ascites, renal failure,
+alcoholic liver disease or low platelets.</span></p>
+<p class=MsoNormal><span lang=EN-US>Management begins with urgent fluid
+resuscitation including the siting of 2 large bore cannulas, iv normal saline
+to restore BP and urgent cross-matching of blood. Whole blood should be
+transfused as soon as possible aiming for an Hb of 9 g/dl.</span></p>
+<p class=MsoNormal><span lang=EN-US>Endoscopy should be arranged if available. </span></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Unstable patients with severe acute upper GI
+bleeding should be scoped as soon as possible after resuscitation.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Stable patients with upper GI bleeding should be
+scoped within the next working day after admission. </span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Any varices should be banded. If another cause
+of bleeding is identified, management should be altered to reflect this. </span></p>
+<p class=MsoNormal><span lang=EN-US>None of the vasoactive medications shown to
+be effective in controlling acute bleeding are available here. </span></p>
+<p class=MsoNormal><span lang=EN-US>Patients are at high risk of concomitant
+infection and the presence of infection increases the risk of re-bleeding so
+all patients should be given prophylactic antibiotics – usually ciprofloxacin
+500 mg BD for 7 days.</span></p>
+<p class=MsoNormal><span lang=EN-US>Patients are at high risk of encephalopathy
+and should be treated with lactulose if they are not passing stool at least
+twice each day – 20 ml TDS to start.</span></p>
+<p class=MsoNormal><i><span lang=EN-US>Secondary prophylaxis </span></i></p>
+<p class=MsoNormal><span lang=EN-US>This should be offered to all patients who
+have had a variceal bleed.</span></p>
+<p class=MsoNormal><span lang=EN-US>Both non-cardioselective beta blockers and
+variceal band ligation should be given. </span></p>
+<p class=MsoNormal><span lang=EN-US>Give propranolol 40 mg BD and titrate up
+the dose until the HR is 50-55 bpm. The maximum dose is 320 mg per day. This
+should also be given to patients identified as having varices who have not yet
+had a bleed (primary prophylaxis).</span></p>
+<h3 style='margin-bottom:6.0pt'><span lang=EN-US>Spontaneous bacterial
+peritonitis (SBP)</span></h3>
+<p class=MsoNormal><span lang=EN-US>The signs of SBP can be very subtle and
+therefore it should be considered a possibility in all patients with ascites
+due to portal hypertension.</span></p>
+<p class=MsoNormal><span lang=EN-US>Ascitic fluid should be aspirated and sent
+for immediate fluid albumin and microscopy including cell count. If plenty of
+fluid is obtained – some can be used to inoculate blood culture bottles. </span></p>
+<p class=MsoNormal><span lang=EN-US>SBP is considered to be present if the
+granulocyte count is greater than 250 cells/mm3. It should be suspected if
+there are typical clinical signs such as Temp &gt; 37.8ºC, abdominal pain or
+tenderness or change in mental status.</span></p>
+<p class=MsoNormal><span lang=EN-US>As soon as the samples are obtained, if
+there are clinical signs of SBP, then treatment should be started. iv
+ceftriaxone 1 g OD or oral ciprofloxacin 500 mg BD are both appropriate
+empirical options. Most patients will recover with a 5 day course of treatment.</span></p>
+<p class=MsoNormal><span lang=EN-US>If the patient is on propranolol, this
+should be stopped permanently.</span></p>
+<p class=MsoNormal><span lang=EN-US>When the patient has recovered, they should
+be placed on antibiotic prophylaxis. The best choice is Septrin 960 mg OD.
+Ciprofloxacin 500 mg OD is an alternative.</span></p>
+<span class=Heading3Char><span lang=EN-US style='font-size:11.0pt'><br
+clear=all style='page-break-before:always'>
+</span></span>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+class=Heading3Char><span lang=EN-US><span style='text-decoration:none'>&nbsp;</span></span></span></p>
+<p class=MsoNormal><span class=Heading3Char><span lang=EN-US>Hepatic
+encephalopathy</span></span></p>
+<p class=MsoNormal><span lang=EN-US>This is a common complication which can be
+difficult to diagnose in its subtler forms. It is graded according to the
+following table:</span></p>
+<div class="tableCont">
+  <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=72 valign=top style='width:53.7pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US>Grade 1</span></p>
+  </td>
+  <td width=331 valign=top style='width:247.9pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US>Changes in behaviour, mild confusion,
+  slurred speech, disordered sleep</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=72 valign=top style='width:53.7pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US>Grade 2</span></p>
+  </td>
+  <td width=331 valign=top style='width:247.9pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US>Lethargy, moderate confusion</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=72 valign=top style='width:53.7pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US>Grade 3</span></p>
+  </td>
+  <td width=331 valign=top style='width:247.9pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US>Marked confusion, incoherent speech,
+  sleeping but rousable</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=72 valign=top style='width:53.7pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US>Grade 4</span></p>
+  </td>
+  <td width=331 valign=top style='width:247.9pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US>Coma</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+<p class=MsoNormal><span lang=EN-US>It may be precipitated by GI bleeding,
+infection (including SBP), low K<sup>+</sup>, renal failure, hypovolaemia,
+hypoxia, sedatives, hypoglycaemia, constipation.</span></p>
+<p class=MsoNormal><span lang=EN-US>Patients should be treated with lactulose,
+beginning with a dose of 20 ml TDS. The dose should be increased until they
+pass stools at least twice each day.</span></p>
+<p class=MsoNormal><span lang=EN-US>Any potential triggers of encephalopathy
+should be corrected.</span></p>
+<h3><span lang=EN-US>Hepatorenal syndrome</span></h3>
+<p class=MsoNormal><span lang=EN-US>This is the cause of about 15% of cases of
+renal failure in chronic liver disease. It refers to renal failure arising from
+falling renal perfusion as a direct effect of liver dysfunction. It has a very
+poor prognosis and there is no treatment available for it in this setting.
+Other causes of renal failure must therefore be excluded or treated before this
+diagnosis is made.</span></p>
+<p class=MsoNormal><span lang=EN-US>Consider alternative diagnoses of renal
+failure such as hypovolaemia, sepsis, glomerulonephritis, or obstruction.</span></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Dip the urine – if there are white cells or red
+cells, consider glomerulonephritis or a urinary infection with septic shock.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Stop any diuretics.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Give 1 litre of normal saline over 1-2 hours and
+monitor urinary output and observations. If the renal failure is caused by
+hypovolaemia, you should see an increase in urine output and improving
+observations.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Treat any infection.</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Arrange for a renal and bladder ultrasound to
+exclude obstruction.</span></p>
+<p class=MsoNormal><span lang=EN-US>Any patient who has no other diagnosis
+identified and who has not had an improvement in their renal function with
+these interventions may have hepatorenal syndrome. The diagnosis can be
+confirmed if the creatinine rises by 25 or more within 48 hours or if there is
+a 50% rise from baseline within 7 days. The treatment is supportive. A small
+number will recover if they can be supported until their liver function
+improves.</span></p>
+<h3 style='margin-bottom:6.0pt'><span lang=EN-US>Hepatopulmonary syndrome</span></h3>
+<p class=MsoNormal><span lang=EN-US>Diagnosed when a patient with CLD becomes
+hypoxic and is found to have a hyperdynamic circulation. They may become
+hypoxic only on sitting upright. </span></p>
+<p class=MsoNormal><span lang=EN-US>Treat with oxygen and exclude other causes
+of hypoxia. There is no specific treatment and the prognosis is very poor.</span></p>
+<h3 style='margin-bottom:6.0pt'><span lang=EN-US>Ascites</span></h3>
+<p class=MsoNormal><span lang=EN-US>Ascites is a very common complication of
+chronic liver disease. It is usually diagnosed clinically and confirmed by
+abdominal ultrasound. </span></p>
+<p class=MsoNormal><span lang=EN-US>All CLD patients presenting with ascites
+should have an immediate ascitic tap with samples sent for albumin, cell count
+and culture.</span></p>
+<p class=MsoNormal><span lang=EN-US>Calculate the serum ascites albumin
+gradient (SAAG):</span></p>
+<p class=MsoNormal style='text-indent:36.0pt'><span lang=EN-US>SAAG = serum
+albumin – ascites albumin</span></p>
+<p class=MsoNormal><span lang=EN-US>If SAAG is greater than 11, the ascites is
+caused by portal hypertension – usually because of liver disease, but could be
+due to heart failure or Budd-Chiari syndrome. If SAAG is less than 11, an
+alternative diagnosis must be sought.</span></p>
+<p class=MsoNormal><span lang=EN-US>If the cell count shows &gt; 250
+granulocytes/mm<sup>3</sup>, then the patient has SBP and should be treated
+accordingly.</span></p>
+<p class=MsoNormal><span lang=EN-US>Ascites that is due to portal hypertension
+in the context of CLD should be treated with salt restriction and diuretics.
+Start with 40 mg furosemide OD and 100 mg spironolactone OD. If there is no
+response after 3-5 days, the doses can be increased in the same ratio up to a
+maximum of 160 mg furosemide and 400 mg spironolactone. A patient with ascites
+and oedema may lose up to 2 kg/day whilst a patient with only ascites typically
+loses no more than 0.75 kg/day.</span></p>
+<p class=MsoNormal><span lang=EN-US>If the ascites is tense or the ascites
+needs to be removed more quickly, large volume paracentesis can be undertaken.
+Up to 5 litres can be removed each day without replacement with albumin or
+other fluids.</span></p>
+<p class=MsoNormal><b><i><span lang=EN-US>Patients who develop ascites should
+not continue treatment with propranolol or an ACE inhibitor.</span></i></b></p>
+<h3 style='margin-bottom:6.0pt'><span lang=EN-US>Hepatocellular carcinoma</span></h3>
+<p class=MsoNormal><span lang=EN-US>In our setting, many patients do not
+present with CLD until they already have a large hepatocellular carcinoma.
+There is little that can be done to treat them apart from symptom control. </span></p>
+<p class=MsoNormal><span lang=EN-US>Patients with CLD who present with a sudden
+deterioration in liver function may have developed a HCC and should be sent for
+ultrasound. If a new HCC is present, they should be referred to the liver
+clinic for assessment once they have recovered from their acute decompensation.</span></p>
+<p class=MsoNormal><span lang=EN-US>Patients should be treated with analgesia
+according to the WHO analgesic ladder if they are in pain. Paracetamol is safe
+in this setting. NSAIDs should be used with caution, but are the most effective
+option for pain due to stretching of the liver capsule. Codeine and morphine
+may trigger hepatic encephalopathy, but should be used if the patient’s pain is
+severe and unresponsive to other options.</span></p>
+<span lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+lang=EN-US style='font-size:12.0pt'>&nbsp;</span></b></p>
+<h2><span lang=EN-US>Key Issues for Nursing care</span></h2>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Refer all patients with suspected liver disease
+or complications to a doctor.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Assess need for pain control.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Check on frequency of bowel movements and if less
+than or greater than two stools / day advise doctor to adjust lactulose dose
+accordingly.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Ask patient if they have melaena stools.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Document presence of confusion and or changes in
+behaviour which may be signs of evolving hepatic encephalopathy.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Order a low salt diet in patients with ascites.</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Ensure adequate nutrition (with epap supplements
+if necessary) for all patients with liver disease. </span></p>
+<h2><span lang=EN-US>References</span></h2>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Goldberg and
+Chopra 2017. Cirrhosis in adults: Overview of complications, general
+management, and prognosis. UpToDate Mar 2017.</span></p>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Sanyal 2017.
+General principles of the management of variceal haemorrhage. UpToDate Feb 2017</span></p>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Runyon 2015.
+Spontaneous bacterial peritonitis in adults: Diagnosis. UpToDate Aug 2015.</span></p>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Runyon 2016.
+Spontaneous bacterial peritonitis in adults: Treatment and prophylaxis.
+UpToDate Jan 2016.</span></p>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Ferenci 2015.
+Hepatic encephalopathy in adults: Clinical manifestations and diagnosis. Sept
+2015.</span></p>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Fenerci 2017.
+Hepatic encephalopathy in adults: Treatment. Aug 2017.</span></p>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Runyon 2016.
+Hepatorenal syndrome. UpToDate June 2016.</span></p>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Goldberg and
+Chopra 2016. Hepatopulmonary syndrome in adults: Prevalence, causes, clinical
+manifestations, and diagnosis. Dec 2016.</span></p>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Such and Runyon
+2017. Ascites in adults with cirrhosis: Initial therapy. June 2017.</span></p>
+<div class="tableCont">
+  <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Written by:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Name: Amie Secka</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Date: 6 June 2018</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Reviewed by:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Name: Karen Forrest</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Date: 14 June 2018</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Version:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Change history:</span></b></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Review due date:</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>1.0</span></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>New document</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>2.0</span></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Adapted from previous guideline on CLD and format updated.</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>31 July 2020</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Review Comments (<i>if applicable)</i></span></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>&nbsp;</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>&nbsp;</span></b></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+</div>
+</div><!-- /content -->
+
+</div>
+
+</body>
+</html>

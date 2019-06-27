@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html manifest="manifest.manifest">
+<head>
+	<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+	<title>MRCG Clinical Guidelines</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=1">
+	<meta name=Generator content="Microsoft Word 14 (filtered)">
+	<link rel="manifest" href="/manifest.json">	
+<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="mystyle.css" />
+	<script src="jquery-1.11.1.min.js"></script>
+	<script src="jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="cordova.js"></script>
+	<script>
+	    		$(function(){
+			$("[data-role='header'], [data-role='footer']").toolbar();
+		});
+  	  $(document).one('pagebeforecreate', function () {
+	        $('input[data-type="search"]').val("");
+	    	        $.get("panel.html", function (data2) {
+            $.mobile.pageContainer.prepend(data2);
+              $("[data-role=panel]").panel().enhanceWithin();
+        }, "html");
+	           $.get("header.html", function (data) {
+      $.mobile.pageContainer.prepend(data);
+      $("[data-role='header']").toolbar().enhanceWithin();
+    }, "html");
+    $.get("footer.html", function (data) {
+      $.mobile.pageContainer.append(data);
+      $("[data-role='footer']").toolbar().enhanceWithin();
+    }, "html");
+        $('.WordSection1').wrap('<div role="main" class="ui-content">');
+        $('table').wrap('<div class="tableCont"></div>');
+        $('img').wrap('<div class="tableCont"></div>');
+        $.mobile.pageContainer.enhanceWithin();
+	  });
+	        $(document).bind( "pagechange", function( ) {
+        $('table').wrap('<div class="tableCont"></div>');
+        $('img').wrap('<div class="tableCont"></div>');
+        $('.tableCont').enhanceWithin();
+      } );
+			// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			document.getElementById("myBtn").style.display = "block";
+		  } else {
+			document.getElementById("myBtn").style.display = "none";
+		  }
+		}
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0; // For Safari
+		  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}</script>      
+
+
+
+	
+
+
+  
+
+</head>
+<body lang=EN-GB link=blue vlink=purple>
+
+<div data-role="page">
+	<div role="main" class="ui-content">
+<div class=WordSection1>
+<h1><span lang=EN-US>Upper respiratory tract infections</span></h1>
+<h2><i><span lang=EN-US>Executive summary</span></i></h2>
+<h2><span lang=EN-US>Introduction</span></h2>
+<p class=MsoNormal><span lang=EN-US>Upper respiratory tract infections (URTIs) are
+very common in both adults and children. Most URTIs are caused by viruses and
+are self-limiting. Antibiotic treatment is avoided or delayed. The common cold
+is the most common of these and affects the nasopharyngeal mucosa. It is
+contagious and is spread by airborne droplets.</span></p>
+<p class=MsoNormal><span lang=EN-US>In some cases, antibiotic treatment is
+required to avoid complications. The following subgroups can be considered for
+an immediate antibiotic prescribing strategy:</span></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>bilateral acute otitis media in children younger
+than 2 years</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>acute otitis media in children with otorrhoea </span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>acute sore throat/acute pharyngitis/acute
+tonsillitis under certain circumstances</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>epiglottitis</span></p>
+<p class=MsoNormal><span lang=EN-US>The routine practice of prescribing
+antihistamines and steroids (except in croup) in URTIs is not found to change
+the disease cause and thus should be avoided. </span></p>
+<h2><span lang=EN-US>Target users</span></h2>
+<p class=MsoListParagraphCxSpFirst style='margin-left:39.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Nurses</span></p>
+<p class=MsoListParagraphCxSpLast style='margin-left:39.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Doctors</span></p>
+<h2><span lang=EN-US>Target area of use </span></h2>
+<p class=MsoListParagraphCxSpFirst style='margin-left:39.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Gate clinic</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:39.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Outpatient department</span></p>
+<p class=MsoListParagraphCxSpLast style='margin-left:39.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Ward</span></p>
+<h2><span lang=EN-US>Key areas of focus / New additions / Changes </span></h2>
+<p class=MsoNormal><span lang=EN-US>This guideline primarily addresses the
+diagnosis of the common cold and other viral URTIs. The following topics are
+addressed in the following guidelines:</span></p>
+<p class=MsoListParagraphCxSpFirst style='text-align:justify;text-justify:inter-ideograph;
+text-indent:-18.0pt'><span lang=EN-US>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Sinusitis MeG-CLS-062</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-justify:
+inter-ideograph;text-indent:-18.0pt'><span lang=EN-US>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Tonsillitis and pharyngitis MeG-CLS-024</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-justify:
+inter-ideograph;text-indent:-18.0pt'><span lang=EN-US>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Acute otitis media MeG-CLS-023</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-justify:
+inter-ideograph;text-indent:-18.0pt'><span lang=EN-US>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Laryngotracheobronchitis (croup) MeG-CLS-059</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-justify:
+inter-ideograph;text-indent:-18.0pt'><span lang=EN-US>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Epiglottis MeG-CLS-063</span></p>
+<p class=MsoListParagraphCxSpLast style='text-align:justify;text-justify:inter-ideograph;
+text-indent:-18.0pt'><span lang=EN-US>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Bronchiolitis </span></p>
+<h2><span lang=EN-US>Limitations</span></h2>
+<p class=MsoNormal><span lang=EN-US>None</span></p>
+<span lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+lang=EN-US style='font-size:12.0pt'>&nbsp;</span></b></p>
+<h2><span lang=EN-US>Presenting symptoms and signs</span></h2>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Nasal discharge</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Nasal obstruction</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Sneezing</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Sore throat</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Cough </span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Slight fever</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Myalgia and headache may be present </span></p>
+<h2><span lang=EN-US>Examination findings</span></h2>
+<h2 style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:36.0pt;
+margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-18.0pt'><span lang=EN-US style='font-size:11.0pt;font-family:Symbol;
+font-weight:normal'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:11.0pt;font-weight:normal'>Low
+grade fever</span></h2>
+<h2 style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:36.0pt;
+margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-18.0pt'><span lang=EN-US style='font-size:11.0pt;font-family:Symbol;
+font-weight:normal'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:11.0pt;font-weight:normal'>Runny
+nose</span></h2>
+<h2 style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:36.0pt;
+margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-18.0pt'><span lang=EN-US style='font-size:11.0pt;font-family:Symbol;
+font-weight:normal'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:11.0pt;font-weight:normal'>Cervical
+lymph nodes may be mildly inflamed </span></h2>
+<h2><span lang=EN-US>Management </span></h2>
+<p class=MsoListParagraphCxSpFirst style='text-align:justify;text-justify:inter-ideograph;
+text-indent:-18.0pt'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Encourage lots of oral fluids and bed rest
+usually suffice.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-justify:
+inter-ideograph;text-indent:-18.0pt'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Paracetamol oral </span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-align:justify;
+text-justify:inter-ideograph;text-indent:-18.0pt'><span lang=EN-US
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US>Adults: 1 g QDS</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-align:justify;
+text-justify:inter-ideograph;text-indent:-18.0pt'><span lang=EN-US
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US>Children: 10-15 mg/kg/dose TDS/QDS</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-justify:
+inter-ideograph;text-indent:-18.0pt'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Ibuprofen, oral,</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-align:justify;
+text-justify:inter-ideograph;text-indent:-18.0pt'><span lang=EN-US
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US>Adults: 200-400 mg TDS</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-align:justify;
+text-justify:inter-ideograph;text-indent:-18.0pt'><span lang=EN-US
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US>Children: 50-100 mg TDS</span></p>
+<p class=MsoListParagraphCxSpLast style='text-align:justify;text-justify:inter-ideograph;
+text-indent:-18.0pt'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Saline nasal drops: 2 drops into each nostril,
+to relieve congestion as required </span></p>
+<p class=MsoNormal><span lang=EN-US>Note: symptoms resolve without antibiotic
+treatment within 2 weeks. If the “cold” lasts longer and there is persistent
+fever and cough associated with offensive nasal discharge, there is a
+possibility of secondary bacterial infection of the respiratory tract or
+influenza. In children, the common cold may be complicated by suppurative otitis
+media or acute bacterial rhinosinusitis.</span></p>
+<h2><span lang=EN-US>Key Issues for Nursing care</span></h2>
+<p class=MsoNormal><span lang=EN-US>Restriction of activities to avoid
+infecting others, along with good hand washing, are the best measures to
+prevent spread of the disease.</span></p>
+<h3><span lang=EN-US>When to refer to a Doctor</span></h3>
+<p class=MsoNormal><span lang=EN-US>Refer patients with:</span></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Symptoms persisting beyond 2 weeks</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Symptoms not resolving with treatment</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Bilateral ear discharge</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Drooling of saliva and unable to swallow food or
+drinks</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Fast breathing</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Chest indrawing</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Persistent cough beyond 2 weeks</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Coughing up blood (hemoptysis)</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Stridor at rest</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Immunocompromised state</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Neonates </span></p>
+<h2><span lang=EN-US>References</span></h2>
+<p class=MsoNormal style='margin-top:12.0pt'><span lang=EN-US style='font-size:
+10.0pt'>Colledge, Nicki R., Brian R. Walker, Stuart Ralston, and Stanley
+Davidson. 2010. Davidson's principles and practice of medicine. Edinburgh:
+Churchill Livingstone/Elsevier.</span></p>
+<p class=MsoNormal style='margin-top:12.0pt'><span lang=EN-US style='font-size:
+10.0pt'>Kliegman, Robert., et al. Nelson Textbook of Pediatrics. Edition 20.
+Philadelphia, PA: Elsevier, 2016.</span></p>
+<div class="tableCont">
+  <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Written by:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Name: Fatoumata Sawaneh</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Date: 27 February 2019</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Reviewed by:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Name: Baderinwa Abatan</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Date: 29 April 2019</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Version:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Change history:</span></b></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Review due date:</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>1.0</span></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>New document</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>2.0</span></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Updated and transferred to new template</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>31 May 2021</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Review Comments (<i>if applicable)</i></span></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>&nbsp;</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>&nbsp;</span></b></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class=MsoNormal><span style='color:black'>&nbsp;</span></p>
+</div>
+</div><!-- /content -->
+
+</div>
+
+</body>
+</html>

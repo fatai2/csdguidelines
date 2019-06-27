@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html manifest="manifest.manifest">
+<head>
+	<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+	<title>MRCG Clinical Guidelines</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=1">
+	<meta name=Generator content="Microsoft Word 14 (filtered)">
+	<link rel="manifest" href="/manifest.json">	
+<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="mystyle.css" />
+	<script src="jquery-1.11.1.min.js"></script>
+	<script src="jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="cordova.js"></script>
+	<script>
+	    		$(function(){
+			$("[data-role='header'], [data-role='footer']").toolbar();
+		});
+  	  $(document).one('pagebeforecreate', function () {
+	        $('input[data-type="search"]').val("");
+	    	        $.get("panel.html", function (data2) {
+            $.mobile.pageContainer.prepend(data2);
+              $("[data-role=panel]").panel().enhanceWithin();
+        }, "html");
+	           $.get("header.html", function (data) {
+      $.mobile.pageContainer.prepend(data);
+      $("[data-role='header']").toolbar().enhanceWithin();
+    }, "html");
+    $.get("footer.html", function (data) {
+      $.mobile.pageContainer.append(data);
+      $("[data-role='footer']").toolbar().enhanceWithin();
+    }, "html");
+        $('.WordSection1').wrap('<div role="main" class="ui-content">');
+        $('table').wrap('<div class="tableCont"></div>');
+        $('img').wrap('<div class="tableCont"></div>');
+        $.mobile.pageContainer.enhanceWithin();
+	  });
+	        $(document).bind( "pagechange", function( ) {
+        $('table').wrap('<div class="tableCont"></div>');
+        $('img').wrap('<div class="tableCont"></div>');
+        $('.tableCont').enhanceWithin();
+      } );
+			// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			document.getElementById("myBtn").style.display = "block";
+		  } else {
+			document.getElementById("myBtn").style.display = "none";
+		  }
+		}
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0; // For Safari
+		  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}</script>      
+	
+	
+  
+   
+
+
+
+
+  
+
+</head>
+<body lang=EN-GB link=blue vlink=purple>
+
+<div data-role="page">
+	<div role="main" class="ui-content">
+<div class=WordSection1>
+<h1><span lang=EN-US>Developmental delay</span></h1>
+<h2><i><span lang=EN-US>Executive summary</span></i></h2>
+<h2><span lang=EN-US style='color:black'>Introduction</span></h2>
+<p class=MsoNormal><span style='color:black'>Developmental delay (DD) is
+defined as significant delay (&gt;2 standard deviations below the mean)
+affecting children &lt; 5 years of age in one or more of the following
+developmental domains: </span></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='color:black'>Gross motor </span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='color:black'>Vision &amp; Fine motor </span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='color:black'>Hearing, Speech &amp; Language</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
+style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='color:black'>Social, Emotional &amp; Behavioural</span></p>
+<p class=MsoNormal><u><span style='color:black'>Global</span></u><span
+style='color:black'> developmental delay is defined as significant delay in <u>two
+or more</u> developmental domains. <span style='background:white'>The degree of
+developmental delay is further subclassified as: </span></span></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='color:black;background:white'>mild (functional
+age&nbsp;&lt; 33% below chronological age)</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='color:black;background:white'>moderate (functional
+age 34%–66% of chronological age)</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
+style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='color:black;background:white'>severe (functional
+age&nbsp;&lt; 66% of chronological age). </span></p>
+<p class=MsoNormal><span lang=EN-US style='color:black'>While DD may not be
+permanent, it can provide a basis for identifying children who may experience a
+disability. Early recognition of DD is crucial to commencing timely
+interventions, prevention of complications, developing family understanding and
+support networks and creating a more stimulating and protective environment for
+the child. </span></p>
+<h2><span lang=EN-US>Target users</span></h2>
+<p class=MsoListParagraphCxSpFirst style='margin-left:39.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Nurses</span></p>
+<p class=MsoListParagraphCxSpLast style='margin-left:39.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Doctors</span></p>
+<h2><span lang=EN-US>Target area of use </span></h2>
+<p class=MsoListParagraphCxSpFirst style='margin-left:39.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Gate clinic</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:39.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Outpatient department</span></p>
+<p class=MsoListParagraphCxSpLast style='margin-left:39.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Ward</span></p>
+<h2><span lang=EN-US>Key areas of focus / New additions / Changes </span></h2>
+<p class=MsoNormal><span lang=EN-US>This guideline provides an approach for
+doctors and nurses to follow in assessing children for developmental delay as
+well as some guidance in how to manage them.</span></p>
+<h2><span lang=EN-US>Limitations</span></h2>
+<p class=MsoNormal><span lang=EN-US>We have limited access to tests and
+management options for these children.</span></p>
+<span lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+lang=EN-US style='font-size:12.0pt'>&nbsp;</span></b></p>
+<h2><span lang=EN-US>Causes of developmental delay</span></h2>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+115%'><span style='line-height:115%'>DD can result from antenatal or postnatal
+damage to brain development although in 50% of cases the cause is unknown:</span></p>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+115%'><b><span style='line-height:115%'>Antenatal:</span></b></p>
+<p class=MsoListParagraphCxSpFirst style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-indent:-18.0pt;line-height:115%'><span style='line-height:115%;font-family:
+Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='color:#333333'>Genetic/syndromes (20-50%)</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-indent:-18.0pt;line-height:115%'><span style='line-height:115%;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='color:#333333'>Cerebral malformations
+(7%)</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-indent:-18.0pt;line-height:115%'><span style='line-height:115%;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='color:#333333'>Early maternal infections
+e.g. rubella, toxoplasma, CMV</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-indent:-18.0pt;line-height:115%'><span style='line-height:115%;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='color:#333333'>Late maternal infections,
+such as varicella, malaria, HIV</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-indent:-18.0pt;line-height:115%'><span style='line-height:115%;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='color:#333333'>Toxins—for example,
+alcohol, pesticides, radiation, smoking</span></p>
+<p class=MsoListParagraphCxSpLast style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-indent:-18.0pt;line-height:115%'><span style='line-height:115%;font-family:
+Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='color:#333333'>Drugs—for example,
+cytotoxics, antiepileptics</span></p>
+<h5 style='margin-top:0cm;line-height:115%;vertical-align:baseline'><b><span
+lang=EN-US style='font-family:"Arial","sans-serif";color:#333333'>Postnatal</span></b></h5>
+<h5 style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:36.0pt;
+margin-bottom:.0001pt;text-indent:-18.0pt;line-height:115%;vertical-align:baseline'><span
+lang=EN-US style='font-family:Symbol;color:#333333'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial","sans-serif";
+color:#333333'>Cerebral palsy/complications of prematurity (2-10%)</span></h5>
+<h5 style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:36.0pt;
+margin-bottom:.0001pt;text-indent:-18.0pt;line-height:115%;vertical-align:baseline'><span
+lang=EN-US style='font-family:Symbol;color:#333333'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial","sans-serif";
+color:#333333'>Postnatal infections e.g. meningitis, encephalitis, CMV</span></h5>
+<h5 style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:36.0pt;
+margin-bottom:.0001pt;text-indent:-18.0pt;line-height:115%;vertical-align:baseline'><span
+lang=EN-US style='font-family:Symbol;color:#333333'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial","sans-serif";
+color:#333333'>Metabolic or endocrine disorders, such as hypoglycaemia,
+hyponatraemia or hypernatraemia, dehydration (1-5%)</span></h5>
+<h5 style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:36.0pt;
+margin-bottom:.0001pt;text-indent:-18.0pt;line-height:115%;vertical-align:baseline'><span
+lang=EN-US style='font-family:Symbol;color:#333333'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial","sans-serif";
+color:#333333'>Toxins e.g. lead, mercury, arsenic, chlorinated organic
+compounds, solvents</span></h5>
+<h5 style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:36.0pt;
+margin-bottom:.0001pt;text-indent:-18.0pt;line-height:115%;vertical-align:baseline'><span
+lang=EN-US style='font-family:Symbol;color:#333333'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial","sans-serif";
+color:#333333'>Trauma, especially head injury</span></h5>
+<h5 style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:36.0pt;
+margin-bottom:.0001pt;text-indent:-18.0pt;line-height:115%;vertical-align:baseline'><span
+lang=EN-US style='font-family:Symbol;color:#333333'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial","sans-serif";
+color:#333333'>Severe understimulation, maltreatment, or domestic violence</span></h5>
+<h5 style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:36.0pt;
+margin-bottom:.0001pt;text-indent:-18.0pt;line-height:115%;vertical-align:baseline'><span
+lang=EN-US style='font-family:Symbol;color:#333333'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial","sans-serif";
+color:#333333'>Malnutrition, especially deficiency of iron, folate, and vitamin
+D</span></h5>
+<h5 style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:36.0pt;
+margin-bottom:.0001pt;text-indent:-18.0pt;line-height:115%;vertical-align:baseline'><span
+lang=EN-US style='font-family:Symbol;color:#333333'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial","sans-serif";
+color:#333333'>Maternal mental health disorders, most commonly depression</span></h5>
+<h2><span lang=EN-US style='color:black'>Red flags to suggest developmental
+delay</span></h2>
+<div class="tableCont">
+  <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=104 valign=top style='width:77.75pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='color:black'>Age</span></b></p>
+  </td>
+  <td width=472 valign=top style='width:353.75pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US style='color:black'>Signs</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=104 valign=top style='width:77.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><i><span lang=EN-US style='color:black'>6 weeks</span></i></p>
+  </td>
+  <td width=472 valign=top style='width:353.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;color:black'>Unresponsive to
+  sound or visual stimuli</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=104 valign=top style='width:77.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><i><span lang=EN-US style='color:black'>6 months</span></i></p>
+  </td>
+  <td width=472 valign=top style='width:353.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;color:black'>Poor head
+  control, floppiness, not reaching</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=104 valign=top style='width:77.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><i><span lang=EN-US style='color:black'>9 months</span></i></p>
+  </td>
+  <td width=472 valign=top style='width:353.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:115%'><span style='font-size:10.0pt;
+  line-height:115%;color:black'>Can’t sit unsupported; no babble</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=104 valign=top style='width:77.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><i><span lang=EN-US style='color:black'>12 months</span></i></p>
+  </td>
+  <td width=472 valign=top style='width:353.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;color:black'>Not
+  communicating by gestures, such as pointing; not weight bearing through legs</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=104 valign=top style='width:77.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><i><span lang=EN-US style='color:black'>18 months</span></i></p>
+  </td>
+  <td width=472 valign=top style='width:353.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;color:black'>Not walking; no
+  symbolic play; no speech</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=104 valign=top style='width:77.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><i><span lang=EN-US style='color:black'>2 years</span></i></p>
+  </td>
+  <td width=472 valign=top style='width:353.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;color:black'>Not joining two
+  words; cannot run; not pointing at objects to share interest with others</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=104 valign=top style='width:77.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><i><span lang=EN-US style='color:black'>3 years</span></i></p>
+  </td>
+  <td width=472 valign=top style='width:353.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;color:black'>Not
+  communicating with words; cannot climb stairs</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=104 valign=top style='width:77.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><i><span lang=EN-US style='color:black'>All ages</span></i></p>
+  </td>
+  <td width=472 valign=top style='width:353.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpFirst><span lang=EN-US style='font-size:10.0pt;
+  color:black'>Loss of developmental skills at any age (regression)</span></p>
+  <p class=MsoListParagraphCxSpMiddle><span lang=EN-US style='font-size:10.0pt;
+  color:black'>Parental or professional concerns about vision, fixing/following
+  at any age</span></p>
+  <p class=MsoListParagraphCxSpMiddle><span lang=EN-US style='font-size:10.0pt;
+  color:black'>Hearing loss at any age</span></p>
+  <p class=MsoListParagraphCxSpMiddle><span lang=EN-US style='font-size:10.0pt;
+  color:black'>Persistent low or high muscle tone, floppiness or asymmetry of
+  movements</span></p>
+  <p class=MsoListParagraphCxSpMiddle><span lang=EN-US style='font-size:10.0pt;
+  color:black'>Complex disabilities</span></p>
+  <p class=MsoListParagraphCxSpMiddle><span lang=EN-US style='font-size:10.0pt;
+  color:black'>Persistently toe walking</span></p>
+  <p class=MsoListParagraphCxSpLast><span lang=EN-US style='font-size:10.0pt;
+  color:black'>Head circumference &gt; 99<sup>th</sup> centile or &lt; 0.4<sup>th</sup>
+  centile</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<h2 style='line-height:115%'><span lang=EN-US style='line-height:115%'>History</span></h2>
+<p class=MsoNormal><span lang=EN-US>A comprehensive clinical assessment,
+including history and examination, is crucial when planning investigations:</span></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Studies have demonstrated that we can identify
+the cause of DD in 1/3<sup>rd</sup> of cases by history and examination alone. </span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>With clinical evaluation prompting
+investigations, we can identify another 1/3<sup>rd</sup>. </span></p>
+<p class=MsoNormal><u><span lang=EN-US>Suggested screening questions:</span></u></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Do you have any concerns about the way your
+child is behaving, learning, or developing?</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Do you have any concerns about the way he or she
+moves or uses his or her arms or legs?</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Do you have any concerns about how your child
+talks and understands what you say?</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Has your child ever stopped doing something he
+or she could previously do?</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Do you have any concerns about how your child is
+learning to do things for himself or herself?</span></p>
+<p class=MsoNormal><span lang=EN-US>Clarify if this is a child who has <u>never
+</u>met their developmental milestones vs. a child who has<u> regressed </u>developmentally,
+having previously been well. Regression suggests either a change in
+social/environmental factors, recent illness or neurological/neurodegenerative
+causes.</span></p>
+<p class=MsoNormal><span lang=EN-US>A thorough and systematic pre-, peri- and
+postnatal history is crucial and will help guide investigations (aetiology) and
+management. Important factors to cover:</span></p>
+<div class="tableCont">
+  <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width=595
+ style='width:446.3pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=208 valign=top style='width:155.7pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:7.5pt;margin-left:
+  0cm;line-height:115%'><b><span style='font-size:11.0pt;line-height:115%;
+  font-family:"Arial","sans-serif";color:#333333'>Prenatal </span></b></p>
+  </td>
+  <td width=198 valign=top style='width:148.85pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:7.5pt;margin-left:
+  0cm;line-height:115%'><b><span style='font-size:11.0pt;line-height:115%;
+  font-family:"Arial","sans-serif";color:#333333'>Perinatal</span></b></p>
+  </td>
+  <td width=189 valign=top style='width:5.0cm;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:7.5pt;margin-left:
+  0cm;line-height:115%'><b><span style='font-size:11.0pt;line-height:115%;
+  font-family:"Arial","sans-serif";color:#333333'>Postnatal</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:227.15pt'>
+  <td width=208 valign=top style='width:155.7pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:227.15pt'>
+  <p class=MsoNormal style='line-height:115%'><span lang=EN-US
+  style='font-size:10.0pt;line-height:115%'>Previous miscarriages or birth
+  defects</span></p>
+  <p class=MsoNormal style='line-height:115%'><span lang=EN-US
+  style='font-size:10.0pt;line-height:115%'>Unexplained sibling death</span></p>
+  <p class=MsoNormal style='line-height:115%'><span lang=EN-US
+  style='font-size:10.0pt;line-height:115%'>Use of teratogens including drug
+  and alcohol misuse</span></p>
+  <p class=MsoNormal style='line-height:115%'><span lang=EN-US
+  style='font-size:10.0pt;line-height:115%'>Prenatal history of Intrauterine
+  infections or severe maternal infection/life threatening event</span></p>
+  <p class=MsoNormal style='line-height:115%'><span lang=EN-US
+  style='font-size:10.0pt;line-height:115%'>Maternal conditions e.g. HELLP
+  syndrome, HTN, GDM, pre-eclampsia</span></p>
+  <p class=MsoNormal style='line-height:115%'><span lang=EN-US
+  style='font-size:10.0pt;line-height:115%'>Fetal movements ↓</span></p>
+  <p class=MsoNormal style='line-height:115%'><span lang=EN-US
+  style='font-size:10.0pt;line-height:115%'>Significant antepartum haemorrhage</span></p>
+  </td>
+  <td width=198 valign=top style='width:148.85pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:227.15pt'>
+  <p class=MsoNormal style='line-height:115%'><span lang=EN-US
+  style='font-size:10.0pt;line-height:115%'>Birth weight and head circumference
+  </span></p>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:7.5pt;margin-left:
+  0cm;line-height:115%'><span style='font-size:10.0pt;line-height:115%;
+  font-family:"Arial","sans-serif";color:#333333'>Birth asphyxia</span><span
+  style='font-size:10.0pt;line-height:115%'> </span></p>
+  <p class=MsoNormal style='line-height:115%'><span lang=EN-US
+  style='font-size:10.0pt;line-height:115%'>Poor Apgars and requiring prolonged
+  resuscitation</span></p>
+  <p class=MsoNormal style='line-height:115%'><span lang=EN-US
+  style='font-size:10.0pt;line-height:115%'>Development of hypoxic ischaemic
+  encephalopathy </span></p>
+  <p class=MsoNormal style='line-height:115%'><span lang=EN-US
+  style='font-size:10.0pt;line-height:115%;color:#333333'>Birth trauma</span></p>
+  </td>
+  <td width=189 valign=top style='width:5.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:227.15pt'>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:7.5pt;margin-left:
+  0cm;line-height:115%'><span style='font-size:10.0pt;line-height:115%;
+  font-family:"Arial","sans-serif";color:#333333'>Trauma</span></p>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:7.5pt;margin-left:
+  0cm;line-height:115%'><span style='font-size:10.0pt;line-height:115%;
+  font-family:"Arial","sans-serif";color:#333333'>Current or previous Infection
+  including meningitis/sepsis</span></p>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:7.5pt;margin-left:
+  0cm;line-height:115%'><span style='font-size:10.0pt;line-height:115%;
+  font-family:"Arial","sans-serif";color:#333333'>Seizures</span></p>
+  <p style='margin-top:0cm;margin-right:0cm;margin-bottom:7.5pt;margin-left:
+  0cm;line-height:115%'><span style='font-size:10.0pt;line-height:115%;
+  font-family:"Arial","sans-serif";color:#333333'>Episodes of hypoglycaemia</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:7.5pt;margin-left:0cm;
+line-height:115%;background:white'><u><span style='font-size:11.0pt;line-height:
+115%;font-family:"Arial","sans-serif";color:#333333'><span style='text-decoration:
+ none'>&nbsp;</span></span></u></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:7.5pt;margin-left:0cm;
+line-height:115%;background:white'><u><span style='font-size:11.0pt;line-height:
+115%;font-family:"Arial","sans-serif";color:black'>Other past medical history:</span></u><span
+style='font-size:11.0pt;line-height:115%;font-family:"Arial","sans-serif";
+color:black'> co-existing infections (acute or chronic), co-existing chronic
+conditions (particularly neurological), severe malnutrition</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:7.5pt;margin-left:0cm;
+line-height:115%;background:white'><u><span style='font-size:11.0pt;line-height:
+115%;font-family:"Arial","sans-serif";color:black'>Social history:</span></u><span
+style='font-size:11.0pt;line-height:115%;font-family:"Arial","sans-serif";
+color:black'> parental consanguinity, familial relationships, environmental
+stress, neglect, health and development of siblings</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:7.5pt;margin-left:0cm;
+line-height:115%;background:white'><u><span style='font-size:11.0pt;line-height:
+115%;font-family:"Arial","sans-serif";color:black'>Family history:</span></u><span
+style='font-size:11.0pt;line-height:115%;font-family:"Arial","sans-serif";
+color:black'> DD, neurological conditions, learning difficulties, genetic
+disease</span></p>
+<h2 style='line-height:115%'><span lang=EN-US style='line-height:115%'>Examination
+findings</span></h2>
+<h3><span lang=EN-US>Growth parameters:</span></h3>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Measure and plot head circumference on
+appropriate standardised WHO growth chart. </span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Measure weight and height/length. Calculate weight-for-height
+Z score (WHZ score &lt; -3 = severe acute malnutrition).</span></p>
+<h3><span lang=EN-US>Thorough developmental assessment:</span></h3>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Examine all domains (gross motor, fine motor,
+language, socioemotional and cognitive skills).</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>If equivocal then follow up every 3-6 months
+with repeat clinical/dysmorphology and developmental assessments over time </span></p>
+<h3><span lang=EN-US>Detailed top-to-toe examination:</span></h3>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Dysmorphism and congenital abnormalities</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Head shape (including fontanelle) and facial
+features</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Skin and Cutaneous stigmata </span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Spine</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Abdomen – check for organomegaly</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Limb abnormalities</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Genital abnormalities</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Abnormal neurological (especially tone) or
+cardiovascular examination</span></p>
+<h3><span lang=EN-US>Hearing and vision assessment:</span></h3>
+<p class=MsoNormal><span lang=EN-US>Identification and correction of sensory
+deficits are essential and may provide pointers to the underlying aetiology.</span></p>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+lang=EN-US>The following features are suggestive of:</span></p>
+<div class="tableCont">
+  <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=336 valign=top style='width:251.75pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US>Genetic cause/unifying syndrome</span></b></p>
+  </td>
+  <td width=336 valign=top style='width:251.75pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US>Metabolic condition</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=336 valign=top style='width:251.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpFirst style='margin-left:18.0pt;text-indent:
+  -18.0pt'><span lang=EN-US style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-US style='font-size:10.0pt'>Any</span><span
+  style='font-size:10.0pt'> child with moderate/severe developmental delay of
+  unknown cause. </span></p>
+  <p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:
+  -18.0pt'><span lang=EN-US style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='font-size:10.0pt'>Family history of DD or learning
+  disability.</span></p>
+  <p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:
+  -18.0pt'><span lang=EN-US style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='font-size:10.0pt'>Parental consanguinity
+  Congenital anomalies, unusual facial features or multisystem problems in
+  addition to DD </span></p>
+  <p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:
+  -18.0pt'><span lang=EN-US style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='font-size:10.0pt'>Unusual growth parameters e.g.
+  microcephaly or macrocephaly, short or tall stature, failure to thrive or
+  severe obesity.</span></p>
+  <p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:
+  -18.0pt'><span style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='font-size:10.0pt'>Sensory problems or odd
+  behaviour </span></p>
+  </td>
+  <td width=336 valign=top style='width:251.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:
+  -18.0pt'><span lang=EN-US style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='font-size:10.0pt'>Family history of DD or learning
+  disability</span></p>
+  <p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:
+  -18.0pt'><span lang=EN-US style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='font-size:10.0pt'>Previous history of sudden
+  infant death</span></p>
+  <p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:
+  -18.0pt'><span lang=EN-US style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='font-size:10.0pt'>Parental consanguinity</span></p>
+  <p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:
+  -18.0pt'><span lang=EN-US style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='font-size:10.0pt'>Regression</span></p>
+  <p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:
+  -18.0pt'><span lang=EN-US style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='font-size:10.0pt'>Abnormal head size</span></p>
+  <p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:
+  -18.0pt'><span lang=EN-US style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='font-size:10.0pt'>Organomegaly</span></p>
+  <p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:
+  -18.0pt'><span lang=EN-US style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='font-size:10.0pt'>Coarse features</span></p>
+  <p class=MsoListParagraphCxSpMiddle style='margin-left:18.0pt;text-indent:
+  -18.0pt'><span lang=EN-US style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-US style='font-size:10.0pt'>Seizures</span></p>
+  <p class=MsoListParagraphCxSpLast style='margin-left:18.0pt;text-indent:-18.0pt'><span
+  lang=EN-US style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='font-size:10.0pt'>Abnormal neurology including
+  hypotonia or movement disorder</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<h2 style='line-height:115%'><span lang=EN-US style='line-height:115%'>&nbsp;</span></h2>
+<span lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+lang=EN-US style='font-size:12.0pt'>&nbsp;</span></b></p>
+<h2 style='line-height:115%'><span lang=EN-US style='line-height:115%'>Key
+principles of management</span></h2>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Exclude reversible causes: </span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US>Infection (acute or chronic e.g. TB)</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US>Undernutrition/failure to thrive</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US>Social difficulties e.g. neglect, family
+isolation, maternal depression</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US>Iron deficiency anaemia, </span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US>Hypothyroidism</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Prevention/amelioration of comorbidities,
+particularly nutritional.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Anticipate child needs and initiate
+multidisciplinary networks early.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Parental counselling and pychosocial support is
+very important.</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Regular follow up and continue monitoring
+developmental progress/regression.</span></p>
+<p class=MsoNormal><span lang=EN-US>Where tests and treatments are not
+available at CSD or in Gambia, consider referral to Dakar if the parents are
+able to afford this (but remember to make it clear when making a diagnosis will
+not change outcome, as parents may spend their last money on this if they are
+not properly counselled).</span></p>
+<h2><span lang=EN-US>Investigations</span></h2>
+<p class=MsoNormal><span lang=EN-US>Indications for further investigations are:</span></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Severe delay: Development &lt;50% of expected
+milestones at that chronological age</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Global delay: Significant delay affecting 2 or
+more domains of development</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Any plateauing or regression of development</span></p>
+<h3><span lang=EN-US>First line investigations:</span></h3>
+<div class="tableCont">
+  <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=104 valign=top style='width:77.75pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><i><span lang=EN-US>Bloods</span></i></p>
+  </td>
+  <td width=472 valign=top style='width:353.75pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>FBC, Urea and
+  creatinine, Electrolytes including HCO<sup>3</sup> </span></p>
+  <p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+  lang=EN-US style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-US style='font-size:10.0pt'>Calculate anion gap
+  (Na + K – Cl – HCO<sup>3</sup>) </span><span lang=EN-US style='font-size:
+  10.0pt;font-family:Wingdings'>à</span><span lang=EN-US style='font-size:10.0pt'>
+  normal anion gap is 8-16 mEq/L</span></p>
+  <p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
+  lang=EN-US style='font-size:10.0pt;font-family:Symbol'>·<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-US style='font-size:10.0pt'>If the anion gap is
+  high then consider <u>metabolic acidosis</u> (+/- underlying metabolic
+  disorders)</span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Fasting blood
+  glucose, AST, ALT, bone profile, uric acid, lipid profile, creatine kinase
+  (CK)</span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Thyroid function
+  tests: TSH, free T4</span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Other tests not
+  available at CSD: Vitamin B12, lead level, lactate, iron studies</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=104 valign=top style='width:77.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><i><span lang=EN-US>Serology for congenital infections</span></i></p>
+  </td>
+  <td width=472 valign=top style='width:353.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Syphilis</span><span
+  style='font-size:10.0pt'> (RPR/TPHA) and HIV1+2</span></p>
+  <p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Other tests not
+  available at CSD: </span><span style='font-size:10.0pt'>Toxoplasma,
+  cytomegalovirus, rubella</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+<span lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><u><span
+lang=EN-US><span style='text-decoration:none'>&nbsp;</span></span></u></b></p>
+<h3><span lang=EN-US>Second line investigations:</span></h3>
+<p class=MsoNormal><span lang=EN-US>These depend on clinical assessment and
+availability. Tests in bold are currently available in CSD.</span></p>
+<div class="tableCont">
+  <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width=576
+ style='width:432.1pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=92 valign=top style='width:68.9pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:115%'><i><span lang=EN-US
+  style='line-height:115%'>Special blood tests (if </span></i></p>
+  <p class=MsoNormal style='line-height:115%'><i><span lang=EN-US
+  style='line-height:115%'>available)</span></i></p>
+  </td>
+  <td width=484 valign=top style='width:363.2pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:115%'><span lang=EN-US
+  style='font-size:10.0pt;line-height:115%'>Genetic tests: Karyotype and
+  microarray</span></p>
+  <p class=MsoNormal style='line-height:115%'><span lang=EN-US
+  style='font-size:10.0pt;line-height:115%'>Metabolic tests (in addition to 1<sup>st</sup>
+  line above): </span></p>
+  <p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt;line-height:
+  115%'><span lang=EN-US style='font-size:10.0pt;line-height:115%'>a)<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+  lang=EN-US style='font-size:10.0pt;line-height:115%'>Blood: ammonia, serum
+  amino acids, VLCFA, white cell enzymes </span></p>
+  <p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt;line-height:
+  115%'><span lang=EN-US style='font-size:10.0pt;line-height:115%'>b)<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+  lang=EN-US style='font-size:10.0pt;line-height:115%'>Urine: organic acids,
+  glycosaminoclycans (MPS screen)</span></p>
+  <p class=MsoNormal style='line-height:115%'><b><span lang=EN-US
+  style='font-size:10.0pt;line-height:115%'>Infection screen:</span></b><span
+  lang=EN-US style='font-size:10.0pt;line-height:115%'> ESR, microbiology if
+  suspect chronic infection, TB investigations (if +ve history)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=92 valign=top style='width:68.9pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:115%'><i><span lang=EN-US
+  style='line-height:115%'>Plain imaging (X Rays)</span></i></p>
+  </td>
+  <td width=484 valign=top style='width:363.2pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:115%'><b><span lang=EN-US
+  style='font-size:10.0pt;line-height:115%'>Chest XR:</span></b><span
+  lang=EN-US style='font-size:10.0pt;line-height:115%'> if chronic infection or
+  malignancy suspected</span></p>
+  <p class=MsoNormal style='line-height:115%'><b><span lang=EN-US
+  style='font-size:10.0pt;line-height:115%'>Limb XR</span></b><span lang=EN-US
+  style='font-size:10.0pt;line-height:115%'>: useful if the child has limb
+  abnormalities</span></p>
+  <p class=MsoNormal style='line-height:115%'><b><span lang=EN-US
+  style='font-size:10.0pt;line-height:115%'>Skull XR:</span></b><span
+  lang=EN-US style='font-size:10.0pt;line-height:115%'> Useful if abnormal
+  sutures and cranial shape suspected (e.g. craniosynostosis)</span></p>
+  </td>
+ </tr>
+ <tr style='height:98.75pt'>
+  <td width=92 valign=top style='width:68.9pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:98.75pt'>
+  <p class=MsoNormal style='line-height:115%'><i><span lang=EN-US
+  style='line-height:115%'>Neuro-imaging</span></i></p>
+  </td>
+  <td width=484 valign=top style='width:363.2pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:98.75pt'>
+  <p class=MsoNormal style='line-height:115%'><span lang=EN-US
+  style='font-size:10.0pt;line-height:115%'>Neuroimaging should be done if <span
+  style='color:#333333;background:white'>abnormal head circumference
+  (microcephaly, non-familial macrocephaly, rapid change in head circumference),
+  focal neurological signs, seizures</span></span></p>
+  <p class=MsoListParagraphCxSpFirst style='margin-left:54.0pt;text-indent:
+  -18.0pt;line-height:115%'><span lang=EN-US style='font-size:10.0pt;
+  line-height:115%;color:#333333'>a)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-US style='font-size:10.0pt;line-height:115%;
+  color:#333333;background:white'>MRI brain: gold standard </span></p>
+  <p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt;text-indent:
+  -18.0pt;line-height:115%'><span lang=EN-US style='font-size:10.0pt;
+  line-height:115%;color:#333333'>b)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+  </span></span><b><span lang=EN-US style='font-size:10.0pt;line-height:115%'>Cranial
+  ultrasound:</span></b><span lang=EN-US style='font-size:10.0pt;line-height:
+  115%'> may be useful to assess intracranial pathology in an infant (if
+  anterior fontanelles not closed) </span></p>
+  <p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt;text-indent:
+  -18.0pt;line-height:115%'><span lang=EN-US style='font-size:10.0pt;
+  line-height:115%'>c)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span lang=EN-US style='font-size:10.0pt;line-height:115%'>CT
+  head: only request if intracranial calcifications suspected (Toxoplasmosis,
+  CMV)</span></p>
+  <p class=MsoListParagraphCxSpLast style='margin-left:54.0pt;text-indent:-18.0pt;
+  line-height:115%'><span lang=EN-US style='font-size:10.0pt;line-height:115%'>d)<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+  lang=EN-US style='font-size:10.0pt;line-height:115%'>EEG: If seizures, speech
+  regression, neurodegeneration/regression</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=92 valign=top style='width:68.9pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:115%'><i><span lang=EN-US
+  style='line-height:115%'>Ultrasound </span></i></p>
+  </td>
+  <td width=484 valign=top style='width:363.2pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:115%'><b><span lang=EN-US
+  style='font-size:10.0pt;line-height:115%'>Abdominal ultrasound</span></b><span
+  lang=EN-US style='font-size:10.0pt;line-height:115%'> is useful if multiple
+  congenital abnormalities or hepatosplenomegaly on examination to exclude
+  intraabdominal organ abnormality</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=92 valign=top style='width:68.9pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:115%'><i><span lang=EN-US
+  style='font-size:10.0pt;line-height:115%'>ECHO</span></i></p>
+  </td>
+  <td width=484 valign=top style='width:363.2pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:115%'><b><span lang=EN-US
+  style='font-size:10.0pt;line-height:115%'>ECHO </span></b><span lang=EN-US
+  style='font-size:10.0pt;line-height:115%'>if multiple congenital
+  abnormalities or dysmorphic features to exclude cardiac lesion</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+<h2><span lang=EN-US>Management of co-morbidities</span></h2>
+<p class=MsoNormal><b><u><span lang=EN-US>Congenital abnormalities:</span></u></b><span
+lang=EN-US> see details of cleft surgical and orthopaedic teams below.</span></p>
+<p class=MsoNormal><b><u><span lang=EN-US>Sensory abnormalities</span></u><span
+lang=EN-US> (hearing and vision):</span></b><span lang=EN-US> see contact
+details below</span></p>
+<p class=MsoNormal><b><u><span lang=EN-US>Contractures/hypotonia:</span></u></b><span
+lang=EN-US> consider diazepam usually before bedtime (will help with
+discomfort), refer for physiotherapy support at Banjul, EFSTH.</span></p>
+<p class=MsoNormal><b><u><span lang=EN-US>Seizures</span></u><span lang=EN-US>:</span></b><span
+lang=EN-US> consider starting anti-epileptic medications e.g. carbamezapine or
+sodium valproate (avoid in women of child bearing age), refer to epilepsy
+guideline MeG-CLS-056.</span></p>
+<b><u><span lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span></u></b>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><u><span
+lang=EN-US><span style='text-decoration:none'>&nbsp;</span></span></u></b></p>
+<p class=MsoNormal><b><u><span lang=EN-US>Malnutrition</span></u></b><span
+lang=EN-US> (including obesity) or failure to thrive:</span></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Dietary advice should be given to parents</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>If severe acute malnutrition (WHZ score &lt;
+-3): refer to WHO malnutrition guidelines including supplementation and
+antibiotics; may need admission</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>If undernourished but not SAM, give dietary
+advice and refer to local clinics for nutritional support</span></p>
+<p class=MsoNormal><span lang=EN-US>Ensure <b><u>vaccinations</u></b> up to
+date and regular anti-worming treatment. </span></p>
+<p class=MsoNormal><b><u><span lang=EN-US>Gastro-oesophageal reflux:</span></u></b></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>High index of suspicion if poor swallow evident
+(e.g. ++ mouth secretions), neurological abnormalities, recurrent vomiting
+especially post feeds, recurrent chest infections.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Consider Omeprazole +/- Ranitidine PO (refer to
+BNF for children for doses).</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Consider aspiration pneumonia as a differential
+for children with DD and poor swallow presenting with infective LRI symptoms.</span></p>
+<p class=MsoNormal><b><u><span lang=EN-US>Neurodevelopmental support:</span></u></b></p>
+<p class=MsoNormal><span lang=EN-US>There is little medical support available
+in the Gambia, but if parents can afford referral to Dakar, then the following
+criteria should be used to guide this:</span></p>
+<div class="tableCont">
+  <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width=633
+ style='width:474.65pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=123 valign=top style='width:91.9pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span style='color:#333333'>Features in the history</span></b></p>
+  </td>
+  <td width=510 valign=top style='width:382.75pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpFirst style='margin-bottom:0cm;margin-bottom:
+  .0001pt;text-indent:-18.0pt'><span style='font-size:10.0pt;font-family:Symbol;
+  color:#333333'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='font-size:10.0pt;color:#333333'>Regression or
+  possible regression including significant change in behaviour</span></p>
+  <p class=MsoListParagraphCxSpMiddle style='margin-bottom:0cm;margin-bottom:
+  .0001pt;text-indent:-18.0pt'><span style='font-size:10.0pt;font-family:Symbol;
+  color:#333333'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='font-size:10.0pt;color:#333333'>Possible or
+  definite seizures</span></p>
+  <p class=MsoListParagraphCxSpMiddle style='margin-bottom:0cm;margin-bottom:
+  .0001pt;text-indent:-18.0pt'><span style='font-size:10.0pt;font-family:Symbol;
+  color:#333333'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='font-size:10.0pt;color:#333333'>Movement disorder:
+  continuous or paroxysmal</span></p>
+  <p class=MsoListParagraphCxSpMiddle style='margin-bottom:0cm;margin-bottom:
+  .0001pt;text-indent:-18.0pt'><span style='font-size:10.0pt;font-family:Symbol;
+  color:#333333'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='font-size:10.0pt;color:#333333'>Muscle
+  pain/fatigue</span></p>
+  <p class=MsoListParagraphCxSpMiddle style='margin-bottom:0cm;margin-bottom:
+  .0001pt;text-indent:-18.0pt'><span style='font-size:10.0pt;font-family:Symbol;
+  color:#333333'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='font-size:10.0pt;color:#333333'>New onset sensory
+  impairment e.g. significant decline in visual acuity</span></p>
+  <p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
+  lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='font-size:10.0pt;color:#333333'>Cognitive
+  decline/behavioural change in a child with epilepsy or ASD</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=123 valign=top style='width:91.9pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span style='color:#333333'>Examination findings</span></b></p>
+  </td>
+  <td width=510 valign=top style='width:382.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpFirst style='margin-bottom:0cm;margin-bottom:
+  .0001pt;text-indent:-18.0pt'><span style='font-size:10.0pt;font-family:Symbol;
+  color:#333333'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='font-size:10.0pt;color:#333333'>Neurological
+  signs:&nbsp;dystonia, ataxia, movement disorder, for example, chorea, focal
+  signs, cranial nerve signs, muscle weakness/signs of a peripheral neuropathy,
+  arthrogryposis/joint contractures, CP picture without a clear cause/history</span></p>
+  <p class=MsoListParagraphCxSpMiddle style='margin-bottom:0cm;margin-bottom:
+  .0001pt;text-indent:-18.0pt'><span style='font-size:10.0pt;font-family:Symbol;
+  color:#333333'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='font-size:10.0pt;color:#333333'>Other
+  signs:&nbsp;sensorineural deafness</span></p>
+  <p class=MsoListParagraphCxSpMiddle style='margin-bottom:0cm;margin-bottom:
+  .0001pt;text-indent:-18.0pt'><span style='font-size:10.0pt;font-family:Symbol;
+  color:#333333'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='font-size:10.0pt;color:#333333'>NeuroCutaneous
+  features</span></p>
+  <p class=MsoListParagraphCxSpMiddle style='margin-bottom:0cm;margin-bottom:
+  .0001pt;text-indent:-18.0pt'><span style='font-size:10.0pt;font-family:Symbol;
+  color:#333333'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='font-size:10.0pt;color:#333333'>Organomegaly/cardiomegaly</span></p>
+  <p class=MsoListParagraphCxSpMiddle style='margin-bottom:0cm;margin-bottom:
+  .0001pt;text-indent:-18.0pt'><span style='font-size:10.0pt;font-family:Symbol;
+  color:#333333'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='font-size:10.0pt;color:#333333'>Course or
+  dysmorphic facial features</span></p>
+  <p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
+  lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span><span style='font-size:10.0pt;color:#333333'>Cerebral palsy</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+<h2><span lang=EN-US>Multi-disciplinary care and services</span></h2>
+<p class=MsoNormal><span lang=EN-US>All referrals should be made on headed MRC
+paper (or from an MRC email):</span></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><u><span lang=EN-US>Epilepsy support</span></u><span lang=EN-US>:
+Support for children with epilepsy: The Gambia Epilepsy Association, <a
+href="mailto:gambiaepilepsy@yahoo.co.uk">gambiaepilepsy@yahoo.co.uk</a>, +220
+994 9034/ 995 5418</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><u><span lang=EN-US>Cleft team</span></u><span lang=EN-US>: Smile
+Train charity offers free cleft surgery annually at the polyclinic EFSTH,
+Banjul, contact Dr Okafor +220 999 6487, Papis Sanneh +220 993 1506, Perannans
++220 715 1055</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><u><span lang=EN-US>Dental team</span></u><span lang=EN-US>:
+polyclinic EFSTH, Banjul</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><u><span lang=EN-US>Orthopaedic team</span></u><span lang=EN-US>:
+Outpatient department EFSTH, Banjul. Clinic is usually held on Wednesday
+mornings.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><u><span lang=EN-US>Physiotherapy</span></u><span lang=EN-US>: EFSTH
+paediatric daily outpatient clinics (they will liaise with Department of Social
+welfare who provide support from occupational therapy e.g. provision of
+mobility aids, wheelchairs)</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><u><span lang=EN-US>Schools:</span></u><span lang=EN-US>
+encourage parents to enroll children into educational system (either mainstream
+or special needs depending on level of disability)</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US>Respite care home/school for children with
+learning difficulties (Eastern Gambia): Hart Foundation, Serrekunda, <a
+href="mailto:geoffharthouse@yahoo.com">geoffharthouse@yahoo.com</a>, +220
+9926258</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US>Rural support organization for the disabled,
+Basse, +220 566 8101, <a href="mailto:rsodgambian@gmail.com">rsodgambian@gmail.com</a></span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><u><span lang=EN-US>Support for children with physical
+disabilities</span></u><span lang=EN-US>: Gambia Association of the Physically
+disabled; also organizes sports activities and support groups – contact <a
+href="mailto:gambiadisabledsports@yahoo.co.uk">gambiadisabledsports@yahoo.co.uk</a>,
++220 992 3377/ 7790158/ 9983480</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><u><span lang=EN-US>Hearing difficulties</span></u><span
+lang=EN-US>: </span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US>Audiology at the polyclinic at EFSTH, Banjul</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US>St John’s School For the Deaf, Kanifing <a
+href="mailto:stjohnsdeafgambia@hotmail.com">stjohnsdeafgambia@hotmail.com</a>,
+Daniel Mendy on +220 779 0286</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><u><span lang=EN-US>Visual difficulties</span></u><span
+lang=EN-US>:</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US>Sheikh Zayed Eye care centre, Kanifing +220 996
+7049/ 208 8707 (includes 2 visits per year by ophthalmology NGO Eye Care Gambia
+<a href="http://www.eyecaregambia.com">www.eyecaregambia.com</a>)</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US>Fresh Start Foundation, Brikama, <a
+href="mailto:info@fsfgambia.org">info@fsfgambia.org</a></span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US>Sightsavers, Kairaba Avenue</span></p>
+<p class=MsoListParagraphCxSpLast style='margin-left:72.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US>Gambia Organisation For The Visual Impaired
+(GOVI) and School For the Blind, Kanifing</span></p>
+<h2><span lang=EN-US>Psychosocial support</span></h2>
+<p class=MsoNormal><span lang=EN-US>Prepare, educate and support parents. It is
+important to tackle concerns around stigma and misunderstanding of aetiology of
+disease (e.g. supernatural causes).</span></p>
+<p class=MsoNormal><u>Counselling:</u></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-size:12.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Discuss parental concerns and expectations (refer to support
+organisations above).</p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-size:12.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>If suspected genetic or metabolic disease – discuss likely
+recurrence risk for future pregnancy (+/- family planning options).</p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-size:12.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Children with disabilities and DD often cannot communicate their
+pain or problems in the same ways as children without DD, therefore, advise
+parents to have a low threshold for seeking medical review (especially if
+unsettled/discomfort/pain/infective symptoms)</p>
+<p class=MsoNormal><u><span lang=EN-US>Support for literate parents:</span></u></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+class=MsoHyperlink><span lang=EN-US style='font-size:12.0pt;font-family:Symbol;
+color:windowtext;text-decoration:none'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><span lang=EN-US><a
+href="https://www.parentcenterhub.org/dd/">https://www.parentcenterhub.org/dd/</a></span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US><a
+href="https://parent2parent.org.nz/developmental-delay-dd-diagnosis-and-prognosis/">https://parent2parent.org.nz/developmental-delay-dd-diagnosis-and-prognosis/</a></span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US><a
+href="https://specialneedsjungle.com/help-parents-worried-childs-development/">https://specialneedsjungle.com/help-parents-worried-childs-development/</a></span></p>
+<span lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+lang=EN-US style='font-size:12.0pt'>&nbsp;</span></b></p>
+<h2><span lang=EN-US>Follow up</span></h2>
+<p class=MsoNormal><span lang=EN-US>Every 3-6 months depending on clinical need.
+</span></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Aim to repeat developmental assessment at every
+visit to monitor progress/regression</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Detailed history and examination including head
+circumference and other growth parameters (ensure plotted on WHO growth charts)</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Assess for other comorbidities (may need
+medications e.g. for seizures or hypertonia)</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Clarify baseline at each appointment to check
+progress/deterioration</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Explore parental ideas, concerns and
+expectations</span></p>
+<h2 style='margin-bottom:6.0pt'><span lang=EN-US>Key Issues for Nursing care</span></h2>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Be sensitive to looking after a child with
+disability or developmental delay and aware of potential limitations to
+movement and communication.</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Clarify baseline at the start of admission so
+that any change or deterioration can be easily recognised (note that children
+with DD may not be verbal and may convey any pain or discomfort in an unusual
+way).</span></p>
+<span lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+lang=EN-US style='font-size:12.0pt'>&nbsp;</span></b></p>
+<h2><span lang=EN-US>References</span></h2>
+<p class=MsoNormal><span style='font-size:10.0pt;background:white'>American
+Academy of Pediatrics, Council on Children with Disabilities, Section on
+Developmental and Behavioral Pediatrics. Identifying infants and young children
+with developmental disorder in the medical home: an algorithm for developmental
+surveillance and screening.&nbsp;</span><span style='font-size:10.0pt'>Pediatrics<span
+style='border:none windowtext 1.0pt;padding:0cm;background:white'>2006</span><span
+style='background:white'>;<span style='border:none windowtext 1.0pt;padding:
+0cm'>118</span>:<span style='border:none windowtext 1.0pt;padding:0cm'>405</span>-20.</span></span></p>
+<p class=MsoNormal><span style='font-size:10.0pt'>Bellman M, Byrne O, Sege R.
+Developmental assessment of children. BMJ 2013;346:e8687</span></p>
+<p class=MsoNormal><span style='font-size:10.0pt'>Bundey S, Aslam H. A
+five-year prospective study of the health of children in different ethnic
+groups, with particular reference to the effect of inbreeding. Eur J Hum Genet
+1993;1:206-219 </span></p>
+<p class=MsoNormal><span style='font-size:10.0pt'>Buch S. Investigation of
+Global Developmental Delay. Shropshire Community health NHS Trust guideline. </span><span
+lang=EN-US><a
+href="http://www.shropscommunityhealth.nhs.uk/content/doclib/12052.pdf"><span
+lang=EN-GB style='font-size:10.0pt'>http://www.shropscommunityhealth.nhs.uk/content/doclib/12052.pdf</span></a></span><span
+style='font-size:10.0pt'>. Accessed 22<sup>nd</sup> November 2018.</span></p>
+<p class=MsoNormal><span style='font-size:10.0pt'>Collins PY, Pringle B,
+Alexander C, Darmstadt GL, Heymann J, Huebner G, et al. (2017) Global services
+and support for children with developmental delays and disabilities: Bridging
+research and policy gaps. PLoS Med 14(9): e1002393. </span><span lang=EN-US><a
+href="https://doi.org/10.1371/journal.pmed.1002393"><span lang=EN-GB
+style='font-size:10.0pt'>https://doi.org/10.1371/journal.pmed.1002393</span></a></span></p>
+<p class=MsoNormal><span style='font-size:10.0pt'>Community Children’s Health
+Partnership. Developmental delay pathway. </span><span lang=EN-US><a
+href="https://cchp.nhs.uk/sites/default/files/Care%20Pathway%20for%20Development%20Delay%20(2010).pdf"><span
+lang=EN-GB style='font-size:10.0pt'>https://cchp.nhs.uk/sites/default/files/Care%20Pathway%20for%20Development%20Delay%20(2010).pdf</span></a></span><span
+style='font-size:10.0pt'> Accessed 22<sup>nd</sup> November 2018.</span></p>
+<p class=MsoNormal><span style='font-size:10.0pt'>Engle PL, Fernald LC,
+Alderman H, Behrman J, O’Gara C, Yousafzai A, et al. Strategies for reducing
+inequalities and improving developmental outcomes for young children in
+low-income and middle-income countries. Lancet 2011;378:1339-53.</span></p>
+<p class=MsoNormal><span style='font-size:10.0pt'>Horridge KA. Assessment and
+investigation of the child with disordered development. Arch Dis Child Educ
+Pract Ed2011;96:9-20</span></p>
+<p class=MsoNormal><span style='font-size:10.0pt'>Mithyantha R, Kneen R, McCann
+E, et al Current evidence-based recommendations on investigating children with
+global developmental delay Archives of Disease in Childhood 2017;102:1071-1076.</span></p>
+<p class=MsoNormal><span style='font-size:10.0pt'>Turner G, Partington M.
+Recurrence risks in undiagnosed mental retardation. J Med Genet 2000:37:E45</span></p>
+<p class=MsoNormal><span style='font-size:10.0pt'>WHO. Developmental
+difficulties in early childhood. Prevention, early identification, assessment
+and intervention in low- and middle-income countries: A Review. 2012. </span></p>
+<div class="tableCont">
+  <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Written by:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Name: Anja Saso</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Date: 30 November 2018</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Reviewed by:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Name: Baderinwa Abatan</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Date: 29 April 2019</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Version:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Change history:</span></b></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Review due date:</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>1.0</span></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>New document</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>31 May 2021</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Review Comments (<i>if applicable)</i></span></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>&nbsp;</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>&nbsp;</span></b></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class=MsoNormal><span style='color:black'>&nbsp;</span></p>
+</div>
+</div><!-- /content -->
+
+</div>
+
+</body>
+</html>

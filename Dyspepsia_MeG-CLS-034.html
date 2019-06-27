@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html manifest="manifest.manifest">
+<head>
+	<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+	<title>MRCG Clinical Guidelines</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=1">
+  
+	<meta name=Generator content="Microsoft Word 14 (filtered)">
+	<link rel="manifest" href="/manifest.json">	
+<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="mystyle.css" />
+	<script src="jquery-1.11.1.min.js"></script>
+	<script src="jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="cordova.js"></script>
+	<script>
+	    		$(function(){
+			$("[data-role='header'], [data-role='footer']").toolbar();
+		});
+  	  $(document).one('pagebeforecreate', function () {
+	        $('input[data-type="search"]').val("");
+	    	        $.get("panel.html", function (data2) {
+            $.mobile.pageContainer.prepend(data2);
+              $("[data-role=panel]").panel().enhanceWithin();
+        }, "html");
+	           $.get("header.html", function (data) {
+      $.mobile.pageContainer.prepend(data);
+      $("[data-role='header']").toolbar().enhanceWithin();
+    }, "html");
+    $.get("footer.html", function (data) {
+      $.mobile.pageContainer.append(data);
+      $("[data-role='footer']").toolbar().enhanceWithin();
+    }, "html");
+        $('.WordSection1').wrap('<div role="main" class="ui-content">');
+        $('table').wrap('<div class="tableCont"></div>');
+        $('img').wrap('<div class="tableCont"></div>');
+        $.mobile.pageContainer.enhanceWithin();
+	  });
+	        $(document).bind( "pagechange", function( ) {
+        $('table').wrap('<div class="tableCont"></div>');
+        $('img').wrap('<div class="tableCont"></div>');
+        $('.tableCont').enhanceWithin();
+      } );
+			// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			document.getElementById("myBtn").style.display = "block";
+		  } else {
+			document.getElementById("myBtn").style.display = "none";
+		  }
+		}
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0; // For Safari
+		  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}</script>      
+	
+
+
+
+
+
+	
+
+
+
+
+
+
+
+  
+  
+  	
+</head>
+<body lang=EN-GB link=blue vlink=purple>
+	
+<div data-role="page">
+	<div role="main" class="ui-content">
+<div class=WordSection1>
+<h1 style='margin-bottom:6.0pt'><span lang=EN-US>Dyspepsia</span></h1>
+<h2><i><span lang=EN-US>Executive summary</span></i></h2>
+<h2><span lang=EN-US>Introduction</span></h2>
+<p class=MsoNormal><span lang=EN-US>Dyspepsia refers to symptoms arising from
+the upper GI tract. They may be caused by gastro-oesophageal reflux disease
+(GORD), peptic ulcer disease or functional disorders. 60-75% of patients with
+dyspepsia are estimated to have a functional rather than an organic cause.</span></p>
+<h2><span lang=EN-US>Target users</span></h2>
+<p class=MsoListParagraphCxSpFirst style='margin-left:39.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Doctors</span></p>
+<p class=MsoListParagraphCxSpLast style='margin-left:39.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Nurses</span></p>
+<h2><span lang=EN-US>Target area of use </span></h2>
+<p class=MsoListParagraphCxSpFirst style='margin-left:39.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Gate clinic</span></p>
+<p class=MsoListParagraphCxSpLast style='margin-left:39.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Outpatients department</span></p>
+<h2><span lang=EN-US>Key areas of focus / New additions / Changes </span></h2>
+<p class=MsoNormal><span lang=EN-US>This guideline outlines the management of
+dyspepsia due to reflux, peptic ulcer disease or functional disorders.</span></p>
+<h2><span lang=EN-US>Limitations</span></h2>
+<p class=MsoNormal><span lang=EN-US>In view of our limited access to endoscopy,
+the guidelines aim to promote safe treatment of dyspepsia with relatively low
+usage of investigations.</span></p>
+<span lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+lang=EN-US style='font-size:12.0pt'>&nbsp;</span></b></p>
+<h2><span lang=EN-US>Presenting symptoms and signs</span></h2>
+<p class=MsoNormal><span lang=EN-US>Dyspeptic symptoms divide into two groups:</span></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>heartburn and other symptoms typical of GORD</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>epigastric pain and other symptoms typical of
+peptic ulcer disease. </span></p>
+<p class=MsoNormal><span lang=EN-US>In both cases, symptoms may be structural
+or organic in origin. </span></p>
+<h3><span lang=EN-US>Heartburn / GORD</span></h3>
+<p class=MsoNormal><span lang=EN-US>A retrosternal burning sensation that may
+move upwards from the epigastrium to the neck or face. </span></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>May coexist with other upper GI symptoms. </span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>May be accompanied by regurgitation of sour
+tasting fluid or gastric contents into the mouth. </span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Symptoms usually intermittent. Often experienced
+soon after eating, during exercise, whilst lying down and at night.</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Usually no abnormalities to identify on
+examination.</span></p>
+<h3><span lang=EN-US>Peptic ulcer disease / Functional dyspepsia</span></h3>
+<p class=MsoNormal><span lang=EN-US>A chronic or recurrent pain in the upper
+abdomen. </span></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>May be associated with a feeling of fullness
+when eating or inability to eat a full meal. </span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>May be accompanied by bloating, belching, nausea
+or heartburn. </span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>May be worsened or improved by eating.</span></p>
+<h3><span lang=EN-US>Alarm features and other diagnoses</span></h3>
+<p class=MsoNormal><span lang=EN-US>The presence of any of the following
+features suggests the possibility of malignancy or another serious illness. <b>Refer
+to the Dr in OPD, in the presence of any of the following:</b></span></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Dysphagia or odynophagia</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Persistent vomiting</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Aspiration pneumonia or respiratory symptoms</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Altered voice </span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>GI bleeding</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Persistent unintentional weight loss</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>New onset of symptoms over the age of 50 years</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Family history of oesophageal or gastric
+carcinoma</span></p>
+<p class=MsoNormal><span lang=EN-US>Features which suggest other diagnoses
+include:</span></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Symptoms related to physical activity, the
+menstrual cycle, urination or defecation</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Urinary urgency</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Abnormalities on examination</span></p>
+<p class=MsoNormal><span lang=EN-US>All such patients should be referred to the
+doctor.</span></p>
+<span lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+lang=EN-US style='font-size:12.0pt'>&nbsp;</span></b></p>
+<h2><span lang=EN-US>Examination findings doctors should look for;</span></h2>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Most common finding is usually epigastric
+tenderness.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Melaena stool on PR, anaemia may suggest upper
+GI bleeding </span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Succussion splash on abdominal examination may
+suggest partial or complete gastric outlet obstruction</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Severe abdominal pain, rebound tenderness,
+guarding &amp; rigidity may indicate a perforated PUD.</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Epigastric mass, lymphadenopathy especially in
+the elderly strongly suggest malignancy.</span></p>
+<h2><span lang=EN-US>Investigations</span></h2>
+<p class=MsoNormal><span lang=EN-US>Dyspepsia may initially not require
+investigation (see management flowchart below).</span></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>The most important investigations in diagnosing
+PUD, gastric tumours, GORD are radiographic &amp; endoscopy.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Lab test (FBC, LFTs): laboratory abnormalities
+such as microcytic anaemia, low albumin, abnormal LFTs, raised ESR may suggest
+malignancy.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Barium meal: addition image may suggest ulcer
+while a filling defect malignancy.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Endoscopy is the mainstay of diagnosis and in
+some cases treatment.</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Urinalysis and Abdominal US can be done to rule
+out other differentials.</span></p>
+<h2><span lang=EN-US>Management</span></h2>
+<h3><span lang=EN-US>Heartburn / GORD</span></h3>
+<p class=MsoNormal><span lang=EN-US>In the absence of alarm symptoms, patients
+should manage their symptoms themselves.</span></p>
+<p class=MsoNormal><span lang=EN-US>Explain that this is likely to be a chronic
+problem which will recur from time to time.</span></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Identify trigger foods and behaviours and avoid
+these. Typical triggers include: ataya, coffee, alcohol, soft drinks,
+chocolate, oily foods, citrus fruits, tomatoes, garlic, onions and peppery
+foods.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Encourage weight loss if overweight.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Lifestyle changes may be effective and include:
+eating smaller meals more frequently, elevating the head of the bed by 20-25 cm
+by placing something under the legs and avoiding food or drink 3 hours prior to
+lying down at night.</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Avoid drugs which cause heartburn including:
+NSAIDs, iron, doxycycline, phenobarbitone, beta-blockers, nifedipine or
+amlodipine, OCP, codeine, aminophylline and amitriptyline. ART can also cause
+heartburn, but this cannot be avoided and instead, patients may need ongoing
+treatment with omeprazole.</span></p>
+<p class=MsoNormal><span lang=EN-US>For infrequent symptoms, patients may be offered
+antacids (such as magnesium trisilicate) to take when they are symptomatic.
+They may also take ranitidine 150 mg BD for short periods during symptomatic
+periods.</span></p>
+<p class=MsoNormal><span lang=EN-US>For more frequent symptoms, omeprazole 20
+mg BD should be prescribed for 2 weeks. In most cases, this should cause
+acid-related symptoms to resolve. Omeprazole can then be given on a PRN basis –
+with patients taking treatment for a few days if symptoms recur.</span></p>
+<p class=MsoNormal><b><span lang=EN-US>If symptoms persist after a 2 week
+course of omeprazole, <i>refer</i> the patient to the doctor</span></b><span
+lang=EN-US> who should consider other diagnoses</span></p>
+<p class=MsoNormal><span lang=EN-US>Very severe cases of GORD may require
+ongoing treatment with omeprazole as well as the use of prokinetic agents.
+Metoclopramide is the only agent available in this context.</span></p>
+<p class=MsoNormal><span lang=EN-US>Although severe GORD is associated with
+complications such as oesophageal stricture, Barrett’s oesophagus and
+oesophageal carcinoma, these are rare occurrences and we do not have the
+resources to prevent them in this context. <b>Note that GORD is not associated
+with <i>H. pylori</i> infection and eradication does not usually help the
+patient.</b></span></p>
+<h3><span lang=EN-US>Peptic ulcer disease / Functional dyspepsia</span></h3>
+<p class=MsoNormal><span lang=EN-US>Any patient taking NSAIDs should stop these
+and be advised to avoid them in the future.</span></p>
+<p class=MsoNormal><span lang=EN-US>In the absence of alarm features, begin by
+presuming the presence of <i>H. pylori</i>. <i>Refer</i> to the doctor for <i>H.
+pylori</i> eradication. Also refer any patient with symptoms of peptic ulcer
+disease or functional dyspepsia.</span></p>
+<p class=MsoNormal><span lang=EN-US>See the flow chart on the next page for
+initial management of these patients.</span></p>
+<p class=MsoNormal><span lang=EN-US>Patients with <b>functional dyspepsia</b>
+may benefit from longer term treatment with omeprazole 20-40 mg OD. Patients
+failing to respond to this may benefit from amitriptyline 10-25 mg nocte for a
+minimum of 8 weeks. Citalopram 20 mg nocte should be used in preference for
+staff and those who can afford it. If this effective it can be continued for 6
+months in the first instance. If an attempt to withdraw treatment is
+unsuccessful, it can be continued long term. A small number of patients failing
+to respond to this may benefit from a 4 week trial of metoclopramide 10 mg 30
+minutes prior to food and at night (QDS). This can be continued if it is effective.</span></p>
+<p class=MsoNormal><b><span lang=EN-US>Refer to ESFTH Surgical unit, if the
+following complications arise:</span></b></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Perforation (acute abdomen)</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Malignancy</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Gastric outflow obstruction</span></p>
+<p class=MsoNormal><span lang=EN-US>Complications like bleeding
+(hematemesis/melaena) should be managed by endoscopic therapy.</span></p>
+<span lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+lang=EN-US style='font-size:12.0pt'>&nbsp;</span></b></p>
+<h2><span lang=EN-US>Flow chart for management of PUD / functional dyspepsia</span></h2>
+<p class=MsoNormal><span lang=EN-US>If </span><span lang=EN-US>&#8805;</span><span
+lang=EN-US> 55 years or alarm features, request for urgent endoscopy – see
+separate guidance on when to request endoscopy. If on NSAIDs, stop. In all
+other cases, consider the following management plan<b>:</b></span></p>
+<p class=MsoNormal><span style='position:relative;z-index:251658240;left:-394px;
+top:0px;width:1015px;height:599px'>
+<div class="tableCont">
+  <table cellpadding=0 cellspacing=0 align=left>
+ <tr>
+  <td width=0 height=0></td>
+  <td width=19></td>
+  <td width=216></td>
+  <td width=34></td>
+  <td width=82></td>
+  <td width=664></td>
+ </tr>
+ <tr>
+  <td height=9></td>
+  <td colspan=2></td>
+ </tr>
+ <tr>
+  <td height=15></td>
+  <td colspan=2></td>
+  <td></td>
+  <td rowspan=4 align=left valign=top><img width=664 height=590
+  src="dyspepsia_image002.png"
+  alt="Emphasise importance of sticking to lifestyle guidance. &#13;&#10;No further clinical input required.&#13;&#10;,History of previous PUD by endoscopic or surgical evidence,Trial of omeprazole for 2/52,No further action,Symptoms persist,Treat possible functional dyspepsia with PPI, amitriptyline or metoclopramide (see elsewhere in guideline).,Simple antacids +/- anti-reflux measures and stop NSAIDs for 4 weeks,Symptoms resolved,Symptoms still persist,H pylori eradiation:&#13;&#10;po Omeprazole 20 mg BD &amp; Amoxicillin 1 g BD &amp; clarithromycin 500 mg BD or Metronidazole 500 mg TDS for 7 days&#13;&#10;followed by 6 weeks of omeprazole 40 mg OD&#13;&#10;,Symptoms resolved,No past ulcer,Tests that might be useful to make another diagnosis include: endoscopy, US, Ba swallow or meal, CT abdomen,Consider &#13;&#10;1) persistent H pylori infection&#13;&#10;2) functional dyspepsia&#13;&#10;3) another diagnosis &#13;&#10;,Consider other possible causes. &#13;&#10;Consider possibility of functional dyspepsia.&#13;&#10;"></td>
+ </tr>
+ <tr>
+  <td height=50></td>
+ </tr>
+ <tr>
+  <td height=136></td>
+ </tr>
+ <tr>
+  <td height=389></td>
+ </tr>
+</table>
+</div>
+</span><span lang=EN-US>&nbsp;</span></p>
+<h2><span lang=EN-US>&nbsp;</span></h2>
+<h2><span lang=EN-US>&nbsp;</span></h2>
+<h2><span lang=EN-US>&nbsp;</span></h2>
+<h2><span lang=EN-US>&nbsp;</span></h2>
+<h2><span lang=EN-US>&nbsp;</span></h2>
+<h2><span lang=EN-US>&nbsp;</span></h2>
+<h2><span lang=EN-US>&nbsp;</span></h2>
+<h2><span lang=EN-US>&nbsp;</span></h2>
+<h2><span lang=EN-US>&nbsp;</span></h2>
+<h2><span lang=EN-US>&nbsp;</span></h2>
+<h2><span lang=EN-US>&nbsp;</span></h2>
+<h2><span lang=EN-US>&nbsp;</span></h2>
+<h2><span lang=EN-US>&nbsp;</span></h2>
+<h2><span lang=EN-US>&nbsp;</span></h2>
+<h2><span lang=EN-US>&nbsp;</span></h2>
+<h2><span lang=EN-US>&nbsp;</span></h2>
+<h2><span lang=EN-US>&nbsp;</span></h2>
+<br clear=ALL>
+<h2><span lang=EN-US>Key Issues for Nursing care</span></h2>
+<p class=MsoNormal><span lang=EN-US>Refer to the doctor any patient with:</span></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Dysphagia or odynophagia</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Persistent vomiting</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Aspiration pneumonia or respiratory symptoms</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Altered voice </span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>GI bleeding</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Laboratory abnormalities such as microcytic
+anaemia, low albumin, abnormal LFTs, raised ESR</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Persistent unintentional weight loss</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Lymphadenopathy</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Epigastric mass</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>New onset of symptoms over the age of 50 years</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Family history of oesophageal or gastric
+carcinoma</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Symptoms related to physical activity, the
+menstrual cycle, urination or defecation</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Urinary urgency</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Abnormalities on examination.</span></p>
+<p class=MsoNormal><span lang=EN-US>Also refer patients with reflux symptoms
+that persist despite treatment with omeprazole and any patient with symptoms of
+peptic ulcer disease or functional dyspepsia.</span></p>
+<h2><span lang=EN-US>References</span></h2>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Guideline Chey WD,
+Wong BC. American College of Gastroenterology guideline on the management of H pylori
+infection. Am J Gastroenterol.2007 Aug. 102(8):1808-25. [Medline]</span></p>
+<p class=MsoNormal><span style='font-size:10.0pt'>Wilkinson IB et al. Oxford
+Handbook of Clinical Medicine. Oxford University Press, 2017.</span></p>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Longstreth and
+Lacy 2017. Approach to the adult with dyspepsia. UpToDate Jan 2017.</span></p>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Kahrilas 2017.
+Clinical manifestations and diagnosis of gastroesophageal reflux in adults.
+UpToDate Jul 2017</span></p>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Kahrilas 2016.
+Medical management of gastroesophageal reflux disease in adults. UpToDate Mar
+2016.</span></p>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Vakil 2017. Peptic
+ulcer disease: Clinical manifestations and diagnosis. UpToDate Sept 2017.</span></p>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Vakil 2017. Peptic
+ulcer disease: Management. UpToDate Sept 2017.</span></p>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Crowe 2017.
+Treatment regimens for Helicobacter pylori. UpToDate, Jul 2017.</span></p>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Longstreth and
+Lacy 2017. Functional dyspepsia in adults. UpToDate Apr 2017.</span></p>
+<div class="tableCont">
+  <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Written by:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Name: </span><span lang=EN-US>Musa Jallow</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Date: 1 June 2018</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Reviewed by:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Name: Karen Forrest</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Date: 21 June 2018</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Version:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Change history:</span></b></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Review due date:</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>1.0</span></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>New document</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>2.0</span></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Adapted from MEG-CLS-006 and version 1.0 of this document and
+  updated</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>31 July 2020</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>2.1</span></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Executive summary added</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>31 July 2020</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Review Comments (<i>if applicable)</i></span></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>&nbsp;</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>&nbsp;</span></b></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+</div>
+</div><!-- /content -->
+
+</div>
+
+</body>
+</html>

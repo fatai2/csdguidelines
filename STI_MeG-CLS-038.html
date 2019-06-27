@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html manifest="manifest.manifest">
+<head>
+	<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+	<title>MRCG Clinical Guidelines</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=1">
+  
+	<meta name=Generator content="Microsoft Word 14 (filtered)">
+	<link rel="manifest" href="/manifest.json">	
+<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="mystyle.css" />
+	<script src="jquery-1.11.1.min.js"></script>
+	<script src="jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="cordova.js"></script>
+	<script>
+	    		$(function(){
+			$("[data-role='header'], [data-role='footer']").toolbar();
+		});
+  	  $(document).one('pagebeforecreate', function () {
+	        $('input[data-type="search"]').val("");
+	    	        $.get("panel.html", function (data2) {
+            $.mobile.pageContainer.prepend(data2);
+              $("[data-role=panel]").panel().enhanceWithin();
+        }, "html");
+	           $.get("header.html", function (data) {
+      $.mobile.pageContainer.prepend(data);
+      $("[data-role='header']").toolbar().enhanceWithin();
+    }, "html");
+    $.get("footer.html", function (data) {
+      $.mobile.pageContainer.append(data);
+      $("[data-role='footer']").toolbar().enhanceWithin();
+    }, "html");
+        $('.WordSection1').wrap('<div role="main" class="ui-content">');
+        $('table').wrap('<div class="tableCont"></div>');
+        $('img').wrap('<div class="tableCont"></div>');
+        $.mobile.pageContainer.enhanceWithin();
+	  });
+	        $(document).bind( "pagechange", function( ) {
+        $('table').wrap('<div class="tableCont"></div>');
+        $('img').wrap('<div class="tableCont"></div>');
+        $('.tableCont').enhanceWithin();
+      } );
+			// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			document.getElementById("myBtn").style.display = "block";
+		  } else {
+			document.getElementById("myBtn").style.display = "none";
+		  }
+		}
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0; // For Safari
+		  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}</script>      
+	
+
+
+
+
+
+	
+
+
+
+
+
+
+
+  
+  
+  	
+</head>
+<body lang=EN-GB link=blue vlink=purple>
+	
+<div data-role="page">
+	<div role="main" class="ui-content">
+<div class=WordSection1>
+<h1><span lang=EN-US>Sexually transmitted infections (STI)</span></h1>
+<h2><i><span lang=EN-US>Executive summary</span></i></h2>
+<h2><span lang=EN-US>Introduction</span></h2>
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:5.65pt;
+margin-left:-.25pt'><span lang=EN-US>Sexually transmitted infections are
+infections that can be transferred through sexual contact, from one individual
+to another. They include: syphillis, gonorrhoea, chlamydia, chancroid, genital
+herpes, genital warts, <i>Trichomonas vaginalis</i> and HIV (discussed in a
+separate guideline).<b> </b></span></p>
+<p class=MsoNormal style='margin-top:0cm;margin-right:-.75pt;margin-bottom:
+8.65pt;margin-left:-.25pt;text-align:justify;text-justify:inter-ideograph;
+line-height:117%'><span lang=EN-US>Majority of people with STIs are
+asymptomatic or may present with non-specific signs and symptoms. Early
+detection and treatment are however of great significance as some STIs may
+result in serious long-term reproductive health problems.  </span></p>
+<h2><span lang=EN-US>Target users</span></h2>
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormalCxSpFirst style='margin-right:13.35pt;margin-bottom:.25pt;
+     line-height:103%'><span lang=EN-US>Nurses</span></li>
+ <li class=MsoNormalCxSpLast style='margin-right:13.35pt;margin-bottom:.25pt;
+     line-height:103%'><span lang=EN-US>Doctors</span></li>
+</ul>
+<h2><span lang=EN-US>Target area of use </span></h2>
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormalCxSpFirst style='margin-right:13.35pt;margin-bottom:.25pt;
+     line-height:103%'><span lang=EN-US>Gate Clinic</span></li>
+ <li class=MsoNormalCxSpMiddle style='margin-right:13.35pt;margin-bottom:.25pt;
+     line-height:103%'><span lang=EN-US>OPD</span></li>
+ <li class=MsoNormalCxSpLast style='margin-right:13.35pt;margin-bottom:.25pt;
+     line-height:103%'><span lang=EN-US>Ward</span></li>
+</ul>
+<h2><span lang=EN-US>Key areas of focus / New additions / Changes </span></h2>
+<p class=MsoNormal style='margin-top:0cm;margin-right:13.35pt;margin-bottom:
+.25pt;margin-left:0cm'><span lang=EN-US>This guideline provides information on
+the diagnosis and treatment of common STIs using a syndromic approach. Patients
+with typical presentation do not require further workup beyond HIV screening
+unless specific indications are present. Treatment involves use of oral and/or
+parenteral antibiotics. Inpatient therapy may be indicated in some patients
+with acute pelvic inflammatory disease. </span></p>
+<h2><span lang=EN-US>Limitations</span></h2>
+<p class=MsoNormal style='margin-bottom:8.0pt;line-height:107%'><span
+lang=EN-US>Culture and sensitivity studies are currently not available at
+Keneba and Basse</span><b><span lang=EN-US style='font-size:12.0pt;line-height:
+107%'>.</span></b></p>
+<span lang=EN-US style='font-size:11.0pt;line-height:107%;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+<p class=MsoNormal style='margin-bottom:8.0pt;line-height:107%'><span
+lang=EN-US>&nbsp;</span></p>
+<h2><span lang=EN-US>Presenting symptoms and signs</span></h2>
+<h3><span lang=EN-US>Men:</span></h3>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Urethral discharge: It is usually accompanied by
+dysuria. Frequency and itchy sensation may also be present</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Genital ulcers</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Inguinal mass</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Scrotal swelling</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Painful micturition</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>May be asymptomatic</span></p>
+<h3><span lang=EN-US>Women:</span></h3>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Vaginal discharge</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Genital ulcers</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Inguinal mass</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Lower abdominal pain</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Fever </span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>May be asymptomatic</span></p>
+<h2><span lang=EN-US>Examination findings</span></h2>
+<h2><span lang=EN-US style='font-weight:normal'>Following a general and
+abdominal examination, in-depth examination of the genitalia should be
+undertaken.</span></h2>
+<h3><span lang=EN-US>Men:</span></h3>
+<p class=MsoNormal><span lang=EN-US>Inspection: the penis should be inspected. The
+opening of the urethra should be examined for discharge. Discharge should be
+milked-out if none is seen at initial inspection. The phallus skin should be
+examined for ulcers. If ulcers are present, note their number and the presence
+of any tenderness.</span></p>
+<p class=MsoNormal><span lang=EN-US>Palpation: palpate for inguinal lymph nodes</span></p>
+<h3><span lang=EN-US>Women:</span></h3>
+<p class=MsoNormal><span lang=EN-US>Inspection: the vulva region should be
+inspected first for any discharge, ulcers or warts. Following this, a speculum
+examination should be carried out. Inspect the cervix, and vagina as the
+speculum is eased out. The origin of vaginal discharge is of importance. If it
+is seen to come from the cervix, gonorrhoeal and chlamydial infections are more
+likely.</span></p>
+<h3><span lang=EN-US>Important things to look for </span></h3>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Colour and consistency of discharge if present</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Number of ulcers if present and associated
+tenderness</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Presence of inguinal lymph nodes</span></p>
+<span lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+lang=EN-US style='font-size:12.0pt'>&nbsp;</span></b></p>
+<h2><span lang=EN-US>Differential diagnoses</span></h2>
+<p class=MsoNormal><span lang=EN-US>Urethral discharge: gonorrhea, chlamydia</span></p>
+<p class=MsoNormal><span lang=EN-US>Genital ulcer: syphilis, chancroid,
+granuloma inguinale, lymphogranuloma venereum (LGV), herpes simplex virus</span></p>
+<p class=MsoNormal><span lang=EN-US>Scrotal swelling: testicular torsion,
+epididymitis (gonorrhea, chlamydia)</span></p>
+<p class=MsoNormal><span lang=EN-US>Vaginal discharge: candidiasis, bacterial
+vaginosis, chlamydia, gonorrhea, <i>Trichomonas vaginalis</i></span></p>
+<p class=MsoNormal><span lang=EN-US>Neonatal conjunctivitis: gonorrhea,
+chlamydia, other organisms: <i>Staphylococcus aureus, Streptococcus pneumoniae,
+Haemophilus spp</i></span></p>
+<h2><span lang=EN-US>Investigations</span></h2>
+<p class=MsoNormal><span lang=EN-US>HIV Screen should be offered to all
+patients. </span></p>
+<p class=MsoNormal><span lang=EN-US>Syndromic management does not require other
+investigations to be done. If there are specific indications appropriate
+investigations might include:</span></p>
+<p class=MsoNormal><span lang=EN-US>FBC, Urethral swab M,C&amp;S, High vaginal
+swab M,C&amp;S, Endocervical swab M,C&amp;S</span></p>
+<p class=MsoNormal><span lang=EN-US>Test for syphilis (VDRL, TPHA) – especially
+for patients with genital ulcer. </span></p>
+<h2><span lang=EN-US>Management</span></h2>
+<p class=MsoNormal>Ask all patients about their sexual partners. </p>
+<p class=MsoNormal>Describe sexual transmission of infections and advise on
+reducing the risk of this by being faithful to one partner who is also faithful
+(or group of partners in a polygamous marriage) and by condom use if this is
+not possible. </p>
+<p class=MsoNormal>Ask patients to bring partners to the clinic for treatment
+Advise them to abstain from sexual contact until all partners have been
+treated. </p>
+<p class=MsoNormal>Provide pre-test counselling for HIV testing and offer a
+test if accepted.</p>
+<p class=MsoNormal>Advise patients to seek further medical attention if their
+symptoms have not resolved by a week after treatment. Give them an appointment
+7 days later to check on their progress and to facilitate partner management.</p>
+<p class=MsoNormal><span lang=EN-US>A syndromic approach to management is
+currently advocated for by WHO in low-resource settings due to the lack of
+appropriate investigations. This involves the use of certain signs and symptoms
+to guide treatment.</span></p>
+<p class=MsoNormal><span lang=EN-US>There are 6 syndromes:</span></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Urethral discharge</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Vaginal discharge</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Scrotal swelling</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Genital ulcer</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Lower abdominal pain</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Neonatal conjunctivitis</span></p>
+<p class=MsoNormal><span lang=EN-US>Note that urethral discharge, scrotal
+swelling and vaginal discharge coming from the cervix are all treated in the
+same way. </span></p>
+<span lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><u><span
+lang=EN-US><span style='text-decoration:none'>&nbsp;</span></span></u></b></p>
+<h3><span lang=EN-US>Urethral discharge, scrotal swelling, vaginal discharge</span></h3>
+<p class=MsoNormal>Examine men complaining of discharge to identify it. If none
+is seen, gently milk the penis to see if discharge is produced. Swab the
+discharge and send for urgent microscopy</p>
+<p class=MsoNormal>Examine men with scrotal swelling to exclude other causes of
+scrotal swelling, such as trauma, testicular torsion or tumour. Consider
+requesting an ultrasound. </p>
+<p class=MsoNormal>All women with vaginal discharge should be examined with a
+speculum and a high vaginal swab taken and sent for microscopy.</p>
+<p class=MsoNormal><span lang=EN-US>Treat patients thought to have STI as the
+cause of these symptoms with Ciprofloxacin 500 mg orally as a single dose PLUS Doxycycline
+100 mg orally BD for 7 days. </span></p>
+<p class=MsoNormal><span lang=EN-US>If a woman is pregnant and cannot take
+these medications, use azithromycin 2 g orally as a single dose. </span></p>
+<p class=MsoNormal>Recommend bed rest and scrotal support for men with scrotal
+swelling until the inflammation has reduced.</p>
+<h3><span lang=EN-US>Vaginal discharge (not from the cervix)</span></h3>
+<p class=MsoNormal><span lang=EN-US>Treat this with Metronidazole 500 mg BD for
+7 days (OR Metronidazole 2 g as a single dose) PLUS Clotrimazole 200 mg
+intravaginally OD for 3 days (OR Fluconazole 150 mg orally as a single dose).</span></p>
+<h3><span lang=EN-US>Genital ulcer</span></h3>
+<p class=MsoNormal><b><span lang=EN-US>Vesicular, multiple or recurrent</span></b><span
+lang=EN-US>: Aciclovir 400 mg TDS for 7 days</span></p>
+<p class=MsoNormal><b><span lang=EN-US>Non-vesicular:</span></b><span
+lang=EN-US> Doxycycline 100 mg twice daily for 15 days PLUS Ciprofloxacin 500 mg
+twice daily for 3 days. This covers chancroid, LGV and syphilis. </span></p>
+<p class=MsoNormal><span lang=EN-US>If the patient is pregnant, then use im
+Ceftriaxone 250 mg as a single dose PLUS erythromycin 500 mg QDS for 14 days. </span></p>
+<h3><span lang=EN-US>Lower abdominal pain</span></h3>
+<p class=MsoNormal>Lower abdominal pain may be caused by pelvic inflammatory
+disease (PID). There may also be pain during intercourse, vaginal discharge,
+dysuria, increased length and frequency of menses, increased pain during
+menses, fever, nausea and vomiting.</p>
+<p class=MsoNormal>Women complaining of lower abdominal pain should be fully
+examined. On pelvic examination there may be adnexal tenderness, cervical
+motion tenderness and visible discharge. They may also have a tender pelvic
+mass, and rebound tenderness.</p>
+<p class=MsoNormal><span lang=EN-US>Inpatient care of patients with acute
+pelvic inflammatory disease should be considered when one or more of the
+following are present:</span></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Uncertain diagnosis</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Failure to exclude surgical emergencies for
+example appendicitis and ectopic pregnancy </span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Suspected pelvic abscess</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>A severe illness which will prevent outpatient
+management</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>A pregnant patient</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Inability to tolerate outpatient regimen </span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Failure to respond to therapy on an out-patient
+basis. </span></p>
+<p class=MsoNormal><b><span lang=EN-US>Outpatient management:</span></b><span
+lang=EN-US> Ceftriaxone 250 mg IM as a single dose PLUS Doxycycline 100 mg
+orally BD for 14 days <i>PLUS </i>Metronidazole 500 mg orally BD for 14 days</span></p>
+<p class=MsoNormal><span lang=EN-US>Inpatient management: Ceftriaxone 250 mg by
+intramuscular injection OD PLUS Doxycycline, 100mg orally or by intravenous
+injection BD PLUS Metronidazole 500mg orally or iv TDS. </span></p>
+<p class=MsoNormal><span lang=EN-US>Inpatient therapy should be continued until
+at least 2 days after the patient has improved, after which doxycycline should
+be given at 100mg orally, twice daily for 14 days.</span></p>
+<h3><span lang=EN-US>Ophthalmia neonatorum</span></h3>
+<p class=MsoNormal><span lang=EN-US>Ceftriaxone 50 mg/kg by intramuscular
+injection as a single dose, to a maximum of 125 mg PLUS Erythromycin syrup 50
+mg/kg per day orally, in 4 divided doses for 14 days.</span></p>
+<h2><span lang=EN-US>Key Issues for Nursing care</span></h2>
+<p class=MsoNormal>Refer the following patients to see a doctor:</p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>A man with persistent or recurrent urethritis.</p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Patients with genital ulcers that do not improve with treatment.</p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Patients with genital ulcers where the diagnosis is unclear.</p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Men with inguinal mass which is fluctuant or of uncertain cause.</p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Men with scrotal swelling of uncertain cause.</p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Women with vaginal discharge unless you can do a speculum and
+pelvic examination yourself.</p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Women with lower abdominal pain unless you can do a pelvic
+examination yourself.</p>
+<h2><span lang=EN-US>References</span></h2>
+<p class=MsoNormal><span lang=EN-US><a
+href="http://www.who.int/news-room/fact-sheets/detail/sexually-transmitted-infections-(stis)"><span
+style='font-size:10.0pt'>http://www.who.int/news-room/fact-sheets/detail/sexually-transmitted-infections-(stis)</span></a></span></p>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>WHO guidelines for
+management of sexually transmitted infections </span><span lang=EN-US><a
+href="http://apps.who.int/medicinedocs/en/d/Jh2942e/3.1.html"><span
+style='font-size:10.0pt'>http://apps.who.int/medicinedocs/en/d/Jh2942e/3.1.html</span></a></span></p>
+<p class=MsoNormal><span lang=EN-US><a
+href="http://apps.who.int/medicinedocs/documents/s22268en/s22268en.pdf"><span
+style='font-size:10.0pt'>http://apps.who.int/medicinedocs/documents/s22268en/s22268en.pdf</span></a></span></p>
+<div class="tableCont">
+  <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Written by:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Name: Azeezat Sallahdeen</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Date: 22 May 2018</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Reviewed by:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Name: Fatai Akemokwe</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Date: 11 June 2018</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Version:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Change history:</span></b></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Review due date:</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>1.0</span></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>New document</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>2.0</span></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Adapted from previous version and MeG-CLS-016 to combine into one
+  document relevant to all areas</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>31 July 2020</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>2.1</span></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Executive summary added</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>31 July 2020</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Review Comments (<i>if applicable)</i></span></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>&nbsp;</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>&nbsp;</span></b></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+</div>
+</div><!-- /content -->
+
+</div>
+
+</body>
+</html>

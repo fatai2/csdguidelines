@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html manifest="manifest.manifest">
+<head>
+	<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+	<title>MRCG Clinical Guidelines</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=1">
+  
+	<meta name=Generator content="Microsoft Word 14 (filtered)">
+	<link rel="manifest" href="/manifest.json">	
+<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="mystyle.css" />
+	<script src="jquery-1.11.1.min.js"></script>
+	<script src="jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="cordova.js"></script>
+	<script>
+	    		$(function(){
+			$("[data-role='header'], [data-role='footer']").toolbar();
+		});
+  	  $(document).one('pagebeforecreate', function () {
+	        $('input[data-type="search"]').val("");
+	    	        $.get("panel.html", function (data2) {
+            $.mobile.pageContainer.prepend(data2);
+              $("[data-role=panel]").panel().enhanceWithin();
+        }, "html");
+	           $.get("header.html", function (data) {
+      $.mobile.pageContainer.prepend(data);
+      $("[data-role='header']").toolbar().enhanceWithin();
+    }, "html");
+    $.get("footer.html", function (data) {
+      $.mobile.pageContainer.append(data);
+      $("[data-role='footer']").toolbar().enhanceWithin();
+    }, "html");
+        $('.WordSection1').wrap('<div role="main" class="ui-content">');
+        $('table').wrap('<div class="tableCont"></div>');
+        $('img').wrap('<div class="tableCont"></div>');
+        $.mobile.pageContainer.enhanceWithin();
+	  });
+	        $(document).bind( "pagechange", function( ) {
+        $('table').wrap('<div class="tableCont"></div>');
+        $('img').wrap('<div class="tableCont"></div>');
+        $('.tableCont').enhanceWithin();
+      } );
+			// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			document.getElementById("myBtn").style.display = "block";
+		  } else {
+			document.getElementById("myBtn").style.display = "none";
+		  }
+		}
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0; // For Safari
+		  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}</script>      
+	
+
+
+
+  
+  
+  	
+</head>
+<body lang=EN-GB link=blue vlink=purple>
+	
+<div data-role="page">
+	<div role="main" class="ui-content">
+<div class=WordSection1>
+<h1><span lang=EN-US>Intestinal helminth infection</span></h1>
+<h2><i><span lang=EN-US>Executive summary</span></i></h2>
+<h2><span lang=EN-US>Introduction</span></h2>
+<p class=MsoNormal><span lang=EN-US>Helminths are small worms and parasites
+that often cause illness when they infect human beings. The commonest helminth
+infections are those affecting the intestines including ascariasis,
+trichuriasis and hookworms. </span></p>
+<h2><span lang=EN-US>Target User</span></h2>
+<p class=MsoListParagraphCxSpFirst style='margin-bottom:10.0pt;text-indent:
+-18.0pt;line-height:115%'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Doctors</span></p>
+<p class=MsoListParagraphCxSpLast style='margin-bottom:10.0pt;text-indent:-18.0pt;
+line-height:115%'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Nurses</span></p>
+<h2><span lang=EN-US>Target area of use </span></h2>
+<p class=MsoListParagraphCxSpFirst style='margin-bottom:10.0pt;text-indent:
+-18.0pt;line-height:115%'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Gate clinic</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-bottom:10.0pt;text-indent:
+-18.0pt;line-height:115%'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Outpatient Department</span></p>
+<p class=MsoListParagraphCxSpLast style='margin-bottom:10.0pt;text-indent:-18.0pt;
+line-height:115%'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Ward</span></p>
+<h2><span lang=EN-US>Key areas of focus/new additions/changes</span></h2>
+<p class=MsoNormal><span lang=EN-US>A vast majority of intestinal helminths
+infections are asymptomatic,c however infected persons may present with
+pulmonary or potentially severe gastrointestinal complaints.</span></p>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;background:
+#FAF9F8'><span lang=EN-US>The guidelines do not address the management of
+complications of intestinal helminth infections such as biliary colic,
+cholangitis, liver abscess, pancreatitis, intestinal obstruction or
+appendicitis. </span></p>
+<h2><span lang=EN-US>Limitations </span></h2>
+<p class=MsoNormal><span lang=EN-US>Increase in IgE and later IgG markers may
+well be suggestive of an Intestinal helminth infection and PCR is another
+diagnostic tool for helminths, however, these tests are not readily available
+in our setting.</span></p>
+<span lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+lang=EN-US style='font-size:12.0pt'>&nbsp;</span></b></p>
+<h2><span lang=EN-US>Presenting symptoms and signs</span></h2>
+<p class=MsoNormal><span lang=EN-US>Patients often complain that they have
+worms or blame their symptoms on a worm – even symptoms that are not usually
+associated with worms. In fact, most worm infections (of all kinds) are
+asymptomatic. </span></p>
+<p class=MsoNormal><span lang=EN-US>Intestinal worms may present with </span></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>itching around the anus, </span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>abdominal pain or bloating, </span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>nausea and vomiting, </span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>passage of worms in the stools, </span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>melaena, </span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>cough and wheezing (a consequence of larval
+migration through the lungs), </span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>flatulence, </span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>failure to thrive </span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>microscopic blood loss in the stools and </span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>iron deficiency anaemia. </span></p>
+<p class=MsoNormal><span lang=EN-US>More rarely, ascariasis can cause biliary
+colic, cholangitis, liver abscess, pancreatitis, intestinal obstruction or
+appendicitis. The adult worms may be coughed up from the lungs. Trichuriasis
+can cause rectal prolapse in young children.</span></p>
+<p class=MsoNormal><span lang=EN-US>Hookworms can invade the skin and cause
+“creeping eruption” – a snake-like itchy red rash which moves through the skin.</span></p>
+<h3><span lang=EN-US>Classification/Causes</span></h3>
+<p class=MsoNormal><span lang=EN-US>Below is a list of common intestinal
+helminths that cause diseases:</span></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><i><span lang=EN-US>Ascaris lumbricoides</span></i><span
+lang=EN-US> (Roundworm)</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><i><span lang=EN-US>Trichuris trichuria </span></i><span
+lang=EN-US>(whip worm)</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><i><span lang=EN-US>Enterobius vermicularis</span></i><span
+lang=EN-US> (pin worm or thread worm)</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><i><span lang=EN-US>Necator americanus</span></i><span
+lang=EN-US> (hookworm)</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><i><span lang=EN-US>Strongyloides stercoralis.</span></i></p>
+<h2><span lang=EN-US>Examination findings</span></h2>
+<p class=MsoNormal><span lang=EN-US>Skin and pulmonary findings are minimal.
+Physical findings in the early stage of the disease may present as erythematous,
+pruritic, papulovesicular rash at the site of initial infection as in the case
+of hookworm infestation.</span></p>
+<p class=MsoNormal><span lang=EN-US>When the worm breaks through from the
+venous circulation into the pulmonary air spaces, cough, fever and reactive
+bronchoconstriction may be observed (eg hookworm, strongyloidiasis)</span></p>
+<p class=MsoNormal><span lang=EN-US>Vague gastrointestinal signs such as mild
+abdominal tenderness may be present.</span></p>
+<p class=MsoNormal><span lang=EN-US>Neurologic manifestations such as altered
+mental state, focal seizures and nuchal rigidity may be seen in severe
+strongyloidiasis.</span></p>
+<p class=MsoNormal><span lang=EN-US>Later signs of helminth infection include
+signs of anaemia (pallor, spooning nails, tachycardia, signs of high output
+cardiac failure). Hypoproteinemia may lead to anasarca and peripheral oedema.</span></p>
+<p class=MsoNormal><span lang=EN-US>Very rarely jaundice may be seen in ascaris
+infection where there is biliary obstruction.</span></p>
+<p class=MsoNormal><span lang=EN-US>Stunted growth may be observed in children
+with severe infestations.</span></p>
+<h2><span lang=EN-US>Investigations.</span></h2>
+<p class=MsoNormal><span lang=EN-US>It is not necessary to request
+investigations routinely. If they are considered they might include:</span></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>FBC (iron deficiency anaemia, eosinophilia)</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Stool microscopy: The diagnosis is often
+confirmed with direct microscopic analysis of fecal samples to verify the
+presence of the worms or its ova.</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Chest radiography: In cases of severe infection,
+chest x-ray may show diffuse alveolar infiltrates during the migration of the
+larvae through the lung. Once infection is established in the gut, imaging
+studies are not helpful.</span></p>
+<h2><span lang=EN-US>Management</span></h2>
+<p class=MsoNormal><span lang=EN-US>Most common intestinal helminth
+infestations can be treated with either of the following:</span></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Oral albendazole </span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US>400 mg stat if 2 years or older (month)</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US>200 mg stat if between 1 and 2 years of age </span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Oral mebendazole 100 mg 12 hourly for 3 days.</span></p>
+<p class=MsoNormal><span lang=EN-US>Avoid these medications if pregnant or
+planning to conceive in the next 1 month – Levamisole may sometimes be
+available and is safe for these patients. The dose is 2.5 mg/kg up to 150 mg
+stat.</span></p>
+<p class=MsoNormal><span lang=EN-US>Treatment course may be repeated after 3
+weeks if infestation persists.</span></p>
+<p class=MsoNormal><span lang=EN-US>Preventive measures against helminthic
+infections include adequate sanitation, appropriate personal and food hygiene,
+and use of protective footwear.</span></p>
+<p class=MsoNormal><span lang=EN-US>Treatment peculiar to some intestinal
+helminthic infestations are shown below:</span></p>
+<h3><span lang=EN-US>Enterobius vermicularis</span></h3>
+<p class=MsoNormal><span lang=EN-US>Treat patient and whole family with:</span></p>
+<p class=MsoListParagraph style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Oral Mebendazole 100 mg od as single dose
+(repeat after 3 weeks if symptoms persist)</span></p>
+<p class=MsoNormal><span lang=EN-US>or</span></p>
+<p class=MsoListParagraph style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Oral Albendazole 400 mg stat (repeat after 2
+weeks)</span></p>
+<h3><span lang=EN-US>Strongyloides stercoralis</span></h3>
+<p class=MsoNormal><span lang=EN-US>The drug of choice is ivermectin 200
+micrograms/kg as a single dose, or two doses on successive days. It is rarely
+available. It is not routinely recommended for children aged under 5 years and
+less than 15 kg, but has been used in younger children for mass drug
+administration with few adverse events.</span></p>
+<p class=MsoNormal><span lang=EN-US>The alternative is albendazole 15 mg/kg 12
+hourly for 3 days. This can be used in children over the age of 2 years:
+albendazole 400 mg 12 hourly for 3 days (Repeated after 3 weeks if necessary).</span></p>
+<p class=MsoNormal><span lang=EN-US>In hyperinfestation, ivermectin 200
+micrograms/kg daily until stool microscopy is negative for 2 weeks.</span></p>
+<p class=MsoNormal><b><u><span lang=EN-US>Tapeworms:</span></u></b></p>
+<p class=MsoNormal><span lang=EN-US>Praziquantel 5-10 mg/kg as single dose (4
+years and older).</span></p>
+<h2><span lang=EN-US>References</span></h2>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Centers for Disease
+Control and Prevention. Strongyloides – Resources for Health Professionals.
+2016. Available from: </span><span lang=EN-US><a
+href="https://www.cdc.gov/parasites/strongyloides/health_professionals/index.html"
+target="_blank"><span style='font-size:10.0pt'>www.cdc.gov/parasites/strongyloides/health_professionals/index.html</span></a></span><span
+lang=EN-US style='font-size:10.0pt'> Accessed 15<sup>th</sup> August 2018</span></p>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Hökelek M.
+Nematode Infections. Medscape. 2017. Available at </span><span lang=EN-US><a
+href="https://emedicine.medscape.com/article/224011-overview"><span
+style='font-size:10.0pt'>https://emedicine.medscape.com/article/224011-overview</span></a></span><span
+lang=EN-US style='font-size:10.0pt'>. Accessed 15<sup>th</sup> August 2018 </span></p>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>British National Formulary
+70<sup>th</sup> edition. September 2015-March 2016.</span></p>
+<p class=MsoNormal><span style='font-size:10.0pt'>Wilkins AL, Steer AC,
+Cranswick N, Gwee A. Question 1: Is it safe to use ivermectin in children less
+than five years of age and weighing less than 15 kg? <i>Archives of Disease in
+Childhood</i> 2018; <b>103</b>: 514–9.</span></p>
+<div class="tableCont">
+  <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Written by:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Name: </span><span lang=EN-US>Amie Secka</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Date: 16 July 2018</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Reviewed by:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Name: </span><span lang=EN-US>Fatai Akemokwe</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Date: 15 August 2018</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Version:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Change history:</span></b></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Review due date:</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>1.0</span></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>New document</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>2.0</span></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Updated from previous version and made specific to intestinal helminths</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>20 August 2020</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Review Comments (<i>if applicable)</i></span></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>&nbsp;</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>&nbsp;</span></b></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+</div>
+</div><!-- /content -->
+
+</div>
+
+</body>
+</html>

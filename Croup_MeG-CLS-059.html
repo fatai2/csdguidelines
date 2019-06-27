@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html manifest="manifest.manifest">
+<head>
+	<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+	<title>MRCG Clinical Guidelines</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=1">
+	<meta name=Generator content="Microsoft Word 14 (filtered)">
+	<link rel="manifest" href="/manifest.json">	
+<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="mystyle.css" />
+	<script src="jquery-1.11.1.min.js"></script>
+	<script src="jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="cordova.js"></script>
+	<script>
+	    		$(function(){
+			$("[data-role='header'], [data-role='footer']").toolbar();
+		});
+  	  $(document).one('pagebeforecreate', function () {
+	        $('input[data-type="search"]').val("");
+	    	        $.get("panel.html", function (data2) {
+            $.mobile.pageContainer.prepend(data2);
+              $("[data-role=panel]").panel().enhanceWithin();
+        }, "html");
+	           $.get("header.html", function (data) {
+      $.mobile.pageContainer.prepend(data);
+      $("[data-role='header']").toolbar().enhanceWithin();
+    }, "html");
+    $.get("footer.html", function (data) {
+      $.mobile.pageContainer.append(data);
+      $("[data-role='footer']").toolbar().enhanceWithin();
+    }, "html");
+        $('.WordSection1').wrap('<div role="main" class="ui-content">');
+        $('table').wrap('<div class="tableCont"></div>');
+        $('img').wrap('<div class="tableCont"></div>');
+        $.mobile.pageContainer.enhanceWithin();
+	  });
+	        $(document).bind( "pagechange", function( ) {
+        $('table').wrap('<div class="tableCont"></div>');
+        $('img').wrap('<div class="tableCont"></div>');
+        $('.tableCont').enhanceWithin();
+      } );
+			// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			document.getElementById("myBtn").style.display = "block";
+		  } else {
+			document.getElementById("myBtn").style.display = "none";
+		  }
+		}
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0; // For Safari
+		  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}</script>      
+
+
+
+	
+
+
+  
+
+</head>
+<body lang=EN-GB link=blue vlink=purple>
+
+<div data-role="page">
+	<div role="main" class="ui-content">
+<div class=WordSection1>
+<h1 style='text-align:justify;text-justify:inter-ideograph'><span lang=EN-US>Croup
+(Acute Laryngotracheobronchitis)</span></h1>
+<h2><i><span lang=EN-US>Executive summary</span></i></h2>
+<h2><span lang=EN-US>Introduction</span></h2>
+<h2><span lang=EN-US style='font-size:11.0pt;font-weight:normal'>Croup is a
+common, primarily childhood, viral respiratory tract illness causing symptoms
+which may involve a harsh barking cough and (inspiratory) stridor. The vast
+majority of children with croup recover without consequences or sequelae;
+however, it can be life-threatening in young infants. Croup most often affects
+children aged 6 months to 3 years, with a peak incidence during the second year
+of life. However, children as young as 3 months of age, or adolescents and,
+very rarely, adults can be affected. The most common viral causes are
+parainfluenza viruses.</span></h2>
+<h2><span lang=EN-US>Target users</span></h2>
+<p class=MsoListParagraphCxSpFirst style='margin-left:39.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Doctors</span></p>
+<p class=MsoListParagraphCxSpLast style='margin-left:39.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Nurses</span></p>
+<h2><span lang=EN-US>Target area of use </span></h2>
+<p class=MsoListParagraphCxSpFirst style='margin-left:39.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Outpatient department</span></p>
+<p class=MsoListParagraphCxSpLast style='margin-left:39.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Ward</span></p>
+<h2><span lang=EN-US>Key areas of focus / New additions / Changes </span></h2>
+<p class=MsoNormal><span lang=EN-US>This guideline addresses the management of
+croup in children.</span></p>
+<h2><span lang=EN-US>Limitations</span></h2>
+<p class=MsoNormal><span lang=EN-US>None</span></p>
+<span lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+lang=EN-US style='font-size:12.0pt'>&nbsp;</span></b></p>
+<h2 style='text-align:justify;text-justify:inter-ideograph'><span lang=EN-US>Presenting
+symptoms and signs</span></h2>
+<p class=MsoNormal><span lang=EN-US>Croup usually begins with nonspecific
+respiratory symptoms (ie, rhinorrhoea, sore throat, cough). Fever is generally
+low grade and is present in 50% of cases.</span></p>
+<p class=MsoNormal><span lang=EN-US>Within 1 to 2 days, the characteristic
+signs of hoarseness, barking cough, and inspiratory stridor develop; often
+suddenly.</span></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Stridor is often worse on exertion.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Variable degree of respiratory distress.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Symptoms generally worse at night.</span></p>
+<p class=MsoListParagraphCxSpLast style='text-align:justify;text-justify:inter-ideograph;
+text-indent:-18.0pt'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Symptoms can last for 2 weeks but typically
+resolve within 3-7 days.</span></p>
+<h2 style='text-align:justify;text-justify:inter-ideograph'><span lang=EN-US>Westley
+croup score</span></h2>
+<p class=MsoNormal><span lang=EN-US>Croup scores help clinicians in assessing
+the patient’s degree of respiratory compromise. The Westley score evaluates the
+severity of croup by assessing five factors: level of <b>consciousness</b>, <b>cyanosis</b>,
+<b>stridor</b>, <b>air entry</b>, and <b>retractions</b>. The point values
+given for each factor are listed below, and the final score sum has a range of
+0 to 17. </span></p>
+<div class="tableCont">
+  <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=575 colspan=2 valign=top style='width:431.5pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><b><span
+  lang=EN-US>Westley croup score</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=288 rowspan=3 valign=top style='width:215.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+  lang=EN-US>Stridor</span></p>
+  </td>
+  <td width=288 valign=top style='width:215.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+  lang=EN-US>None: 0</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=288 valign=top style='width:215.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+  lang=EN-US>With agitation: +1</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=288 valign=top style='width:215.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+  lang=EN-US>At rest: +2</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=288 rowspan=4 valign=top style='width:215.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+  lang=EN-US>Chest wall retractions</span></p>
+  </td>
+  <td width=288 valign=top style='width:215.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+  lang=EN-US>None: 0</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=288 valign=top style='width:215.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+  lang=EN-US>Mild: +1</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=288 valign=top style='width:215.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+  lang=EN-US>Moderate: +2</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=288 valign=top style='width:215.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+  lang=EN-US>Severe: +3</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=288 rowspan=3 valign=top style='width:215.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+  lang=EN-US>Cyanosis </span></p>
+  </td>
+  <td width=288 valign=top style='width:215.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+  lang=EN-US>None: 0</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=288 valign=top style='width:215.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+  lang=EN-US>With agitation: +4</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=288 valign=top style='width:215.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+  lang=EN-US>At rest: +5</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=288 rowspan=2 valign=top style='width:215.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+  lang=EN-US>Level of consciousness</span></p>
+  </td>
+  <td width=288 valign=top style='width:215.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+  lang=EN-US>Normal: 0</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=288 valign=top style='width:215.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+  lang=EN-US>Disoriented: +5</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=288 rowspan=2 valign=top style='width:215.75pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+  lang=EN-US>Air entry</span></p>
+  </td>
+  <td width=288 valign=top style='width:215.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+  lang=EN-US>Normal: 0</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=288 valign=top style='width:215.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+  lang=EN-US>Decrease: +1</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><b><span
+lang=EN-US>&nbsp;</span></b></p>
+<p class=MsoNormal><b><span lang=EN-US>Score &lt;2 – mild disease</span></b><span
+lang=EN-US> (occasional barking cough, hoarseness, no stridor at rest, mild or
+absent suprasternal or subcostal retractions)</span></p>
+<p class=MsoNormal><b><span lang=EN-US>Score 3-5: moderate disease</span></b><span
+lang=EN-US> (findings include frequent cough, audible stridor at rest, and
+visible retractions, but little distress or agitation)</span></p>
+<p class=MsoNormal><b><span lang=EN-US>Score 6-11: severe disease</span></b><span
+lang=EN-US> (patients present with prominent inspiratory, and occasionally
+expiratory stridor, frequent cough, marked chest wall retractions, decreased
+air entry on auscultation, significant distress and agitation. </span></p>
+<p class=MsoNormal><b><span lang=EN-US>A Westley score of ≥ 12 indicates
+impending respiratory failure</span></b><span lang=EN-US>; at this point, a
+barking cough and inspiratory stridor may no longer be prominent – it presents
+with lethargy, cyanosis and decreasing retractions.</span></p>
+<h2><span lang=EN-US>Management </span></h2>
+<p class=MsoNormal><span lang=EN-US>Taking a child with stridor outdoor into
+the cool air for 10 minutes can give him/her some relieve. Parent can be
+advised to do this. In addition, advise caregivers to have the child breathe warm
+moist air. This can be done by:</span></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>running hot water in your shower with the
+bathroom door closed. After the bathroom becomes steamy, the parent can sit
+with the child in the room for about 10 minutes.</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Have the child breathe through a warm, wet
+washcloth lightly placed over the mouth and nose.</span></p>
+<p class=MsoNormal><span lang=EN-US>Treatment depends on the severity. </span></p>
+<p class=MsoNormal><b><span lang=EN-US>Mild disease: </span></b></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Give paracetamol (10-15 mg/kg TDS/QDS) or
+ibuprofen (5-10 mg/kg TDS) for fever</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Encourage adequate fluid intake</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Giving a single dose of oral dexamethasone
+0.6mg/kg or prednisolone 1-2mg/kg may be of benefit.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Send patient home</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Advised to return if symptoms worsen</span></p>
+<p class=MsoNormal><b><span lang=EN-US>In moderate to severe croup</span></b></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Admit to the ward</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Start oxygen therapy</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Give dexamethasone 0.6 mg/kg or prednisolone 1-2
+mg/kg by mouth. Repeat dose after 12 hours if necessary</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Nebulised adrenaline (epinephrine) solution 1 in
+1,000 (1 mg/mL) should be given with close clinical monitoring in a dose of 400
+micrograms/kg (maximum 5 mg) repeated every 30 minutes if necessary.</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Monitor closely and send home when respiratory
+distress and stridor resolves.</span></p>
+<div class="tableCont">
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+style='font-size:14.0pt'><img width=576 height=268 id="Picture 3"
+src="croup_image001.jpg"></span></b></p>
+</div>
+<span lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+lang=EN-US style='font-size:12.0pt'>&nbsp;</span></b></p>
+<h2><span lang=EN-US>References</span></h2>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Colledge, Nicki
+R., Brian R. Walker, Stuart Ralston, and Stanley Davidson. 2010. Davidson's
+principles and practice of medicine. Edinburgh: Churchill Livingstone/Elsevier.</span></p>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Kliegman, Robert.,
+et al. Nelson Textbook of Pediatrics. Edition 20. Phialdelphia, PA: Elsevier,
+2016.</span></p>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Management of
+acute respiratory diseases in the pediatric population. The role of oral
+corticosteroids. Italian Journal of Pediatrics 43(1). December 2017. Retrieved
+from https://www.researchgate.net/figure/Westley-croup-score_tbl7_315597265 on
+25th February 2017.</span></p>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Waseem M (2018).
+Otitis Media. Medscape. Retrieved from
+https://emedicine.medscape.com/article/994656-overview on 26th February, 2019</span></p>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Standard Treatment
+Guidelines, 6th Edition, 2010. ISBN 978-9988-1-2538-7</span></p>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Zoorob R et al
+(2011). Croup: An Overview. Retrieved from
+https://www.aafp.org/afp/2011/0501/p1067.html on 25th February, 2019.</span></p>
+<div class="tableCont">
+  <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Written by:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Name: Fatoumata Sawaneh</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Date: 27 February 2019</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Reviewed by:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Name: Baderinwa Abatan</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Date: 3 May 2019</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Version:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Change history:</span></b></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Review due date:</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>1.0</span></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>New document</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>31 May 2021</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Review Comments (<i>if applicable)</i></span></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>&nbsp;</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>&nbsp;</span></b></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class=MsoNormal><span style='color:black'>&nbsp;</span></p>
+</div>
+</div><!-- /content -->
+
+</div>
+
+</body>
+</html>

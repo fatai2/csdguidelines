@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html manifest="manifest.manifest">
+<head>
+	<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+	<title>MRCG Clinical Guidelines</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=1">
+  
+	<meta name=Generator content="Microsoft Word 14 (filtered)">
+	<link rel="manifest" href="/manifest.json">	
+<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="mystyle.css" />
+	<script src="jquery-1.11.1.min.js"></script>
+	<script src="jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="cordova.js"></script>
+	<script>
+	    		$(function(){
+			$("[data-role='header'], [data-role='footer']").toolbar();
+		});
+  	  $(document).one('pagebeforecreate', function () {
+	        $('input[data-type="search"]').val("");
+	    	        $.get("panel.html", function (data2) {
+            $.mobile.pageContainer.prepend(data2);
+              $("[data-role=panel]").panel().enhanceWithin();
+        }, "html");
+	           $.get("header.html", function (data) {
+      $.mobile.pageContainer.prepend(data);
+      $("[data-role='header']").toolbar().enhanceWithin();
+    }, "html");
+    $.get("footer.html", function (data) {
+      $.mobile.pageContainer.append(data);
+      $("[data-role='footer']").toolbar().enhanceWithin();
+    }, "html");
+        $('.WordSection1').wrap('<div role="main" class="ui-content">');
+        $('table').wrap('<div class="tableCont"></div>');
+        $('img').wrap('<div class="tableCont"></div>');
+        $.mobile.pageContainer.enhanceWithin();
+	  });
+	        $(document).bind( "pagechange", function( ) {
+        $('table').wrap('<div class="tableCont"></div>');
+        $('img').wrap('<div class="tableCont"></div>');
+        $('.tableCont').enhanceWithin();
+      } );
+			// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			document.getElementById("myBtn").style.display = "block";
+		  } else {
+			document.getElementById("myBtn").style.display = "none";
+		  }
+		}
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0; // For Safari
+		  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}</script>      
+	
+
+
+
+
+
+	
+
+
+
+
+
+  
+  
+  	
+</head>
+<body lang=EN-GB link=blue vlink=purple>
+	
+<div data-role="page">
+	<div role="main" class="ui-content">
+<div class=WordSection1>
+<h2><span style='font-size:14.0pt'>Trauma</span></h2>
+<h2><i><span lang=EN-US>Executive summary</span></i></h2>
+<h2><span lang=EN-US>Introduction</span></h2>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>Traumatic injuries can range from minor isolated wounds to complex
+injuries involving multiple organ systems. All trauma patients require a systematic
+approach to management to maximize outcomes and reduce the risk of undiscovered
+injuries and death.</span></p>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>Relatively few patients die after the first 24 hours following
+injury. Rather, the majority of deaths occur either at the scene or within the
+first four hours after the patient reaches a trauma centre. </span></p>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>The &quot;golden hour&quot; concept, which emphasises the increased
+risk of death and the need for rapid intervention during the first hour of care
+following major trauma should guide our practice locally.</span></p>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>Most trauma cases should be referred on to the EFSTH, where a
+multi-disciplinary team is on call 24 hrs. However in some cases a minor trauma
+case like RTA without fracture or bleeding may be managed conservatively and
+discharged.</span></p>
+<h2><span lang=EN-US>Target users</span></h2>
+<p class=MsoListParagraphCxSpFirst style='text-align:justify;text-justify:inter-ideograph;
+text-indent:-18.0pt'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Nurses</span></p>
+<p class=MsoListParagraphCxSpLast style='text-align:justify;text-justify:inter-ideograph;
+text-indent:-18.0pt'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Doctors</span></p>
+<h2><span lang=EN-US>Target area of use</span></h2>
+<p class=MsoListParagraphCxSpFirst style='text-align:justify;text-justify:inter-ideograph;
+text-indent:-18.0pt'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Outpatient department</span></p>
+<p class=MsoListParagraphCxSpLast style='text-align:justify;text-justify:inter-ideograph;
+text-indent:-18.0pt'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Ward</span></p>
+<h3><span lang=EN-US style='font-size:12.0pt;text-decoration:none'>Key areas of
+focus / New additions / Changes </span></h3>
+<p class=MsoNormal><span lang=EN-US>This guideline outlines the initial
+stabilization of trauma cases within CSD. Most patients will then need to be
+transferred elsewhere for definitive care. </span></p>
+<p class=MsoNormal><span lang=EN-US>When more than 1 major trauma case is
+received out-of-hours or 2 or more are received at any time, then a major
+incident must be declared and SOP-CLS-015 should be followed to guide
+management of the department.</span></p>
+<h3><span lang=EN-US style='font-size:12.0pt;text-decoration:none'>Limitations </span></h3>
+<p class=MsoNormal><span lang=EN-US>There are no surgeons or anaesthetists at
+the unit, so our involvement is limited to the initial resuscitation and
+stabilization of patients.</span></p>
+<b><span lang=EN-US style='font-size:12.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span></b>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+lang=EN-US style='font-size:12.0pt'>&nbsp;</span></b></p>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><b><span
+lang=EN-US style='font-size:12.0pt'>Presenting symptoms and signs</span></b></p>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>Mechanism — Particular mechanisms predispose patients to specific
+injuries. Common blunt trauma mechanisms and their most frequently associated
+injuries are described in the accompanying table (Table 1 below). In addition,
+certain high-risk blunt mechanisms, including pedestrians struck by
+automobiles, motorcycle accidents, severe motor vehicle accidents (e.g., extensive
+damage leading to prolonged extrication time), and falls greater than 20 feet,
+have been associated with greater morbidity and mortality.</span></p>
+<p class=MsoNormal>Table 1: Blunt trauma mechanisms and associated injuries</p>
+<div class="tableCont">
+  <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width=583
+ style='width:436.95pt;border-collapse:collapse;border:none'>
+ <tr style='height:18.45pt'>
+  <td width=291 valign=top style='width:218.45pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:18.45pt'>
+  <p class=MsoNormal><b><span lang=EN-US>Mechanism of injury</span></b></p>
+  </td>
+  <td width=291 valign=top style='width:218.5pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:18.45pt'>
+  <p class=MsoNormal><b><span lang=EN-US>Potential associated injuries</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:44.3pt'>
+  <td width=291 valign=top style='width:218.45pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:44.3pt'>
+  <p class=MsoNormal><span lang=EN-US>Motor vehicle collision: Head-on
+  collision, Windshield damage, Steering wheel damage</span></p>
+  </td>
+  <td width=291 valign=top style='width:218.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:44.3pt'>
+  <p class=MsoNormal><span lang=EN-US>Facial injuries, Lower extremity
+  injuries, Aortic injuries, Thoracic injuries, Abdominal injuries: spleen,
+  liver etc.</span></p>
+  </td>
+ </tr>
+ <tr style='height:21.55pt'>
+  <td width=291 valign=top style='width:218.45pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:21.55pt'>
+  <p class=MsoNormal><span lang=EN-US>Pedestrian versus automobile: Low or high
+  speed (braking automobile, </span></p>
+  </td>
+  <td width=291 valign=top style='width:218.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:21.55pt'>
+  <p class=MsoNormal><span lang=EN-US>Tibia and fibula fractures, knee injuries</span></p>
+  </td>
+ </tr>
+ <tr style='height:18.45pt'>
+  <td width=291 valign=top style='width:218.45pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:18.45pt'>
+  <p class=MsoNormal><span lang=EN-US>Falls: </span></p>
+  </td>
+  <td width=291 valign=top style='width:218.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:18.45pt'>
+  <p class=MsoNormal><span lang=EN-US>Calcaneal and lower extremity fractures,
+  Pelvic fractures</span></p>
+  <p class=MsoNormal><span lang=EN-US>Closed head injuries, Cervical spine
+  fractures, Hand and wrist fractures</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+lang=EN-US style='font-size:12.0pt'>&nbsp;</span></b></p>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><b><span
+lang=EN-US style='font-size:12.0pt'>Preparation</span></b></p>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>Whenever possible, the ward should be notified that a trauma patient
+is <i>en route</i>. This provides the receiving Nurses and Doctors with
+information and time that can be crucial to the management of the severely
+injured patient.</span></p>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>When trauma cases, do however present to the ward. Efforts should be
+made to assess, stabilise and refer to the appropriate centre where necessary.</span></p>
+<h3><span lang=EN-US>Primary evaluation and management</span></h3>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>A clear, simple, and organized approach is needed when managing a
+severely injured patient prior to referral for a definitive treatment.</span></p>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>The primary survey consists of the following steps:</span></p>
+<p class=MsoListParagraphCxSpFirst style='text-align:justify;text-justify:inter-ideograph;
+text-indent:-18.0pt'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Airway assessment and protection (maintain
+cervical spine stabilization when appropriate)</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-justify:
+inter-ideograph;text-indent:-18.0pt'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Breathing and ventilation assessment (maintain
+adequate oxygenation, usually oxygen saturation above 96%)</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-justify:
+inter-ideograph;text-indent:-18.0pt'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Circulation assessment (control haemorrhage and
+maintain adequate end-organ perfusion)</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-justify:
+inter-ideograph;text-indent:-18.0pt'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Disability assessment (perform basic neurologic
+evaluation)</span></p>
+<p class=MsoListParagraphCxSpLast style='text-align:justify;text-justify:inter-ideograph;
+text-indent:-18.0pt'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Exposure, with environmental control (undress
+patient and search everywhere for possible injury, while preventing
+hypothermia)</span></p>
+<span lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+lang=EN-US>&nbsp;</span></p>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>While performing the primary survey, keep the following points in
+mind<b> :</b></span></p>
+<p class=MsoListParagraphCxSpFirst style='text-align:justify;text-justify:inter-ideograph;
+text-indent:-18.0pt'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Airway obstruction is a major cause of death
+immediately following trauma. The airway may be obstructed by the tongue, a
+foreign body, aspirated material, tissue oedema, or expanding haematoma.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-justify:
+inter-ideograph;text-indent:-18.0pt'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Haemorrhage is the most common preventable cause
+of mortality in trauma. Be alert for subtle signs of haemorrhagic shock,
+particularly in the elderly, who may be on cardiovascular medications that
+blunt such signs, and young, healthy adults who may not present with obvious
+manifestations. Hypotension generally does not manifest until at least 30
+percent of the patient's blood volume has been lost. Such patients are at high
+risk of death. Elderly patients may be hypotensive relative to their baseline
+blood pressure but still have blood pressure measurements in the
+&quot;normal&quot; range.</span></p>
+<p class=MsoListParagraphCxSpLast style='text-align:justify;text-justify:inter-ideograph;
+text-indent:-18.0pt'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Brain injuries are common in patients who have
+sustained severe blunt trauma and even a single episode of hypotension
+increases their risk of death</span></p>
+<h2><span lang=EN-US>Management </span></h2>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>Patients should be managed on the ward – the endoscopy room or the
+emergency bed are best as there is plenty of room to access the patient. The
+aim is to stabilise and refer, especially in a major case.</span></p>
+<h3><span lang=EN-US>Airway Assessment </span></h3>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>In a conscious patient, initial airway assessment can be performed
+as follows</span></p>
+<p class=MsoListParagraphCxSpFirst style='text-align:justify;text-justify:inter-ideograph;
+text-indent:-18.0pt'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Begin by asking the patient a simple question
+(e.g., &quot;What is your name?&quot; especially in adults). A clear accurate
+response verifies the patient's ability to mentate, phonate, and to protect
+their airway, at least temporarily.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-justify:
+inter-ideograph;text-indent:-18.0pt'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Observe the face, neck, chest, and abdomen for
+signs of respiratory difficulty, including tachypnea, accessory or asymmetric
+muscle use, abnormal patterns of respiration, and stridor.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-justify:
+inter-ideograph;text-indent:-18.0pt'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Inspect the oropharyngeal cavity for disruption;
+injuries to the teeth or tongue; blood, vomitus, or pooling secretions.</span></p>
+<p class=MsoListParagraphCxSpLast style='text-align:justify;text-justify:inter-ideograph;
+text-indent:-18.0pt'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Inspect and palpate the anterior neck for
+lacerations, hemorrhage, crepitus, swelling, or other signs of injury. </span></p>
+<h3><span lang=EN-US>Breathing and ventilation</span></h3>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>Once airway patency is ensured, assess the adequacy of oxygenation
+and ventilation. Inspect the chest wall looking for signs of injury, including
+asymmetric or paradoxical movement (e.g., flail chest), auscultate breath
+sounds at the apices and axillae, and palpate for crepitus and deformity. Where
+necessary provide supplemental oxygen to keep saturation &gt;96%.</span></p>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>Presumptively treat patients with signs of tension pneumothorax,
+including hypotension, dyspnoea, and ipsilateral decreased breath sounds, with
+needle decompression before obtaining imaging or referring to the EFSTH. Needle
+decompression is performed with a large bore (14 gauge or larger), either in
+the second intercostal space in the midclavicular line or in the fifth
+intercostal space in the midaxillary line. </span></p>
+<span lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><u><span
+lang=EN-US><span style='text-decoration:none'>&nbsp;</span></span></u></b></p>
+<h3><span lang=EN-US>Circulation: Recognition and management of haemorrhage</span></h3>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>Once the airway and breathing are stabilized, perform an initial
+evaluation of the patient's circulatory status by palpating central pulses. If
+a carotid or femoral pulse is verified and no obvious exsanguinating external
+injury is noted, circulation may be assumed to be intact. While circulation is
+assessed, one or two large-bore (16 gauge or larger) intravenous (IV) catheters
+are placed, most often in the antecubital fossa of each arm.</span></p>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><i><span
+lang=EN-US>Life-threatening haemorrhage must be controlled</span></i><span
+lang=EN-US>. A combination of manual pressure, proximal compression with either
+a tourniquet or a manual blood pressure cuff, and elevation is typically
+sufficient to control external arterial haemorrhage. Venous bleeding is
+controlled with direct pressure. Bleeding from severe pelvic injuries may
+require the application of a pelvic binder. Most trauma patients with
+hypotension or signs of shock (eg, pale, cool, moist skin) could be bleeding
+internally, initial fluid resuscitation for these patients may consist of a
+bolus of intravenous crystalloid (eg, 20 mL/kg isotonic saline) while arrangement
+is being made to transfer to the EFSTH for definitive treatment</span></p>
+<h3><span lang=EN-US>Disability and neurologic evaluation </span></h3>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>Once problems related to the airway, breathing, and circulation are
+addressed, perform a focused neurologic examination. This should include a description
+of the patient's level of consciousness using the Glasgow Coma Scale (GCS)
+score or  the paediatric GCS, a validated scale for children &#8804;2 year old
+and assessments of pupillary size and reactivity, gross motor function, and
+sensation. Trauma patients with a GCS &#8804;8 or who are unresponsive or only
+respond to pain have severe altered mental status and require rapid
+resuscitative efforts.</span></p>
+<h3><span lang=EN-US>Exposure and environmental control </span></h3>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>Be certain that the trauma patient is completely undressed and that
+his or her entire body is examined for signs of injury during the primary
+survey. Missed injuries pose a grave threat. Regions often neglected include
+the scalp, axillary folds, perineum, and in obese patients, abdominal folds.</span></p>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>Patients should be stabilized as well as possible without delaying
+transfer; delays are associated with increased mortality. Criteria for transfer
+are based upon the patient's demographics, mechanism of injury, and clinical
+findings. </span></p>
+<h3><span lang=EN-US>Secondary Survey</span></h3>
+<p class=MsoListParagraphCxSpFirst style='text-align:justify;text-justify:inter-ideograph;
+text-indent:-18.0pt'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>AMPLE History: <b>A</b>llergies, <b>m</b>edications,
+<b>p</b>ast medical history/<b>p</b>regnancy, <b>l</b>ast meal, <b>e</b>vents
+and <b>e</b>nvironment surrounding injury.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-justify:
+inter-ideograph;text-indent:-18.0pt'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Physical examination from head to toe including
+a rectal examination (major trauma)</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-align:justify;text-justify:
+inter-ideograph;text-indent:-18.0pt'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Decide on definitive management (is emergency
+referral needed?)</span></p>
+<p class=MsoListParagraphCxSpLast style='text-align:justify;text-justify:inter-ideograph;
+text-indent:-18.0pt'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Use MIST template when writing a referral to
+have a patient transferred to EFSTH for further care. This includes: <b>m</b>echanism
+of injury plus sex and age of patient, <b>i</b>njuries, <b>s</b>igns and  and
+symptoms and  <b>t</b>reatment so far </span></p>
+<b><u><span lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span></u></b>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><u><span
+lang=EN-US><span style='text-decoration:none'>&nbsp;</span></span></u></b></p>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><b><u><span
+lang=EN-US>Laboratory investigations.</span></u></b></p>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US>It cannot be overemphasized that a complete workup is not a
+requirement for transfer or referral to the EFSTH, Banjul; postponing transfer
+to obtain laboratory results or imaging studies only delays definitive
+treatment. Often such studies must be repeated at the receiving facility. </span></p>
+<p class=MsoNormal><span lang=EN-US>However some laboratory and radiological
+studies that may be done are</span></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>Portable radiographs </span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>Ultrasound scan (FAST – Focused Assessment with Sonography for
+Trauma)</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>Blood sugar</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>HCG - especially  in women of child-bearing age .</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>Haemoglobin.</span></p>
+<h2><span lang=EN-US>Key Issues for Nursing care</span></h2>
+<p class=MsoNormal><span lang=EN-US>Always call the attention of the Doctor
+when you are presented with a case of a major trauma.</span></p>
+<p class=MsoNormal><span lang=EN-US>Check vital sign on arrival and attempt to
+start resuscitation management as outlined above if required until the doctor arrives.</span></p>
+<p class=MsoNormal><span lang=EN-US>The decision to refer should be made by the
+doctor or the senior nurse on duty upon initial assessment.</span></p>
+<h2><span lang=EN-US>References</span></h2>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:10.0pt'>1. </span><span lang=EN-US
+style='font-size:9.0pt'>Feliciano, DV, Mattox, et al. Trauma, 6th, McGraw-Hill,
+New York 2008.</span></p>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:9.0pt'>2. CDC. National estimates of the ten
+leading causes of nonfatal injuries, Centers for Disease Control and Prevention
+2004. www.cdc.gov/injury/wisqars.html.</span></p>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:9.0pt'>3. Mackenzie EJ, Rivara FP, Jurkovich GJ, et
+al. The National Study on Costs and Outcomes of Trauma. J Trauma 2007; 63:S54.</span></p>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:9.0pt'>4. Global Status on Road Safety 2015, World
+Health Organization,
+http://www.who.int/violence_injury_prevention/road_safety_status/2015/.</span></p>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:9.0pt'>5. Søreide K. Epidemiology of major trauma.
+Br J Surg 2009; 96:697.</span></p>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:9.0pt'>6. Demetriades D, Murray J, Sinz B, et al.
+Epidemiology of major trauma and trauma deaths in Los Angeles County. J Am Coll
+Surg 1998; 187:373.</span></p>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:9.0pt'>7. Evans JA, van Wessem KJ, McDougall D, et
+al. Epidemiology of traumatic deaths: comprehensive population-based
+assessment. World J Surg 2010; 34:158.</span></p>
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+lang=EN-US style='font-size:9.0pt'>8. MacKenzie EJ, Rivara FP, Jurkovich GJ, et
+al. A national evaluation of the effect of trauma-center care on mortality. N
+Engl J Med 2006; 354:366</span><span lang=EN-US style='font-size:10.0pt'>.</span></p>
+<div class="tableCont">
+  <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Written by:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Name: Okpara Chibuike</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Date: 26 November 2018</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Reviewed by:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Name: Orighomisan Agboghoroma</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Date: 31 December 2018</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Version:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Change history:</span></b></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Review due date:</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>1.0</span></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>New document</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>31 January 2021</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>1.1</span></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Executive summary added</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>31 January 2021</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Review Comments (<i>if applicable)</i></span></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>&nbsp;</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>&nbsp;</span></b></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+</div>
+</div><!-- /content -->
+
+</div>
+
+</body>
+</html>

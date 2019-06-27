@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html manifest="manifest.manifest">
+<head>
+	<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+	<title>MRCG Clinical Guidelines</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=1">
+	
+	<meta name=Generator content="Microsoft Word 14 (filtered)">
+  
+	<meta name=Generator content="Microsoft Word 14 (filtered)">
+	<link rel="manifest" href="/manifest.json">	
+<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="mystyle.css" />
+	<script src="jquery-1.11.1.min.js"></script>
+	<script src="jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="cordova.js"></script>
+	<script>
+	    		$(function(){
+			$("[data-role='header'], [data-role='footer']").toolbar();
+		});
+  	  $(document).one('pagebeforecreate', function () {
+	        $('input[data-type="search"]').val("");
+	    	        $.get("panel.html", function (data2) {
+            $.mobile.pageContainer.prepend(data2);
+              $("[data-role=panel]").panel().enhanceWithin();
+        }, "html");
+	           $.get("header.html", function (data) {
+      $.mobile.pageContainer.prepend(data);
+      $("[data-role='header']").toolbar().enhanceWithin();
+    }, "html");
+    $.get("footer.html", function (data) {
+      $.mobile.pageContainer.append(data);
+      $("[data-role='footer']").toolbar().enhanceWithin();
+    }, "html");
+        $('.WordSection1').wrap('<div role="main" class="ui-content">');
+        $('table').wrap('<div class="tableCont"></div>');
+        $('img').wrap('<div class="tableCont"></div>');
+        $.mobile.pageContainer.enhanceWithin();
+	  });
+	        $(document).bind( "pagechange", function( ) {
+        $('table').wrap('<div class="tableCont"></div>');
+        $('img').wrap('<div class="tableCont"></div>');
+        $('.tableCont').enhanceWithin();
+      } );
+			// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			document.getElementById("myBtn").style.display = "block";
+		  } else {
+			document.getElementById("myBtn").style.display = "none";
+		  }
+		}
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0; // For Safari
+		  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}</script>      
+
+
+
+</head>
+<body lang=EN-GB link=blue vlink=purple>
+	
+<div data-role="page">
+	<div role="main" class="ui-content">
+<div class=WordSection1>
+<h1><span lang=EN-US>Animal bites</span></h1>
+<h2><i><span lang=EN-US>Executive summary</span></i></h2>
+<h2><span lang=EN-US>Introduction</span></h2>
+<p class=MsoNormal><span lang=EN-US>Patients may present with bites from other
+people as well as a number of different animals. The most common sources
+include dogs, monkeys and snakes. </span></p>
+<p class=MsoNormal><span lang=EN-US>All bites can be associated with bacterial
+infections – often with very virulent bacteria. Human bites, then cat bites,
+are the most likely to lead to serious infections. Mammal bites raise the
+possibility of exposure to rabies. Snake bites may also be venomous (but up to
+2/3 of all bites contain no venom).</span></p>
+<h3><span lang=EN-US style='font-size:12.0pt;text-decoration:none'>Target users</span></h3>
+<p class=MsoListParagraphCxSpFirst style='margin-left:39.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Doctors</span></p>
+<p class=MsoListParagraphCxSpLast style='margin-left:39.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Nurses</span></p>
+<h3><span lang=EN-US style='font-size:12.0pt;text-decoration:none'>Target area
+of use </span></h3>
+<p class=MsoListParagraphCxSpFirst style='margin-left:39.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Outpatients</span></p>
+<p class=MsoListParagraphCxSpLast style='margin-left:39.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Ward</span></p>
+<h3><span lang=EN-US style='font-size:12.0pt;text-decoration:none'>Key areas of
+focus / New additions / Changes </span></h3>
+<p class=MsoNormal><span lang=EN-US>This guidelines summarises in clinical
+format the management of animal bites, including human, other mammals and snake
+bites. There are formal SOPs (SOP-CLS-009 and SOP-CLS-020) giving more detail
+about how to manage rabies-prone exposures and snake bites. </span></p>
+<h2><span lang=EN-US>Limitations</span></h2>
+<p class=MsoNormal><span lang=EN-US>We do not have rabies immunoglobulin
+available. There is no anti-venom manufactured for neurotoxic snake bites in
+this region.</span></p>
+<span lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+lang=EN-US style='font-size:12.0pt'>&nbsp;</span></b></p>
+<h2><span lang=EN-US>Presenting symptoms and signs</span></h2>
+<p class=MsoNormal><span lang=EN-US>The history is very important. What animal
+bit the patient? What was happening at the time? Was the bite unprovoked or was
+there something that triggered the bite? If it was unprovoked, was there any
+other indication that the animal was unwell or mad? Does the animal belong to
+someone? Has it been vaccinated? Has the patient been vaccinated against
+rabies?</span></p>
+<p class=MsoNormal><span lang=EN-US>For snake bites, did they see the snake?
+What did it look like? </span></p>
+<p class=MsoNormal><span lang=EN-US>Beware that traditional healers often
+diagnose swollen legs as being due to snake bite even when there is no history
+of this. They then “remove the fangs,” reinforcing their diagnosis. Patients
+who later present to a clinic will report that they were bitten by a snake, but
+on further questioning cannot remember when this happened. </span></p>
+<p class=MsoNormal><span lang=EN-US>For all patients with bites, ask what
+treatment has been given so far. How long ago did the bite happen? </span></p>
+<h2><span lang=EN-US>Examination findings</span></h2>
+<p class=MsoNormal><span lang=EN-US>Look at the bite. Is it deep? Which part of
+the body is it on? Does it already look infected? </span></p>
+<p class=MsoNormal><span lang=EN-US>Check the observations (</span><span
+lang=EN-US>GCS, HR, BP, RR, O<sub>2</sub> sats) </span><span lang=EN-US>and
+look at the general state of the patient. </span></p>
+<p class=MsoNormal><span lang=EN-US>For snake bites, look for signs of
+envenomation – local swelling, tender lymph nodes, bleeding, signs of shock
+(cold, cyanosis, sweating, reduced GCS) and signs of neurotoxicity (blurred
+vision, heavy eyes, drowsiness, shortness of breath, restlessness). </span></p>
+<h2><span lang=EN-US>Investigations</span></h2>
+<p class=MsoNormal><span lang=EN-US>No investigations are needed for mammal
+bites. </span></p>
+<p class=MsoNormal><span lang=EN-US>For snake bites, with signs of
+envenomation, check </span><span lang=EN-US>FBC, blood film, INR, APTT. Also
+put 2 ml blood in a clean dry glass tube and leave it for 20 minutes, then look
+for clotting.</span></p>
+<span lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+lang=EN-US style='font-size:12.0pt'>&nbsp;</span></b></p>
+<h2><span lang=EN-US>Management </span></h2>
+<h3><span lang=EN-US>Mammal (including human) bites</span></h3>
+<p class=MsoNormal><span lang=EN-US>For bites with a risk of rabies exposure,
+which present acutely, wash the wound with soap and water for at least 15
+minutes. If it looks dirty, scrub away the dirt with a brush. Apply iodine or
+40-70% alcohol to the wound and dress it with a sterile dressing. </span></p>
+<p class=MsoNormal><b><span lang=EN-US>Never</span></b><span lang=EN-US> suture
+an animal bite. </span></p>
+<p class=MsoNormal><span lang=EN-US>Give tetanus toxoid and start antibiotics –
+co-amoxiclav is the best choice. Prescribe by amoxicillin dose (30 mg/kg up to
+500 mg TDS – where the dose of amoxicillin is greater than 250 mg use 1
+co-amoxiclav tablet and make the rest of the dose up with amoxicillin  tablets).
+Alternatives include doxycycline 100 mg BD and metronidazole 500 mg TDS
+(non-pregnant adults only), ceftriaxone 80 mg/kg OD or ciprofloxacin 20 mg/kg
+up to 500 mg BD and clindamycin 10 mg/kg up to 450 mg TDS. All courses of
+antibiotics are for 5 days. </span></p>
+<p class=MsoNormal><span lang=EN-US>Where there is concern about rabies,
+consider the possibility of rabies vaccine. Patients must pay the full cost of
+this. See SOP-CLS-009. Rabies vaccine will only be effective if given within 72
+hours of the bite. We do not have access to human rabies immunoglobulin, so if
+a patient has a high risk bite, especially on a proximal site of the body, they
+would need to travel immediately to Dakar. High risk bites are those where carnivore
+saliva has contacted the mucous membranes, has entered a transdermal bite or
+has been licked onto broken skin. </span></p>
+<h3><span lang=EN-US>Snake bites</span></h3>
+<p class=MsoNormal><span lang=EN-US>Management is very variable depending on
+whether the bite contained venom or not and on the type of snake that bit the
+patient. </span></p>
+<p class=MsoNormal><span lang=EN-US>If there is evidence of hypovolaemia or
+shock, manage the airway, breathing and circulation as necessary. Start fluid
+resuscitation as soon as possible.</span></p>
+<p class=MsoNormal><span lang=EN-US>Give paracetamol and / or codeine if
+necessary for pain. </span></p>
+<p class=MsoNormal><span lang=EN-US>If there is evidence of bleeding, organize
+a whole blood transfusion. </span></p>
+<p class=MsoNormal><span lang=EN-US>Clean all wounds with antiseptic – alcohol,
+potassium permanganate, iodine or GV are all suitable. Immobilise the limb in a
+comfortable position level with the patient (neither elevate nor hold it down).
+</span></p>
+<p class=MsoNormal><span lang=EN-US>Where there is local tissue damage or
+swelling:</span></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Do not open blisters. </span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>If there is necrotic tissue, debride it. </span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Watch for signs of compartment syndrome and arrange
+surgical intervention if present. </span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Treat with cloxacillin if there are signs of
+bacterial wound infection.</span></p>
+<p class=MsoNormal><span lang=EN-US>If the bite was from a puff adder or a
+spitting cobra with signs of envenomation, then anti-venom is indicated and
+should be available for staff and staff relatives only. Make it up as
+instructed, dilute it in normal saline and infuse over 30 minutes. Admit any
+patient given anti-venom to the ward. Monitor the patient closely for evidence
+of anti-venom reaction including anaphylaxis, fever and late reactions. See
+SOP-CLS-020 for more details on management of snake bite.</span></p>
+<p class=MsoNormal><span lang=EN-US>There is no anti-venom available for bites
+by mambas or neurotoxic biting cobras. </span></p>
+<h2><span lang=EN-US>Key Issues for Nursing care</span></h2>
+<h2><span lang=EN-US style='font-size:11.0pt;font-weight:normal'>Keep the
+patient calm.</span></h2>
+<p class=MsoNormal><span lang=EN-US>Wash the wound as described above. Dress
+the wound only after it has been reviewed by a doctor (or take a photograph before
+dressing it, if you are away from Fajara and need to dress it before
+transferring the patient there). </span></p>
+<h2><span lang=EN-US>References</span></h2>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>World Health
+Organisation 2010. Guidelines for the Prevention and Clinical Management of
+Snakebite in Africa.</span></p>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>World Health
+Organisation, ‘Rabies: Local treatment of wounds’ published 2012 cited 24/07/12
+found at: </span><span lang=EN-US><a
+href="http://www.who.int/rabies/vaccines/treatment_wound/en/index.html"><span
+style='font-size:10.0pt'>http://www.who.int/rabies/vaccines/treatment_wound/en/index.html</span></a></span></p>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>World Health
+Organisation. Rabies: Guide to post exposure prophylaxis, published WHO 2012,
+cited 25/07/12, found at: </span><span lang=EN-US><a
+href="http://www.who.int/rabies/human/postexp/en/index.html"><span
+style='font-size:10.0pt'>http://www.who.int/rabies/human/postexp/en/index.html</span></a></span></p>
+<div class="tableCont">
+  <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Written by:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Name: Karen Forrest</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Date: 31 October 2018</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Reviewed by:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Name: Fatai Akemokwe</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Date: 14 November 2018</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Version:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Change history:</span></b></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Review due date:</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>1.0</span></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>New document</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>31 January 2020</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>1.1</span></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Executive summary added</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>31 January 2020</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Review Comments (<i>if applicable)</i></span></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>&nbsp;</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>&nbsp;</span></b></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+</div>
+</div><!-- /content -->
+
+</div>
+
+</body>
+</html>

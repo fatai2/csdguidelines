@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html manifest="manifest.manifest">
+<head>
+	<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+	<title>MRCG Clinical Guidelines</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=1">
+  
+	<meta name=Generator content="Microsoft Word 14 (filtered)">
+	<link rel="manifest" href="/manifest.json">	
+<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="mystyle.css" />
+	<script src="jquery-1.11.1.min.js"></script>
+	<script src="jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="cordova.js"></script>
+	<script>
+	    		$(function(){
+			$("[data-role='header'], [data-role='footer']").toolbar();
+		});
+  	  $(document).one('pagebeforecreate', function () {
+	        $('input[data-type="search"]').val("");
+	    	        $.get("panel.html", function (data2) {
+            $.mobile.pageContainer.prepend(data2);
+              $("[data-role=panel]").panel().enhanceWithin();
+        }, "html");
+	           $.get("header.html", function (data) {
+      $.mobile.pageContainer.prepend(data);
+      $("[data-role='header']").toolbar().enhanceWithin();
+    }, "html");
+    $.get("footer.html", function (data) {
+      $.mobile.pageContainer.append(data);
+      $("[data-role='footer']").toolbar().enhanceWithin();
+    }, "html");
+        $('.WordSection1').wrap('<div role="main" class="ui-content">');
+        $('table').wrap('<div class="tableCont"></div>');
+        $('img').wrap('<div class="tableCont"></div>');
+        $.mobile.pageContainer.enhanceWithin();
+	  });
+	        $(document).bind( "pagechange", function( ) {
+        $('table').wrap('<div class="tableCont"></div>');
+        $('img').wrap('<div class="tableCont"></div>');
+        $('.tableCont').enhanceWithin();
+      } );
+			// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			document.getElementById("myBtn").style.display = "block";
+		  } else {
+			document.getElementById("myBtn").style.display = "none";
+		  }
+		}
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0; // For Safari
+		  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}</script>      
+	
+
+
+
+
+
+	
+
+
+
+
+
+
+
+  
+  
+  	
+</head>
+<body lang=EN-GB link=blue vlink=purple>
+	
+<div data-role="page">
+	<div role="main" class="ui-content">
+<div class=WordSection1>
+<h1><span lang=EN-US>Osteoarthritis</span></h1>
+<h2><i><span lang=EN-US>Executive summary</span></i></h2>
+<h2><span lang=EN-US>Introduction</span></h2>
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.25pt;
+margin-left:-.25pt'><span lang=EN-US>Osteoarthritis (OA) is a common condition
+resulting in mechanical and biological dysfunction of joints leading to loss of
+cartilage, sclerosis and eburnation of the subchondral bone, osteophytes, and
+subchondral cysts. It is characterized by joint pain, stiffness, and functional
+limitation. Key risk factors include age over 50 years, female sex, obesity and
+occupation. </span></p>
+<h2><span lang=EN-US>Target users</span></h2>
+<p class=MsoListParagraphCxSpFirst style='margin-top:0cm;margin-right:13.35pt;
+margin-bottom:.25pt;margin-left:36.0pt;text-indent:-18.0pt;line-height:103%'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Nurses</span></p>
+<p class=MsoListParagraphCxSpLast style='margin-top:0cm;margin-right:13.35pt;
+margin-bottom:.25pt;margin-left:36.0pt;text-indent:-18.0pt;line-height:103%'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Doctors</span></p>
+<h2 style='margin-top:12.0pt'><span lang=EN-US>Target area of use </span></h2>
+<p class=MsoListParagraphCxSpFirst style='margin-top:0cm;margin-right:13.35pt;
+margin-bottom:.25pt;margin-left:36.0pt;text-indent:-18.0pt;line-height:103%'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Gate Clinic</span></p>
+<p class=MsoListParagraphCxSpLast style='margin-top:0cm;margin-right:13.35pt;
+margin-bottom:.25pt;margin-left:36.0pt;text-indent:-18.0pt;line-height:103%'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>OPD</span></p>
+<h2 style='margin-top:12.0pt'><span lang=EN-US>Key areas of focus / New
+additions / Changes </span></h2>
+<p class=MsoNormal><span lang=EN-US>This guideline provides information on the
+diagnosis and treatment of osteoarthritis. Patients with typical presentation
+do not require further workup. Treatment involves both non-pharmacologic and
+pharmacological measures. </span></p>
+<h2 style='margin-top:12.0pt'><span lang=EN-US>Limitations</span></h2>
+<p class=MsoNormal style='margin-bottom:8.0pt;line-height:107%'><span
+lang=EN-US>Physical and occupational therapy services are not available in our
+facility. Surgical therapy is currently not available within The Gambia</span><b><span
+lang=EN-US style='font-size:12.0pt;line-height:107%'>.</span></b></p>
+<span lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+lang=EN-US style='font-size:12.0pt'>&nbsp;</span></b></p>
+<h2><span lang=EN-US>Introduction</span></h2>
+<p class=MsoNormal><span lang=EN-US>Osteoarthritis (OA) </span><span
+style='background:white'>is a condition resulting in mechanical and biological
+dysfunction of joints leading to loss of cartilage, sclerosis and eburnation of
+the subchondral bone, osteophytes, and subchondral cysts. It is characterized
+by joint pain, stiffness, and functional limitation.</span></p>
+<p class=MsoNormal><span style='background:white'>Key risk factors include: </span></p>
+<p class=MsoListParagraphCxSpFirst style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-indent:-18.0pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Age over 50 years</p>
+<p class=MsoListParagraphCxSpMiddle style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-indent:-18.0pt'><span style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Female sex</p>
+<p class=MsoListParagraphCxSpMiddle style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-indent:-18.0pt'><span style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Obesity </p>
+<p class=MsoListParagraphCxSpLast style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-indent:-18.0pt'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Physical or manual occupation including agricultural work.</p>
+<h2><span lang=EN-US>Presenting symptoms and signs</span></h2>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Pain relating to physical activity and weight
+bearing activity.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Functional difficulties such as knee giving way.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Commonly affects knees, hips, hands, lumbar and
+cervical spine. </span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US>Unlikely to involve the ankles (which helps in
+differential diagnosis)</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Morning stiffness is rare and would require
+further investigation (if present for more than 30 minutes.)</span></p>
+<h2><span lang=EN-US>Examination findings</span></h2>
+<h2 style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:36.0pt;
+margin-bottom:.0001pt;text-indent:-18.0pt'><span lang=EN-US style='font-size:
+11.0pt;font-family:Symbol;font-weight:normal'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:11.0pt;font-weight:normal'>OA
+can cause pain along the joint line.</span></h2>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Crepitus (palpable &amp; sometimes audible
+creaking of joint in active and passive movement.) </span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Bony deformity (especially in the hands there is
+enlargement of the proximal interphalangeal (PIP) and distal interphalangeal (DIP)
+joints. In advanced knee osteoarthritis there may be new bone formation causing
+bony swelling.) </span></p>
+<h3><span lang=EN-US>Differential diagnoses</span></h3>
+<p class=MsoNormal><b><span lang=EN-US>Rheumatoid arthritis</span></b><span
+lang=EN-US>  - small joint symmetrical polyarthritis, with prolonged morning
+stiffness. Exacerbations can be associated with malaise and feeling generally
+unwell. May have raised ESR, raised CRP and erosive changes on X-ray.</span></p>
+<p class=MsoNormal><b><span lang=EN-US>Psoriatic arthritis</span></b><span
+lang=EN-US> – Associated with psoriasis but can occur without skin lesions. It
+usually affects DIP joints (asymmetrical) and shows erosive changes on X-ray.</span></p>
+<p class=MsoNormal><b><span lang=EN-US>Gout &amp; Pseudogout</span></b><span
+lang=EN-US> – Normally more acute onset with hot, swollen, tender joints. Gout
+affects first metatarsophalangeal joint (big toe pain), while pseudogout most
+commonly affects wrist and knee. Aspiration of the joint can diagnose this.</span></p>
+<p class=MsoNormal><b><span lang=EN-US>Avascular necrosis</span></b><span
+lang=EN-US> –Consider if patients with history of corticosteroid use or young
+adults with sickle cell disease. Half of these cases will have associated
+effusion. </span></p>
+<p class=MsoNormal><b><span lang=EN-US>Bursitis</span></b><span lang=EN-US>
+(Greater trochanteric gives pain over lateral aspect of the hip, pes anserine
+bursitis gives pain over medial aspect of the knee.)</span></p>
+<span lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+lang=EN-US style='font-size:12.0pt'>&nbsp;</span></b></p>
+<h2><span lang=EN-US>Investigations</span></h2>
+<p class=MsoNormal><span lang=EN-US>Generally, no investigations are required
+if ALL the following are true</span></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Over 50 </span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>No morning stiffness (or less than 30 minutes.)</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Crepitus </span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Joint line tenderness </span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Bony enlargement (in knee) or classical Heberden
+or Bouchard nodes (in hands)</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>No palpable warmth</span></p>
+<p class=MsoNormal><span lang=EN-US>Where there is doubt:</span></p>
+<p class=MsoListParagraphCxSpFirst style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-indent:-18.0pt'>1)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span><span lang=EN-US>X-ray of affected joint – </span><span
+style='background:white'>Will show new bone formation (osteophytes), joint
+space narrowing, and subchondral sclerosis and cysts.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'>2)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span><span
+lang=EN-US>ESR: ordered if inflammatory arthritis is suspected. In OA, ESR
+should be less than </span>40 mm/hour</p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'>3)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span>Rheumatoid Factor
+(RF) – If inflammatory arthritis is suspected.</p>
+<p class=MsoNormal><span lang=EN-US>Uric acid is not generally indicated but may
+be worthwhile in conjunction with joint aspiration when calculating risk of
+gout over septic arthritis in hot, red swollen joint</span><span lang=EN-US>. </span></p>
+<h2><span lang=EN-US>Management</span></h2>
+<h3><span lang=EN-US>Non pharmacological management</span></h3>
+<p class=MsoNormal><span lang=EN-US>Weight loss and exercise are key aspects of
+management. </span></p>
+<p class=MsoNormal><span lang=EN-US>Physiotherapy including quadriceps
+exercises is helpful. </span></p>
+<p class=MsoNormal><span lang=EN-US>Occupational therapy – supportive footwear
+and stick/ cane on contralateral side of arthritic joint.</span></p>
+<h3><span lang=EN-US>Pharmacological </span></h3>
+<p class=MsoNormal><span lang=EN-US>1<sup>st</sup> line: Topical/ local
+treatment – diclofenac gel + non pharmacological management </span></p>
+<p class=MsoNormal><span lang=EN-US>2<sup>nd</sup> line: Oral treatment –
+Regular Paracetamol + 1<sup>st</sup> line measures. </span></p>
+<p class=MsoNormal><span lang=EN-US>3<sup>rd</sup> line: NSAIDS for shortest
+possible duration (Ibuprofen 200-400mg TDS) + paracetamol + 1<sup>st</sup> line
+measures. (Consider gastroprotection with omeprazole when prescribing NSAIDS) .</span></p>
+<p class=MsoNormal><span lang=EN-US>4<sup>th</sup> line: Codeine (15-60mg QDS)
++ NSAIDS + paracetamol + 1<sup>st</sup> line measures. </span></p>
+<p class=MsoNormal><span lang=EN-US>5<sup>th</sup> line: May include the
+addition of stronger opioids – such as Morphine Slow-Release Tablets (MST).</span></p>
+<p class=MsoNormal><b><span lang=EN-US>Adjuvant therapy</span></b><span
+lang=EN-US> such as intraarticular methylprednisolone injections during any
+line of management to help improve pain and daily functioning. These may be
+available in some private clinics locally.</span></p>
+<p class=MsoNormal><span lang=EN-US>Patients unable to gain adequate/
+acceptable pain control with functional impairment may wish to seek referral
+outside of The Gambia for surgical management.</span></p>
+<span lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+lang=EN-US style='font-size:12.0pt'>&nbsp;</span></b></p>
+<h2><span lang=EN-US>Key Issues for Nursing care</span></h2>
+<p class=MsoNormal><span lang=EN-US>Patients should be advised about weight
+loss and exercise. </span></p>
+<p class=MsoNormal><span lang=EN-US>Anyone with red, hot , or swollen joint
+should be seen/discussed with a doctor in OPD</span></p>
+<h2><span lang=EN-US>References</span></h2>
+<p class=MsoNormal><span lang=EN-US style='font-size:9.0pt;color:black;
+letter-spacing:.5pt'>Badlissi F.</span><span style='font-size:9.0pt;background:
+white'> Osteoarthritis. BMJ Best Practice. May 2018. Available from: </span><span
+lang=EN-US><a href="https://bestpractice.bmj.com/topics/en-us/192"><span
+lang=EN-GB style='font-size:9.0pt;background:white'>https://bestpractice.bmj.com/topics/en-us/192</span></a></span><span
+style='font-size:9.0pt;background:white'> Accessed: June 2018</span></p>
+<p class=MsoNormal><span style='font-size:9.0pt'>National Institute of Clinical
+excellence (NICE) clinical guideline [CG177] Osteoarthritis Care and Management
+February 2014</span></p>
+<div class="tableCont">
+  <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Written by:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Name: David Burgess</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Date: 01 June 2018</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Reviewed by:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Name: Fatai Akemokwe</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Date: 11 June 2018</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Version:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Change history:</span></b></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Review due date:</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>1.0</span></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>New document</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>31 July 2020</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>1.1</span></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Executive summary added</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>31 July 2020</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Review Comments (<i>if applicable)</i></span></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>&nbsp;</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>&nbsp;</span></b></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+</div>
+</div><!-- /content -->
+
+</div>
+
+</body>
+</html>

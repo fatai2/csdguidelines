@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html manifest="manifest.manifest">
+<head>
+	<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+	<title>MRCG Clinical Guidelines</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=1">
+  
+	<meta name=Generator content="Microsoft Word 14 (filtered)">
+	<link rel="manifest" href="/manifest.json">	
+<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="mystyle.css" />
+	<script src="jquery-1.11.1.min.js"></script>
+	<script src="jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="cordova.js"></script>
+	<script>
+	    		$(function(){
+			$("[data-role='header'], [data-role='footer']").toolbar();
+		});
+  	  $(document).one('pagebeforecreate', function () {
+	        $('input[data-type="search"]').val("");
+	    	        $.get("panel.html", function (data2) {
+            $.mobile.pageContainer.prepend(data2);
+              $("[data-role=panel]").panel().enhanceWithin();
+        }, "html");
+	           $.get("header.html", function (data) {
+      $.mobile.pageContainer.prepend(data);
+      $("[data-role='header']").toolbar().enhanceWithin();
+    }, "html");
+    $.get("footer.html", function (data) {
+      $.mobile.pageContainer.append(data);
+      $("[data-role='footer']").toolbar().enhanceWithin();
+    }, "html");
+        $('.WordSection1').wrap('<div role="main" class="ui-content">');
+        $('table').wrap('<div class="tableCont"></div>');
+        $('img').wrap('<div class="tableCont"></div>');
+        $.mobile.pageContainer.enhanceWithin();
+	  });
+	        $(document).bind( "pagechange", function( ) {
+        $('table').wrap('<div class="tableCont"></div>');
+        $('img').wrap('<div class="tableCont"></div>');
+        $('.tableCont').enhanceWithin();
+      } );
+			// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			document.getElementById("myBtn").style.display = "block";
+		  } else {
+			document.getElementById("myBtn").style.display = "none";
+		  }
+		}
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0; // For Safari
+		  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}</script>      
+	
+
+
+
+
+
+	
+
+
+
+  	
+</head>
+<body lang=EN-GB link=blue vlink=purple>
+	
+<div data-role="page">
+	<div role="main" class="ui-content">
+<div class=WordSection1>
+<h1><span lang=EN-US>Stroke</span></h1>
+<h2><i><span lang=EN-US>Executive summary</span></i></h2>
+<h2><span lang=EN-US>Introduction</span></h2>
+<p class=MsoNormal><span lang=EN-US>A stroke is the sudden loss of neurological
+function resulting from death of brain tissue from vascular occlusion or
+rupture. </span></p>
+<p class=MsoNormal><span lang=EN-US>Stroke is the second leading cause of death
+globally and the number one cause of functional disability. It is a feared
+complication of hypertension, diabetes mellitus and heart disease. </span></p>
+<p class=MsoNormal><span lang=EN-US>The gold standard for stroke treatment
+includes an early CT scan to rule out bleeding followed by thrombolysis. These
+are not readily available in The Gambia but should not prevent our patients
+from receiving the best possible care that is available. </span></p>
+<h3><span lang=EN-US style='font-size:12.0pt;text-decoration:none'>Target users</span></h3>
+<p class=MsoListParagraphCxSpFirst style='margin-left:39.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Doctors</span></p>
+<p class=MsoListParagraphCxSpLast style='margin-left:39.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Nurses</span></p>
+<h3><span lang=EN-US style='font-size:12.0pt;text-decoration:none'>Target area
+of use </span></h3>
+<p class=MsoListParagraphCxSpFirst style='margin-left:39.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Gate clinic</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:39.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Outpatient department</span></p>
+<p class=MsoListParagraphCxSpLast style='margin-left:39.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Ward</span></p>
+<h3><span lang=EN-US style='font-size:12.0pt;text-decoration:none'>Key areas of
+focus / New additions / Changes </span></h3>
+<p class=MsoNormal><span lang=EN-US>This guideline covers the diagnoses and
+management of stroke. It updates the previous guideline on acute stroke care.</span></p>
+<p class=MsoNormal><span lang=EN-US>Patients suspected to have suffered a
+stroke should be sent from the Gate Clinic to the ward for urgent review by a
+doctor.</span></p>
+<p class=MsoNormal><span lang=EN-US>The ROSIER score can assist the doctor in
+diagnosis if the presentation is unclear.</span></p>
+<p class=MsoNormal><span lang=EN-US>For patients presenting in Keneba, refer
+after emergency care.</span></p>
+<p class=MsoNormal><span lang=EN-US>Ideally, patients should have a
+non-contrast cranial CT scan to rule out haemorrhage. Treatment on the ward
+involves maintenance of hydration, management of intracranial pressure,
+antithrombotics (if ischaemic), DVT and pressure ulcer prophylaxis, physical
+therapy and other supportive care. In addition, patients with suspected SAH
+require sedation, analgesia, laxatives and possible early neurosurgical
+referral. </span></p>
+<p class=MsoNormal><span lang=EN-US>Post-discharge care should be planned in
+consultation with the patient and/or caregivers. This may include palliative
+care in patients with severe functional disability.</span></p>
+<h2><span lang=EN-US>Limitations</span></h2>
+<p class=MsoNormal><span lang=EN-US>CT scan and rehabilitation services may not
+be readily accessible to most patients. Thrombolysis for stroke is currently
+unavailable in The Gambia. </span></p>
+<h2><span lang=EN-US>Presenting symptoms and signs</span></h2>
+<p class=MsoNormal><span lang=EN-US>Stroke typically presents as sudden,
+rapidly peaking loss of neurological function. A history of sudden limb
+weakness, slurring of speech or visual deficits suggests a stroke or, if
+resolved within 24 hours, a transient ischaemic attack. Rarely, a stroke may
+present with only paraesthesia, balance problems or language problems.</span></p>
+<p class=MsoNormal><span lang=EN-US>Ask for head trauma within the past 3
+months.</span></p>
+<p class=MsoNormal><span lang=EN-US>If any of coma, neck stiffness, seizures,
+diastolic blood pressure &gt; 110 mmHg, vomiting, or headache is also present,
+the patient is more likely to have had a haemorrhagic type of stroke. A history
+of sudden severe headache and neck stiffness is in keeping with subarachnoid
+haemorrhage.</span></p>
+<p class=MsoNormal><span lang=EN-US>A history of only loss of consciousness or
+seizures suggests an alternative diagnosis. </span></p>
+<h2><span lang=EN-US>Examination findings</span></h2>
+<p class=MsoNormal><span lang=EN-US>Assess airway, breathing and circulation. Check
+the observations (</span><span lang=EN-US>HR, BP, RR, O<sub>2</sub> sats,
+Temperature).</span></p>
+<p class=MsoNormal><span lang=EN-US>Assess consciousness, then orientation in
+time, place and person. Observe for confusion and difficulty producing or
+understanding speech.</span></p>
+<p class=MsoNormal><span lang=EN-US>Check for neck stiffness which suggests
+subarachnoid haemorrhage.</span></p>
+<p class=MsoNormal><span lang=EN-US>Assess the pupils, eye movements and facial
+symmetry. If patient is conscious, ask them to protrude their tongue.  </span></p>
+<p class=MsoNormal><span lang=EN-US>Assess tone, power and reflexes across the
+limbs.</span></p>
+<p class=MsoNormal><span lang=EN-US>Observe the gait if the patient is able to
+walk.</span></p>
+<p class=MsoNormal><span lang=EN-US>Listen over the heart for rhythm, murmurs
+and over the neck for carotid bruit.</span></p>
+<h2><span lang=EN-US>Investigations</span></h2>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Blood glucose as soon as possible (Both hypo-
+and hyperglycaemia are stroke mimics. They also worsen stroke outcome)</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>CT Scan of the brain without contrast to rule
+out haemorrhage. This should be done same day if stable or next day (if
+available and affordable).</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Full Blood Count</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>ESR (helps exclude vasculitis in younger
+patients)</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Electrolytes, Urea and Creatinine</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Urinalysis</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>ECG (rule out atrial fibrillation)</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>CXR</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Sepsis screen (if fever develops)</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Clotting profile (if previously on warfarin)</span></p>
+<h2><span lang=EN-US style='font-size:11.0pt;font-weight:normal'>Aim to have
+acted on the results for the above tests (excluding cultures) in less than four
+hours.</span></h2>
+<span lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+lang=EN-US style='font-size:12.0pt'>&nbsp;</span></b></p>
+<h2><span lang=EN-US>Management </span></h2>
+<h3><span lang=EN-US>Management in Gate Clinic</span></h3>
+<p class=MsoNormal><span lang=EN-US>All patients with features of a possible
+stroke (recent onset of facial weakness, limb weakness or speech problems)
+should be referred immediately to the ward for urgent review by a doctor. </span></p>
+<h3><span lang=EN-US>Management on the Ward</span></h3>
+<p class=MsoNormal><u><span lang=EN-US>Assessment:</span></u></p>
+<p class=MsoNormal><span lang=EN-US>Use the ROSIER (Recognition of Stroke in
+the Emergency Room) score if uncertain of the diagnosis of stroke</span></p>
+<div class="tableCont">
+  <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=461 valign=top style='width:345.6pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US>Feature</span></b></p>
+  </td>
+  <td width=130 valign=top style='width:97.2pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><b><span lang=EN-US>Score</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=461 valign=top style='width:345.6pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US>Loss of consciousness or syncope</span></p>
+  </td>
+  <td width=130 valign=top style='width:97.2pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US>-1</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=461 valign=top style='width:345.6pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US>Seizure activity</span></p>
+  </td>
+  <td width=130 valign=top style='width:97.2pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US>-1</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=461 valign=top style='width:345.6pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US>Asymmetric facial weakness*</span></p>
+  </td>
+  <td width=130 valign=top style='width:97.2pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US>+1</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=461 valign=top style='width:345.6pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US>Asymmetric arm weakness*</span></p>
+  </td>
+  <td width=130 valign=top style='width:97.2pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US>+1</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=461 valign=top style='width:345.6pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US>Asymmetric leg weakness*</span></p>
+  </td>
+  <td width=130 valign=top style='width:97.2pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US>+1</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=461 valign=top style='width:345.6pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US>Speech disturbance*</span></p>
+  </td>
+  <td width=130 valign=top style='width:97.2pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US>+1</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=461 valign=top style='width:345.6pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US>Visual field defect*</span></p>
+  </td>
+  <td width=130 valign=top style='width:97.2pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US>+1</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class=MsoListParagraph><span lang=EN-US>*of recent sudden onset or noticed
+on waking from sleep</span></p>
+<p class=MsoNormal><span lang=EN-US>If the total ROSIER score is less than 1, a
+diagnosis of stroke is unlikely.</span></p>
+<p class=MsoNormal><span lang=EN-US>Consider other diagnosis if the patient is young,
+has gradual progression over days, is febrile or has papilloedema.</span></p>
+<p class=MsoNormal><u><span lang=EN-US>Treatment:</span></u></p>
+<p class=MsoNormal><u><span lang=EN-US>Starting at admission:</span></u></p>
+<p class=MsoListParagraphCxSpFirst style='margin-left:17.85pt;text-indent:-17.85pt;
+line-height:150%'><span lang=EN-US>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Hydrate initially with <b>IV normal saline</b>. </span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt;text-indent:-18.0pt;
+line-height:150%'><span lang=EN-US>a.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Nothing by mouth if dysarthric. Start on NG
+tube. Repeat <b>swallow test</b> daily for conscious patients.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:17.85pt;text-indent:
+-17.85pt;line-height:150%'><span lang=EN-US>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>If there are signs of<b> raised ICP,</b> give IV
+furosemide 40 mg bolus and IV mannitol 0.5 g/kg given over 20 minutes 4 - 6
+hourly. </span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:17.85pt;text-indent:
+-17.85pt;line-height:150%'><span lang=EN-US>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Antithrombotics: If CT scan rules out
+haemorrhage, commence <b>oral aspirin</b> at 300 mg daily for 4 weeks. For
+patients without a CT scan but unlikely to have haemorrhagic stroke, start
+aspirin on day 2 at 150 mg daily for 2 weeks. Reduce to 75 mg daily
+subsequently.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:17.85pt;text-indent:
+-17.85pt;line-height:150%'><span lang=EN-US>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>For suspected vasculitis (e.g raised ESR),
+consider starting 1 mg per kg prednisolone.</span></p>
+<p class=MsoListParagraphCxSpLast style='margin-left:17.85pt;text-indent:-17.85pt;
+line-height:150%'><span lang=EN-US>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>For stroke patients presenting in Keneba,
+commence emergency care and refer immediately. </span></p>
+<p class=MsoNormal style='line-height:150%'><u><span lang=EN-US>Starting after
+24 hours:</span></u></p>
+<p class=MsoListParagraphCxSpFirst style='margin-left:17.85pt;text-indent:-17.85pt;
+line-height:150%'><span lang=EN-US>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><b><span lang=EN-US>DVT prophylaxis</span></b><span lang=EN-US>
+with <b>heparin </b>after 2 days for immobile patients if hemorrhage is ruled
+out or unlikely.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:17.85pt;text-indent:
+-17.85pt;line-height:150%'><span lang=EN-US>7.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><b><span lang=EN-US>Early mobilization</span></b><span
+lang=EN-US> of the patient is encouraged but minimize within first 24 hours.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:17.85pt;text-indent:
+-17.85pt;line-height:150%'><span lang=EN-US>8.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><b><span lang=EN-US>Statins </span></b><span lang=EN-US>should be
+commenced after 48 hours if patient is able to obtain the drug.</span></p>
+<p class=MsoListParagraphCxSpLast style='margin-left:17.85pt;text-indent:-17.85pt;
+line-height:150%'><span lang=EN-US>9.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Treat <b>recurrent seizures</b> with oral
+carbamazepine or valproate. </span></p>
+<p class=MsoNormal style='line-height:150%'><u><span lang=EN-US>Ongoing
+supportive care</span></u></p>
+<p class=MsoListParagraphCxSpFirst style='margin-left:17.85pt;text-indent:-17.85pt;
+line-height:150%'><span lang=EN-US>10.<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><b><span lang=EN-US>Supplemental Oxygen</span></b><span
+lang=EN-US> should be given for patients with oxygen saturations below 94%.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:17.85pt;text-indent:
+-17.85pt;line-height:150%'><span lang=EN-US>11.<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Keep <b>systolic BP</b> below 180 mmHg with oral
+antihypertensives. Consider IV labetalol if systolic blood pressure is &gt;220
+mmHg</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:17.85pt;text-indent:
+-17.85pt;line-height:150%'><span lang=EN-US>12.<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Maintain <b>blood glucose</b> between 7.7 – 10
+mmol/l. Hypoglycaemia should be identified and treated promptly. Hyperglycaemia
+may require insulin therapy as discussed in the Diabetes Mellitus guideline. </span></p>
+<p class=MsoListParagraphCxSpLast style='margin-left:17.85pt;text-indent:-17.85pt;
+line-height:150%'><span lang=EN-US>13.<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Maintain normal <b>body temperature</b>. Fever
+&gt;37.5°C should be treated with paracetamol. Search for possible infections
+and do sepsis screening. Avoid indwelling catheters if feasible, otherwise
+monitor daily.</span></p>
+<p class=MsoNormal><u><span lang=EN-US>SAH:</span></u></p>
+<p class=MsoListParagraphCxSpFirst style='margin-left:17.85pt;text-indent:-17.85pt;
+line-height:150%'><span lang=EN-US>14.<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>For suspected or confirmed subarachnoid
+haemorrhage,  </span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt;text-indent:-18.0pt;
+line-height:150%'><span lang=EN-US>a.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Keep systolic BP below 130 mmHg with a calcium
+channel blocker but avoid hypotension</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt;text-indent:-18.0pt;
+line-height:150%'><span lang=EN-US>b.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Lactulose suspension to keep stools soft
+(prevents straining and raised ICP)</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt;text-indent:-18.0pt;
+line-height:150%'><span lang=EN-US>c.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Oral diazepam for light sedation</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt;text-indent:-18.0pt;
+line-height:150%'><span lang=EN-US>d.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Analgesics</span></p>
+<p class=MsoListParagraphCxSpLast style='margin-left:54.0pt;text-indent:-18.0pt;
+line-height:150%'><span lang=EN-US>e.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Consider early referral for neurosurgical
+management especially for unconscious patients or sudden deterioration</span></p>
+<span lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><u><span
+lang=EN-US><span style='text-decoration:none'>&nbsp;</span></span></u></b></p>
+<h3><span lang=EN-US>Discharge planning and Post-Discharge Care</span></h3>
+<p class=MsoNormal><span lang=EN-US>Discharge planning should involve the
+patient, their caregivers at home and the clinical team. Stroke patients should
+be discharged home when agreed-upon achievable goals of inpatient care have
+been reached and the home environment made safe. Patients with severe residual
+brain injury from stroke may require palliative care.</span></p>
+<p class=MsoNormal><span lang=EN-US>Assess functional independence at discharge
+</span></p>
+<p class=MsoNormal><span lang=EN-US>Plan safe care at home e.g sturdy
+arm-chairs resting against walls, wheelchairs, relocate patient to a
+ground-floor bedroom, install hand-holds on walls.</span></p>
+<p class=MsoNormal><span lang=EN-US>Explain stroke risk factors and
+prescriptions to the patient and caregivers.</span></p>
+<p class=MsoNormal><span lang=EN-US>Patients with persistent swallowing
+difficulties may be fed with thickened fluids if tolerated. For patients
+requiring nasogastric feeding, discuss feasibility of a PEG tube insertion.</span></p>
+<p class=MsoNormal><span lang=EN-US>Patient should be referred for physical and
+psychological rehabilitation services. Regardless of clinical recovery,
+patients with stroke should be advised not to drive for at least one month
+post-discharge.</span></p>
+<p class=MsoNormal><span lang=EN-US>Schedule first follow-up visit for 4 weeks
+after discharge but advise caregivers to present early if they notice any deterioration
+in the patient’s state.</span></p>
+<h2><span lang=EN-US>Key Issues for Nursing care</span></h2>
+<p class=MsoNormal><span lang=EN-US>Monitor vital signs every 4 hours. Call the
+doctor if: </span></p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Temperature &gt; 37.5, </span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Blood glucose &lt; 6 mmol/l or &gt; 10 mmol/l</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Systolic blood pressure &lt; 140 or &gt; 180 mmHg</span></p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>GCS drops by 1 point compared to last
+observation</span></p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Oxygen saturation &lt; 95%</span></p>
+<p class=MsoNormal><span lang=EN-US>Nurse in 30 degrees head up position with
+head in midline</span></p>
+<p class=MsoNormal><span lang=EN-US>Two-hourly turning and surveillance for
+pressure ulcers if unconscious/immobile</span></p>
+<p class=MsoNormal><span lang=EN-US>Suction oral cavity and airway as needed if
+unconscious</span></p>
+<p class=MsoNormal><span lang=EN-US>Strict fluid charts</span></p>
+<p class=MsoNormal><span lang=EN-US>Strict bed rest if SAH is suspected</span></p>
+<span lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+lang=EN-US style='font-size:12.0pt'>&nbsp;</span></b></p>
+<h2><span lang=EN-US>References</span></h2>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Prasad K, Kaul S,
+Padma MV, Gorthi SP, Khurana D, Bakshi A. Stroke management. Ann Indian Acad
+Neurol. 2011;14(Suppl 1):S82-96. </span></p>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Berkowitz AL.
+Managing acute stroke in low-resource settings. Bull World Health Organ.
+2016;94(7):554-6. </span></p>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Stroke and
+transient ischaemic attack in over 16s: diagnosis and initial management. NICE
+Guideline. March 2017</span></p>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Nor AM, Davis J,
+Sen B, Shipsey D, Louw SJ, Dyker AG, Davis M, Ford GA. The Recognition of
+Stroke in the Emergency Room (ROSIER) scale: development and validation of a
+stroke recognition instrument.Lancet Neurol. 2005 Nov;4(11):727-34.</span></p>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Medscape.
+Subarachnoid haemorrhage. Available at: </span><span lang=EN-US><a
+href="https://emedicine.medscape.com/article/1164341-overview"><span
+style='font-size:10.0pt'>https://emedicine.medscape.com/article/1164341-overview</span></a></span><span
+lang=EN-US style='font-size:10.0pt'> Accessed: 9<sup>th</sup> January 2019</span></p>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>&nbsp;</span></p>
+<div class="tableCont">
+  <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Written by:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Name: Fatai Akemokwe</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Date: 09 January 2019</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Reviewed by:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Name: Karen Forrest </span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Date: 14 January 2019</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Version:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Change history:</span></b></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Review due date:</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>1.0</span></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>New document</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>2.0</span></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Previous guideline was updated and transferred onto the new
+  template</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>31 January 2021</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>2.1</span></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Executive summary added</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>31 January 2021</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Review Comments (<i>if applicable)</i></span></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>&nbsp;</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>&nbsp;</span></b></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+</div>
+</div><!-- /content -->
+
+</div>
+
+</body>
+</html>

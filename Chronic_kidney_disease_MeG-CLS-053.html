@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html manifest="manifest.manifest">
+<head>
+	<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+	<title>MRCG Clinical Guidelines</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=1">
+	<meta name=Generator content="Microsoft Word 14 (filtered)">
+	<link rel="manifest" href="/manifest.json">	
+<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="mystyle.css" />
+	<script src="jquery-1.11.1.min.js"></script>
+	<script src="jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="cordova.js"></script>
+	<script>
+	    		$(function(){
+			$("[data-role='header'], [data-role='footer']").toolbar();
+		});
+  	  $(document).one('pagebeforecreate', function () {
+	        $('input[data-type="search"]').val("");
+	    	        $.get("panel.html", function (data2) {
+            $.mobile.pageContainer.prepend(data2);
+              $("[data-role=panel]").panel().enhanceWithin();
+        }, "html");
+	           $.get("header.html", function (data) {
+      $.mobile.pageContainer.prepend(data);
+      $("[data-role='header']").toolbar().enhanceWithin();
+    }, "html");
+    $.get("footer.html", function (data) {
+      $.mobile.pageContainer.append(data);
+      $("[data-role='footer']").toolbar().enhanceWithin();
+    }, "html");
+        $('.WordSection1').wrap('<div role="main" class="ui-content">');
+        $('table').wrap('<div class="tableCont"></div>');
+        $('img').wrap('<div class="tableCont"></div>');
+        $.mobile.pageContainer.enhanceWithin();
+	  });
+	        $(document).bind( "pagechange", function( ) {
+        $('table').wrap('<div class="tableCont"></div>');
+        $('img').wrap('<div class="tableCont"></div>');
+        $('.tableCont').enhanceWithin();
+      } );
+			// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			document.getElementById("myBtn").style.display = "block";
+		  } else {
+			document.getElementById("myBtn").style.display = "none";
+		  }
+		}
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0; // For Safari
+		  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}</script>      
+	
+	
+  
+   
+
+
+
+
+
+
+
+
+  
+
+</head>
+<body lang=EN-GB link=blue vlink=purple>
+
+<div data-role="page">
+	<div role="main" class="ui-content">
+<div class=WordSection1>
+<h1><span lang=EN-US>Chronic kidney disease</span></h1>
+<h2><i><span lang=EN-US>Executive summary</span></i></h2>
+<h2><span lang=EN-US>Introduction</span></h2>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+lang=EN-US style='color:black'>Chronic kidney disease (CKD) is a process that
+may progress over years and the end point of this process is renal failure.
+Early detection and management of CKD improves mortality, and morbidity and delays
+the point where dialysis is necessary which incur significant cost to the patient
+in terms of life expectancy, quality of life and finances. Most patients with
+CKD have a stable glomerular filtration rate (GFR), but an important minority
+deteriorate to end stage kidney failure. The early stage of CKD is usually
+asymptomatic, therefore must be detected by opportunistic testing of at-risk
+groups or acting on incidental findings. Preventive measures may be taken to
+slow the progression and minimise nephrotoxicity.</span></p>
+<h2><span lang=EN-US>Target users</span></h2>
+<p class=MsoListParagraphCxSpFirst style='margin-left:39.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Doctors</span></p>
+<p class=MsoListParagraphCxSpLast style='margin-left:39.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Nurses</span></p>
+<h2><span lang=EN-US>Target area of use </span></h2>
+<p class=MsoListParagraphCxSpFirst style='margin-left:39.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Outpatients</span></p>
+<p class=MsoListParagraphCxSpLast style='margin-left:39.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Ward</span></p>
+<h2><span lang=EN-US>Key areas of focus / New additions / Changes </span></h2>
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><span lang=EN-US style='color:black'>This
+guideline aims to address both management of the patient in chronic kidney
+failure, and the early detection of CKD and minimising modifiable risks for
+progression. </span></p>
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt'><span lang=EN-US style='color:black'>Conservative
+management can be provided in accordance with the patient and with consulting
+the palliative care guidelines for additional advice.</span></p>
+<h3><span lang=EN-US>Aims for CSD</span></h3>
+<p class=MsoListParagraphCxSpFirst style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='color:black'>Identification of patients
+at risk of CKD.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='color:black'>Classification of patients
+according to estimated GFR (or eGFR) with serum creatinine.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='color:black'>Urine reagent strip
+(dipstick) analysis for broad quantification of kidney damage.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='color:black'>Monitoring progression of
+CKD.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='color:black'>Optimisation
+of&nbsp;pharmacotherapy and hypertension management.</span></p>
+<p class=MsoListParagraphCxSpLast style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='color:black'>Early referral to
+nephrologists (at stage G4 or G3a with 3+ of protein on urine dipstick
+analysis)</span></p>
+<h2><span lang=EN-US>Limitations</span></h2>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+lang=EN-US style='color:black'>We cannot offer Renal Replacement Therapy (RRT)
+and patients must be referred to the EFSTH hospital early, in anticipation of
+deteriorating renal function, and at end stage renal failure. </span><span
+lang=EN-US><br clear=all style='page-break-before:always'>
+</span></p>
+<h2><span lang=EN-US>Presenting symptoms and signs</span></h2>
+<p class=MsoNormal><span lang=EN-US>Chronic kidney disease is asymptomatic in
+most patients until end-stage renal failure occurs.</span></p>
+<h2><span lang=EN-US>Examination findings</span></h2>
+<p class=MsoBodyText style='line-height:normal'><span style='font-family:"Arial","sans-serif";
+color:black'>Signs and symptoms of (end stage) kidney failure:</span></p>
+<p class=MsoBodyText style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:36.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:normal'><span
+style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial","sans-serif";color:black'>Acid-base
+or electrolyte abnormalities</span></p>
+<p class=MsoBodyText style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:36.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:normal'><span
+style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial","sans-serif";color:black'>Pruritis</span></p>
+<p class=MsoBodyText style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:36.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:normal'><span
+style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial","sans-serif";color:black'>Serositis
+(pericarditis, pleuritis)</span></p>
+<p class=MsoBodyText style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:36.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:normal'><span
+style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial","sans-serif";color:black'>Inability
+to control volume status or blood pressure (severe hypertension, pulmonary
+oedema)</span></p>
+<p class=MsoBodyText style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:36.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:normal'><span
+style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial","sans-serif";color:black'>Progressive
+deterioration in nutritional status refractory to dietary intervention</span></p>
+<p class=MsoBodyText style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:36.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:normal'><span
+style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial","sans-serif";color:black'>Cognitive
+impairment</span></p>
+<p class=MsoBodyText style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:36.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:normal'><span
+style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial","sans-serif";color:black'>Anaemia</span></p>
+<p class=MsoBodyText style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:36.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:normal'><span
+style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial","sans-serif";color:black'>Bone
+pains</span></p>
+<p class=MsoBodyText style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:36.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;line-height:normal'><span
+style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Arial","sans-serif";color:black'>Gastritis</span></p>
+<h2><span lang=EN-US>Management </span></h2>
+<h3><span lang=EN-US>Define ‘at risk’ patient groups:</span></h3>
+<p class=MsoNormal><span lang=EN-US>Patients with the following conditions
+should be screened for chronic kidney disease with serum creatinine and urine
+dipstick:</span></p>
+<p class=MsoListParagraphCxSpFirst style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Hypertension </span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Diabetes mellitus </span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Cardiovascular disease </span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Heart failure </span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Peripheral vascular disease </span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Ischaemic heart disease</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Cerebral vascular disease</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Acute kidney injury</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Family history of kidney disease</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Incidental findings of haematuria</span></p>
+<p class=MsoListParagraphCxSpLast style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Multisystem disease that involves the kidney
+(e.g. SLE). </span></p>
+<p class=MsoNormal><span lang=EN-US>Current evidence does not support the
+screening of unselected populations.</span></p>
+<h2 style='margin-top:0cm;line-height:18.85pt'><span lang=EN-US>Investigations</span></h2>
+<h3><span lang=EN-US>Serum Urea, Electrolytes and Creatinine:</span></h3>
+<p class=MsoNormal><span lang=EN-US>Serum creatinine levels are useful for
+estimating glomerular filtration rate. The CKD-EPI calculation gives better
+estimations in the early stages of CKD. There are reliable online calculators
+available e.g. <a
+href="https://www.mdcalc.com/ckd-epi-equations-glomerular-filtration-rate-gfr"><span
+style='color:black'>https://www.mdcalc.com/ckd-epi-equations-glomerular-filtration-rate-gfr</span></a></span></p>
+<p class=MsoNormal><span lang=EN-US>CKD is classified into 5 stages. Stages 1
+and 2 are defined by good GFR, but with markers of kidney damage e.g.
+albuminuria, abnormalities in urine sediment, histological abnormalities,
+structural abnormalities detected by imaging, history of kidney transplant, and
+electrolyte disorders that are due to tubular disorders.</span></p>
+<p class=MsoNormal><span lang=EN-US>Stages 3a, 3b, 4 and 5 are defined by GFR
+of less than 60 ml/min/1.73m<sup>2</sup> with or without the evidence of kidney
+damage. </span></p>
+<p class=MsoNormal><span lang=EN-US>This diagnosis must be made from at least 3
+instances of investigations with at least 90 days between the first and last
+tests.</span></p>
+<div class="tableCont">
+  <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=601
+ style='width:450.5pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=601 colspan=3 valign=top style='width:450.5pt;border:none;
+  border-bottom:inset black 1.0pt;padding:2.4pt 24.0pt 2.4pt -1.1pt'><b><u><span
+  lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
+  clear=all style='page-break-before:always'>
+  </span></u></b>
+  <h3><span lang=EN-US>GFR categories</span></h3>
+  </td>
+ </tr>
+ <tr>
+  <td width=132 valign=top style='width:99.25pt;border:inset black 1.0pt;
+  border-top:none;padding:2.4pt 24.0pt 2.4pt -1.1pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  lang=EN-US>GFR category</span></b></p>
+  </td>
+  <td width=198 valign=top style='width:148.85pt;border-top:none;border-left:
+  none;border-bottom:inset black 1.0pt;border-right:inset black 1.0pt;
+  padding:2.4pt 24.0pt 2.4pt -1.1pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  lang=EN-US>GFR (ml/min/1.73&nbsp;m<sup>2</sup>)</span></b></p>
+  </td>
+  <td width=270 valign=top style='width:202.4pt;border-top:none;border-left:
+  none;border-bottom:inset black 1.0pt;border-right:inset black 1.0pt;
+  padding:2.4pt 24.0pt 2.4pt -1.1pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  lang=EN-US>Terms</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=132 valign=top style='width:99.25pt;border:inset black 1.0pt;
+  border-top:none;padding:2.4pt 24.0pt 2.4pt -1.1pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center'><span lang=EN-US>G1</span></p>
+  </td>
+  <td width=198 valign=top style='width:148.85pt;border-top:none;border-left:
+  none;border-bottom:inset black 1.0pt;border-right:inset black 1.0pt;
+  padding:2.4pt 24.0pt 2.4pt -1.1pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center'><span lang=EN-US>&gt;90</span></p>
+  </td>
+  <td width=270 valign=top style='width:202.4pt;border-top:none;border-left:
+  none;border-bottom:inset black 1.0pt;border-right:inset black 1.0pt;
+  padding:2.4pt 24.0pt 2.4pt -1.1pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center'><span lang=EN-US>Normal or high</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=132 valign=top style='width:99.25pt;border:inset black 1.0pt;
+  border-top:none;padding:2.4pt 24.0pt 2.4pt -1.1pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center'><span lang=EN-US>G2</span></p>
+  </td>
+  <td width=198 valign=top style='width:148.85pt;border-top:none;border-left:
+  none;border-bottom:inset black 1.0pt;border-right:inset black 1.0pt;
+  padding:2.4pt 24.0pt 2.4pt -1.1pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center'><span lang=EN-US>60–89</span></p>
+  </td>
+  <td width=270 valign=top style='width:202.4pt;border-top:none;border-left:
+  none;border-bottom:inset black 1.0pt;border-right:inset black 1.0pt;
+  padding:2.4pt 24.0pt 2.4pt -1.1pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center'><span lang=EN-US>Mildly decreased</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=132 valign=top style='width:99.25pt;border:inset black 1.0pt;
+  border-top:none;padding:2.4pt 24.0pt 2.4pt -1.1pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center'><span lang=EN-US>G3a</span></p>
+  </td>
+  <td width=198 valign=top style='width:148.85pt;border-top:none;border-left:
+  none;border-bottom:inset black 1.0pt;border-right:inset black 1.0pt;
+  padding:2.4pt 24.0pt 2.4pt -1.1pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center'><span lang=EN-US>45–59</span></p>
+  </td>
+  <td width=270 valign=top style='width:202.4pt;border-top:none;border-left:
+  none;border-bottom:inset black 1.0pt;border-right:inset black 1.0pt;
+  padding:2.4pt 24.0pt 2.4pt -1.1pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center'><span lang=EN-US>Mildly to moderately decreased</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=132 valign=top style='width:99.25pt;border:inset black 1.0pt;
+  border-top:none;padding:2.4pt 24.0pt 2.4pt -1.1pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center'><span lang=EN-US>G3b</span></p>
+  </td>
+  <td width=198 valign=top style='width:148.85pt;border-top:none;border-left:
+  none;border-bottom:inset black 1.0pt;border-right:inset black 1.0pt;
+  padding:2.4pt 24.0pt 2.4pt -1.1pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center'><span lang=EN-US>30–44</span></p>
+  </td>
+  <td width=270 valign=top style='width:202.4pt;border-top:none;border-left:
+  none;border-bottom:inset black 1.0pt;border-right:inset black 1.0pt;
+  padding:2.4pt 24.0pt 2.4pt -1.1pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center'><span lang=EN-US>Moderately to severely decreased</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=132 valign=top style='width:99.25pt;border:inset black 1.0pt;
+  border-top:none;padding:2.4pt 24.0pt 2.4pt -1.1pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center'><span lang=EN-US>G4</span></p>
+  </td>
+  <td width=198 valign=top style='width:148.85pt;border-top:none;border-left:
+  none;border-bottom:inset black 1.0pt;border-right:inset black 1.0pt;
+  padding:2.4pt 24.0pt 2.4pt -1.1pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center'><span lang=EN-US>15–29</span></p>
+  </td>
+  <td width=270 valign=top style='width:202.4pt;border-top:none;border-left:
+  none;border-bottom:inset black 1.0pt;border-right:inset black 1.0pt;
+  padding:2.4pt 24.0pt 2.4pt -1.1pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center'><span lang=EN-US>Severely decreased (<b>R</b>)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=132 valign=top style='width:99.25pt;border:inset black 1.0pt;
+  border-top:none;padding:2.4pt 24.0pt 2.4pt -1.1pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center'><span lang=EN-US>G5</span></p>
+  </td>
+  <td width=198 valign=top style='width:148.85pt;border-top:none;border-left:
+  none;border-bottom:inset black 1.0pt;border-right:inset black 1.0pt;
+  padding:2.4pt 24.0pt 2.4pt -1.1pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center'><span lang=EN-US>&lt;15</span></p>
+  </td>
+  <td width=270 valign=top style='width:202.4pt;border-top:none;border-left:
+  none;border-bottom:inset black 1.0pt;border-right:inset black 1.0pt;
+  padding:2.4pt 24.0pt 2.4pt -1.1pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center'><span lang=EN-US>Kidney failure (<b>R</b>)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=601 colspan=3 valign=top style='width:450.5pt;border:none;
+  padding:2.4pt 24.0pt 2.4pt -1.1pt'>
+  <p class=MsoNormal><span lang=EN-US>Abbreviations: CKD, chronic kidney
+  disease; GFR, glomerular filtration rate, <b>R</b>- refer to EFSTH</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class=MsoNormal><span lang=EN-US>Progression of CKD is the sustained
+decrease in GFR of 25% or more with a change in GFR category within 12 months, <b>or
+</b>a sustained decrease in GFR of 15 ml/min/1.73 m<sup>2</sup> per year.</span></p>
+<h3><span lang=EN-US>Dipstick Urinalysis</span></h3>
+<p class=MsoListParagraphCxSpFirst style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span lang=EN-US>Proteinuria</span></b><span lang=EN-US>: Test
+for proteinuria in patients in the at-risk groups, and patients with abnormal
+serum creatinine. Urine dipstick testing should occur at each appointment in
+patients in groups G3a –G5 (eGFR &lt; 60 ml/min). Although urine
+albumin-creatinine ratio is the ideal test for proteinuria, dipstick testing of
+random urine samples is most practical for the OPD.</span></p>
+<p class=MsoListParagraphCxSpLast style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span lang=EN-US>Haematuria</span></b><span lang=EN-US>: The
+presence of 1+ or more of blood in urine is considered significant and should
+be investigated further. Urine microscopy is not required to test or confirm
+diagnosis. Invisible haematuria is confirmed with 2 out of 3 positive urine
+analysis dipstick tests in separate clinic appointments. Investigate patients
+with persistent invisible haematuria for urinary tract malignancy in the
+appropriate age groups. Patients with invisible haematuria with proteinuria
+should be followed up with annual repeat testing for as long as the haematuria
+continues</span></p>
+<h3><span lang=EN-US>Haemoglobin</span></h3>
+<p class=MsoNormal><span lang=EN-US style='color:black'>Check the haemoglobin
+level in people with a GFR of less than 45 ml/min/1.73 m<sup>2</sup> to
+identify anaemia (haemoglobin less than 11 g/dl).</span></p>
+<h3><span lang=EN-US>Serum calcium and phosphate</span></h3>
+<p class=MsoNormal><span lang=EN-US style='color:black'>Low calcium and high
+phosphate levels may be seen in patients in end stage renal disease.</span></p>
+<span lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><u><span
+lang=EN-US><span style='text-decoration:none'>&nbsp;</span></span></u></b></p>
+<h3><span lang=EN-US>Renal ultrasound</span></h3>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+lang=EN-US style='color:black'>Perform renal ultrasound if there is:</span></p>
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal style='color:black;margin-bottom:0cm;margin-bottom:.0001pt'><span
+     lang=EN-US>accelerated progression of CKD</span></li>
+ <li class=MsoNormal style='color:black;margin-bottom:0cm;margin-bottom:.0001pt'><span
+     lang=EN-US>Haematuria or persisting invisible haematuria</span></li>
+ <li class=MsoNormal style='color:black;margin-bottom:0cm;margin-bottom:.0001pt'><span
+     lang=EN-US>Urinary tract obstruction</span></li>
+ <li class=MsoNormal style='color:black;margin-bottom:0cm;margin-bottom:.0001pt'><span
+     lang=EN-US>Family history of polycystic kidney disease </span></li>
+ <li class=MsoNormal style='color:black;margin-bottom:0cm;margin-bottom:.0001pt'><span
+     lang=EN-US>GFR of &lt;30 ml/min/1.73m<sup>2</sup> (G4 or G5)</span></li>
+</ul>
+<h2 style='margin-top:0cm;line-height:18.85pt'><span lang=EN-US>Treatment</span></h2>
+<p class=MsoNormal><span lang=EN-US>At all stages, it is important to involve
+the patient in shared decision making, discussing the implications of diagnosis
+and prognosis, as well as preference for invasive treatment or conservative
+management</span></p>
+<h3><span lang=EN-US>Hypertension</span></h3>
+<p class=MsoNormal><span lang=EN-US>Control systolic blood pressure in the
+target range of 120 - 139 mmHg and keep diastolic blood pressure below 90 mmHg.
+In those with diabetes, aim for tighter blood pressure control with target
+systolic BP of 120 – 130 mmHg and diastolic BP of &lt; 80 mmHg. Refer to the
+CSD hypertension guideline for more information on controlling blood pressure.</span></p>
+<p class=MsoListParagraphCxSpFirst style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Single renin - angiotensin system antagonists
+may be used (do not combine renin - angiotensin system antagonists): these
+include ACE inhibitors and spironolactone.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Monitor potassium levels and withhold treatment
+if Potassium &gt;6 mmol/l. </span></p>
+<p class=MsoListParagraphCxSpLast style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Check GFR when starting or increasing dose of
+renin - angiotensin system antagonist. A deterioration of less than 25% is
+acceptable. If the eGFR change is 25% or more, or the change in serum
+creatinine is 30% or more, investigate other causes of deterioration in renal
+function, such as volume depletion or concurrent medication (for example,
+NSAIDs).If no other cause for the deterioration in renal function is found,
+stop the renin–angiotensin system antagonist or reduce the dose to a previously
+tolerated lower dose, and add an alternative antihypertensive medication if
+required.</span></p>
+<h3><span lang=EN-US>Reduce nephrotoxic medication burden:</span></h3>
+<p class=MsoNormal><span lang=EN-US>Avoid giving the following drugs if
+possible:</span></p>
+<p class=MsoListParagraphCxSpFirst style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='color:black'>Antimicrobials: Vancomycin,
+Quinolones, Aminoglycosides</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='color:black'>NSAIDS, Methotrexate</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='color:black'>ACE- Inhibitors, Angiotensin
+Receptor Blocker, Renin Inhibitor</span></p>
+<p class=MsoListParagraphCxSpLast style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='color:black'>Statins - Offer atorvastatin
+20 mg for the primary or secondary prevention of CVD to people with CKD.
+Increase the dose if less than 40% reduction in non‑HDL cholesterol is achieved
+and eGFR is 30 ml/min/1.73 m<sup>2</sup> or more. Do not give in patients with
+eGFR &lt; 30 ml/min/1.73 m<sup>2</sup>.</span></p>
+<h3><span lang=EN-US>Lifestyle advice:</span></h3>
+<p class=MsoListParagraphCxSpFirst style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='color:black'>Encourage exercise, aim for
+healthy weight, stop smoking.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='color:black'>Dietary advice regarding
+calorie, salt, potassium and phosphate levels appropriate to the severity of
+CKD.</span></p>
+<p class=MsoListParagraphCxSpLast style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='color:black'>Low protein diet should <b>not</b>
+be recommended.</span></p>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+lang=EN-US style='color:black'>&nbsp;</span></p>
+<h3><span lang=EN-US>Acute Kidney Injury (AKI):</span></h3>
+<p class=MsoNormal><span lang=EN-US>Patients with CKD are more likely to
+develop AKI than the normal population. AKI may also lead to progression of CKD</span></p>
+<p class=MsoNormal><span lang=EN-US>AKI in the background of CKD should not be
+managed with diuretics </span></p>
+<p class=MsoNormal><span lang=EN-US>The prognosis is poor for patients with AKI
+in end stage kidney disease. This is an emergency and should lead to an<i> </i>urgent
+referral of the patient to EFSTH following stabilisation, or conservative
+management.</span></p>
+<h3><span lang=EN-US>Anaemia</span></h3>
+<p class=MsoNormal><span lang=EN-US>Iron replacement therapy is often effective
+in anaemia of CKD. Erythropoietin may be needed in later stages.</span></p>
+<h3><span lang=EN-US>Hypocalcaemia</span></h3>
+<p class=MsoNormal><span lang=EN-US>Hypocalcaemia in patients with GFR &lt; 30
+ml/min/1.73m<sup>2</sup> (stage G4 or G5) should be treated with cholecalciferol
+as  hypocalcaemia results from Vitamin D deficiency.</span></p>
+<h2><span lang=EN-US>Referral to EFSTH</span></h2>
+<p class=MsoNormal><span lang=EN-US>Referral criteria include:</span></p>
+<p class=MsoListParagraphCxSpFirst style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>GFR &lt; 60 ml/min/1.73m<sup>2</sup> AND
+visible/persistent invisible haematuria </span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>GFR &lt; 45 ml/min/1.73m<sup>2</sup> with at
+least 1+ proteinuria</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>GFR &lt; 30 ml/min/1.73m<sup>2</sup> (category
+G4/G5)</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Sustained decrease in GFR of &gt; 15
+ml/min/1.73m<sup>2</sup> over 12 months</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Sustained decrease of 25% in GFR and a change in
+GFR category within 12 months</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Suspected genetic or rare causes of CKD</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Suspected renal artery stenosis</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>AKI with a background of End Stage CKD
+(emergency)</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Uraemic features such as gastritis,
+pericarditis, pleuritis and encephalopathy</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>CKD and Hypertension refractory to treatment
+with 4 or more antihypertensive agents</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Nephrolithiasis</span></p>
+<p class=MsoListParagraphCxSpLast style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Persistent abnormalities in serum potassium.</span></p>
+<p class=MsoNormal><span lang=EN-US>Referral should be made to EFSTH
+Nephrologist via the Accident and Emergency Department.</span></p>
+<p class=MsoListParagraphCxSpFirst style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Stabilise medical conditions such as
+hyperkalaemia, uraemic symptoms, acidosis and fluid overload before ambulance
+transfer.</span></p>
+<p class=MsoListParagraphCxSpLast style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>If possible, address correspondence to EFSTH
+renal physicians for referral and long-term management plan. </span></p>
+<span lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+lang=EN-US style='font-size:12.0pt'>&nbsp;</span></b></p>
+<div class="tableCont">
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+style='font-size:14.0pt'><img width=576 height=268 id="Picture 3"
+src="ckd_image001.png"></span></b></p>
+</div>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+lang=EN-US>&nbsp;</span></p>
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+lang=EN-US><br clear=all style='page-break-before:always'>
+</span><b><span lang=EN-US style='font-size:12.0pt'>&nbsp;</span></b></p>
+<br clear=ALL>
+<h2><span lang=EN-US>Key Issues for Nursing care</span></h2>
+<p class=MsoListParagraphCxSpFirst style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Monitoring of urine output is essential.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Daily review of fluid management.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Oral intake is encouraged.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Good skin care should be practiced in patients
+with peripheral oedema.</span></p>
+<p class=MsoListParagraphCxSpMiddle style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Patient mobility and self-care should be
+actively encouraged.</span></p>
+<p class=MsoListParagraphCxSpLast style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Patients should continue to eat a balanced diet,
+and certain foods containing high amounts of potassium, such as bananas should
+be avoided.</span></p>
+<h2><span lang=EN-US>References</span></h2>
+<p class=MsoNormal><span lang=EN style='font-size:10.0pt;color:black'>Kerr M,
+Bray B, Medcalf J et al. (2012) Estimating the financial cost of chronic kidney
+disease to the NHS in England. Nephrology Dialysis Transplantation. 27 (Suppl.
+3): iii73–80]</span></p>
+<p class=MsoNormal><span lang=EN style='font-size:10.0pt;color:black'>National
+Institute for Health and Care Excellence (2015) <i>Chronic kidney disease in
+adults: assessment and management </i>Clinical guideline [CG182] (available at </span><span
+lang=EN-US><a href="https://www.nice.org.uk/guidance/cg182%20accessed%201/11/18"><span
+class=InternetLink><span lang=EN style='font-size:10.0pt;color:black'>https://www.nice.org.uk/guidance/cg182
+accessed 1/11/18</span></span></a></span><span lang=EN style='font-size:10.0pt;
+color:black'>)</span></p>
+<p class=MsoNormal><span lang=EN style='font-size:10.0pt;color:black'>Kidney
+disease improving global outcomes (KDIGO): 2012 Clinical Practice Guideline for
+the Evaluation and Management of Chronic Kidney Disease. (available at </span><span
+lang=EN-US><a
+href="http://www.kdigo.org/clinical_practice_guidelines/pdf/CKD/KDIGO_2012_CKD_GL.pdf"><span
+class=InternetLink><span lang=EN style='font-size:10.0pt;color:black'>http://www.kdigo.org/clinical_practice_guidelines/pdf/CKD/KDIGO_2012_CKD_GL.pdf</span></span></a></span><span
+lang=EN style='font-size:10.0pt;color:black'> (accessed 1/11/18)</span></p>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt;color:black'>Rule
+AD, Larson TS, Bergstralh EJ, et al; Using serum creatinine to estimate glomerular
+filtration rate: accuracy in good health and in chronic kidney disease. Ann
+Intern Med. 2004 Dec 21;141(12):929-37. </span></p>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt;color:black'>Levey
+AS et al; A new equation to estimate glomerular filtration rate. Ann Intern
+Med. 2009 May 5;150(9):604-12.</span></p>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt;color:black'>Inker
+LA et al; Estimating glomerular filtration rate from serum creatinine and
+cystatin C. N Engl J Med. 2012 Jul 5;367(1):20-9. doi: 10.1056/NEJMoa1114248.</span></p>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt;color:black'>Boulware
+LE, Jaar BG, Tarver-Carr ME et al. Screening for proteinuria in US adults: a
+cost-effectiveness analysis. JAMA 2003; 290: 3101–3114.</span></p>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt;color:black'>White
+SL, Yu R, Craig JC et al. Diagnostic accuracy of urine dipsticks for detection
+of albuminuria in the general community. Am J Kidney Dis 2011; 58: 19–28.</span></p>
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt;color:black'>Lamb
+EJ, MacKenzie F, Stevens PE. How should proteinuria be detected and measured?
+Ann Clin Biochem 2009; 46: 205–217.</span></p>
+<div class="tableCont">
+  <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US style='color:black'>Written by:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US style='color:black'>Name: Thomas Sammut</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph'><span lang=EN-US style='color:black'>Date:
+  29 November 2018 </span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US style='color:black'>Reviewed by:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US style='color:black'>Name: Fatai Akemokwe</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph'><span lang=EN-US style='color:black'>Date:
+  04 February 2019 </span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US style='color:black'>Version:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US style='color:black'>Change history:</span></b></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US style='color:black'>Review due date:</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US style='color:black'>1.0</span></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US style='color:black'>New document</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US style='color:black'>31 May 2021</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US style='color:black'>Review Comments (<i>if applicable)</i></span></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US style='color:black'>&nbsp;</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US style='color:black'>&nbsp;</span></b></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class=MsoNormal><span style='color:black'>&nbsp;</span></p>
+</div>
+</div><!-- /content -->
+
+</div>
+
+</body>
+</html>
