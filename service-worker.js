@@ -29,8 +29,6 @@
         // generate the list of possible URLs that a user might load.               
                 '/', // do not remove this
 				'/index.html', //default
-                '/index.html?homescreen=1', //default
-                '/?homescreen=1', //default
 				'/Acute_kidney_injury_MeG-CLS-071.html',
 				'/Acute_rheumatic_fever__MeG-CLS-048.html',
 				'/Acute_rheumatic_fever__MeG-CLS-048.zip',
