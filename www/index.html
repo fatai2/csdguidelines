@@ -1,13 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html manifest="manifest.manifest">
 <head>
 	<title>MRCG Clinical Guidelines</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=1">
 	<meta name=Generator content="Microsoft Word 14 (filtered)">
+	<link rel="icon" href="MRC_Icon.png">
 	<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="jquery.mobile.structure-1.4.5.min.css" />
 	<script src="jquery-1.11.1.min.js"></script>
 	<script src="jquery.mobile-1.4.5.min.js"></script>
-	<script type="text/javascript" src="cordova.js"></script>      
+	<script type="text/javascript" src="cordova.js"></script>
+	<script>
+	    		$(function(){
+			$("[data-role='header'], [data-role='footer']").toolbar();
+		});
+  	  $(document).one('pagebeforecreate', function () {
+	        $('input[data-type="search"]').val("");
+	    	        $.get("panel.html", function (data2) {
+            $.mobile.pageContainer.prepend(data2);
+              $("[data-role=panel]").panel().enhanceWithin();
+        }, "html");
+	           $.get("header.html", function (data) {
+      $.mobile.pageContainer.prepend(data);
+      $("[data-role='header']").toolbar().enhanceWithin();
+    }, "html");
+    $.get("footer.html", function (data) {
+      $.mobile.pageContainer.append(data);
+      $("[data-role='footer']").toolbar().enhanceWithin();
+    }, "html");
+        $('.WordSection1').wrap('<div role="main" class="ui-content">');
+        $('table').wrap('<div class="tableCont"></div>');
+        $('img').wrap('<div class="tableCont"></div>');
+        $.mobile.pageContainer.enhanceWithin();
+	  });
+	        $(document).bind( "pagechange", function( ) {
+        $('table').wrap('<div class="tableCont"></div>');
+        $('img').wrap('<div class="tableCont"></div>');
+        $('.tableCont').enhanceWithin();
+      } );
+	</script>
+	<!-- register service worker -->
+        <script>
+          if ('serviceWorker' in navigator)
+          {
+          window.addEventListener('load', function() {
+            navigator.serviceWorker.register('/service-worker.js')
+            .then(function() { console.log("Service Worker Registered, Cheers to PWA Fire!"); });
+          }
+          );
+        }
+        </script>
+ <!-- end of service worker -->
+
 	<style>
 	.show {display: block;}
 	.tablist-left {
@@ -37,6 +81,18 @@
 .footer-button-right {
     right: 0.4em;
 }
+    .ui-panel.ui-panel-open {
+        position:fixed;
+    }
+    .ui-panel-inner {
+        position: absolute;
+        top: 5.5em;
+        left: 0;
+        right: 0;
+        bottom: 0px;
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
 <!--
  /* Font Definitions */
  @font-face
@@ -253,14 +309,6 @@ ul
 }
   </style>
   	<script>
-		$(function(){
-			$( "[data-role='header'], [data-role='footer']" ).toolbar();
-			$('input[data-type="search"]').val("");			
-		});
-			$("#main").load('guideList.html', function(){
-			$("#popupNested").trigger('create');
-		});
-
 		// When the user scrolls down 20px from the top of the document, show the button
 		window.onscroll = function() {scrollFunction()};
 		function scrollFunction() {
@@ -276,23 +324,13 @@ ul
 		  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 		}
 	</script>
-
-
 </head>
 <body lang=EN-GB link=blue vlink=purple>
-	<div data-role="header" data-tap-toggle="false" data-id="persistent-header" data-position="fixed" data-theme="a">
-		<h2 style="font-size:0.75em;">MRCG<br>Clinical Guidelines<br></h2>
-		<a data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-mini header-button-left ui-icon-carat-l ui-btn-icon-notext">Back</a>
-		<a href="#leftpanel1" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-mini header-button-left ui-icon-info ui-btn-icon-notext">About this app</a>
-		<a href="#popupNested" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-bars ui-btn-icon-right ui-btn-b header-button-right" data-transition="pop">Choose a guideline.</a>
-		<div data-role="popup" id="popupNested" data-theme="a">
+  
 
-		</div>
-	</div>
-	 
-    </div><!-- /header -->
+    <!-- /header -->
 <div data-role="page">
-	<div role="main" class="ui-content">
+
 <div class=WordSection1>
 <h1><span lang=EN-US>Introduction to Clinical Services Department (CSD)
 guidelines</span></h1>
@@ -348,7 +386,7 @@ clear=all style='page-break-before:always'>
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
 lang=EN-US style='font-size:12.0pt'>&nbsp;</span></b></p>
 <h2><span lang=EN-US>Abbreviations</span></h2>
-<div class="tableCont">
+<div>
   <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=595
  style='width:446.55pt;border-collapse:collapse'>
  <tr style='height:15.0pt'>
@@ -2236,7 +2274,7 @@ clear=all style='page-break-before:always'>
 </span>
 <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
 lang=EN-US>&nbsp;</span></p>
-<div class="tableCont">
+<div>
   <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
  style='border-collapse:collapse;border:none'>
  <tr style='height:1.0pt'>
@@ -2355,18 +2393,8 @@ lang=EN-US>&nbsp;</span></p>
 </div>
 <p class=MsoNormal><span style='color:black'>&nbsp;</span></p>
 </div>
-</div><!-- /content -->
-<div data-role="panel" data-position="right" data-display="overlay" data-position-fixed="true" data-theme="b" id="leftpanel1">
-	<a href="#" data-rel="close" data-theme="b" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-  <h1>About this app</h1>
-  <div>
-    This app is designed to provide doctors and nurses with quick access to the clinical guidelines of the Clinical Services Department of the MRC Unit The Gambia at LSHTM. <br>Users will be notified of updates via departmental email. <br>For feedback or support, email fakemokwe@mrc.gm
-  </div>
+
 </div>
-</div>
-<div data-role="footer" data-tap-toggle="false" data-id="persistent-footer" data-position="fixed" data-theme="a">
-  <a href="index.html" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-home">Home</a>
-  <a href="#" onclick="topFunction()" id="myBtn" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-u">Top</a>  
-</div>
+
 </body>
 </html>
