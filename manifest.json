@@ -1,13 +1,11 @@
-{
-  "name": "CSD Guidelines",
-  "short_name": "CSD Guidelines",
-  "theme_color": "#1375c3",
-  "background_color": "#b4b4b4",
-  "display": "standalone",
-  "scope": "/",
-  "start_url": "/index.html",
-  "description": "Designed for quick offline access when added to home screen",
-  "lang": "en-GB",
+{"display" : "standalone",
+    "orientation" : "portrait-primary",
+    "lang" : "English",
+    "scope" : "/",
+    "start_url" : "/index.html",
+    "description" : "This app is designed to provide doctors and nurses with quick access to the clinical guidelines of the Clinical Services Department of the MRC Unit The Gambia at LSHTM. It does not need an internet connection. Users will be notified of updates via departmental email. For feedback or support, email fakemokwe@mrc.gm",
+    "short_name" : "CSD Guidelines",
+    "name" : "CSD Guidelines",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
