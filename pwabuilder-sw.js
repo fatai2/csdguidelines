@@ -3,7 +3,7 @@
 const CACHE = "pwabuilder-precache";
 const precacheFiles = [
   /* Add an array of files to precache for your app */
-  /', // do not remove this
+  '/', // do not remove this
 				'/index.html', //default
 				'/Acute_kidney_injury_MeG-CLS-071.html',
 				'/Acute_rheumatic_fever__MeG-CLS-048.html',
