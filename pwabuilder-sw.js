@@ -7,7 +7,6 @@ const precacheFiles = [
 				'./index.html', //default
 				'./Acute_kidney_injury_MeG-CLS-071.html',
 				'./Acute_rheumatic_fever__MeG-CLS-048.html',
-				'./Acute_rheumatic_fever__MeG-CLS-048.zip',
 				'./Animal_bites_MeG-CLS-049.html',
 				'./asthma_image001.png',
 				'./asthma_image002.png',
@@ -18,7 +17,6 @@ const precacheFiles = [
 				'./Chest_pain_and_Acute_Coronary_Syndrome_MeG-CLS-052.html',
 				'./Chronic_kidney_disease_MeG-CLS-053.html',
 				'./ckd_image001.png',
-				'./config.xml',
 				'./Congenital_heart_disease_MeG-CLS-039.html',
 				'./Constipation_MeG-CLS-003.html',
 				'./COPD_MeG-CLS-032.html',
