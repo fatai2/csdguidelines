@@ -83,7 +83,7 @@ const precacheFiles = [
 				'/Rheumatic_heart_disease_MeG-CLS-065.html',
 				'/Scabies_MeG-CLS-066.html',
 				'/Sepsis_in_adults_MeG-CLS-043.html',
-				'/pwabuilder-sw.js',
+				// '/pwabuilder-sw.js',
 				'/Sinusitis_MeG-CLS-062.html',
 				'/splash.9.png',
 				'/Stevens-Johnsons_syndrome_MeG-CLS-067.html',
