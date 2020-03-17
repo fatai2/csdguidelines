@@ -11,19 +11,19 @@
                     <key>kind</key>
                     <string>software-package</string>
                     <key>url</key>
-                    <string>https://www.anysite.com/application/your_app.ipa</string>
+                    <string>https://fatai2.github.io/csdguidelines/ios/CSDGuidelines.3568288.60.ipa</string>
                 </dict>
             </array>
             <key>metadata</key>
             <dict>
                 <key>bundle-identifier</key>
-                <string>com.example.helloworld</string>
+                <string>com.gmail.drfatai998.csdguidelines</string>
                 <key>bundle-version</key>
-                <string>1.0.0</string>
+                <string>1.2.0</string>
                 <key>kind</key>
                 <string>software</string>
                 <key>title</key>
-                <string>HELLO</string>
+                <string>CSD Guidelines</string>
             </dict>
         </dict>
     </array>
