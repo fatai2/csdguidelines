@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html manifest="manifest.manifest">
+<head>
+	<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+	<title>MRCG Clinical Guidelines</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=1">
+  
+	<meta name=Generator content="Microsoft Word 14 (filtered)">
+	<link rel="manifest" href="/manifest.json">	
+	<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="mystyle.css" />
+	<script src="jquery-1.11.1.min.js"></script>
+	<script src="jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="cordova.js"></script>
+	<script>
+	    		$(function(){
+			$("[data-role='header'], [data-role='footer']").toolbar();
+		});
+  	  $(document).one('pagebeforecreate', function () {
+	        $('input[data-type="search"]').val("");
+	    	        $.get("panel.html", function (data2) {
+            $.mobile.pageContainer.prepend(data2);
+              $("[data-role=panel]").panel().enhanceWithin();
+        }, "html");
+	           $.get("header.html", function (data) {
+      $.mobile.pageContainer.prepend(data);
+      $("[data-role='header']").toolbar().enhanceWithin();
+    }, "html");
+    $.get("footer.html", function (data) {
+      $.mobile.pageContainer.append(data);
+      $("[data-role='footer']").toolbar().enhanceWithin();
+    }, "html");
+        $('.WordSection1').wrap('<div role="main" class="ui-content">');
+        $('table').wrap('<div class="tableCont"></div>');
+        $('img').wrap('<div class="tableCont"></div>');
+        $.mobile.pageContainer.enhanceWithin();
+	  });
+	        $(document).bind( "pagechange", function( ) {
+        $('table').wrap('<div class="tableCont"></div>');
+        $('img').wrap('<div class="tableCont"></div>');
+        $('.tableCont').enhanceWithin();
+      } );
+			// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			document.getElementById("myBtn").style.display = "block";
+		  } else {
+			document.getElementById("myBtn").style.display = "none";
+		  }
+		}
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0; // For Safari
+		  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}
+	</script>  
+</head>
+
+<body lang=EN-GB link=blue vlink=purple>
+
+<div class=WordSection1>
+
+<p class=Heading>Adults with severe COVID-19</p>
+
+<p class=paragraph style='vertical-align:baseline'><span class=normaltextrun><b><i><span
+style='font-family:"Arial","sans-serif"'>Executive summary</span></i></b></span></p>
+
+<p class=paragraph style='vertical-align:baseline'><span class=normaltextrun><b><span
+style='font-family:"Arial","sans-serif"'>Introduction</span></b></span><span
+class=eop><b>&nbsp;</b></span></p>
+
+<p class=paragraph style='vertical-align:baseline'><span class=normaltextrun><span
+style='font-size:11.0pt;font-family:"Arial","sans-serif"'>This guideline
+assumes that an adult patient has been diagnosed with COVID-19 or that the
+clinical picture is highly suspicious for COVID-19. A small group of patients
+who contract COVID-19 will become very unwell with it. </span></span></p>
+
+<p class=paragraph style='vertical-align:baseline'><span class=normaltextrun><b><span
+style='font-family:"Arial","sans-serif"'>Target User</span></b></span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class=normaltextrun>Nurses</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class=normaltextrun>Doctors</span></p>
+
+<p class=paragraph style='vertical-align:baseline'><span class=normaltextrun><b><span
+style='font-family:"Arial","sans-serif"'>Target area of use</span></b></span></p>
+
+<p class=MsoListParagraph style='text-indent:-18.0pt'><span style='font-family:
+Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class=normaltextrun>Ward</span></p>
+
+<h2>Key areas of focus / New additions / Changes&nbsp;&nbsp;</h2>
+
+<p class=paragraph style='margin-left:36.0pt;text-indent:-18.0pt;vertical-align:
+baseline'><span class=normaltextrun><span style='font-size:11.0pt;font-family:
+Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><span class=normaltextrun><span style='font-size:11.0pt;
+font-family:"Arial","sans-serif"'>Identification of those who may become
+unwell. </span></span></p>
+
+<p class=paragraph style='margin-left:36.0pt;text-indent:-18.0pt;vertical-align:
+baseline'><span class=normaltextrun><span style='font-size:11.0pt;font-family:
+Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><span class=normaltextrun><span style='font-size:11.0pt;
+font-family:"Arial","sans-serif"'>Management of complications</span></span></p>
+
+<p class=paragraph style='margin-left:36.0pt;text-indent:-18.0pt;vertical-align:
+baseline'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class=normaltextrun><span style='font-size:11.0pt;
+font-family:"Arial","sans-serif"'>The importance of PPE in all circumstances</span></span></p>
+
+<p class=paragraph style='vertical-align:baseline'><span class=normaltextrun><b><span
+style='font-family:"Arial","sans-serif"'>Limitations</span></b></span></p>
+
+<p class=paragraph style='margin-left:36.0pt;text-indent:-18.0pt;vertical-align:
+baseline'><span class=normaltextrun><span style='font-size:11.0pt;font-family:
+Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><span class=normaltextrun><span style='font-size:11.0pt;
+font-family:"Arial","sans-serif"'>We lack access to HDU/ITU level care and
+cannot ventilate patients. </span></span></p>
+
+<p class=paragraph style='margin-left:36.0pt;text-indent:-18.0pt;vertical-align:
+baseline'><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class=normaltextrun><span style='font-size:11.0pt;
+font-family:"Arial","sans-serif"'>We have two negative pressure rooms.</span></span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<span style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br clear=all
+style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+style='font-size:12.0pt'>&nbsp;</span></b></p>
+
+<h2>Presenting symptoms and signs</h2>
+
+<p class=MsoNormal>There are two groups of patients to think about as high risk
+in the COVID-19 outbreak:</p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span><b>Those who
+have become very unwell with COVID-19 as their only problem.</b> This group
+seems to present to hospital 5-12 days after the start of symptoms. They can
+develop Acute Respiratory Distress Syndrome (ARDS) and become very unwell. They
+comprise patients who have diabetes, chronic respiratory conditions (including
+severe asthma and COPD), chronic heart conditions (including uncontrolled
+hypertension) and immunosuppression (which in our setting is HIV/AIDS, steroids
+and methotrexate use). Also, lymphopenia, especially when progressively
+worsening seems to be a marker of likely poorer prognosis.</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span><b>Those
+patients who have another medical condition that has been complicated by
+contracting COVID-19</b>. </p>
+
+<h3>Clinical presentation of COVID-19 Pneumonia (severe &amp; critical
+COVID-19)</h3>
+
+<p class=MsoNormal>Clinically apparent COVID-19 primarily presents as a
+febrile, flu-like illness with recovery in approximately 80 % of cases. </p>
+
+<p class=MsoNormal>In around 20% of cases this flu-like illness progresses to a
+pneumonia over a period of 5-12 days from symptom onset and in a small number
+of cases (approximately 5% of total clinically apparent cases) this progresses
+further to ARDS, multi-organ failure, circulatory collapse &amp; death. COVID
+with hypoxia, tachypnoea, or widespread CXR changes (&gt; 50% lungs on CXR) is
+considered severe disease, whilst the presence of ARDS, multi-organ failure or
+circulatory collapse would constitute critical disease. </p>
+
+<p class=MsoNormal>Fever can be prolonged, lasting up to 14 days even in
+relatively uncomplicated cases, though persistence of fever after 7 days
+suggests that a more severe course may be developing. </p>
+
+<p class=MsoNormal>As disease become more common, more atypical presentations
+may present including acute abdominal pain, diarrhoea, delirium etc. </p>
+
+<h3>Differentiating COVID-19 from bacterial pneumonia (CAP)</h3>
+
+<p class=MsoNormal>The following are suggestive of COVID-19 rather than CAP:</p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Travel from outside the Gambia</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>A history of close contact with confirmed / suspected case(s) of
+COVID-19</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Household contacts with acute cough, fever, breathlessness</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>High rapidly spiking fever (peaks &gt; 37.8<sup>0</sup>C)</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Several days history before respiratory deterioration</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>History of loss of sense of smell / taste is highly suggestive
+and should be sought in all patients</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>History of myalgia and /or headache</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Bilateral respiratory signs</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Bilateral infiltrates on the chest X ray, with a non-lobar, lower
+zone and peripheral predominance</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Normal WCC with relative lymphopenia and absence of neutrophilia.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Significant pleural effusion is uncommon in COVID-19</p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:14.2pt'>&nbsp;</p>
+
+<u><span style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span></u>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><u><span
+ style='text-decoration:none'>&nbsp;</span></u></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:14.2pt'><u>Other
+laboratory features commonly seen:</u></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Slightly elevated liver enzymes (ALT/AST)</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Low platelets</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Raised LDH</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Raised troponin</p>
+
+<p class=MsoNormal>Currently COVID-19 can only be confirmed by a viral PCR,
+usually of a throat or nasopharyngeal swab sample. Estimates of the sensitivity
+of the vary from 80-90%, probably worse later in disease when the virus is
+predominantly in the lungs. Specificity is good. Therefore remember two things:</p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Imaging changes (CXR or US in our context) with symptoms and lab
+tests suggestive of COVID-19 with a negative test can still be COVID-19. This
+is particularly true at the time when pneumonia becomes a predominant feature,
+and also becomes more of a problem as the disease spreads (pre-test probability
+rises and the test performs worse). </p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>If someone has COVID-19, they can still have another infection or
+health problem complicating their presentation. </p>
+
+<h2>Management </h2>
+
+<p class=MsoNormal>All patients must be assessed for severity and a decision
+made about plans for treatment escalation at the time of admission. This is
+covered in another guideline.</p>
+
+<p class=Body>Currently, the management of COVD-19 is <b>supportive</b>. </p>
+
+<p class=Body>There have been several treatments suggested that may be of
+benefit. At this moment, <b>only patients enrolled in a clinical trial</b>
+should receive therapy directed at COVID-19. This group of medicines include
+high dose corticosteroids (in the absence of bronchoconstriction),
+hydroxychloroquine, azithromycin and anti-retroviral medications such as Lopinavir/ritonavir.</p>
+
+<p class=Body><b>In all circumstances</b>, appropriate PPE must be worn. If a
+patient becomes critically unwell, then staff should still take the time to don
+the PPE in a safe and proper manner.</p>
+
+<p class=Body>Decisions on whether patients with COVID-19 need admission are
+likely to vary depending on the state of the epidemic at the time and the
+public health strategy. Where containment is the objective public health
+authorities may request the admission of all patients. If resources and beds
+become scarce, this may change to those meeting specific criteria (eg at risk
+of deterioration, needing oxygen or palliation). </p>
+
+<p class=MsoNormal><b><u>Respiratory support</u></b>: <span lang=EN-US>Give
+oxygen to patients with SARI and resp distress, hypoxaemia, seizures or shock
+and target SpO2 &gt; or equal to 94%. Once stable, target saturation is &gt;
+90% in non-pregnant and 92 – 95% in pregnant patients. (</span>This is not a
+guide on how many litres of oxygen to give them but a target for the optimum
+saturations once the oxygen is started. Oxygen should be turned down if
+saturations are consistently 99-100%).</p>
+
+<p class=Body>It may help in all patients, to lie them in a prone position i.e.
+on their front. </p>
+
+<p class=Body>BiPAP or CPAP are indicated when patients are classed as
+critically ill. If BiPAP or CPAP are available, they are likely to be the
+ceiling of care for many patients in The Gambia. CPAP and BiPAP are aerosol
+generating so should ideally be deployed in a neutral or negative pressure
+room. It may become necessary to cohort (place together) patients with proven
+or suspected COVID-19 and COVID-19 patients on CPAP or BiPAP.</p>
+
+<p class=Body>Intubation and ventilation may be available in a few cases
+offsite, but the feasibility of this is currently unknown. With mortality in
+well-resourced settings of 66% for selected patients put on a ventilator with
+COVID-19, it will be necessary to select specific patients that may benefit
+from this resource intensive procedure. Intubation should be done by the most
+skilled operative using strict PPE. </p>
+
+<p class=Body><b><u>Fever</u></b>: Give due consideration as to why the fever
+is being treated. Generally, bringing down a patient's fever will likely make
+them feel better but not necessarily change how long they are unwell for. The
+exception to this is in patients with haemodynamic instability where reducing
+fever may reduce the risk of hypoxic tissue damage. </p>
+
+<p class=Body>There is currently no evidence that NSAIDs are associated with
+extra morbidity and mortality in COVID-19. There is some evidence from other
+respiratory infections that NSAIDS will increase stroke and heart disease risk
+in susceptible patients. We recommend the use paracetamol first and then
+ibuprofen at as little a quantity as possible, for as short a time as possible.</p>
+
+<p class=Body><b><u>Pain</u></b>: Please, see above under fever above. If
+unresponsive to paracetamol, then use the WHO pain ladder. </p>
+
+<p class=Body><b><u>Underlying medical conditions</u></b>: Individual decisions
+should be made about each patient as they come, to manage their underlying
+condition alongside their acute COVID-19 as needed. There are a few areas of
+controversy to address:</p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b>ACEi/ARB:</b> There is no current evidence to support that
+patients will either gain protection or come to harm from these medications.
+Continuing the medication where it is needed while the patient is unwell is
+reasonable. However, given that these patients are likely to be acutely unwell,
+they are likely to be at risk of hypotension and renal injury. In such a
+situation, consideration should be given to stopping them during the infection
+and re-starting these medications after recovery. </p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b>Asthma/COPD/Post TB lung</b>: These patients may benefit from
+steroids. Endeavour to use the lowest effective dose and where possible reduce
+the dose to less than 20mg for adults. However, given our limited therapy for
+bronchoconstriction, higher doses of steroids may still be needed.</p>
+
+<p class=Body><b><u>Secondary bacterial infection</u></b>: Patients who worsen
+unexpectedly, whose cough becomes productive, who have neutrophil leucocytosis
+or who have new lateralising signs and symptoms should be considered for
+treatment with antibiotics aimed at bacterial pneumonia. It may be necessary
+for some patients (eg. critical cases with unclear aetiology) to start
+antibiotics when they are unwell and then stop them if the test for COVID-19
+comes back and explains their presentation. </p>
+
+<p class=Body><b><u>Pressure area care</u></b>: Ensure that patients who become
+bed bound are turned regularly (2-3 hourly) by nursing staff to stop pressure
+area damage.</p>
+
+<p class=Body><b><u>Fluid and nutrition</u></b>: Patients should be encouraged
+to eat but anorexia and anosmia are a common feature. Food intake is not vital
+and people will recover an appetite and their lost weight after recovery. </p>
+
+<p class=Body>Fluid should be encouraged orally and then given NG first and
+ultimately intravenously if that does not work. If iv fluids are given, the aim
+is to maintain euvolaemia, taking into account insensible losses. Boluses
+should only be used if a patient is obviously shocked. </p>
+
+<p class=Body><b><u>Monitoring</u></b>: Hospitalised patients should be
+monitored regularly to identify deterioration. Saturations are particularly
+important. Early warning scores or specific severity scores should be used according
+to current practice.</p>
+
+<h2>Key Issues for Nursing care</h2>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Regular monitoring of a potential unstable group of patients</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Adhering to PPE to ensure staff and wider public safety</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Communication with patients and families</p>
+
+<h2>References</h2>
+
+<p class=Default><span style='font-size:10.0pt;font-family:"Arial","sans-serif";
+color:windowtext;background:white'>Aronson J, Ferner R. Angiotensin converting
+enzyme (ACE) inhibitors and angiotensin receptor blockers in COVID-19 - CEBM
+[Internet]. CEBM. 2020 [cited 24 March 2020]. Available from: </span><span
+lang=EN-US><a
+href="https://www.cebm.net/angiotensin-converting-enzyme-ace-inhibitors-and-angiotensin-receptor-blockers-in-covid-19/"><span
+class=Hyperlink0><span lang=EN-GB style='font-size:10.0pt;font-family:"Arial","sans-serif";
+background:white'>https://www.cebm.net/angiotensin-converting-enzyme-ace-inhibitors-and-angiotensin-receptor-blockers-in-covid-19/</span></span></a></span></p>
+
+<p class=Default><span style='font-size:10.0pt;font-family:"Arial","sans-serif";
+color:windowtext;background:white'>De Simone G. Position Statement of the ESC
+Council on Hypertension on ACE-Inhibitors and Angi [Internet]. Escardio.org.
+2020 [cited 24 March 2020]. Available from: </span><span lang=EN-US><a
+href="https://www.escardio.org/Councils/Council-on-Hypertension-(CHT)/News/position-statement-of-the-esc-council-on-hypertension-on-ace-inhibitors-and-ang"><span
+class=Hyperlink0><span lang=EN-GB style='font-size:10.0pt;font-family:"Arial","sans-serif";
+background:white'>https://www.escardio.org/Councils/Council-on-Hypertension-(CHT)/News/position-statement-of-the-esc-council-on-hypertension-on-ace-inhibitors-and-ang</span></span></a></span></p>
+
+<p class=Default><span style='font-size:10.0pt;font-family:"Arial","sans-serif";
+color:windowtext;background:white'>Ramsay M. Contraindications and special
+considerations [Internet]. Assets.publishing.service.gov.uk. 2020 [cited 25
+March 2020]. Available from: </span><span lang=EN-US><a
+href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/655225/Greenbook_chapter_6.pdf"><span
+class=Hyperlink0><span lang=EN-GB style='font-size:10.0pt;font-family:"Arial","sans-serif";
+background:white'>https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/655225/Greenbook_chapter_6.pdf</span></span></a></span></p>
+
+<p class=Default><span style='font-size:10.0pt;font-family:"Arial","sans-serif";
+color:windowtext;background:white'>Heneghan C, Brassey J. NSAIDs in Acute
+Respiratory Infection - CEBM [Internet]. CEBM. 2020 [cited 25 March 2020].
+Available from: </span><span lang=EN-US><a
+href="https://www.cebm.net/oxford-covid-19/nsaids-in-acute-respiratory-infection/"><span
+class=Hyperlink0><span lang=EN-GB style='font-size:10.0pt;font-family:"Arial","sans-serif";
+background:white'>https://www.cebm.net/oxford-covid-19/nsaids-in-acute-respiratory-infection/</span></span></a></span><span
+style='font-size:10.0pt;font-family:"Arial","sans-serif";color:#666666;
+background:white'> </span></p>
+
+<p class=Default><span style='font-size:10.0pt;font-family:"Arial","sans-serif";
+color:windowtext;background:white'>Clinical management of persons admitted to
+hospital with suspected COVID-19 infection [Internet]. England.nhs.uk. 2020
+[cited 25 March 2020]. Available from: </span><span lang=EN-US><a
+href="https://www.england.nhs.uk/coronavirus/wp-content/uploads/sites/52/2020/03/clinical-management-of-persons-admitted-to-hospita-v1-19-march-2020.pdf"><span
+class=Hyperlink0><span lang=EN-GB style='font-size:10.0pt;font-family:"Arial","sans-serif";
+background:white'>https://www.england.nhs.uk/coronavirus/wp-content/uploads/sites/52/2020/03/clinical-management-of-persons-admitted-to-hospita-v1-19-march-2020.pdf</span></span></a></span><span
+style='font-size:10.0pt;font-family:"Arial","sans-serif";color:#666666;
+background:white'> </span></p>
+
+<p class=Default><span style='font-size:10.0pt;font-family:"Arial","sans-serif";
+color:windowtext;background:white'>Myth busters [Internet]. Who.int. 2020
+[cited 25 March 2020]. Available from: </span><span lang=EN-US><a
+href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters"><span
+class=Hyperlink0><span lang=EN-GB style='font-size:10.0pt;font-family:"Arial","sans-serif";
+background:white'>https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters</span></span></a></span><span
+style='font-size:10.0pt;font-family:"Arial","sans-serif";color:#666666;
+background:white'> </span></p>
+
+<p class=Default><span style='font-size:10.0pt;font-family:"Arial","sans-serif";
+color:windowtext;background:white'>Kalil A. Treating COVID-19—Off-Label Drug
+Use, Compassionate Use, and Randomized Clinical Trials During Pandemics. JAMA
+[Internet]. 2020 [cited 25 March 2020];. Available from: </span><span
+lang=EN-US><a
+href="https://jamanetwork.com/journals/jama/fullarticle/2763802?utm_source=twitter&amp;utm_campaign=content-shareicons&amp;utm_content=article_engagement&amp;utm_medium=social&amp;utm_term=032420#.XnprLOb6jWY.twitter"><span
+class=Hyperlink0><span lang=EN-GB style='font-size:10.0pt;font-family:"Arial","sans-serif";
+background:white'>https://jamanetwork.com/journals/jama/fullarticle/2763802?utm_source=twitter&amp;utm_campaign=content-shareicons&amp;utm_content=article_engagement&amp;utm_medium=social&amp;utm_term=032420#.XnprLOb6jWY.twitter</span></span></a></span><span
+style='font-size:10.0pt;font-family:"Arial","sans-serif";color:#666666;
+background:white'> </span></p>
+
+<p class=Default><span style='font-size:10.0pt;font-family:"Arial","sans-serif";
+color:windowtext;background:white'>Self-isolation advice - Coronavirus
+(COVID-19) [Internet]. nhs.uk. 2020 [cited 25 March 2020]. Available from</span><span
+style='font-size:10.0pt;font-family:"Arial","sans-serif";color:#666666;
+background:white'>: </span><span lang=EN-US><a
+href="https://www.nhs.uk/conditions/coronavirus-covid-19/self-isolation-advice/"><span
+class=Hyperlink0><span lang=EN-GB style='font-size:10.0pt;font-family:"Arial","sans-serif";
+background:white'>https://www.nhs.uk/conditions/coronavirus-covid-19/self-isolation-advice/</span></span></a></span><span
+style='font-size:10.0pt;font-family:"Arial","sans-serif";color:#666666;
+background:white'> </span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b>Written
+  by:</b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'>Name: Will
+  Taylor</p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'>Date: 30
+  March 2020</p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b>Reviewed
+  by:</b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'>Name: Babatunde
+  Awokola</p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'>Date: 07
+  April 2020</p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b>Reviewed
+  by:</b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'>Name: <span
+  class=normaltextrun>Behzad Nadjm</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'>Date: 10
+  April 2020 </p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b>Version:</b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b>Change
+  history:</b></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b>Review
+  due date:</b></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'>1.0</p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'>New
+  document</p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'>10 April
+  2022</p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'>Review
+  Comments (<i>if applicable)</i></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'>&nbsp;</p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b>&nbsp;</b></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

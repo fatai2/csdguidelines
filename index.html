@@ -4,12 +4,11 @@
 	<title>MRCG Clinical Guidelines</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=1">
 	<meta name=Generator content="Microsoft Word 14 (filtered)">
-	<link rel="manifest" href="manifest.json">
-        <link rel="icon" href="MRC_Icon.png">
 	<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
 	<link rel="stylesheet" href="jquery.mobile.structure-1.4.5.min.css" />
 	<script src="jquery-1.11.1.min.js"></script>
 	<script src="jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="cordova.js"></script>
 	<script>
 	    		$(function(){
 			$("[data-role='header'], [data-role='footer']").toolbar();
@@ -28,8 +27,7 @@
       $.mobile.pageContainer.append(data);
       $("[data-role='footer']").toolbar().enhanceWithin();
     }, "html");
-        $$('.WordSection1').wrap('<div role="main" class="ui-content">').wrap('<div data-role="page">');
-	$('.ui-content').enhanceWithin();
+        $('.WordSection1').wrap('<div role="main" class="ui-content">').wrap('<div data-role="page">');
         $('table').wrap('<div class="tableCont"></div>');
         $('img').wrap('<div class="tableCont"></div>');
         $.mobile.pageContainer.enhanceWithin();
@@ -39,32 +37,7 @@
         $('img').wrap('<div class="tableCont"></div>');
         $('.tableCont').enhanceWithin();
       } );
-// This is the service worker with the Cache-first network
-
-// Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
-
-// Check compatibility for the browser we're running this in
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('pwabuilder-sw.js');
-  });
-}
-//if ("serviceWorker" in navigator) {
-//  if (navigator.serviceWorker.controller) {
-//    console.log("[PWA Builder] active service worker found, no need to register");
-//  } else {
-    // Register the service worker
- //   navigator.serviceWorker
- //     .register("pwabuilder-sw.js", {
- //       scope: "./"
- //     })
- //     .then(function (reg) {
- //       console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
- //     });
-//  }
-//}
 	</script>
- <!-- end of service worker -->
 
 	<style>
 	.show {display: block;}
@@ -344,7 +317,7 @@ ul
 
     <!-- /header -->
 <div data-role="page">
-<div role="main" class="ui-content">
+
 <div class=WordSection1>
 <h1><span lang=EN-US>Introduction to Clinical Services Department (CSD)
 guidelines</span></h1>
@@ -2407,7 +2380,7 @@ lang=EN-US>&nbsp;</span></p>
 </div>
 <p class=MsoNormal><span style='color:black'>&nbsp;</span></p>
 </div>
-</div>
+
 </div>
 
 </body>

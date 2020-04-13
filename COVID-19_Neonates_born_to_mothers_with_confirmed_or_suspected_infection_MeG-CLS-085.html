@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html manifest="manifest.manifest">
+<head>
+	<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+	<title>MRCG Clinical Guidelines</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=1">
+  
+	<meta name=Generator content="Microsoft Word 14 (filtered)">
+	<link rel="manifest" href="/manifest.json">	
+	<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="mystyle.css" />
+	<script src="jquery-1.11.1.min.js"></script>
+	<script src="jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="cordova.js"></script>
+	<script>
+	    		$(function(){
+			$("[data-role='header'], [data-role='footer']").toolbar();
+		});
+  	  $(document).one('pagebeforecreate', function () {
+	        $('input[data-type="search"]').val("");
+	    	        $.get("panel.html", function (data2) {
+            $.mobile.pageContainer.prepend(data2);
+              $("[data-role=panel]").panel().enhanceWithin();
+        }, "html");
+	           $.get("header.html", function (data) {
+      $.mobile.pageContainer.prepend(data);
+      $("[data-role='header']").toolbar().enhanceWithin();
+    }, "html");
+    $.get("footer.html", function (data) {
+      $.mobile.pageContainer.append(data);
+      $("[data-role='footer']").toolbar().enhanceWithin();
+    }, "html");
+        $('.WordSection1').wrap('<div role="main" class="ui-content">');
+        $('table').wrap('<div class="tableCont"></div>');
+        $('img').wrap('<div class="tableCont"></div>');
+        $.mobile.pageContainer.enhanceWithin();
+	  });
+	        $(document).bind( "pagechange", function( ) {
+        $('table').wrap('<div class="tableCont"></div>');
+        $('img').wrap('<div class="tableCont"></div>');
+        $('.tableCont').enhanceWithin();
+      } );
+			// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			document.getElementById("myBtn").style.display = "block";
+		  } else {
+			document.getElementById("myBtn").style.display = "none";
+		  }
+		}
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0; // For Safari
+		  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}
+	</script>  
+</head>
+
+<body lang=EN-GB link=blue vlink=purple>
+
+<div class=WordSection1>
+
+<h1><span lang=EN-US>Neonates born to confirmed or suspected COVID-19 mothers</span></h1>
+
+<p class=paragraph style='vertical-align:baseline'><span class=normaltextrun><b><i><span
+lang=EN-US style='font-family:"Arial","sans-serif"'>Executive summary</span></i></b></span></p>
+
+<p class=paragraph style='vertical-align:baseline'><span class=normaltextrun><b><span
+lang=EN-US style='font-family:"Arial","sans-serif"'>Introduction</span></b></span><span
+class=eop><b>&nbsp;</b></span></p>
+
+<p class=paragraph style='text-align:justify;text-justify:inter-ideograph;
+vertical-align:baseline'><span class=normaltextrun><span lang=EN-US
+style='font-size:11.0pt;font-family:"Arial","sans-serif"'>Neonatal infection
+with SARS-CoV-2 is expected to be mild, with shortness of breath the main
+presenting symptom. Vertical transmission is unproven. However, this is based
+on limited data and all infection prevention control procedures should be
+followed to limit onward transmission of SARS-CoV-2 from exposed or infected
+neonates. There is currently no evidence supporting transmission of SARS-CoV2
+in the breast milk but close proximity during breast feeding may be associated
+with transmission.</span></span></p>
+
+<p class=paragraph style='text-align:justify;text-justify:inter-ideograph;
+vertical-align:baseline'><span class=normaltextrun><span lang=EN-US
+style='font-size:11.0pt;font-family:"Arial","sans-serif"'>Aim to keep the
+mother and baby together as much as possible unless there is a clinical need to
+separate them. This is to ensure breast milk feeding and bonding. Kangaroo
+mother care (KMC) can be provided, all of which are important to prevent
+neonatal illness and death from other conditions.</span></span></p>
+
+<p class=paragraph style='vertical-align:baseline'><span class=normaltextrun><b><span
+lang=EN-US style='font-family:"Arial","sans-serif"'>Target User</span></b></span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class=normaltextrun><span lang=EN-US>Nurses</span></span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class=normaltextrun><span lang=EN-US>Doctors</span></span></p>
+
+<p class=paragraph style='vertical-align:baseline'><span class=normaltextrun><b><span
+lang=EN-US style='font-family:"Arial","sans-serif"'>Target area of use</span></b></span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class=normaltextrun><span lang=EN-US>MRC Clinical Services
+Department</span></span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class=normaltextrun><span lang=EN-US>Other health
+facilities</span></span></p>
+
+<h2><span lang=EN-US>Key areas of focus / New additions / Changes&nbsp;</span>&nbsp;</h2>
+
+<p class=paragraph style='vertical-align:baseline'><span class=normaltextrun><span
+lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'>Clinical
+care of neonates with suspected or confirmed COVID19 disease</span></span></p>
+
+<p class=paragraph style='vertical-align:baseline'><span class=normaltextrun><b><span
+lang=EN-US style='font-family:"Arial","sans-serif"'>Limitations</span></b></span></p>
+
+<p class=MsoNormal><span class=normaltextrun><span lang=EN-US>The evidence base
+for managing COVID-19 infections is growing exponentially as we see more cases.
+For the most up to date information please see the links in the reference
+section below as our understanding and response to this disease will change
+over time. </span></span></p>
+
+<span lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+lang=EN-US style='font-size:12.0pt'>&nbsp;</span></b></p>
+
+<h2><span lang=EN-US>Presenting symptoms and signs</span></h2>
+
+<h3><span lang=EN-US>Well (asymptomatic) neonate:</span></h3>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span lang=EN-US>Well (asymptomatic) baby and well mother</span></b><span
+lang=EN-US>: Consider the best place for care to be provided and according to
+national guidelines. This may be in an inpatient setting or at home in self
+isolation.  Encourage the mother to continue expressing milk with another
+relative feeding the baby, if possible. If this is not possible, encourage the
+mother to wear a face mask whilst breastfeeding. </span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span lang=EN-US>Well (asymptomatic) baby and unwell mother:</span></b><span
+lang=EN-US> If mother is too unwell to care for the newborn, he/she should be
+in the care of a family member. This does not need to be in hospital if the
+family can ensure self-isolation for 14 days. If this is not possible the
+neonate may require admission to hospital or a self-isolation facility whilst
+awaiting testing.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Advise the mother to look out for signs of
+fast breathing, difficulty in breathing/feeding and fever  or hypothermia and
+to contact health workers if any concerns. </span></p>
+
+<p class=MsoNormal><span lang=EN-US>Testing for SARS-CoV-2 will be conducted
+according to national policy. </span></p>
+
+<h3><span lang=EN-US>Unwell / symptomatic neonate </span></h3>
+
+<p class=MsoNormal><span lang=EN-US>The usual causes of neonatal illness and
+mortality (complications of prematurity, bacterial infection and intra-partum
+related birth asphyxia) may still be present in neonates born to mothers with
+suspected or confirmed COVID-19. These should be considered in any unwell baby
+and all other treatments provided as per standard neonatal protocols.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Respiratory symptoms are the main clinical feature
+in neonates, particularly fast breathing. Other non-specific signs of illness
+(fever, hypothermia, lethargy, poor feeding, vomiting) may also be present and
+mimic sepsis.</span></p>
+
+<h2><span lang=EN-US>Investigations</span></h2>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Testing for SARS-CoV-2 virus will be conducted
+according to national guidelines</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>FBC: WBC may be normal or low. If high suspect
+bacterial infection. Pay attention to neutrophil: lymphocyte ratio. If this is
+high it is a poor prognostic indicator in adults. Prognosis in neonates is not
+established.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Blood culture – should be done to identify
+bacterial sepsis, as the conditions may present in similar way</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Chest X-ray – radiologic signs are non-specific
+in neonates and CXR should be avoided unless for a specific indication which
+will change management (e.g. pneumothorax</span><span lang=EN-US>, pleural
+effusion etc).</span></p>
+
+<span lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+lang=EN-US style='font-size:12.0pt'>&nbsp;</span></b></p>
+
+<h2><span lang=EN-US>Management </span></h2>
+
+<h3><span lang=EN-US>Respiratory support</span></h3>
+
+<p class=MsoListParagraphCxSpFirst style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-indent:-18.0pt'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Prone (lying on abdomen) position is associated
+with better lung aeration and reduced oxygen requirement. Manage neonates in
+prone position as much as possible, with their heads turned to the side and
+arms/legs in flexed position.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Provide oxygen via nasal cannula to maintain
+SPO2 &gt;90% (&gt;88% for preterm neonates).</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Avoid potentially aerosolising techniques if
+possible (E.g. suctioning, CPAP).</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>If a neonate requires CPAP for clinical reasons
+(Silverman score ≥4 or persistently hypoxic despite oxygen – see appendix),
+ensure that the patient is managed in a separate</span><span lang=EN-US> area
+and all staff wear PPE whilst dealing with the baby.</span></p>
+
+<h3><span lang=EN-US>IV fluids</span></h3>
+
+<p class=MsoListParagraphCxSpFirst style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-indent:-18.0pt'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Provide routine maintenance fluids according to
+age and weight, as per standard care.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-indent:-18.0pt'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>If signs of suspected infection treat as per
+usual protocols, with cautious use of fluid boluses.</span></p>
+
+<h3><span lang=EN-US>Feeding</span></h3>
+
+<p class=MsoListParagraphCxSpFirst style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-indent:-18.0pt'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Provide expressed breast milk as soon as
+possible as per standard neonatal care.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-indent:-18.0pt'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Follow standard feeding regimes, including use
+of gastric tubes and cup feeding.</span></p>
+
+<h3><span lang=EN-US>Kangaroo Mother Care</span></h3>
+
+<p class=MsoListParagraphCxSpFirst style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-indent:-18.0pt'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Continue KMC for preterm / LBW neonates
+(&lt;2kg) as long as the baby and mother are well.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-indent:-18.0pt'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>With-holding KMC is likely to result in worse
+outcomes than from COVID19</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-indent:-18.0pt'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Ensure adequate spacing (3 m) between beds if
+more than one mother / baby pair are receiving KMC.</span></p>
+
+<h3><span lang=EN-US>Other treatments</span></h3>
+
+<p class=MsoListParagraphCxSpFirst style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-indent:-18.0pt'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Provide all other treatments as needed,
+according to the likely diagnosis. Consider antibiotics early as the clinical
+signs of COVID19 may be very similar to bacterial sepsis.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-indent:-18.0pt'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Avoid using nebulised medications. </span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-indent:-18.0pt'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>There is currently no evidence for the benefits
+of steroids, diuretics or anti-virals in neonatal COVID19 disease. </span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-indent:-18.0pt'><span lang=EN-US style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Any use of other medications should be part of a
+clinical trial.</span></p>
+
+<h2><span lang=EN-US>Key Issues for Nursing care</span></h2>
+
+<h2><span lang=EN-US style='font-size:11.0pt;font-weight:normal'>Wear PPE
+during all clinical encounters, especially during suctioning, bag-valve-mask
+ventilation, management on CPAP. Dispose of nappies in a hygienic manner and
+assume to be contagious until more evidence is available</span></h2>
+
+<p class=MsoNormal><span lang=EN-US>Ensure hands are washed thoroughly with
+soap and running water for a t least 20 seconds before and after caring for
+(feeding, examining, changing) each neonate. Teach care giver to do the same.</span></p>
+
+<h2><span style='position:absolute;z-index:251654656;margin-left:-15px;
+margin-top:40px;width:614px;height:878px'><img width=614 height=878
+src="COVID-19_Neonates_born_to_mothers_with_confirmed_or_suspected_infection_MeG-CLS-085_files/image001.png"></span><span
+lang=EN-US>Figure 1. Overview of how to manage neonates born to mother with
+suspected / confirmed COVID-19</span></h2>
+
+<b><span lang=EN-US style='font-size:12.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span></b>
+
+<h2><span lang=EN-US style='font-weight:normal'>&nbsp;</span></h2>
+
+<h2><span lang=EN-US>References</span></h2>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>UNICEF guidance
+re. breastfeeding </span><span lang=EN-US><a
+href="https://www.unicef.org.uk/babyfriendly/infant-feeding-during-the-covid-19-outbreak/"><span
+style='font-size:10.0pt'>https://www.unicef.org.uk/babyfriendly/infant-feeding-during-the-covid-19-outbreak/</span></a></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>COVID and KMC: </span><span
+lang=EN-US><a href="https://kangaroo.care/blogs/covid-19/guidelines"><span
+style='font-size:10.0pt'>https://kangaroo.care/blogs/covid-19/guidelines</span></a></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>&nbsp;</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Written by:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Name: Elizabeth Ledger </span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Date: 09 April 2020</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Reviewed by:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Name: Helen Brotherton</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Date: 09 April 2020</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Reviewed by:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Name: Baderinwa Abatan</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Date: 10 April 2020</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Version:</span></b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Change history:</span></b></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>Review due date:</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>1.0</span></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>New document</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>10 April 2022</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>Review Comments (<i>if applicable)</i></span></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US>&nbsp;</span></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+  lang=EN-US>&nbsp;</span></b></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<span lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+lang=EN-US>&nbsp;</span></p>
+
+<h2><span lang=EN-US>Appendix I. Silverman score &amp; care pathway for
+neonatal CPAP in resource limited settings</span></h2>
+
+<p class=MsoNormal><img border=0 width=558 height=724 id="Picture 1"
+src="COVID-19_Neonates_born_to_mothers_with_confirmed_or_suspected_infection_MeG-CLS-085_files/image002.png"></p>
+
+<span lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='font-size:12.0pt'>Silverman-Anderson
+score</span></b></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=605
+ style='width:453.65pt;background:white;border-collapse:collapse;border:none'>
+ <thead>
+  <tr style='height:26.8pt'>
+   <td valign=top style='border:solid windowtext 1.0pt;padding:2.4pt 4.8pt 2.4pt 4.8pt;
+   height:26.8pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;
+   text-align:justify;text-justify:inter-ideograph'><b><span lang=EN-US
+   style='font-size:10.0pt'>Score</span></b></p>
+   </td>
+   <td valign=top style='border:solid windowtext 1.0pt;border-left:none;
+   padding:2.4pt 4.8pt 2.4pt 4.8pt;height:26.8pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+   lang=EN-US style='font-size:10.0pt'>Movement of abdomen &amp; chest</span></b></p>
+   </td>
+   <td valign=top style='border:solid windowtext 1.0pt;border-left:none;
+   padding:2.4pt 4.8pt 2.4pt 4.8pt;height:26.8pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;
+   text-align:justify;text-justify:inter-ideograph'><b><span lang=EN-US
+   style='font-size:10.0pt'>Subcostal recession</span></b></p>
+   </td>
+   <td valign=top style='border:solid windowtext 1.0pt;border-left:none;
+   padding:2.4pt 4.8pt 2.4pt 4.8pt;height:26.8pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;
+   text-align:justify;text-justify:inter-ideograph'><b><span lang=EN-US
+   style='font-size:10.0pt'>Xiphoid retraction</span></b></p>
+   </td>
+   <td valign=top style='border:solid windowtext 1.0pt;border-left:none;
+   padding:2.4pt 4.8pt 2.4pt 4.8pt;height:26.8pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;
+   text-align:justify;text-justify:inter-ideograph'><b><span lang=EN-US
+   style='font-size:10.0pt'>Nasal Flare</span></b></p>
+   </td>
+   <td valign=top style='border:solid windowtext 1.0pt;border-left:none;
+   padding:2.4pt 4.8pt 2.4pt 4.8pt;height:26.8pt'>
+   <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;
+   text-align:justify;text-justify:inter-ideograph'><b><span lang=EN-US
+   style='font-size:10.0pt'>Grunt</span></b></p>
+   </td>
+  </tr>
+ </thead>
+ <tr style='height:13.85pt'>
+  <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
+  padding:2.4pt 4.8pt 2.4pt 4.8pt;height:13.85pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph'><span lang=EN-US style='font-size:10.0pt'>0</span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:2.4pt 4.8pt 2.4pt 4.8pt;
+  height:13.85pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph'><span lang=EN-US style='font-size:10.0pt'>Synchronised</span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:2.4pt 4.8pt 2.4pt 4.8pt;
+  height:13.85pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph'><span lang=EN-US style='font-size:10.0pt'>None</span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:2.4pt 4.8pt 2.4pt 4.8pt;
+  height:13.85pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph'><span lang=EN-US style='font-size:10.0pt'>None</span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:2.4pt 4.8pt 2.4pt 4.8pt;
+  height:13.85pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph'><span lang=EN-US style='font-size:10.0pt'>None</span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:2.4pt 4.8pt 2.4pt 4.8pt;
+  height:13.85pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph'><span lang=EN-US style='font-size:10.0pt'>None</span></p>
+  </td>
+ </tr>
+ <tr style='height:13.85pt'>
+  <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
+  padding:2.4pt 4.8pt 2.4pt 4.8pt;height:13.85pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph'><span lang=EN-US style='font-size:10.0pt'>1</span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:2.4pt 4.8pt 2.4pt 4.8pt;
+  height:13.85pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+  lang=EN-US style='font-size:10.0pt'>Abdomen lag on inspiration</span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:2.4pt 4.8pt 2.4pt 4.8pt;
+  height:13.85pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph'><span lang=EN-US style='font-size:10.0pt'>Just
+  visible</span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:2.4pt 4.8pt 2.4pt 4.8pt;
+  height:13.85pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph'><span lang=EN-US style='font-size:10.0pt'>Just
+  visible</span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:2.4pt 4.8pt 2.4pt 4.8pt;
+  height:13.85pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph'><span lang=EN-US style='font-size:10.0pt'>Minimal</span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:2.4pt 4.8pt 2.4pt 4.8pt;
+  height:13.85pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph'><span lang=EN-US style='font-size:10.0pt'>Stethoscope
+  only</span></p>
+  </td>
+ </tr>
+ <tr style='height:13.85pt'>
+  <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
+  padding:2.4pt 4.8pt 2.4pt 4.8pt;height:13.85pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph'><span lang=EN-US style='font-size:10.0pt'>2</span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:2.4pt 4.8pt 2.4pt 4.8pt;
+  height:13.85pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph'><span lang=EN-US style='font-size:10.0pt'>See-Saw</span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:2.4pt 4.8pt 2.4pt 4.8pt;
+  height:13.85pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph'><span lang=EN-US style='font-size:10.0pt'>Marked</span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:2.4pt 4.8pt 2.4pt 4.8pt;
+  height:13.85pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph'><span lang=EN-US style='font-size:10.0pt'>Marked</span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:2.4pt 4.8pt 2.4pt 4.8pt;
+  height:13.85pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph'><span lang=EN-US style='font-size:10.0pt'>Marked</span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+  border-right:solid windowtext 1.0pt;padding:2.4pt 4.8pt 2.4pt 4.8pt;
+  height:13.85pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+  justify;text-justify:inter-ideograph'><span lang=EN-US style='font-size:10.0pt'>Naked
+  ear</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><b><span lang=EN-US style='font-size:12.0pt'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>

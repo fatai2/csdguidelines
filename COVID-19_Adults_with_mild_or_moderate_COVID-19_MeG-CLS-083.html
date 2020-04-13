@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html manifest="manifest.manifest">
+<head>
+	<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+	<title>MRCG Clinical Guidelines</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=1">
+  
+	<meta name=Generator content="Microsoft Word 14 (filtered)">
+	<link rel="manifest" href="/manifest.json">	
+	<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="mystyle.css" />
+	<script src="jquery-1.11.1.min.js"></script>
+	<script src="jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="cordova.js"></script>
+	<script>
+	    		$(function(){
+			$("[data-role='header'], [data-role='footer']").toolbar();
+		});
+  	  $(document).one('pagebeforecreate', function () {
+	        $('input[data-type="search"]').val("");
+	    	        $.get("panel.html", function (data2) {
+            $.mobile.pageContainer.prepend(data2);
+              $("[data-role=panel]").panel().enhanceWithin();
+        }, "html");
+	           $.get("header.html", function (data) {
+      $.mobile.pageContainer.prepend(data);
+      $("[data-role='header']").toolbar().enhanceWithin();
+    }, "html");
+    $.get("footer.html", function (data) {
+      $.mobile.pageContainer.append(data);
+      $("[data-role='footer']").toolbar().enhanceWithin();
+    }, "html");
+        $('.WordSection1').wrap('<div role="main" class="ui-content">');
+        $('table').wrap('<div class="tableCont"></div>');
+        $('img').wrap('<div class="tableCont"></div>');
+        $.mobile.pageContainer.enhanceWithin();
+	  });
+	        $(document).bind( "pagechange", function( ) {
+        $('table').wrap('<div class="tableCont"></div>');
+        $('img').wrap('<div class="tableCont"></div>');
+        $('.tableCont').enhanceWithin();
+      } );
+			// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			document.getElementById("myBtn").style.display = "block";
+		  } else {
+			document.getElementById("myBtn").style.display = "none";
+		  }
+		}
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0; // For Safari
+		  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}
+	</script>  
+</head>
+
+<body lang=EN-GB link=blue vlink=purple>
+
+<div class=WordSection1>
+
+<h1>Adults with mild or moderate COVID-19</h1>
+
+<p class=paragraph style='vertical-align:baseline'><span class=normaltextrun><b><i><span
+style='font-family:"Arial","sans-serif"'>Executive summary</span></i></b></span></p>
+
+<p class=paragraph style='vertical-align:baseline'><span class=normaltextrun><b><span
+style='font-family:"Arial","sans-serif"'>Introduction</span></b></span><span
+class=eop><b>&nbsp;</b></span></p>
+
+<p class=paragraph style='vertical-align:baseline'><span style='font-size:11.0pt;
+font-family:"Arial","sans-serif"'>In late December 2019, the World Health
+Organization (WHO) China Country Office was informed of cases of pneumonia of
+unknown cause detected in Wuhan City, China. On 7 January 2020, the causative
+pathogen was identified as a novel coronavirus (SARS-CoV-2). The disease
+(COVID-19) can range from an symptomatic or mild flu-like illness to a severe
+pneumonia requiring critical care. It was declared a pandemic by WHO on 11<sup>th</sup>
+March 2020. </span></p>
+
+<p class=paragraph style='vertical-align:baseline'><span class=normaltextrun><b><span
+style='font-family:"Arial","sans-serif"'>Target User</span></b></span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class=normaltextrun>Doctors</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class=normaltextrun>Nurses</span></p>
+
+<p class=paragraph style='vertical-align:baseline'><span class=normaltextrun><b><span
+style='font-family:"Arial","sans-serif"'>Target area of use</span></b></span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Outpatient department</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class=normaltextrun>Ward</span></p>
+
+<h2>Key areas of focus / New additions / Changes&nbsp;&nbsp;</h2>
+
+<p class=paragraph style='vertical-align:baseline'><span class=normaltextrun><span
+style='font-size:11.0pt;font-family:"Arial","sans-serif"'>These guidelines </span></span><span
+style='font-size:11.0pt;font-family:"Arial","sans-serif"'>addresses the
+diagnosis and management of low risk adults with COVID-19 who are mainly those
+under the age of 60 with no serious underlying health conditions.</span></p>
+
+<p class=paragraph style='vertical-align:baseline'><span class=normaltextrun><b><span
+style='font-family:"Arial","sans-serif"'>Limitations</span></b></span></p>
+
+<p class=MsoNormal>We lack access to HDU/ICU level care and cannot ventilate
+patients.</p>
+
+<p class=MsoNormal>We have only two negative pressure ward side rooms.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><a name="_Hlk35758971">&nbsp;</a></h2>
+
+<span style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br clear=all
+style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+style='font-size:12.0pt'>&nbsp;</span></b></p>
+
+<h2>Management in the Gate clinic or at registration to OPD</h2>
+
+<p class=MsoNormal>Patients should be asked as a group and individually at
+registration if they have a history of travel to areas with local transmission
+of SARS-CoV-2 in the last four weeks and if they have a fever, cough or
+shortness of breath. </p>
+
+<p class=MsoNormal>When the number of people having a dry cough in the gate
+clinic and OPD waiting areas are more than usual, please have a heightened
+index of suspicion. The travel history inquiry must be repeated before
+consultation starts in the gate clinic and also during vital signs assessment at
+the OPD by the nurses. If the answer to both questions is yes, do not touch the
+patient. Give them a surgical mask and take them to a place 2 metres from other
+people. Immediately inform a doctor or senior nurse who will wear a mask,
+goggles and gloves and verbally screen the patient from a safe distance. If the
+risk for COVID-19 is significant, a call is immediately placed to the COVID-19 national
+number on 1025. A health worker in facemask and gloves must be left watching
+over the patient. If there is no risk for COVID-19, the patient is taken care
+of in the usual manner. </p>
+
+<p class=MsoNormal><u>Epidemiological criteria- </u><b><i>Please note that this
+is dynamic and it changes everyday</i></b></p>
+
+<p class=MsoNormal>Those that have travelled from the countries with ongoing
+presumed community transmission of COVID-19 disease in the 4 weeks prior to
+onset of symptoms. (See WHO website for the latest list of relevant countries:</p>
+
+<p class=MsoNormal><span lang=EN-US><a
+href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports">https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports</a></span>)</p>
+
+<p class=MsoNormal>OR</p>
+
+<p class=MsoNormal>Contact with a confirmed case of COVID-19</p>
+
+<p class=MsoNormal>OR </p>
+
+<p class=MsoNormal>Patient has worked or attended a heath care facility where
+patients with COVID-19 acute respiratory disease patients were being treated.</p>
+
+<p class=MsoNormal><u>Clinical criteria</u></p>
+
+<p class=MsoNormal>Severe acute respiratory infection requiring hospital
+admission with radiological/clinical signs of pneumonia or respiratory distress
+syndrome</p>
+
+<p class=MsoNormal>OR</p>
+
+<p class=MsoNormal>Acute respiratory infection with cough or shortness of
+breath (with or without fever)</p>
+
+<p class=MsoNormal>OR</p>
+
+<p class=MsoNormal>Fever with no other symptoms.</p>
+
+<p class=MsoNormal>AND with no other aetiology that fully explains the clinical
+presentation</p>
+
+<span style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br clear=all
+style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'>&nbsp;</p>
+
+<h2>Presenting symptoms and signs</h2>
+
+<p class=MsoNormal>Early recognition of suspected patients allows timely initiation
+of infection prevention and control (IPC) measures. Most (80%) symptomatic
+patients develop mild disease, an estimated 15% develop severe disease (with
+hypoxaemia, dyspnoea and tachypnoea) while 5% become critically ill (with
+respiratory failure, septic shock and/or multiorgan dysfunction). The
+proportion of asymptomatic carriers is currently unknown.</p>
+
+<p class=MsoNormal>The most common presenting symptoms have been:</p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>fever (~90%, but only present in 44% on admission)</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>cough (68%)</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>fatigue (38%)</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>sputum production (34%)</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>shortness of breath (19%)</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>myalgia or arthralgia (15%)</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>sore throat (14%)</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>headache (13.6%)</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>chills (12%). </p>
+
+<p class=MsoNormal>Gastrointestinal symptoms such as nausea or vomiting (5.0%)
+and diarrhoea (3.8%) appear to be uncommon. </p>
+
+<p class=MsoNormal>There have been recent reports of people with COVID-19
+presenting with loss of smell (anosmia) and loss of taste (ageusia)</p>
+
+<p class=MsoNormal>The vast majority of cases will make a full recovery,
+particularly the low risk adults.</p>
+
+<h2><a name="_Hlk35763554">Examination findings</a></h2>
+
+<p class=MsoNormal>Examinations are non-specific and may range from none other
+than fever to severe respiratory distress, shock and multi organ failure.</p>
+
+<h3>Important things to look for</h3>
+
+<h2><span style='font-size:11.0pt;font-weight:normal'>Travel history of anyone
+meeting the clinical criteria is key.</span></h2>
+
+<h2>Management at the OPD and Ward</h2>
+
+<p class=MsoNormal>Diagnostic criteria, symptoms, signs and examination
+findings are as above.</p>
+
+<p class=MsoNormal>As soon as a possible case is identified the nurse and
+doctor in charge should be called. Possible cases should be given a surgical
+mask to wear as soon as it is clear that they are a possible case. </p>
+
+<p class=MsoNormal>They should then be transferred as soon as possible into the
+negative pressure ward side room using the rear corridor (avoiding transit
+through the ward). If the two side rooms are occupied, the Gambian MOH must be
+promptly informed on 1025 so that the patient can be evacuated after
+nasopharyngeal and throat samples are taken for COVID-19. However, if the
+patient is eligible for admission into the MRCG CSD, admit to the COVID-19 bay
+on Fajara ward and or the COVID-19 ward at Keneba.</p>
+
+<p class=MsoNormal>For emphasis, the public health authorities (Gambian MOH,
+1025) should be alerted that the unit has a possible case. They have the duty
+to follow things up and inform the WHO if the results turn out to be positive.</p>
+
+<p class=MsoNormal>Where there is a delay in transit and the patient is well,
+they should be taken to chairs behind the seminar room to wait for the side
+room to be made ready. If they are unwell one of the OPD rooms should be
+vacated for them and access to this room strictly limited.</p>
+
+<p class=MsoNormal>Once a patient has been identified as a possible case, 2
+staff should get changed into the appropriate PPE. See SOP-AIR-001 and 002 for
+Donning/Doffing PPE for COVID-19. </p>
+
+<h2>Investigations </h2>
+
+<p class=MsoNormal>Investigations should be discussed with the laboratories
+prior to sampling so that they can be sure that they are prepared. ALL samples
+should be clearly labelled with a sticker and marked as “suspected Coronavirus”</p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Nasopharyngeal and oropharyngeal swab, sputum – For PCR detection
+of SARS-CoV-2 after discussion with the molecular lab.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>FBC – Lymphopenia is common, seen in ~80% of patients (Guan et al
+,Yang et al). Mild thrombocytopenia is common (but platelets are rarely
+&lt;100). Lower platelet count is a poor prognostic sign (Ruan et al 3/3). Also
+look for signs of other diseases or coinfection.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>U&amp;Es – renal failure can be a complication of sepsis.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>LFTs – may give signs of alternative diagnosis (eg biliary
+sepsis).</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Malaria RDT &amp; slide – looking for signs of other diseases or
+coinfection. Note that it is safe to do an RDT at the bedside using a capillary
+blood sample.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Blood sugar – it is safe to do blood sugar at the bedside using a
+capillary sample. </p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>HIV – looking for signs of other diseases or coinfection.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Chest X-ray – should NOT be performed until COVID-19 has been
+ruled out as there is a risk of contamination. If/when available, the portable
+Xray machine will be used for all chest X-rays.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>ECG – if there is arrhythmia. </p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>USS – bedside USS may be helpful in the absence of CXR. Remember
+that the probe and all parts that enter the negative pressure room must be
+decontaminated after use. </p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Other tests that are clinically indicated.</p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt'>Treatment on the Ward</span></b></p>
+
+<p class=MsoNormal>There is no specific treatment for COVID-19.</p>
+
+<p class=MsoNormal>Patient with confirmed COVID-19 with <b>mild disease</b>
+such as fever, cough, sore throat, fatigue, headache, muscle pain and nasal
+congestion may be managed at home with strict instructions to self-isolate at
+home where they will be followed up by public health officials and be given
+appropriate advice about reducing possible transmission to others. See guidance
+on Self-isolation for Coronavirus issued by MRCG at LSHTM.</p>
+
+<p class=MsoNormal>Currently in the Gambia however, people with mild disease
+are being admitted to ensure isolation and decrease the probability of
+community/local transmission. This might however change as the pandemic unfolds
+locally.</p>
+
+<p class=MsoNormal>Confirmed patients with <b>moderate</b> to <b>severe </b>cases
+with pneumonia manifestations  who meet any of the following criteria: respiratory
+rate ≥ 30 breaths/min; oxygen saturation ≤ 93% at a rest state; Heart rate &gt;
+120 bpm, temperature &gt; 39 and altered mental state must be hospitalized to
+receive supportive therapy. This is covered in another guideline.</p>
+
+<p class=MsoNormal>All patients must be assessed for severity and a decision
+made about plans for treatment escalation at the time of admission. This is
+covered in another guideline.</p>
+
+<p class=MsoNormal><b>Give supplemental oxygen therapy immediately to patients
+with low oxygen saturation.</b> </p>
+
+<p class=MsoNormal>Oxygen therapy is likely to be the single most effective
+supportive measure in COVID-19 patients overall. Target SpO2 ≥90% in
+non-pregnant adults and SpO2 ≥92-95 % in pregnant patients. Titrate oxygen
+therapy up and down to reach targets by means of nasal cannula, a simple face
+mask or a face mask with reservoir bag, as appropriate.</p>
+
+<p class=MsoNormal><b>Use conservative fluid management in patients with SARS
+when there is no evidence of shock.</b>  Aggressive fluid resuscitation may
+worsen oxygenation, especially in settings where there is limited availability
+of mechanical ventilation.</p>
+
+<p class=MsoNormal><b>If a clinical suspicion for co-infection exists, consider
+empiric antimicrobials to treat co-pathogens causing the syndrome, particularly
+in severe cases</b>. This may include conventional and atypical bacterial
+pathogens, malaria, influenza and PCP. </p>
+
+<p class=MsoNormal>Although there is no clinical evidence for effective
+antiviral drugs, lopinavir-ritonavir combination as well as antibacterial, azithromycin
+and antimalarial drug, hydroxychloroquine are being studied at the moment. Use
+of antiviral or anti-inflammatory medications should be used only as part of a
+clinical trial.</p>
+
+<p class=MsoNormal>Closely monitor patients for signs of clinical
+deterioration, such as rapidly progressive respiratory failure and sepsis, and
+apply supportive care interventions. </p>
+
+<p class=MsoNormal><b>Differential diagnosis</b> </p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Influenza (remembering the seasonality in patients from the
+northern hemisphere differs from those of the southern hemisphere)</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Both conventional and atypical bacterial pneumonias,</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>In patients with HIV and a CD4 count &lt;200 cells/mm3 (or
+equivalent immunosuppression), <i>Pneumocystis jiroveci</i> pneumonia. </p>
+
+<p class=MsoNormal><b>Discharge and deisolation criteria</b> </p>
+
+<p class=MsoNormal>Patients with COVID-19 can be discharged home from OPD or
+isolation room provided the meet ALL of the following criteria: </p>
+
+<p class=MsoNormal>1. There are no medical indications for admission. </p>
+
+<p class=MsoNormal>2. The patient’s symptoms have improved or resolved. (Note:
+full recovery can take several weeks, especially in severe cases. It is not
+necessary for every symptoms to have completely resolved prior to discharge,
+only that there has been improvement).</p>
+
+<p class=MsoNormal> 3. The patient has two consecutive negative combined
+nasopharyngeal and oropharyngeal RT-PCR tests, performed at least 24-48 hours
+apart.  </p>
+
+<p class=MsoNormal>Patients with mild disease who were managed at home from the
+outset can be deisolated using the same criteria.</p>
+
+<span style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br clear=all
+style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+style='font-size:12.0pt'>&nbsp;</span></b></p>
+
+<h2>Key Issues for Nursing care</h2>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>All patients being seen in Gate clinic or OPD with any one of
+cough, shortness of breath or fever starting in the last 14 days MUST be asked
+about travel.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>All nursing staff entering a side room containing a patient, or
+caring for a patient in another setting, with suspected or proven COVID-19 must
+wear PPE as outlined in the SOP.</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>All staff that have contact with the patient must enter the
+details into the log book provided. </p>
+
+<h2>References</h2>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>Handbook of COVID-19
+prevention and treatment </span><span lang=EN-US><a
+href="https://video-intl.alicdn.com/Handbook%20of%20COVID-19%20Prevention%20and%20Treatment%20%28Standard%29.pdf?spm=a3c0i.14138300.8102420620.download.6df3647ft8yaHa&amp;file=Handbook%20of%20COVID-19%20Prevention%20and%20Treatment%20%28Standard%29.pdf"><span
+lang=EN-GB style='font-size:10.0pt'>https://video-intl.alicdn.com/Handbook%20of%20COVID-19%20Prevention%20and%20Treatment%20%28Standard%29.pdf?spm=a3c0i.14138300.8102420620.download.6df3647ft8yaHa&amp;file=Handbook%20of%20COVID-19%20Prevention%20and%20Treatment%20%28Standard%29.pdf</span></a></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>Clinical management of
+suspected or confirmed COVID-19 disease </span><span lang=EN-US><a
+href="http://www.health.gov.za/index.php/component/phocadownload/category/628"><span
+lang=EN-GB style='font-size:10.0pt'>http://www.health.gov.za/index.php/component/phocadownload/category/628</span></a></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>WHO technical guidance for
+2019-nCoV. </span><span lang=EN-US><a
+href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/technical-guidance"><span
+lang=EN-GB style='font-size:10.0pt'>https://www.who.int/emergencies/diseases/novel-coronavirus-2019/technical-guidance</span></a></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>Novel Coronavirus (2019-nCov)
+Guidance for Health professionals collection. </span><span lang=EN-US><a
+href="https://www.gov.uk/government/collections/wuhan-novel-coronavirus"><span
+lang=EN-GB style='font-size:10.0pt'>https://www.gov.uk/government/collections/wuhan-novel-coronavirus</span></a></span><span
+style='font-size:10.0pt'>  </span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>Guan WJ, Ni ZY, Hu Y, Liang
+WH, Ou CQ, He JX, et al. Clinical Characteristics of Coronavirus Disease 2019
+in China. N Engl J Med. 2020.</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>Yang J, Zheng Y, Gou X, Pu K,
+Chen Z, Guo Q, Ji R, Wang H, Wang Y, Zhou Y, Prevalence of comorbidities in the
+novel Wuhan coronavirus (COVID-19) infection: a systematic review and
+meta-analysis, International Journal of Infectious Diseases (2020), doi: </span><span
+lang=EN-US><a href="https://doi.org/10.1016/j.ijid.2020.03.017"><span
+lang=EN-GB style='font-size:10.0pt'>https://doi.org/10.1016/j.ijid.2020.03.017</span></a></span><span
+style='font-size:10.0pt'> </span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;background:#FCFCFC'>Ruan, Q.,
+Yang, K., Wang, W. <i>et al.</i> Clinical predictors of mortality due to
+COVID-19 based on an analysis of data of 150 patients from Wuhan, China. <i>Intensive
+Care Med </i>(2020). https://doi.org/10.1007/s00134-020-05991-x</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b>Written
+  by:</b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'>Name: Amie
+  Secka</p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'>Date: 25
+  March 2020</p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b>Reviewed
+  by:</b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'>Name: Babatunde
+  Awokola</p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'>Date: 10
+  April 2020</p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b>Version:</b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b>Change
+  history:</b></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b>Review
+  due date:</b></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'>1.0</p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'>New document</p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'>10 April
+  2022</p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'>Review
+  Comments (<i>if applicable)</i></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'>&nbsp;</p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b>&nbsp;</b></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>                                                          </p>
+
+</div>
+
+</body>
+
+</html>

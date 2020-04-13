@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html manifest="manifest.manifest">
+<head>
+	<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+	<title>MRCG Clinical Guidelines</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=1">
+  
+	<meta name=Generator content="Microsoft Word 14 (filtered)">
+	<link rel="manifest" href="/manifest.json">	
+	<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="mystyle.css" />
+	<script src="jquery-1.11.1.min.js"></script>
+	<script src="jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="cordova.js"></script>
+	<script>
+	    		$(function(){
+			$("[data-role='header'], [data-role='footer']").toolbar();
+		});
+  	  $(document).one('pagebeforecreate', function () {
+	        $('input[data-type="search"]').val("");
+	    	        $.get("panel.html", function (data2) {
+            $.mobile.pageContainer.prepend(data2);
+              $("[data-role=panel]").panel().enhanceWithin();
+        }, "html");
+	           $.get("header.html", function (data) {
+      $.mobile.pageContainer.prepend(data);
+      $("[data-role='header']").toolbar().enhanceWithin();
+    }, "html");
+    $.get("footer.html", function (data) {
+      $.mobile.pageContainer.append(data);
+      $("[data-role='footer']").toolbar().enhanceWithin();
+    }, "html");
+        $('.WordSection1').wrap('<div role="main" class="ui-content">');
+        $('table').wrap('<div class="tableCont"></div>');
+        $('img').wrap('<div class="tableCont"></div>');
+        $.mobile.pageContainer.enhanceWithin();
+	  });
+	        $(document).bind( "pagechange", function( ) {
+        $('table').wrap('<div class="tableCont"></div>');
+        $('img').wrap('<div class="tableCont"></div>');
+        $('.tableCont').enhanceWithin();
+      } );
+			// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			document.getElementById("myBtn").style.display = "block";
+		  } else {
+			document.getElementById("myBtn").style.display = "none";
+		  }
+		}
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0; // For Safari
+		  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}
+	</script>  
+</head>
+
+<body lang=EN-GB link=blue vlink=purple>
+
+<div class=WordSection1>
+
+<h1>COVID-19 Infection in Pregnancy</h1>
+
+<h2><i>Executive summary</i></h2>
+
+<h2>Introduction</h2>
+
+<p class=MsoNormal><span class=normaltextrun>Current evidence suggests that
+pregnant women are not at a greater risk of contracting SARS-CoV-2 infection
+than the general population. However, if they do, they can be at an increased
+risk of severe illness like pneumonia, hypoxia and ARDS, especially at later
+gestations. Despite this increased risk, most will have </span>no symptoms or a
+mild cold/flu-like illness from which they will make a full recovery<span
+class=normaltextrun>. </span></p>
+
+<p class=MsoNormal><span class=normaltextrun>There is also unclear evidence of
+vertical transmission in limited studies. Hence, it is important to take
+further precautions against this. </span><span style='color:black'>At present,
+there are no known effective treatments for COVID19 and antiviral medications
+should only be given as part of a clinical trial.</span></p>
+
+<h2>Target users</h2>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:39.0pt;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Doctors</p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:39.0pt;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Nurses</p>
+
+<h2>Target area of use </h2>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:39.0pt;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>OPD</p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:39.0pt;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Ward</p>
+
+<h2>Key areas of focus / New additions / Changes </h2>
+
+<p class=MsoNormal><b><span style='color:white'>&nbsp;</span></b></p>
+
+<h2>Limitations</h2>
+
+<p class=MsoNormal><b><span style='color:white'>&nbsp;</span></b></p>
+
+<span style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br clear=all
+style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
+style='font-size:12.0pt'>&nbsp;</span></b></p>
+
+<h2>Risks of COVID-19 in pregnancy</h2>
+
+<h3>Effect on mother</h3>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+class=normaltextrun><span style='font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span>Potential for increased risk <span class=normaltextrun>of
+severe illness, especially after 28 weeks’ gestation (third trimester).</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
+class=normaltextrun><span style='font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><span class=normaltextrun>There is accumulating evidence
+that COVID19 results in an increased risk of preterm delivery for maternal
+medical reasons.</span></p>
+
+<h3><span class=normaltextrun>Effect on foetus</span></h3>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+class=normaltextrun><span style='font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><span class=normaltextrun>From limited evidence, no
+increased risk of miscarriage or early pregnancy loss.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+class=normaltextrun><span style='font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><span class=normaltextrun>No current evidence for
+intrauterine infection, abnormal foetal development or teratogenicity.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class=normaltextrun>In at least one report, foetal
+compromise and prelabour preterm rupture of membranes although this association
+is not established.</span></p>
+
+<h2><span class=normaltextrun>General Advice for patients:</span></h2>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+class=normaltextrun><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><span class=normaltextrun>Strict observation of social
+distancing, especially when above 28 weeks’ gestation. Avoid any social mixing
+in the community, e.g. having friends and family visiting the house, avoid
+public transport and work from home.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+class=normaltextrun><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><span class=normaltextrun>Identify the escort for delivery
+early and identify a primary support person for the puerperal period (6-8
+weeks), ideally the same person.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+class=normaltextrun><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><span class=normaltextrun>Should it be necessary to seek
+care, firstly use the telephone to contact health services instead of visiting
+in person.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+class=normaltextrun><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><span class=normaltextrun>Avoid contact with confirmed
+COVID-19 cases or those with possible symptoms, especially when above 28 weeks’
+gestation.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+class=normaltextrun><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><span class=normaltextrun>Do not reduce the number of
+antenatal visits without first discussing and agreeing with your maternity
+team.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+class=normaltextrun><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><span class=normaltextrun>Do not bring children when you
+attend appointments.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+class=normaltextrun><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><span class=normaltextrun>Defer appointments until 7 days
+after the start of symptoms, unless the symptoms persevere (aside from
+persistent cough).</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+class=normaltextrun><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><span class=normaltextrun>Defer appointments for 14 days
+if self-isolating because someone in your household has possible COVID-19
+symptoms.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='color:black'>Even if previous tests were negative
+for COVID-19, if you re-present with symptoms, COVID-19 should be tested for
+again</span></p>
+
+<h2>General management of all pregnant women with COVID-19</h2>
+
+<h3>Antepartum</h3>
+
+<p class=MsoNormal>See flowchart for outpatient assessment. Avoid admission if
+possible:</p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Prescribe symptomatic treatment e.g. paracetamol.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Initiate self-isolation at home.</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
+class=normaltextrun><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><span class=normaltextrun>Defer appointments until 7 days after
+the start of symptoms, unless the symptoms persevere (aside from persistent
+cough).</span></p>
+
+<span class=normaltextrun><span style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span></span>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+class=normaltextrun>&nbsp;</span></p>
+
+<p class=MsoNormal><span class=normaltextrun>Advise:</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+class=normaltextrun><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><span class=normaltextrun>to seek urgent care if symptoms
+deteriorate.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
+class=normaltextrun><span style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><span class=normaltextrun>on what to do once labour sets
+in or membranes rupture (how and when to come to the health facility).</span></p>
+
+<p class=MsoNormal><span style='color:black'>Once COVID-19 is confirmed,
+arrange for ultrasound to monitor foetal growth. Although there is no evidence
+for foetal growth restriction (FGR), two thirds of pregnancies with SARS had
+FGR and placental abruption occurred in a MERS case.</span></p>
+
+<h3>Intrapartum</h3>
+
+<p class=MsoNormal>In labour and vaginal delivery, PPE is required by all
+healthcare professionals caring for woman with suspected or proven COVID-19 to
+prevent droplet spread – gloves, apron, gown, fluid resistant surgical mask
+(FRSM) with visor to protect eyes as per SOP-AIR-001.</p>
+
+<p class=MsoNormal>The mode of birth is as per obstetric presentation. It is not
+influenced by presence of COVID-19, except for avoiding water birth. All
+obstetric complications can be managed as per standard practice, taking
+precautions for aerosolising techniques and wearing appropriate PPE.</p>
+
+<p class=MsoNormal>Women should stay at home during early (latent phase) of
+labour, contact health facility. They should deliver at an obstetric unit, in
+an isolation room.</p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b>Delivery escort/partner</b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-indent:-18.0pt'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>If asymptomatic: wear a facemask and wash hands frequently.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-indent:-18.0pt'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>If symptomatic: to remain in self-isolation and cannot attend the
+health facility</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b>Admission </b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-indent:-18.0pt'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>Inform obstetrician, anaesthetist, midwife-in-charge,
+neonatologist and infection control team.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-indent:-18.0pt'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>PPE required by all healthcare professionals caring for woman.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-indent:-18.0pt'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>Take woman and escort to isolation room/delivery room.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b>Monitoring</b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-indent:-18.0pt'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>Open partogram.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-indent:-18.0pt'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>Frequent temperature, respiratory rate, SpO<sub>2</sub> aim &gt; 94%
+- if possible hourly.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-indent:-18.0pt'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span>Foetal heart rate - CTG if possible or done after every
+contraction.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Epidural or spinal analgesia is possible.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Delayed cord clamping is recommended.</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Third stage of labour is proceeded as per normal protocols i.e.
+active management with controlled cord traction and prophylactic uterotonics
+e.g. 10 units IV oxytocin or 1 ml syntometrine intramuscularly or ergometrine. </p>
+
+<p class=MsoNormal>Recommendations for conducting Caesarean Sections:</p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>General anaesthesia – all staff in theatre should wear PPE,
+including FFP3 mask before GA is commenced, with scrub team scrubbed up.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Regional anaesthesia – all staff not required for siting of the
+regional anaesthesia should stay outside the theatre till the block is
+effective, then don PPE with FRSM.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Number of staff in the operating theatre should be kept to a
+minimum, and all must wear appropriate PPE.</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='color:black'>For elective caesarean sections and planned
+inductions of labour, make an individual assessment on whether it is safe to
+delay the appointment to minimise transmission to other women, healthcare
+workers and postnatally, to her infant.</span></p>
+
+<h3>Postpartum</h3>
+
+<p class=MsoNormal><span lang=EN-US>Keep women and well infants together. Advise
+hand washing before usual mother-baby interactions e.g. feeding, changing
+nappy, holding.</span></p>
+
+<p class=MsoNormal>Breastfeeding is advised as the benefits outweigh the
+potential risks of close contact with mother. There is no current evidence of
+presence of virus in breastmilk and stopping breastfeeding is a risk to the
+newborn.</p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Avoid coughing or sneezing on the baby.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Consider wearing a face mask while breastfeeding.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Consider asking well escort to feed expressed
+milk to the baby.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>For babies &lt; 2000 g, encourage KMC unless
+there is a clinical reason to stop.</span></p>
+
+<h2>Management of pregnant women with moderate/severe COVID-19</h2>
+
+<h3>Antepartum</h3>
+
+<p class=MsoNormal>Admit to an obstetric unit in an isolation room.</p>
+
+<p class=MsoNormal><u>Monitoring and diagnostics: </u></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>frequent temperature, respiratory rate, SpO<sub>2</sub>
+– if possible hourly.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Consider </span>cardiotocogram (<span
+lang=EN-US>CTG) if &gt;34 weeks.</span><span lang=EN-US> </span>The frequency
+and suitability of CTG should be considered on an individual basis, taking into
+concern the maternal condition and gestational age of foetus.</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Perform Chest X-ray once if indicated e.g. acute respiratory symptoms,
+hyoxia or suspected pulmonary embolism, and not to be delayed due to foetal
+concerns. Abdominal shielding can be used as per normal protocols to protect
+foetus.</p>
+
+<p class=MsoNormal><u><span lang=EN-US>Treatment:</span></u></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>If hypotensive, cautious trial of 250-500mls IV
+fluid bolus before proceeding with further fluids.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>No changes to usual indications for antenatal
+steroids, magnesium sulfate, tocolytics.</span><span lang=EN-US> </span>There
+is no evidence that steroids for foetal lung maturation cause any harm in the
+context of COVID-19 and should still be given to women in preterm labour, if
+available.</p>
+
+<p class=MsoNormal><u><span lang=EN-US>Before discharge:</span></u></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Following an initial period of improvement in
+the woman’s condition, consider observation for 24-48 hours further as she may
+rapidly deteriorate.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>After resolution of symptoms, arrange ultrasound
+for foetal growth.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Advise to return if she becomes more unwell.</span></p>
+
+<h3>Intrapartum</h3>
+
+<p class=MsoNormal>Maternal stabilisation before delivery is essential, as in
+other obstetric emergencies.</p>
+
+<p class=MsoNormal>If delivery is anticipated or indicated, transfer should be
+made to the closest obstetric unit with surgical capacity. They should be
+notified in advance to allow for adequate preparation.</p>
+
+<p class=MsoNormal>In addition to the general advice: </p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-indent:-18.0pt;text-autospace:none'><span lang=EN-US style='font-family:
+Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='color:black'>Open fluid input/output
+chart – hourly, if possible.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-bottom:0cm;margin-bottom:
+.0001pt;text-indent:-18.0pt;text-autospace:none'><span lang=EN-US
+style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='color:black'>Consider instrumental
+delivery if women is becoming exhausted or hypoxic.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
+style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='color:black'>If the woman’s symptoms are
+deteriorating, proceed to emergency CS, if the delivery would be quicker than
+vaginal, to assist efforts to resuscitate her.</span></p>
+
+<h3>Post partum</h3>
+
+<p class=MsoNormal>In addition to the general advice: </p>
+
+<p class=MsoNormal><span lang=EN-US style='color:black'>Encourage and support
+mother and baby to be together. Consider separating mother and baby partially
+or completely (e.g. discharging baby home before unwell mother) only after
+taking into account limited local capacity, disease severity, psychological
+wellbeing, parental preferences, if method exists to feed baby e.g. bottle or
+cup feeding.</span></p>
+
+<h2>Advice for pregnant healthcare workers</h2>
+
+<p class=MsoNormal>At any gestation, they should be offered the choice of
+whether or not they wish to work in direct patient-facing roles and should
+discuss work arrangements with their line manager.</p>
+
+<p class=MsoNormal>Less than 28 weeks pregnant and without underlying health
+conditions e.g. heart or lung disease:</p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Practice social distancing</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Where possible, avoid caring for patients with suspected or
+confirmed <span style='color:black'>COVID-19</span></p>
+
+<p class=MsoNormal>More than 28 weeks pregnant, or have underlying health
+conditions:</p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Recommended to work from home</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Avoid patient contact in general</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='color:black'>Avoid contact with anyone with symptoms
+of COVID-19</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='color:black'>Significantly reduce unnecessary social
+contact</span></p>
+
+<h2>References</h2>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Royal College of
+Obstetricians and Gynaecologists. <i>Coronavirus (COVID-19) Infection in Pregnancy</i>.
+Information for healthcare professionals. London; RCOG, 26 March 2020.</span></p>
+
+<p class=MsoNormal><span lang=DE style='font-size:10.0pt;color:black'>MB,
+Fontijin J, Ochsenbein-Kölble N et al. </span><span lang=EN-US
+style='font-size:10.0pt;color:black'>COVID-19 in pregnant women. The Lancet
+Infectious Diseases. 2020; (published online March 17.) DOI:
+10.1016/S1437-3099(20)30175-4 </span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>American College
+of Obstetricians and Gynecologists. Outpatient Assessment and Management of
+Pregnant Women with <span style='color:black'>Suspected or Confirmed Novel Coronavirus
+(COVID-19). March 2020</span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>World Health
+Organization. Clinical Management of severe acute respiratory infections (SARI)
+when COVID-19 disease is suspected. Interim guidance. 13 March 2020</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:10.0pt'>Swartz D, Graham
+A. Potential Maternal and Infant Outcomes from Coronavirus 2019-nCoV
+(SARS-CoV-2) Infecting Pregnant Women: Lessons from SARS, MERS, and Other Human
+Coronavirus Infections. Viruses 2020:1-16.</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b>Written
+  by:</b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'>Name: Caryssa
+  Yan</p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'>Date: 10
+  April 2020</p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b>Reviewed
+  by:</b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'>Name: Hawanatu
+  Jah</p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'>Date: 12
+  April 2020</p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b>Version:</b></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b>Change
+  history:</b></p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b>Review
+  due date:</b></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'>1.0</p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'>New
+  document</p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'>12 April
+  2022</p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'>Review
+  Comments (<i>if applicable)</i></p>
+  </td>
+  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'>&nbsp;</p>
+  </td>
+  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b>&nbsp;</b></p>
+  </td>
+ </tr>
+</table>
+
+<h2><span style='position:absolute;z-index:251688960;margin-left:-77px;
+margin-top:33px;width:737px;height:844px'><img width=737 height=844
+src="COVID-19_Infection_in_Pregnancy_MeG-CLS-086_files/image001.png"></span><span
+lang=EN-US>Outpatient Assessment of Pregnant Women with Suspected or Confirmed
+COVID-19</span></h2>
+
+<p class=MsoNormalCxSpFirst align=center style='text-align:center'><span
+lang=EN-US style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

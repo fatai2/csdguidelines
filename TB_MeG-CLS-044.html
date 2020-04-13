@@ -1,76 +1,15 @@
 <!DOCTYPE html>
-<html manifest="manifest.manifest">
+<html>
 <head>
-	<meta http-equiv=Content-Type content="text/html; charset=utf-8">
 	<title>MRCG Clinical Guidelines</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=1">
   
-	<meta name=Generator content="Microsoft Word 14 (filtered)">
-	<link rel="manifest" href="/manifest.json">	
-<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
-	<link rel="stylesheet" href="mystyle.css" />
+	<<meta name=Generator content="Microsoft Word 14 (filtered)">
+	<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
 	<script src="jquery-1.11.1.min.js"></script>
 	<script src="jquery.mobile-1.4.5.min.js"></script>
-	<script type="text/javascript" src="cordova.js"></script>
-	<script>
-	    		$(function(){
-			$("[data-role='header'], [data-role='footer']").toolbar();
-		});
-  	  $(document).one('pagebeforecreate', function () {
-	        $('input[data-type="search"]').val("");
-	    	        $.get("panel.html", function (data2) {
-            $.mobile.pageContainer.prepend(data2);
-              $("[data-role=panel]").panel().enhanceWithin();
-        }, "html");
-	           $.get("header.html", function (data) {
-      $.mobile.pageContainer.prepend(data);
-      $("[data-role='header']").toolbar().enhanceWithin();
-    }, "html");
-    $.get("footer.html", function (data) {
-      $.mobile.pageContainer.append(data);
-      $("[data-role='footer']").toolbar().enhanceWithin();
-    }, "html");
-        $('.WordSection1').wrap('<div role="main" class="ui-content">');
-        $('table').wrap('<div class="tableCont"></div>');
-        $('img').wrap('<div class="tableCont"></div>');
-        $.mobile.pageContainer.enhanceWithin();
-	  });
-	        $(document).bind( "pagechange", function( ) {
-        $('table').wrap('<div class="tableCont"></div>');
-        $('img').wrap('<div class="tableCont"></div>');
-        $('.tableCont').enhanceWithin();
-      } );
-			// When the user scrolls down 20px from the top of the document, show the button
-		window.onscroll = function() {scrollFunction()};
-		function scrollFunction() {
-		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-			document.getElementById("myBtn").style.display = "block";
-		  } else {
-			document.getElementById("myBtn").style.display = "none";
-		  }
-		}
-		// When the user clicks on the button, scroll to the top of the document
-		function topFunction() {
-		  document.body.scrollTop = 0; // For Safari
-		  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-		}</script>      
-	
-
-
-
-
-
-	
-
-
-
-
-
-
-
-  
-  
-  	
+	<script type="text/javascript" src="cordova.js"></script>      
+	  	
 </head>
 <body lang=EN-GB link=blue vlink=purple>
 	
