@@ -28,7 +28,7 @@
       $.mobile.pageContainer.append(data);
       $("[data-role='footer']").toolbar().enhanceWithin();
     }, "html");
-        $('.WordSection1').wrap('<div role="main" class="ui-content">');
+        $$('.WordSection1').wrap('<div role="main" class="ui-content">').wrap('<div data-role="page">');
 	$('.ui-content').enhanceWithin();
         $('table').wrap('<div class="tableCont"></div>');
         $('img').wrap('<div class="tableCont"></div>');
