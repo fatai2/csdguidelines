@@ -13,7 +13,7 @@ self.addEventListener("message", (event) => {
 const networkFirstPaths = [
   /* Add an array of regex of paths that should go network first */
   // Example: /\/api\/.*/
-  '/csdguidelines/index.html'
+  '/csdguidelines//index.html'
 ];
 
 const networkOnlyPaths = [
