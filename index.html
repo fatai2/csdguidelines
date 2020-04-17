@@ -4,7 +4,6 @@
 	<title>MRCG Clinical Guidelines</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=1">
 	<meta name=Generator content="Microsoft Word 14 (filtered)">
-	<script src="pwabuilder-sw-register.js"></script>
 	<link rel="manifest" href="manifest.json"/>
 	<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
 	<link rel="stylesheet" href="jquery.mobile.structure-1.4.5.min.css" />
@@ -41,6 +40,11 @@
       } );
 	</script>
 	<script src="manup.js"></script>
+	<script src="pwabuilder-sw-register.js">
+		import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+		const el = document.createElement('pwa-update');
+		document.body.appendChild(el);
+	</script>
 	<style>
 	.show {display: block;}
 	.tablist-left {
