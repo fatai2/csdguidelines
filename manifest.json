@@ -2,9 +2,9 @@
     "dir": "ltr",
     "lang": "English",
     "name": "MRCG Clinical Guidelines",
-    "scope": "/csdguidelines/",
+    "scope": "./",
     "display": "fullscreen",
-    "start_url": "https://fatai2.github.io/csdguidelines/index.html",
+    "start_url": "https://fatai2.github.io/csdguidelines//index.html",
     "short_name": "MRCG Guidelines",
     "theme_color": "transparent",
     "description": "Official guidelines app for the Clinical Services Department of the MRC Unit The Gambia",
@@ -104,6 +104,6 @@
             "type": "image/png"
         }
     ],
-    "url": "https://fatai2.github.io/csdguidelines/",
+    "url": "https://fatai2.github.io/csdguidelines//",
     "screenshots": []
 }
