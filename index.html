@@ -9,7 +9,11 @@
 	<link rel="stylesheet" href="./jquery.mobile.structure-1.4.5.min.css" />
 	<script src="./jquery-1.11.1.min.js"></script>
 	<script src="./jquery.mobile-1.4.5.min.js"></script>
-	<script type="text/javascript" src="cordova.js"></script>
+	<script type="module">
+		import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+		const el = document.createElement('pwa-update');
+		document.body.appendChild(el);
+	</script>
 	<script>
 	    		$(function(){
 			$("[data-role='header'], [data-role='footer']").toolbar();
