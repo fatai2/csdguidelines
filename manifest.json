@@ -2,7 +2,7 @@
     "dir": "ltr",
     "lang": "English",
     "name": "MRCG Clinical Guidelines",
-    "scope": "/",
+    "scope": "/csdguidelines/",
     "display": "fullscreen",
     "start_url": "https://fatai2.github.io/csdguidelines/",
     "short_name": "MRCG Guidelines",
