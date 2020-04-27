@@ -9,7 +9,7 @@
     "theme_color": "transparent",
     "description": "Official guidelines app for the Clinical Services Department of the MRC Unit The Gambia",
     "orientation": "portrait",
-    "background_color": "transparent",
+    "background_color": "white",
     "related_applications": [],
     "prefer_related_applications": false,
     "icons": [
