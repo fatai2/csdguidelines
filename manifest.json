@@ -3,7 +3,7 @@
     "lang": "English",
     "name": "MRCG Clinical Guidelines",
     "scope": "/csdguidelines/",
-    "display": "standalone",
+    "display": "fullscreen",
     "start_url": "https://fatai2.github.io/csdguidelines//",
     "short_name": "MRCG Guidelines",
     "theme_color": "white",
