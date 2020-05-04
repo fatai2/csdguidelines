@@ -35,10 +35,12 @@
         $('img').wrap('<div class="tableCont"></div>');
         $.mobile.pageContainer.enhanceWithin();
 	  });
-	        $(document).bind( "pagechange", function( ) {
+$(document).bind( "pagechange", function( ) {
+	$('.WordSection1').wrap('<div role="main" class="ui-content">');
         $('table').wrap('<div class="tableCont"></div>');
         $('img').wrap('<div class="tableCont"></div>');
         $('.tableCont').enhanceWithin();
+	$('.ui-content').enhanceWithin()
       } );
 	</script>
 
