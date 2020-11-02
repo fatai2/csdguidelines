@@ -1,586 +1,373 @@
 <!DOCTYPE html>
-<html manifest="manifest.manifest">
+<!--
+==============================================================================
+           "GitHub HTML5 Pandoc Template" v2.1 — by Tristano Ajmone           
+==============================================================================
+Copyright © Tristano Ajmone, 2017, MIT License (MIT). Project's home:
+
+- https://github.com/tajmone/pandoc-goodies
+
+The CSS in this template reuses source code taken from the following projects:
+
+- GitHub Markdown CSS: Copyright © Sindre Sorhus, MIT License (MIT):
+  https://github.com/sindresorhus/github-markdown-css
+
+- Primer CSS: Copyright © 2016-2017 GitHub Inc., MIT License (MIT):
+  http://primercss.io/
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The MIT License 
+
+Copyright (c) Tristano Ajmone, 2017 (github.com/tajmone/pandoc-goodies)
+Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+Copyright (c) 2017 GitHub Inc.
+
+"GitHub Pandoc HTML5 Template" is Copyright (c) Tristano Ajmone, 2017, released
+under the MIT License (MIT); it contains readaptations of substantial portions
+of the following third party softwares:
+
+(1) "GitHub Markdown CSS", Copyright (c) Sindre Sorhus, MIT License (MIT).
+(2) "Primer CSS", Copyright (c) 2016 GitHub Inc., MIT License (MIT).
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+==============================================================================-->
+<html>
 <head>
-	<meta http-equiv=Content-Type content="text/html; charset=utf-8">
-	<title>MRCG Clinical Guidelines</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=1">
-	<meta name=Generator content="Microsoft Word 14 (filtered)">
-	<link rel="manifest" href="/manifest.json">	
-<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
-	<link rel="stylesheet" href="mystyle.css" />
-	<script src="jquery-1.11.1.min.js"></script>
-	<script src="jquery.mobile-1.4.5.min.js"></script>
-	<script type="text/javascript" src="cordova.js"></script>
-	<script>
-	    		$(function(){
-			$("[data-role='header'], [data-role='footer']").toolbar();
-		});
-  	  $(document).one('pagebeforecreate', function () {
-	        $('input[data-type="search"]').val("");
-	    	        $.get("panel.html", function (data2) {
-            $.mobile.pageContainer.prepend(data2);
-              $("[data-role=panel]").panel().enhanceWithin();
-        }, "html");
-	           $.get("header.html", function (data) {
-      $.mobile.pageContainer.prepend(data);
-      $("[data-role='header']").toolbar().enhanceWithin();
-    }, "html");
-    $.get("footer.html", function (data) {
-      $.mobile.pageContainer.append(data);
-      $("[data-role='footer']").toolbar().enhanceWithin();
-    }, "html");
-        $('.WordSection1').wrap('<div role="main" class="ui-content">');
-        $('table').wrap('<div class="tableCont"></div>');
-        $('img').wrap('<div class="tableCont"></div>');
-        $.mobile.pageContainer.enhanceWithin();
-	  });
-	        $(document).bind( "pagechange", function( ) {
-        $('table').wrap('<div class="tableCont"></div>');
-        $('img').wrap('<div class="tableCont"></div>');
-        $('.tableCont').enhanceWithin();
-      } );
-			// When the user scrolls down 20px from the top of the document, show the button
-		window.onscroll = function() {scrollFunction()};
-		function scrollFunction() {
-		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-			document.getElementById("myBtn").style.display = "block";
-		  } else {
-			document.getElementById("myBtn").style.display = "none";
-		  }
-		}
-		// When the user clicks on the button, scroll to the top of the document
-		function topFunction() {
-		  document.body.scrollTop = 0; // For Safari
-		  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-		}</script>      
-	
-
-
-  
-  
-  	
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Cellulitis MeG-CLS-051</title>
+  <style type="text/css">
+@charset "UTF-8";.markdown-body{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;color:#24292e;font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";font-size:16px;line-height:1.5;word-wrap:break-word;box-sizing:border-box;min-width:200px;max-width:980px;margin:0 auto;padding:45px}.markdown-body a{color:#0366d6;background-color:transparent;text-decoration:none;-webkit-text-decoration-skip:objects}.markdown-body a:active,.markdown-body a:hover{outline-width:0}.markdown-body a:hover{text-decoration:underline}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body strong{font-weight:600}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.markdown-body h1{font-size:2em;margin:.67em 0;padding-bottom:.3em;border-bottom:1px solid #eaecef}.markdown-body h2{padding-bottom:.3em;font-size:1.5em;border-bottom:1px solid #eaecef}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{font-size:.85em;color:#6a737d}.markdown-body img{border-style:none}.markdown-body svg:not(:root){overflow:hidden}.markdown-body hr{box-sizing:content-box;height:.25em;margin:24px 0;padding:0;overflow:hidden;background-color:#e1e4e8;border:0}.markdown-body hr::before{display:table;content:""}.markdown-body hr::after{display:table;clear:both;content:""}.markdown-body input{margin:0;overflow:visible;font:inherit;font-family:inherit;font-size:inherit;line-height:inherit}.markdown-body [type=checkbox]{box-sizing:border-box;padding:0}.markdown-body *{box-sizing:border-box}.markdown-body blockquote{margin:0}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol ol,.markdown-body ul ol{list-style-type:lower-roman}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body ol ol ol,.markdown-body ol ul ol,.markdown-body ul ol ol,.markdown-body ul ul ol{list-style-type:lower-alpha}.markdown-body li>p{margin-top:16px}.markdown-body li+li{margin-top:.25em}.markdown-body dd{margin-left:0}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:600}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body code{font-family:SFMono-Regular,Consolas,"Liberation Mono",Menlo,Courier,monospace}.markdown-body pre{font:12px SFMono-Regular,Consolas,"Liberation Mono",Menlo,Courier,monospace;word-wrap:normal}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body blockquote{padding:0 1em;color:#6a737d;border-left:.25em solid #dfe2e5}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body table{display:block;width:100%;overflow:auto;border-spacing:0;border-collapse:collapse}.markdown-body table th{font-weight:600}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #dfe2e5}.markdown-body table tr{background-color:#fff;border-top:1px solid #c6cbd1}.markdown-body table tr:nth-child(2n){background-color:#f6f8fa}.markdown-body img{max-width:100%;box-sizing:content-box;background-color:#fff}.markdown-body code{padding:.2em 0;margin:0;font-size:85%;background-color:rgba(27,31,35,.05);border-radius:3px}.markdown-body code::after,.markdown-body code::before{letter-spacing:-.2em;content:" "}.markdown-body pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:0 0;border:0}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f6f8fa;border-radius:3px}.markdown-body pre code{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.markdown-body pre code::after,.markdown-body pre code::before{content:normal}.markdown-body .full-commit .btn-outline:not(:disabled):hover{color:#005cc5;border-color:#005cc5}.markdown-body kbd{box-shadow:inset 0 -1px 0 #959da5;display:inline-block;padding:3px 5px;font:11px/10px SFMono-Regular,Consolas,"Liberation Mono",Menlo,Courier,monospace;color:#444d56;vertical-align:middle;background-color:#fcfcfc;border:1px solid #c6cbd1;border-bottom-color:#959da5;border-radius:3px;box-shadow:inset 0 -1px 0 #959da5}.markdown-body :checked+.radio-label{position:relative;z-index:1;border-color:#0366d6}.markdown-body .task-list-item{list-style-type:none}.markdown-body .task-list-item+.task-list-item{margin-top:3px}.markdown-body .task-list-item input{margin:0 .2em .25em -1.6em;vertical-align:middle}.markdown-body::before{display:table;content:""}.markdown-body::after{display:table;clear:both;content:""}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.Alert,.Error,.Note,.Success,.Warning{padding:11px;margin-bottom:24px;border-style:solid;border-width:1px;border-radius:4px}.Alert p,.Error p,.Note p,.Success p,.Warning p{margin-top:0}.Alert p:last-child,.Error p:last-child,.Note p:last-child,.Success p:last-child,.Warning p:last-child{margin-bottom:0}.Alert{color:#246;background-color:#e2eef9;border-color:#bac6d3}.Warning{color:#4c4a42;background-color:#fff9ea;border-color:#dfd8c2}.Error{color:#911;background-color:#fcdede;border-color:#d2b2b2}.Success{color:#22662c;background-color:#e2f9e5;border-color:#bad3be}.Note{color:#2f363d;background-color:#f6f8fa;border-color:#d5d8da}.Alert h1,.Alert h2,.Alert h3,.Alert h4,.Alert h5,.Alert h6{color:#246;margin-bottom:0}.Warning h1,.Warning h2,.Warning h3,.Warning h4,.Warning h5,.Warning h6{color:#4c4a42;margin-bottom:0}.Error h1,.Error h2,.Error h3,.Error h4,.Error h5,.Error h6{color:#911;margin-bottom:0}.Success h1,.Success h2,.Success h3,.Success h4,.Success h5,.Success h6{color:#22662c;margin-bottom:0}.Note h1,.Note h2,.Note h3,.Note h4,.Note h5,.Note h6{color:#2f363d;margin-bottom:0}.Alert h1:first-child,.Alert h2:first-child,.Alert h3:first-child,.Alert h4:first-child,.Alert h5:first-child,.Alert h6:first-child,.Error h1:first-child,.Error h2:first-child,.Error h3:first-child,.Error h4:first-child,.Error h5:first-child,.Error h6:first-child,.Note h1:first-child,.Note h2:first-child,.Note h3:first-child,.Note h4:first-child,.Note h5:first-child,.Note h6:first-child,.Success h1:first-child,.Success h2:first-child,.Success h3:first-child,.Success h4:first-child,.Success h5:first-child,.Success h6:first-child,.Warning h1:first-child,.Warning h2:first-child,.Warning h3:first-child,.Warning h4:first-child,.Warning h5:first-child,.Warning h6:first-child{margin-top:0}h1.title,p.subtitle{text-align:center}h1.title.followed-by-subtitle{margin-bottom:0}p.subtitle{font-size:1.5em;font-weight:600;line-height:1.25;margin-top:0;margin-bottom:16px;padding-bottom:.3em}div.line-block{white-space:pre-line}
+  </style>
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
 </head>
-<body lang=EN-GB link=blue vlink=purple>
-	
-<div data-role="page">
-	<div role="main" class="ui-content">
-<div class=WordSection1>
-<h2><span style='font-size:14.0pt;color:black'>Cellulitis</span></h2>
-<h2><i><span lang=EN-US>Executive summary</span></i></h2>
-<h2><span lang=EN-US>Introduction</span></h2>
-<p class=MsoNormal><span style='color:black'>The term cellulitis is commonly
-used to indicate a non-necrotizing inflammation of the skin and subCutaneous
-tissues, usually from acute infection. Cellulitis usually follows a breach in
-the skin, although a portal of entry may not be obvious; the breach may involve
-microscopic skin changes or invasive qualities of certain bacteria.</span></p>
-<h2><span lang=EN-US>Target Users</span></h2>
-<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
-lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN-US>Doctors</span></p>
-<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN-US>Nurses</span></p>
-<h2><span lang=EN-US>Target area of use </span></h2>
-<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
-lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN-US>Ward</span></p>
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN-US>Outpatient department</span></p>
-<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN-US>Gate clinic</span></p>
-<h2><span lang=EN-US>Key areas of focus/new additions/changes</span></h2>
-<p class=MsoNormal><span lang=EN-US>These guidelines addresses the management of
-cellulitis in adults and children.</span></p>
-<h2><span lang=EN-US>Limitations</span></h2>
-<p class=MsoNormal><span lang=EN-US>Patient with complicated cellulitis
-associated with compartment syndrome or necrosis must be referred to a surgeon.</span></p>
-<span lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
-clear=all style='page-break-before:always'>
-</span>
-<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
-lang=EN-US style='font-size:12.0pt'>&nbsp;</span></b></p>
-<h2><span style='color:black'>Presenting symptoms and signs</span></h2>
-<p class=MsoNormal><span style='color:black'>Nonpurulent cellulitis is
-associated with the 4 cardinal signs of infections, as follows:</span></p>
-<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='color:black'>Erythema</span></p>
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='color:black'>Pain</span></p>
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='color:black'>Swelling</span></p>
-<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='color:black'>Warmth</span></p>
-<p class=MsoNormal><span style='color:black'>The follow findings suggest severe
-infection:</span></p>
-<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='color:black'>Malaise</span></p>
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='color:black'>Chills</span></p>
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='color:black'>Fever and toxicity</span></p>
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='color:black'>Circumferential cellulitis</span></p>
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='color:black'>Lymphangitic spread (red lines
-streaking away from the area of infection)</span></p>
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='color:black'>Crepitus</span></p>
-<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='color:black'>Pain disproportionate to examination
-findings</span></p>
-<h2><span style='color:black'>Examination findings</span></h2>
-<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='color:black'>The involved site(s) is/are red, hot,
-swollen and tender.</span><span style='color:black'> </span><span
-style='color:black'>The leg is the most common site. Tinea pedis lesions may be
-the sites of entry</span></p>
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='color:black'>Regional lymphadenopathy may be present</span></p>
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='color:black'>Malaise, chills, fever, and toxicity may
-be present</span></p>
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='color:black'>Skin infections without associated drainage,
-penetrating trauma, eschar, or abscess is most likely caused by streptococci;
-on the other hand<b>, S aureus</b>, often community acquired
-methicillin-resistant S aureus, is the most likely pathogen when these factors
-are present.</span></p>
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='color:black'>Perianal cellulitis is usually observed
-in children with perianal fissures; it is characterized by <b>perianal erythema</b>
-and <b>pruritis, purulent secretions</b>, <b>painful defecation </b>and <b>blood
-in stools</b></span></p>
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='color:black'>Cellulitis characterized by violet colour
-and bullae suggests more serious or systemic infection with organisms such as<b>
-</b><i>V. vulnificus</i> or <i>S. pneumoniae.</i></span></p>
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='color:black'>Lymphangitic spread (red lines
-streaking away from area of infection), crepitus, .and hemodynamic instability
-are indications of severe infection, requiring more aggressive treatment.</span></p>
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='color:black'>Circumferential cellulitis or pain that
-is disproportional to examination findings should prompt consideration of severe
-soft tissue infection</span></p>
-<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN-US><a
-href="https://www.hopkinsguides.com/hopkins/view/Johns_Hopkins_ABX_Guide/540402/all/Orbital_Cellulitis"><b><span
-lang=EN style='color:black;text-decoration:none'>Periorbital</span></b></a></span><b><span
-lang=EN style='color:black'> (preseptal) cellulitis </span></b><span lang=EN
-style='color:black'> is potentially serious and merits an ophthalmology
-consultation and a CT scan to exclude an orbital infection</span></p>
-<p class=MsoNormal><b><u><span style='color:black'>Indication for referral for emergent
-surgical evaluation</span></u></b><span style='color:black'> are as follows:</span></p>
-<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='color:black'>Violaceous bullae</span></p>
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='color:black'>Cutaneous haemorrhage</span></p>
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='color:black'>Skin sloughing</span></p>
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='color:black'>Skin anaesthesia</span></p>
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='color:black'>Rapid progression</span></p>
-<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='color:black'>Gas in the tissue (crepitus)</span></p>
-<p class=MsoNormal><span style='color:black'>&nbsp;</span></p>
-<h2><span style='color:black'>Differential Diagnoses</span></h2>
-<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='color:black'>Erysipelas (more superficial with
-sharply demarcated borders)</span></p>
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN style='color:black'>Thrombophlebitis</span></p>
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN-US><a
-href="https://www.hopkinsguides.com/hopkins/view/Johns_Hopkins_ABX_Guide/540378/all/Necrotizing_Fasciitis"><span
-lang=EN style='color:black;text-decoration:none'>Necrotizing fasciitis</span></a></span></p>
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN style='color:black'>Erythroderma</span></p>
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN style='color:black'>Panniculitis</span></p>
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN style='color:black'>Pyoderma</span></p>
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN style='color:black'>Dermatitis</span></p>
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN style='color:black'>Allergic reactions</span></p>
-<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN style='color:black'>Drug reaction </span></p>
-<h2><span style='color:black'>Investigations</span></h2>
-<p class=MsoNormal><span lang=EN style='color:black'>Generally no work-up is required
-in uncomplicated cases of cellulitis.</span></p>
-<p class=MsoNormal><span lang=EN style='color:black'>For patients with cellulitis
-who have signs and symptoms of systemic inflammatory response, do:</span></p>
-<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='color:black'>FBC </span></p>
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='color:black'>Creatinine and Bicarbonate </span></p>
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='color:black'>Aspirate gram stain and culture
-(purulent cellulitis only)</span></p>
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='color:black'>Blood culture should be performed for
-serious infections to pinpoint the etiology </span></p>
-<p class=MsoListParagraphCxSpMiddle style='text-indent:36.0pt'><span
-style='color:black'>Blood cultures are only  positive in 5-15 % of patients
-with cellulitis)</span></p>
-<p class=MsoListParagraphCxSpLast style='margin-left:72.0pt'><span
-style='color:black'>Blood cultures are also indicated in special populations (immunosuppressed,
-severe post-surgical wounds</span><span style='color:black'>).</span></p>
-<h2><span style='color:black'>Management </span></h2>
-<h3>Management at the Gate Clinic</h3>
-<p class=MsoNormal><span style='color:black'>Patients with cellulitis should be
-referred to OPD for evaluation by a doctor.</span></p>
-<h3>Management in OPD or on the ward</h3>
-<p class=MsoNormal><span style='color:black'>Management of cellulitis should
-include elevation of the affected area and treatment of underlying conditions. </span></p>
-<p class=MsoNormal><span style='color:black'>Many patients with cellulitis have
-underlying conditions that predispose them to developing recurrent cellulitis
-(these include tinea pedis, lymphedema, and chronic venous insufficiency). In
-such patients, treatment should be directed at both the infection and the
-predisposing condition if modifiable. As an example, patients with oedema may
-benefit from treatment with compressive stockings and diuretic therapy. </span></p>
-<p class=MsoNormal><span style='color:black'>Consider in-patient care when
-there is:</span></p>
-<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
-style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='color:black'>An elevated creatinine level</span></p>
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='color:black'>A low serum bicarbonate level</span></p>
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='color:black'>Systemic signs of toxicity (e.g. fever
-&gt; 38°C, hypotension, or sustained tachycardia)</span></p>
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='color:black'>Rapid progression of erythema</span></p>
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='color:black'>Progression of clinical findings after
-48 hours of oral antibiotic therapy</span></p>
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='color:black'>Inability to tolerate oral therapy</span></p>
-<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
-style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='color:black'>Proximity of the lesion to an
-indwelling medical device (e.g. prosthetic joint or vascular graft)</span></p>
-<h3>Nonpurulent cellulitis</h3>
-<p class=MsoNormal><span lang=EN-US>Patients with nonpurulent cellulitis (e.g.
-cellulitis with no purulent drainage or exudate and no associated abscess)
-should be managed with empiric therapy for infection due to beta-hemolytic
-streptococci and methicillin-susceptible </span><em><span lang=EN-US
-style='font-family:"Arial","sans-serif";color:black'>Staphylococcus aureus</span></em><span
-lang=EN-US> (MSSA). Common options for mild infections are:</span></p>
-<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
-lang=EN-US style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN-US style='color:black'>Cloxacillin 25 mg/kg/dose (max.
-500 mg) PO QDS</span></p>
-<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
-style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN-US style='color:black'>Amoxicillin/Clavulanate 625
-– 875 mg PO BD </span></p>
-<p class=MsoNormal><span lang=EN-US style='color:black'>For patients with
-penicillin allergies:</span></p>
-<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
-lang=EN-US style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN-US style='color:black'>Azithromycin 10mg/kg (max.
-500 mg) PO OD for 3 days, or</span></p>
-<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
-style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN-US style='color:black'>Clindamycin 150 – 300mg PO QDS
-(3 – 6 mg/kg/dose in children)</span></p>
-<p class=MsoNormal><span lang=EN-US style='color:black'>In patients with
-moderately severe infection, intravenous antibiotics options include:</span></p>
-<p class=MsoListParagraph style='text-indent:-18.0pt'><span lang=EN-US
-style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN-US style='color:black'>IV Cloxacillin 1 – 2 g QDS</span></p>
-<p class=MsoNormal><span lang=EN-US style='color:black'>For severe infections:</span></p>
-<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
-lang=EN-US style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN-US style='color:black'>IV Ceftriaxone 1 – 2 g OD
-(children 50 – 80 mg/kg OD)</span></p>
-<p class=MsoListParagraphCxSpLast><span lang=EN-US style='color:black'>&nbsp;</span></p>
-<h3><span class=h23>Purulent infection</span></h3>
-<p class=MsoNormal><span lang=EN-US style='font-family:"Helvetica","sans-serif";
-color:black'>Purulent infection refers to presence of a drainable abscess <strong><span
-style='font-family:"Helvetica","sans-serif"'>or</span></strong> cellulitis
-associated with purulent drainage in the absence of drainable abscess. Any
-infection involving purulence is potentially attributable to methicillin-resistant
-<em><span style='font-family:"Helvetica","sans-serif"'>S. aureus</span></em>,
-which should be reflected in the choice of empiric antimicrobial therapy.</span></p>
-<p class=MsoNormal><b><span lang=EN-US style='color:black'>Incision and
-drainage</span></b><span lang=EN-US style='color:black'> of abscess is
-indicated for all purulent infections and is sufficient for <b>mild infections.</b></span></p>
-<p class=MsoNormal><span lang=EN-US style='color:black'>For moderate
-infections, options for oral antibiotics include the following:</span></p>
-<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
-lang=EN-US style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN-US style='color:black'>Doxycycline 100mg PO BD
-(non-pregnant adults only), or </span></p>
-<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
-style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN-US style='color:black'>Trimethoprim-sulfamethoxazole
-24mg/kg/dose (max. 960mg) PO BD</span></p>
-<p class=MsoNormal><span lang=EN-US style='color:black'>Once microorganisms are
-identified based on cultures, treatment is tailored to the patient’s need. The
-most common organism are staphylococcal and streptococcal strains.</span></p>
-<h3>Duration of therapy</h3>
-<p class=MsoNormal><span style='color:black'>The appropriate duration of
-therapy for treatment of skin and soft tissue infection depends on the nature
-of the clinical presentation, and the clinical response should guide duration
-of therapy.</span></p>
-<p class=MsoNormal><span style='color:black'>Patients with mild infection who receive
-outpatient management with oral antibiotic therapy should have repeat
-evaluation after 48 hours to verify clinical response. </span></p>
-<p class=MsoNormal><span style='color:black'>Patients with MRSA responsive to
-oral therapy are typically treated for 5 days; treatment may be extended up to
-14 days where there is severe infection, slow response to therapy, or
-immunosuppression. Lack of response may be due to infection with resistant
-organism(s), inadequate adherence, or presence of a deeper, more serious infection
-than previously realized.</span></p>
-<p class=MsoNormal><span style='color:black'>Patients with infection warranting
-parenteral therapy (in the absence of bacteraemia or involvement beyond soft
-tissue) are typically treated for a total duration of 5 to 14 days. Once there
-are signs of clinical improvement with no evidence of systemic toxicity,
-antibiotics may be transitioned from parenteral to oral therapy.</span></p>
-<p class=MsoNormal><span style='color:black'>For patients with abscess that was
-detected radiographically, follow-up imaging may be useful for assessing
-response to therapy.</span></p>
-<h2><span style='color:black'>Key Issues for Nursing care</span></h2>
-<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='color:black'>Ensure that patient get adequate bed
-rest: Passive exercise can reduce the associated complications</span></p>
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='color:black'>Limb elevation is important to reduce
-oedema</span></p>
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='color:black'>Pressure area care</span></p>
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='color:black'>Cleaning any skin breaks carefully and
-monitoring for signs of infection</span></p>
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='color:black'>Advise on basic skin care and avoidance
-of predisposing factors where possible</span></p>
-<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
-style='font-family:Symbol;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='color:black'>Advise on avoidance of skin damage by wearing
-appropriate protective equipment when taking part in work or sport.</span></p>
-<h2><span style='color:black'>References</span></h2>
-<p class=MsoNormal><span lang=EN-US><a
-href="https://www.uptodate.com/contents/cellulitis-and-skin-abscess-in-adults-treatment/abstract/1"><span
-lang=EN-GB style='font-size:10.0pt;color:black;text-decoration:none'>Liu C,
-Bayer A, Cosgrove SE, et al. Clinical practice guidelines by the Infectious Diseases
-Society of America for the treatment of methicillin-resistant Staphylococcus
-aureus infections in adults and children. Clin Infect Dis 2011; 52:e18.</span></a></span></p>
-<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
-lang=EN-US><a
-href="https://www.uptodate.com/contents/cellulitis-and-skin-abscess-in-adults-treatment/abstract/2"><span
-lang=EN-GB style='font-size:10.0pt;color:black;text-decoration:none'>Stevens
-DL, Bisno AL, Chambers HF, et al. Practice guidelines for the diagnosis and
-management of skin and soft tissue infections: 2014 update by the infectious
-diseases society of America. Clin Infect Dis 2014; 59:147.</span></a></span></p>
-<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
-lang=EN-US><a
-href="https://www.uptodate.com/contents/cellulitis-and-skin-abscess-in-adults-treatment/abstract/3"><span
-lang=EN-GB style='font-size:10.0pt;color:black;text-decoration:none'>Raff AB,
-Kroshinsky D. Cellulitis: A Review. JAMA 2016; 316:325.</span></a></span></p>
-<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
-lang=EN-US><a
-href="https://www.uptodate.com/contents/cellulitis-and-skin-abscess-in-adults-treatment/abstract/4"><span
-lang=EN-GB style='font-size:10.0pt;color:black;text-decoration:none'>Halilovic
-J, Heintz BH, Brown J. Risk factors for clinical failure in patients
-hospitalized with cellulitis and Cutaneous abscess. J Infect 2012; 65:128.</span></a></span></p>
-<p class=MsoNormal><span style='font-size:10.0pt;color:black'>Herchline TE.
-Cellulitis. Medscape 2018. Available from: </span><span lang=EN-US><a
-href="https://emedicine.medscape.com/article/214222-overview"><span lang=EN-GB
-style='font-size:10.0pt;color:black'>https://emedicine.medscape.com/article/214222-overview</span></a></span></p>
-<p class=MsoNormal><span style='font-size:10.0pt;color:black'>John Hopkins ABX
-guide for cellulitis</span></p>
-<div class="tableCont">
-  <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
- style='border-collapse:collapse;border:none'>
- <tr style='height:1.0pt'>
-  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
-  style='color:black'>Written by:</span></b></p>
-  </td>
-  <td width=241 valign=bottom style='width:181.1pt;border:solid windowtext 1.0pt;
-  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
-  style='color:black'>Name: Amie Secka</span></p>
-  </td>
-  <td width=191 valign=bottom style='width:143.45pt;border:solid windowtext 1.0pt;
-  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
-  style='color:black'>Date: 26 November 2018</span></p>
-  </td>
- </tr>
- <tr style='height:1.0pt'>
-  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
-  style='color:black'>Reviewed by:</span></b></p>
-  </td>
-  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
-  style='color:black'>Name: Fatai Akemokwe</span></p>
-  </td>
-  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
-  style='color:black'>Date: 28 January 2019 </span></p>
-  </td>
- </tr>
- <tr style='height:1.0pt'>
-  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
-  style='color:black'>Version:</span></b></p>
-  </td>
-  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
-  style='color:black'>Change history:</span></b></p>
-  </td>
-  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
-  style='color:black'>Review due date:</span></b></p>
-  </td>
- </tr>
- <tr style='height:1.0pt'>
-  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
-  style='color:black'>1.0</span></p>
-  </td>
-  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
-  style='color:black'>New document</span></p>
-  </td>
-  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
-  style='color:black'>31 January 2021</span></p>
-  </td>
- </tr>
- <tr style='height:1.0pt'>
-  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
-  style='color:black'>1.1</span></p>
-  </td>
-  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
-  style='color:black'>Executive summary added</span></p>
-  </td>
-  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
-  style='color:black'>31 January 2021</span></p>
-  </td>
- </tr>
- <tr style='height:1.0pt'>
-  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
-  style='color:black'>Review Comments (<i>if applicable)</i></span></p>
-  </td>
-  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
-  style='color:black'>&nbsp;</span></p>
-  </td>
-  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
-  style='color:black'>&nbsp;</span></b></p>
-  </td>
- </tr>
+<body>
+<article class="markdown-body">
+<h2 id="cellulitis">Cellulitis</h2>
+<h2 id="executive-summary"><em>Executive summary</em></h2>
+<h2 id="introduction">Introduction</h2>
+<p>The term cellulitis is commonly used to indicate a non-necrotizing inflammation of the skin and subcutaneous tissues, usually from acute infection. Cellulitis usually follows a breach in the skin, although a portal of entry may not be obvious; the breach may involve microscopic skin changes or invasive qualities of certain bacteria.</p>
+<h2 id="target-users">Target Users</h2>
+<ul>
+<li><div data-custom-style="List Paragraph">
+<p>Doctors</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Nurses</p>
+</div></li>
+</ul>
+<h2 id="target-area-of-use">Target area of use </h2>
+<ul>
+<li><div data-custom-style="List Paragraph">
+<p>Ward</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Outpatient department</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Gate clinic</p>
+</div></li>
+</ul>
+<h2 id="key-areas-of-focusnew-additionschanges">Key areas of focus/new additions/changes</h2>
+<p>These guidelines addresses the management of cellulitis in adults and children.</p>
+<h2 id="limitations">Limitations</h2>
+<p>Patient with complicated cellulitis associated with compartment syndrome or necrosis must be referred to a surgeon.</p>
+<h2 id="presenting-symptoms-and-signs">Presenting symptoms and signs</h2>
+<p>Nonpurulent cellulitis is associated with the 4 cardinal signs of infections, as follows:</p>
+<ul>
+<li><div data-custom-style="List Paragraph">
+<p>Erythema</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Pain</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Swelling</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Warmth</p>
+</div></li>
+</ul>
+<p>The follow findings suggest severe infection:</p>
+<ul>
+<li><div data-custom-style="List Paragraph">
+<p>Malaise</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Chills</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Fever and toxicity</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Circumferential cellulitis</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Lymphangitic spread (red lines streaking away from the area of infection)</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Crepitus</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Pain disproportionate to examination findings</p>
+</div></li>
+</ul>
+<h2 id="examination-findings">Examination findings</h2>
+<p>The involved site(s) is/are red, hot, swollen and tender. The leg is the most common site. Tinea pedis lesions may be the sites of entry</p>
+<ul>
+<li><div data-custom-style="List Paragraph">
+<p>Regional lymphadenopathy may be present</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Malaise, chills, fever, and toxicity may be present</p>
+</div></li>
+</ul>
+<p>Skin infections without associated drainage, penetrating trauma, eschar, or abscess is most likely caused by streptococci; on the other hand<strong>, <em>S aureus</em></strong>, often community acquired methicillin-resistant <em>S aureus</em> (MRSA), is the most likely pathogen when these factors are present.</p>
+<p>Perianal cellulitis is usually observed in children with perianal fissures; it is characterized by <strong>perianal erythema</strong> and <strong>pruritis, purulent secretions</strong>, <strong>painful defecation</strong> and <strong>blood in stools</strong></p>
+<p>Cellulitis characterized by violet colour and bullae suggests more serious or systemic infection with organisms such as <em>V. vulnificus</em> or <em>S. pneumoniae.</em></p>
+<p>Lymphangitic spread (red lines streaking away from area of infection), crepitus, .and hemodynamic instability are indications of severe infection, requiring more aggressive treatment.</p>
+<p>Circumferential cellulitis or pain that is disproportional to examination findings should prompt consideration of severe soft tissue infection</p>
+<p><strong><a href="https://www.hopkinsguides.com/hopkins/view/Johns_Hopkins_ABX_Guide/540402/all/Orbital_Cellulitis">Periorbital</a> (preseptal) cellulitis</strong> is potentially serious and merits an ophthalmology consultation and a CT scan to exclude an orbital infection</p>
+<p><strong><span class="underline">Indication for referral for emergent surgical evaluation</span></strong> are as follows:</p>
+<ul>
+<li><div data-custom-style="List Paragraph">
+<p>Violaceous bullae</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Cutaneous haemorrhage</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Skin sloughing</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Skin anaesthesia</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Rapid progression</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Gas in the tissue (crepitus)</p>
+</div></li>
+</ul>
+<h2 id="differential-diagnoses">Differential Diagnoses</h2>
+<ul>
+<li><div data-custom-style="List Paragraph">
+<p>Erysipelas (more superficial with sharply demarcated borders)</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Thrombophlebitis</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p><a href="https://www.hopkinsguides.com/hopkins/view/Johns_Hopkins_ABX_Guide/540378/all/Necrotizing_Fasciitis">Necrotizing fasciitis</a></p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Erythroderma</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Panniculitis</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Pyoderma</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Dermatitis</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Allergic reactions</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Drug reaction</p>
+</div></li>
+</ul>
+<h2 id="investigations">Investigations</h2>
+<p>Generally no work-up is required in uncomplicated cases of cellulitis.</p>
+<p>For patients with cellulitis who have signs and symptoms of systemic inflammatory response, do:</p>
+<ul>
+<li><div data-custom-style="List Paragraph">
+<p>FBC</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Creatinine and Bicarbonate</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Aspirate gram stain and culture (purulent cellulitis only)</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Blood culture should be performed for serious infections to pinpoint the etiology</p>
+</div></li>
+</ul>
+<div data-custom-style="List Paragraph">
+<p>Blood cultures are only positive in 5-15 % of patients with cellulitis)</p>
+</div>
+<div data-custom-style="List Paragraph">
+<blockquote>
+<p>Blood cultures are also indicated in special populations (immunosuppressed, severe post-surgical wounds).</p>
+</blockquote>
+</div>
+<h2 id="management">Management </h2>
+<h3 id="management-at-the-gate-clinic">Management at the Gate Clinic</h3>
+<p>Patients with cellulitis should be referred to OPD for evaluation by a doctor.</p>
+<h3 id="management-in-opd-or-on-the-ward">Management in OPD or on the ward</h3>
+<p>Management of cellulitis should include elevation of the affected area and treatment of underlying conditions.</p>
+<p>Many patients with cellulitis have underlying conditions that predispose them to developing recurrent cellulitis (these include tinea pedis, lymphedema, and chronic venous insufficiency). In such patients, treatment should be directed at both the infection and the predisposing condition if modifiable. As an example, patients with oedema may benefit from treatment with compressive stockings and diuretic therapy.</p>
+<p>Consider in-patient care when there is:</p>
+<ul>
+<li><div data-custom-style="List Paragraph">
+<p>An elevated creatinine level</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>A low serum bicarbonate level</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Systemic signs of toxicity (e.g. fever &gt; 38°C, hypotension, or sustained tachycardia)</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Rapid progression of erythema</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Progression of clinical findings after 48 hours of oral antibiotic therapy</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Inability to tolerate oral therapy</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Proximity of the lesion to an indwelling medical device (e.g. prosthetic joint or vascular graft)</p>
+</div></li>
+</ul>
+<h3 id="nonpurulent-cellulitis">Nonpurulent cellulitis</h3>
+<p>Patients with nonpurulent cellulitis (e.g. cellulitis with no purulent drainage or exudate and no associated abscess) should be managed with empiric therapy for infection due to beta-hemolytic streptococci and methicillin-susceptible <span data-custom-style="Emphasis">Staphylococcus aureus</span>. Common options for mild infections are:</p>
+<ul>
+<li><div data-custom-style="List Paragraph">
+<p>Cloxacillin 25 mg/kg/dose (max. 500 mg) PO QDS</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Amoxicillin/Clavulanate 625 – 875 mg PO BD</p>
+</div></li>
+</ul>
+<p>For patients with penicillin allergies:</p>
+<ul>
+<li><div data-custom-style="List Paragraph">
+<p>Azithromycin 10 mg/kg (max. 500 mg) PO OD for 3 days, or</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Clindamycin 150 – 300 mg PO QDS (3 – 6 mg/kg/dose in children)</p>
+</div></li>
+</ul>
+<p>In patients with moderately severe infection, intravenous antibiotics options include:</p>
+<ul>
+<li><div data-custom-style="List Paragraph">
+<p>IV Cloxacillin 1 – 2 g QDS</p>
+</div></li>
+</ul>
+<p>For severe infections:</p>
+<ul>
+<li><div data-custom-style="List Paragraph">
+<p>IV Ceftriaxone 1 – 2 g OD (children 50 – 80 mg/kg OD)</p>
+</div></li>
+</ul>
+<h3 id="purulent-infection"><span data-custom-style="h23"><strong>Purulent infection</strong></span></h3>
+<p>Purulent infection refers to presence of a drainable abscess <span data-custom-style="Strong">or</span> cellulitis associated with purulent drainage in the absence of drainable abscess. Any infection involving purulence is potentially attributable to <span data-custom-style="Emphasis">MRSA</span>, which should be reflected in the choice of empiric antimicrobial therapy.</p>
+<p><strong>Incision and drainage</strong> of abscess is indicated for all purulent infections and is sufficient for <strong>mild infections.</strong></p>
+<p>For moderate infections, options for oral antibiotics include the following:</p>
+<ul>
+<li><div data-custom-style="List Paragraph">
+<p>Doxycycline 100 mg PO BD (non-pregnant adults only), or</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Trimethoprim-sulfamethoxazole 24 mg/kg/dose (max. 960 mg) PO BD</p>
+</div></li>
+</ul>
+<p>Once microorganisms are identified based on cultures, treatment is tailored to the patient’s need. The most common organism are staphylococcal and streptococcal strains.</p>
+<h3 id="duration-of-therapy">Duration of therapy</h3>
+<p>The appropriate duration of therapy for treatment of skin and soft tissue infection depends on the nature of the clinical presentation, and the clinical response should guide duration of therapy.</p>
+<p>Patients with mild infection who receive outpatient management with oral antibiotic therapy should have repeat evaluation after 48 hours to verify clinical response.</p>
+<p>Patients with MRSA responsive to oral therapy are typically treated for 5 days; treatment may be extended up to 14 days where there is severe infection, slow response to therapy, or immunosuppression. Lack of response may be due to infection with resistant organism(s), inadequate adherence, or presence of a deeper, more serious infection than previously realized.</p>
+<p>Patients with infection warranting parenteral therapy (in the absence of bacteraemia or involvement beyond soft tissue) are typically treated for a total duration of 5 to 14 days. Once there are signs of clinical improvement with no evidence of systemic toxicity, antibiotics may be transitioned from parenteral to oral therapy.</p>
+<p>For patients with abscess that was detected radiographically, follow-up imaging may be useful for assessing response to therapy.</p>
+<h2 id="key-issues-for-nursing-care">Key Issues for Nursing care</h2>
+<ul>
+<li><div data-custom-style="List Paragraph">
+<p>Ensure that patient get adequate bed rest: Passive exercise can reduce the associated complications</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Limb elevation is important to reduce oedema</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Pressure area care</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Cleaning any skin breaks carefully and monitoring for signs of infection</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Advise on basic skin care and avoidance of predisposing factors where possible</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>Advise on avoidance of skin damage by wearing appropriate protective equipment when taking part in work or sport.</p>
+</div></li>
+</ul>
+<h2 id="references">References</h2>
+<p><a href="https://www.uptodate.com/contents/cellulitis-and-skin-abscess-in-adults-treatment/abstract/1">Liu C, Bayer A, Cosgrove SE, et al. Clinical practice guidelines by the Infectious Diseases Society of America for the treatment of methicillin-resistant Staphylococcus aureus infections in adults and children. Clin Infect Dis 2011; 52:e18.</a></p>
+<p><a href="https://www.uptodate.com/contents/cellulitis-and-skin-abscess-in-adults-treatment/abstract/2">Stevens DL, Bisno AL, Chambers HF, et al. Practice guidelines for the diagnosis and management of skin and soft tissue infections: 2014 update by the infectious diseases society of America. Clin Infect Dis 2014; 59:147.</a></p>
+<p><a href="https://www.uptodate.com/contents/cellulitis-and-skin-abscess-in-adults-treatment/abstract/3">Raff AB, Kroshinsky D. Cellulitis: A Review. JAMA 2016; 316:325.</a></p>
+<p><a href="https://www.uptodate.com/contents/cellulitis-and-skin-abscess-in-adults-treatment/abstract/4">Halilovic J, Heintz BH, Brown J. Risk factors for clinical failure in patients hospitalized with cellulitis and cutaneous abscess. J Infect 2012; 65:128.</a></p>
+<p>Herchline TE. Cellulitis. Medscape 2018. Available from: <a href="https://emedicine.medscape.com/article/214222-overview"><span data-custom-style="Hyperlink">https://emedicine.medscape.com/article/214222-overview</span></a></p>
+<p>John Hopkins ABX guide for cellulitis</p>
+<table>
+<thead>
+<tr class="header">
+<th><strong>Written by:</strong></th>
+<th>Name: Amie Secka</th>
+<th>Date: 26 November 2018</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Reviewed by:</strong></td>
+<td>Name: Fatai Akemokwe</td>
+<td>Date: 28 January 2019</td>
+</tr>
+<tr class="even">
+<td><strong>Version:</strong></td>
+<td><strong>Change history:</strong></td>
+<td><strong>Review due date:</strong></td>
+</tr>
+<tr class="odd">
+<td>1.0</td>
+<td>New document</td>
+<td>31 January 2021</td>
+</tr>
+<tr class="even">
+<td>1.1</td>
+<td>Executive summary added</td>
+<td>31 January 2021</td>
+</tr>
+<tr class="odd">
+<td>Review Comments (<em>if applicable)</em></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
 </table>
-</div>
-<p class=MsoNormal><span style='color:black'>&nbsp;</span></p>
-</div>
-</div><!-- /content -->
-
-</div>
-
+</article>
 </body>
 </html>
