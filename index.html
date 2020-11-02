@@ -4,13 +4,13 @@
 	<title>MRCG Clinical Guidelines</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=1">
 	<meta name=Generator content="Microsoft Word 14 (filtered)">
-	<script src="pwabuilder-sw-register.js"></script>
-	<link rel="manifest" href="manifest.json"/>
-	<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
-	<link rel="stylesheet" href="jquery.mobile.structure-1.4.5.min.css" />
-	<script src="jquery-1.11.1.min.js"></script>
-	<script src="jquery.mobile-1.4.5.min.js"></script>
-	<script type="text/javascript" src="cordova.js"></script>
+	<meta name="theme-color" content="#fff">
+	<script src="pwabuilder-sw-register.js" type="module"></script>
+	<link rel="manifest" href="./manifest.json"/>
+	<link rel="stylesheet" href="./jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="./jquery.mobile.structure-1.4.5.min.css" />
+	<script src="./jquery-1.11.1.min.js"></script>
+	<script src="./jquery.mobile-1.4.5.min.js"></script>
 	<script>
 	    		$(function(){
 			$("[data-role='header'], [data-role='footer']").toolbar();
@@ -29,18 +29,21 @@
       $.mobile.pageContainer.append(data);
       $("[data-role='footer']").toolbar().enhanceWithin();
     }, "html");
-        $('.WordSection1').wrap('<div role="main" class="ui-content">').wrap('<div data-role="page">');
+        $('.WordSection1').wrap('<div role="main" class="ui-content">');
+	$('.ui-content').enhanceWithin();
         $('table').wrap('<div class="tableCont"></div>');
         $('img').wrap('<div class="tableCont"></div>');
         $.mobile.pageContainer.enhanceWithin();
 	  });
-	        $(document).bind( "pagechange", function( ) {
+$(document).bind( "pagechange", function( ) {
+	$('.WordSection1').wrap('<div role="main" class="ui-content">');
         $('table').wrap('<div class="tableCont"></div>');
         $('img').wrap('<div class="tableCont"></div>');
         $('.tableCont').enhanceWithin();
+	$('.ui-content').enhanceWithin()
       } );
 	</script>
-	<script src="manup.js"></script>
+
 	<style>
 	.show {display: block;}
 	.tablist-left {
@@ -315,10 +318,7 @@ ul
 	</script>
 </head>
 <body lang=EN-GB link=blue vlink=purple>
-  
-
-    <!-- /header -->
-<div data-role="page">
+  <div data-role="page">
 
 <div class=WordSection1>
 <h1><span lang=EN-US>Introduction to Clinical Services Department (CSD)
@@ -2381,9 +2381,10 @@ lang=EN-US>&nbsp;</span></p>
 </table>
 </div>
 <p class=MsoNormal><span style='color:black'>&nbsp;</span></p>
-</div>
+
 
 </div>
-
+</div>
+<script src="manup.js"></script>	
 </body>
 </html>
