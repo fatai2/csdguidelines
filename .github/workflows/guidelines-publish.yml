@@ -13,7 +13,7 @@ jobs:
       - name: replace head tags with extra html
         run: |
           cd www
-          find . -name '*.html' -exec sed -i -e 's|</head>|\<script\ src\=\"myScript.js\"\>\</script\>\</head\>|g' -e 's|\<body\>|\<body\>\ \<div w3-include-html\=\"panel.html\"\>\</div\>\ \<script\>\ includeHTML\(\)\;\ \</script\>|g' {} \;
+          find . -name '*.html' -exec sed -i -e 's|</head>|\<script\ src\=\"myScript.js\"\>\</script\>\<link rel\=\"stylesheet\"\ href\=\"myStyle.css\"\>\</head\>|g' -e 's|\<body\>|\<body\>\ \<div w3-include-html\=\"panel.html\"\>\</div\>\ \<script\>\ includeHTML\(\)\;\ \</script\>|g' {} \;
           mv *.html ..
         shell: bash
       - name: Commit files  # transfer the new html files back into the repository
