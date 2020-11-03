@@ -13,7 +13,8 @@ jobs:
       - name: replace head tags with extra html
         run: |
           cd www
-          printf '<li> <a href="%s">%s</a></li>\n' *.html > filelist2.txt
+          printf '<li> <a href="%s">%s</a></li>\n' *.html > filelist.txt
+          cat prefix.txt filelist.txt postfix.txt > panel.html
           find . -name '*.html' -exec sed -i -e 's|</head>|\<script\ src\=\"myScript.js\"\>\</script\>\<link rel\=\"stylesheet\"\ href\=\"myStyle.css\"\>\</head\>|g' -e 's|\<body\>|\<body\>\ \<div w3-include-html\=\"panel.html\"\>\</div\>\ \<script\>\ includeHTML\(\)\;\ \</script\>|g' {} \;
           mv *.html ..
         shell: bash
