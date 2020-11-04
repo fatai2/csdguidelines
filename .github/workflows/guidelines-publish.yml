@@ -14,7 +14,6 @@ jobs:
         run: |
           cd www
           printf '<li> <a href="%s">%s</a></li>\n' *.html > filelist.txt
-          sed 
           find . -name '*.html' -exec sed -i -e 's|</head>|\<script\ src\=\"myScript.js\"\>\</script\>\<link rel\=\"stylesheet\"\ href\=\"myStyle.css\"\>\</head\>|g' -e 's|\<body\>|\<body\>\ \<div w3-include-html\=\"panel.html\"\>\</div\>\ \<script\>\ includeHTML\(\)\;\ \</script\>|g' {} \;
           cat prefix.txt filelist.txt postfix.txt > panel.html
           mv *.html ..
