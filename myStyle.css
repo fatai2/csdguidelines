@@ -1,3 +1,10 @@
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+}
+
 .sidenav {
   height: 100%;
   width: 0;
