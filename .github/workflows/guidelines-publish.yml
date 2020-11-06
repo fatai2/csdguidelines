@@ -16,7 +16,7 @@ jobs:
           printf '<li> <a href="%s">\n' *.html > filelist.txt
           printf '%s</a></li>\n' *.html > filelist2.txt
           sed -i -e 's|_| |g' filelist2.txt 
-          sed -i -e 's|MeG*html| |g' filelist2.txt
+          sed -i -e ':a;s/html/\n/;s/MeG.*\n//;ta' filelist2.txt
           paste -d " " filelist.txt filelist2.txt > filelist3.txt
           find . -name '*.html' -exec sed -i -e 's|</head>|\<script\ src\=\"myScript.js\"\>\</script\>\<link rel\=\"stylesheet\"\ href\=\"myStyle.css\"\>\</head\>|g' -e 's|<body>|<body>\ \<div w3-include-html\=\"panel.html\"\>\</div\>\ \<script\>\ includeHTML\(\)\;\ \</script\>|g' {} \;
           cat prefix.txt filelist3.txt postfix.txt > panel.html
