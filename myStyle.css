@@ -5,6 +5,34 @@
   border: 1px solid #ddd;
 }
 
+.show {display: block;}
+
+.footer-button-left,
+.footer-button-right {
+    position: absolute;
+    margin: 0;
+    top: auto;
+    bottom: 0.24em;
+    background-color: white;
+    color: black;
+    border: 2px solid #f1f1f1 /* Grey*/
+}
+
+.footer-button-left {
+    left: 0.4em;
+}
+.footer-button-right {
+    right: 0.4em;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
 .sidenav {
   height: 100%;
   width: 0;
@@ -19,7 +47,7 @@
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 8px 8px 8px 8px;
   text-decoration: none;
   font-size: 25px;
   color: #818181;
