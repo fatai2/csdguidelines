@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html manifest="manifest.manifest">
-	<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>	
+	<div class="navbar">
+		<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+		<img src="mrclogo.png">
+		<h3>CSD Guidelines</h3>		
+	</div>
 	<div id="mySidenav" class="sidenav">
-		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>		
-		  <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>		
+		<input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
 		<ul id="myMenu">
