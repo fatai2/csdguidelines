@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html manifest="manifest.manifest">
 	<div class="navbar">
-		<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+		<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 		<img src="mrclogo.png">
 		<h3>CSD Guidelines</h3>		
 	</div>
