@@ -6,6 +6,10 @@
 		<h3 style="float:right" >CSD Guidelines</h3>
 		<span style="font-size:30px;cursor:pointer" onclick="openNav2()">&#9432;</span>		  	
 	</div>
+	<div id="persistent-footer" >
+		<a href="index.html" class="footer-button-left">Home</a>
+		<a href="#" onclick="topFunction()" id="myBtn" class="footer-button-right">Top</a>  
+	</div>	
 	<div id="mySidenav" class="sidenav">
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>		
 		<input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
