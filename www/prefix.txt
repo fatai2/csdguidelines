@@ -2,8 +2,9 @@
 <html manifest="manifest.manifest">
 	<div class="navbar">
 		<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-		<img src="mrclogo.png">
-		<h3>CSD Guidelines</h3>		
+		<img style="float: none" src="mrclogo.png">
+		<h3 style="float:right" >CSD Guidelines</h3>
+		<span style="font-size:30px;cursor:pointer" onclick="openNav2()">&#9432;</span>		  	
 	</div>
 	<div id="mySidenav" class="sidenav">
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>		
