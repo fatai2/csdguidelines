@@ -32,6 +32,15 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
+
+function openNav2() {
+  document.getElementById("mySidenav2").style.width = "250px";
+}
+
+function closeNav2() {
+  document.getElementById("mySidenav2").style.width = "0";
+}
+
 function myFunction() {
   			var input, filter, ul, li, a, i;
   			input = document.getElementById("mySearch");
