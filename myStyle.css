@@ -9,8 +9,8 @@
 
 .footer-button-left,
 .footer-button-right {
-    position: absolute;
-    margin: 0;
+    position: fixed;
+    margin: 0.24em;
     top: auto;
     bottom: 0.24em;
     background-color: white;
