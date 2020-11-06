@@ -13,7 +13,7 @@
     margin: 0.24em;
     top: auto;
     bottom: 0.24em;
-    background-color: white;
+    background-color: f1f1f1;
     color: black;
     border: 2px solid #f1f1f1 /* Grey*/
 }
@@ -31,6 +31,7 @@
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
+  height:4em;
 }
 
 .sidenav {
