@@ -40,14 +40,6 @@ body {
   height:4em;
 }
 
-.sidenav h2{
-  padding: 8px 8px 8px 4px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
 .sidenav {
   height: 100%;
   width: 0;
@@ -59,6 +51,19 @@ body {
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+}
+
+.sidenav h2 {
+  padding: 8px 8px 8px 4px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav ul {
+  list-style-type: none;
 }
 
 .sidenav li a {
