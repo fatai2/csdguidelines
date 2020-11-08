@@ -116,7 +116,7 @@
    z-index: 2;
 }
 
-.sidenav, .sidenav2 h1 {
+.sidenav2 h1 {
   padding: 8px 8px 8px 4px;
   text-decoration: none;
   font-size: 25px;
@@ -151,12 +151,20 @@
   color: #f1f1f1;
 }
 
-.sidenav, .sidenav2 .closebtn {
+.sidenav .closebtn {
   position: absolute;
   top: 0;
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+}
+
+.sidenav2 .closebtn {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  font-size: 36px;
+  margin-right: 50px;
 }
 
 @media screen and (max-height: 450px) {
