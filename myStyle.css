@@ -22,6 +22,7 @@ article {
     border: 2px solid #f1f1f1; /* Grey*/
     padding: 8px 8px 8px 8px;
   	text-decoration: none;
+    box-shadow: inset 0px 8px 48px #ddd;
 }
 
 .footer-button-left {
