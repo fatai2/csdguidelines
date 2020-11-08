@@ -115,7 +115,7 @@ article {
    right: 0;
 }
 
-.sidenav h2 {
+.sidenav, .sidenav2 h2 {
   padding: 8px 8px 8px 4px;
   text-decoration: none;
   font-size: 25px;
@@ -129,6 +129,15 @@ article {
 }
 
 .sidenav li a {
+  padding: 8px 8px 8px 4px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav2 a {
   padding: 8px 8px 8px 4px;
   text-decoration: none;
   font-size: 25px;
