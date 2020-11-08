@@ -4,13 +4,13 @@
 		<span style="font-size:30px;cursor:pointer;float:left;" onclick="openNav()">&#9776;</span>
 		<img src="https://i0.wp.com/www.mrc.gm/wp-content/uploads/2018/07/Logo-small.png?fit=260%2C56&ssl=1" style="float:left;" width="260" height="56" alt="MRC Unit The Gambia at LSHTM Logo" srcset="https://i0.wp.com/www.mrc.gm/wp-content/uploads/2018/07/Logo-small.png?fit=260%2C56&ssl=1 2x">
 		<h2 style="float:left;">CSD Guidelines</h2>
-		<span style="font-size:30px;cursor:pointer;float:right;" onclick="openNav2()">&#9432;</span>		  	
+		<span style="font-size:30px;cursor:pointer;float:right;padding-right:10px;" onclick="openNav2()">&#9432;</span>		  	
 	</div>
 	<div id="persistent-footer" >
 		<a href="index.html" class="footer-button-left">&#8962; Home</a>
 		<a href="#" onclick="topFunction()" id="myBtn" class="footer-button-right">Top &#x21EA;</a>  
 	</div>
-	<div id="mySidenav2" class="sidenav">
+	<div id="mySidenav2" class="sidenav2">
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
 		<h1>About this app</h1>
     			<a href="javascript:void(0)"> This app is designed to provide doctors and nurses with quick access to the clinical guidelines of the Clinical Services Department of the MRC Unit The Gambia at LSHTM. <br>For feedback or support, email</a><a href="mailto:fakemokwe@mrc.gm"> the developers</a>	
