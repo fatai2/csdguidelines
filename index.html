@@ -1,2390 +1,1021 @@
 <!DOCTYPE html>
+<!--
+==============================================================================
+           "GitHub HTML5 Pandoc Template" v2.1 — by Tristano Ajmone           
+==============================================================================
+Copyright © Tristano Ajmone, 2017, MIT License (MIT). Project's home:
+
+- https://github.com/tajmone/pandoc-goodies
+
+The CSS in this template reuses source code taken from the following projects:
+
+- GitHub Markdown CSS: Copyright © Sindre Sorhus, MIT License (MIT):
+  https://github.com/sindresorhus/github-markdown-css
+
+- Primer CSS: Copyright © 2016-2017 GitHub Inc., MIT License (MIT):
+  http://primercss.io/
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The MIT License 
+
+Copyright (c) Tristano Ajmone, 2017 (github.com/tajmone/pandoc-goodies)
+Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+Copyright (c) 2017 GitHub Inc.
+
+"GitHub Pandoc HTML5 Template" is Copyright (c) Tristano Ajmone, 2017, released
+under the MIT License (MIT); it contains readaptations of substantial portions
+of the following third party softwares:
+
+(1) "GitHub Markdown CSS", Copyright (c) Sindre Sorhus, MIT License (MIT).
+(2) "Primer CSS", Copyright (c) 2016 GitHub Inc., MIT License (MIT).
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+==============================================================================-->
 <html>
 <head>
-	<title>MRCG Clinical Guidelines</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=1">
-	<meta name=Generator content="Microsoft Word 14 (filtered)">
-	<meta name="theme-color" content="#fff">
-	<script src="pwabuilder-sw-register.js" type="module"></script>
-	<link rel="manifest" href="./manifest.json"/>
-	<link rel="stylesheet" href="./jquery.mobile-1.4.5.min.css" />
-	<link rel="stylesheet" href="./jquery.mobile.structure-1.4.5.min.css" />
-	<script src="./jquery-1.11.1.min.js"></script>
-	<script src="./jquery.mobile-1.4.5.min.js"></script>
-	<script>
-	    		$(function(){
-			$("[data-role='header'], [data-role='footer']").toolbar();
-		});
-  	  $(document).one('pagebeforecreate', function () {
-	        $('input[data-type="search"]').val("");
-	    	        $.get("panel.html", function (data2) {
-            $.mobile.pageContainer.prepend(data2);
-              $("[data-role=panel]").panel().enhanceWithin();
-        }, "html");
-	           $.get("header.html", function (data) {
-      $.mobile.pageContainer.prepend(data);
-      $("[data-role='header']").toolbar().enhanceWithin();
-    }, "html");
-    $.get("footer.html", function (data) {
-      $.mobile.pageContainer.append(data);
-      $("[data-role='footer']").toolbar().enhanceWithin();
-    }, "html");
-        $('.WordSection1').wrap('<div role="main" class="ui-content">');
-	$('.ui-content').enhanceWithin();
-        $('table').wrap('<div class="tableCont"></div>');
-        $('img').wrap('<div class="tableCont"></div>');
-        $.mobile.pageContainer.enhanceWithin();
-	  });
-$(document).bind( "pagechange", function( ) {
-	$('.WordSection1').wrap('<div role="main" class="ui-content">');
-        $('table').wrap('<div class="tableCont"></div>');
-        $('img').wrap('<div class="tableCont"></div>');
-        $('.tableCont').enhanceWithin();
-	$('.ui-content').enhanceWithin()
-      } );
-	</script>
-
-	<style>
-	.show {display: block;}
-	.tablist-left {
-    width: 25%;
-    display: inline-block;
-  }
-  .tablist-content {
-    width: 60%;
-    display: inline-block;
-    vertical-align: top;
-    margin-left: 5%;
-    }
-    body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-}
-.footer-button-left,
-.footer-button-right {
-    position: absolute;
-    margin: 0;
-    top: auto;
-    bottom: 0.24em;
-}
-.footer-button-left {
-    left: 0.4em;
-}
-.footer-button-right {
-    right: 0.4em;
-}
-    .ui-panel.ui-panel-open {
-        position:fixed;
-    }
-    .ui-panel-inner {
-        position: absolute;
-        top: 5.5em;
-        left: 0;
-        right: 0;
-        bottom: 0px;
-        overflow: scroll;
-        -webkit-overflow-scrolling: touch;
-    }
-<!--
- /* Font Definitions */
- @font-face
-	{font-family:Wingdings;
-	panose-1:5 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"MS Mincho";
-	panose-1:2 2 6 9 4 2 5 8 3 4;}
-@font-face
-	{font-family:"MS Mincho";
-	panose-1:2 2 6 9 4 2 5 8 3 4;}
-@font-face
-	{font-family:Tahoma;
-	panose-1:2 11 6 4 3 5 4 4 2 4;}
-@font-face
-	{font-family:"Lucida Grande";}
-@font-face
-	{font-family:"\@MS Mincho";
-	panose-1:2 2 6 9 4 2 5 8 3 4;}
- /* Style Definitions */
- p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:6.0pt;
-	margin-left:0cm;
-	font-size:11.0pt;
-	font-family:"Arial","sans-serif";}
-h1
-	{mso-style-link:"Heading 1 Char";
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:18.0pt;
-	margin-left:0cm;
-	font-size:14.0pt;
-	font-family:"Arial","sans-serif";}
-h2
-	{mso-style-link:"Heading 2 Char";
-	margin-top:6.0pt;
-	margin-right:0cm;
-	margin-bottom:12.0pt;
-	margin-left:0cm;
-	font-size:12.0pt;
-	font-family:"Arial","sans-serif";}
-h3
-	{mso-style-link:"Heading 3 Char";
-	margin-top:6.0pt;
-	margin-right:0cm;
-	margin-bottom:9.0pt;
-	margin-left:0cm;
-	font-size:11.0pt;
-	font-family:"Arial","sans-serif";
-	text-decoration:underline;}
-h4
-	{mso-style-link:"Heading 4 Char";
-	margin-top:2.0pt;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:0cm;
-	margin-bottom:.0001pt;
-	page-break-after:avoid;
-	font-size:11.0pt;
-	font-family:"Calibri","sans-serif";
-	color:#365F91;
-	font-weight:normal;
-	font-style:italic;}
-p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
-	{mso-style-link:"Comment Text Char";
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:6.0pt;
-	margin-left:0cm;
-	font-size:10.0pt;
-	font-family:"Arial","sans-serif";}
-p.MsoHeader, li.MsoHeader, div.MsoHeader
-	{mso-style-link:"Header Char";
-	margin:0cm;
-	margin-bottom:.0001pt;
-	font-size:10.0pt;
-	font-family:"Arial","sans-serif";}
-p.MsoFooter, li.MsoFooter, div.MsoFooter
-	{mso-style-link:"Footer Char";
-	margin:0cm;
-	margin-bottom:.0001pt;
-	font-size:10.0pt;
-	font-family:"Arial","sans-serif";}
-p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
-	{mso-style-link:"Body Text Indent 3 Char";
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:6.0pt;
-	margin-left:14.15pt;
-	font-size:11.0pt;
-	font-family:"Arial","sans-serif";}
-a:link, span.MsoHyperlink
-	{color:blue;
-	text-decoration:underline;}
-a:visited, span.MsoHyperlinkFollowed
-	{color:purple;
-	text-decoration:underline;}
-p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject
-	{mso-style-link:"Comment Subject Char";
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:6.0pt;
-	margin-left:0cm;
-	font-size:10.0pt;
-	font-family:"Arial","sans-serif";
-	font-weight:bold;}
-p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
-	{mso-style-link:"Balloon Text Char";
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:6.0pt;
-	margin-left:0cm;
-	font-size:9.0pt;
-	font-family:"Lucida Grande","sans-serif";}
-p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:6.0pt;
-	margin-left:36.0pt;
-	font-size:11.0pt;
-	font-family:"Arial","sans-serif";}
-p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:36.0pt;
-	margin-bottom:.0001pt;
-	font-size:11.0pt;
-	font-family:"Arial","sans-serif";}
-p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:36.0pt;
-	margin-bottom:.0001pt;
-	font-size:11.0pt;
-	font-family:"Arial","sans-serif";}
-p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
-	{margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:6.0pt;
-	margin-left:36.0pt;
-	font-size:11.0pt;
-	font-family:"Arial","sans-serif";}
-span.Heading1Char
-	{mso-style-name:"Heading 1 Char";
-	mso-style-link:"Heading 1";
-	font-family:"Arial","sans-serif";
-	font-weight:bold;}
-span.Heading2Char
-	{mso-style-name:"Heading 2 Char";
-	mso-style-link:"Heading 2";
-	font-family:"Arial","sans-serif";
-	font-weight:bold;}
-span.BalloonTextChar
-	{mso-style-name:"Balloon Text Char";
-	mso-style-link:"Balloon Text";
-	font-family:"Lucida Grande","sans-serif";}
-span.Heading3Char
-	{mso-style-name:"Heading 3 Char";
-	mso-style-link:"Heading 3";
-	font-family:"Arial","sans-serif";
-	font-weight:bold;
-	text-decoration:underline;}
-span.HeaderChar
-	{mso-style-name:"Header Char";
-	mso-style-link:Header;}
-span.FooterChar
-	{mso-style-name:"Footer Char";
-	mso-style-link:Footer;}
-span.BodyTextIndent3Char
-	{mso-style-name:"Body Text Indent 3 Char";
-	mso-style-link:"Body Text Indent 3";
-	font-family:"Arial","sans-serif";}
-span.Heading4Char
-	{mso-style-name:"Heading 4 Char";
-	mso-style-link:"Heading 4";
-	font-family:"Calibri","sans-serif";
-	color:#365F91;
-	font-style:italic;}
-span.UnresolvedMention1
-	{mso-style-name:"Unresolved Mention1";
-	color:#605E5C;
-	background:#E1DFDD;}
-span.CommentTextChar
-	{mso-style-name:"Comment Text Char";
-	mso-style-link:"Comment Text";
-	font-family:"Arial","sans-serif";}
-span.CommentSubjectChar
-	{mso-style-name:"Comment Subject Char";
-	mso-style-link:"Comment Subject";
-	font-family:"Arial","sans-serif";
-	font-weight:bold;}
-.MsoChpDefault
-	{font-size:10.0pt;
-	font-family:"Tahoma","sans-serif";}
- /* Page Definitions */
- @page WordSection1
-	{size:612.0pt 792.0pt;
-	margin:72.0pt 90.0pt 72.0pt 90.0pt;}
-div.WordSection1
-	{page:WordSection1;}
- /* List Definitions */
- ol
-	{margin-bottom:0cm;}
-ul
-	{margin-bottom:0cm;}
--->
- .tableCont {
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
-}
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Introduction and abbreviations MeG-CLS-047</title>
+  <style type="text/css">
+@charset "UTF-8";.markdown-body{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;color:#24292e;font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";font-size:16px;line-height:1.5;word-wrap:break-word;box-sizing:border-box;min-width:200px;max-width:980px;margin:0 auto;padding:45px}.markdown-body a{color:#0366d6;background-color:transparent;text-decoration:none;-webkit-text-decoration-skip:objects}.markdown-body a:active,.markdown-body a:hover{outline-width:0}.markdown-body a:hover{text-decoration:underline}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body strong{font-weight:600}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.markdown-body h1{font-size:2em;margin:.67em 0;padding-bottom:.3em;border-bottom:1px solid #eaecef}.markdown-body h2{padding-bottom:.3em;font-size:1.5em;border-bottom:1px solid #eaecef}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{font-size:.85em;color:#6a737d}.markdown-body img{border-style:none}.markdown-body svg:not(:root){overflow:hidden}.markdown-body hr{box-sizing:content-box;height:.25em;margin:24px 0;padding:0;overflow:hidden;background-color:#e1e4e8;border:0}.markdown-body hr::before{display:table;content:""}.markdown-body hr::after{display:table;clear:both;content:""}.markdown-body input{margin:0;overflow:visible;font:inherit;font-family:inherit;font-size:inherit;line-height:inherit}.markdown-body [type=checkbox]{box-sizing:border-box;padding:0}.markdown-body *{box-sizing:border-box}.markdown-body blockquote{margin:0}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol ol,.markdown-body ul ol{list-style-type:lower-roman}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body ol ol ol,.markdown-body ol ul ol,.markdown-body ul ol ol,.markdown-body ul ul ol{list-style-type:lower-alpha}.markdown-body li>p{margin-top:16px}.markdown-body li+li{margin-top:.25em}.markdown-body dd{margin-left:0}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:600}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body code{font-family:SFMono-Regular,Consolas,"Liberation Mono",Menlo,Courier,monospace}.markdown-body pre{font:12px SFMono-Regular,Consolas,"Liberation Mono",Menlo,Courier,monospace;word-wrap:normal}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body blockquote{padding:0 1em;color:#6a737d;border-left:.25em solid #dfe2e5}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body table{display:block;width:100%;overflow:auto;border-spacing:0;border-collapse:collapse}.markdown-body table th{font-weight:600}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #dfe2e5}.markdown-body table tr{background-color:#fff;border-top:1px solid #c6cbd1}.markdown-body table tr:nth-child(2n){background-color:#f6f8fa}.markdown-body img{max-width:100%;box-sizing:content-box;background-color:#fff}.markdown-body code{padding:.2em 0;margin:0;font-size:85%;background-color:rgba(27,31,35,.05);border-radius:3px}.markdown-body code::after,.markdown-body code::before{letter-spacing:-.2em;content:" "}.markdown-body pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:0 0;border:0}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f6f8fa;border-radius:3px}.markdown-body pre code{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.markdown-body pre code::after,.markdown-body pre code::before{content:normal}.markdown-body .full-commit .btn-outline:not(:disabled):hover{color:#005cc5;border-color:#005cc5}.markdown-body kbd{box-shadow:inset 0 -1px 0 #959da5;display:inline-block;padding:3px 5px;font:11px/10px SFMono-Regular,Consolas,"Liberation Mono",Menlo,Courier,monospace;color:#444d56;vertical-align:middle;background-color:#fcfcfc;border:1px solid #c6cbd1;border-bottom-color:#959da5;border-radius:3px;box-shadow:inset 0 -1px 0 #959da5}.markdown-body :checked+.radio-label{position:relative;z-index:1;border-color:#0366d6}.markdown-body .task-list-item{list-style-type:none}.markdown-body .task-list-item+.task-list-item{margin-top:3px}.markdown-body .task-list-item input{margin:0 .2em .25em -1.6em;vertical-align:middle}.markdown-body::before{display:table;content:""}.markdown-body::after{display:table;clear:both;content:""}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.Alert,.Error,.Note,.Success,.Warning{padding:11px;margin-bottom:24px;border-style:solid;border-width:1px;border-radius:4px}.Alert p,.Error p,.Note p,.Success p,.Warning p{margin-top:0}.Alert p:last-child,.Error p:last-child,.Note p:last-child,.Success p:last-child,.Warning p:last-child{margin-bottom:0}.Alert{color:#246;background-color:#e2eef9;border-color:#bac6d3}.Warning{color:#4c4a42;background-color:#fff9ea;border-color:#dfd8c2}.Error{color:#911;background-color:#fcdede;border-color:#d2b2b2}.Success{color:#22662c;background-color:#e2f9e5;border-color:#bad3be}.Note{color:#2f363d;background-color:#f6f8fa;border-color:#d5d8da}.Alert h1,.Alert h2,.Alert h3,.Alert h4,.Alert h5,.Alert h6{color:#246;margin-bottom:0}.Warning h1,.Warning h2,.Warning h3,.Warning h4,.Warning h5,.Warning h6{color:#4c4a42;margin-bottom:0}.Error h1,.Error h2,.Error h3,.Error h4,.Error h5,.Error h6{color:#911;margin-bottom:0}.Success h1,.Success h2,.Success h3,.Success h4,.Success h5,.Success h6{color:#22662c;margin-bottom:0}.Note h1,.Note h2,.Note h3,.Note h4,.Note h5,.Note h6{color:#2f363d;margin-bottom:0}.Alert h1:first-child,.Alert h2:first-child,.Alert h3:first-child,.Alert h4:first-child,.Alert h5:first-child,.Alert h6:first-child,.Error h1:first-child,.Error h2:first-child,.Error h3:first-child,.Error h4:first-child,.Error h5:first-child,.Error h6:first-child,.Note h1:first-child,.Note h2:first-child,.Note h3:first-child,.Note h4:first-child,.Note h5:first-child,.Note h6:first-child,.Success h1:first-child,.Success h2:first-child,.Success h3:first-child,.Success h4:first-child,.Success h5:first-child,.Success h6:first-child,.Warning h1:first-child,.Warning h2:first-child,.Warning h3:first-child,.Warning h4:first-child,.Warning h5:first-child,.Warning h6:first-child{margin-top:0}h1.title,p.subtitle{text-align:center}h1.title.followed-by-subtitle{margin-bottom:0}p.subtitle{font-size:1.5em;font-weight:600;line-height:1.25;margin-top:0;margin-bottom:16px;padding-bottom:.3em}div.line-block{white-space:pre-line}
   </style>
-  	<script>
-		// When the user scrolls down 20px from the top of the document, show the button
-		window.onscroll = function() {scrollFunction()};
-		function scrollFunction() {
-		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-			document.getElementById("myBtn").style.display = "block";
-		  } else {
-			document.getElementById("myBtn").style.display = "none";
-		  }
-		}
-		// When the user clicks on the button, scroll to the top of the document
-		function topFunction() {
-		  document.body.scrollTop = 0; // For Safari
-		  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-		}
-	</script>
-</head>
-<body lang=EN-GB link=blue vlink=purple>
-  <div data-role="page">
-
-<div class=WordSection1>
-<h1><span lang=EN-US>Introduction to Clinical Services Department (CSD)
-guidelines</span></h1>
-<h2><span lang=EN-US>Introduction</span></h2>
-<h2><span lang=EN-US style='font-size:11.0pt;font-weight:normal'>CSD has
-produced a set of guidelines to be used in the department with the aim of
-standardizing care to ensure we are making the best use of the resources and
-facilities available to us and to help new doctors and nurses settle in.</span></h2>
-<p class=MsoNormal><span lang=EN-US>This introductory document outlines some of
-the approaches that have been taken and lists abbreviations used in the
-guidelines</span></p>
-<h2><span lang=EN-US>General approach</span></h2>
-<p class=MsoNormal><span lang=EN-US>As far as possible, CSD guidelines
-recommend the use of investigations and drugs available within the department.
-Where something is temporarily unavailable, it will have been included as if it
-were available. </span></p>
-<p class=MsoNormal><span lang=EN-US>Exceptions to this include:</span></p>
-<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
-lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN-US>investigations which are available in country </span></p>
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
-lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN-US>drugs which have a good evidence base and are
-easily accessible in country</span></p>
-<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
-style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span lang=EN-US>emergency interventions which are last ditch
-attempts to save a life and which might be available depending on the skill of
-the doctor on duty.</span></p>
-<p class=MsoNormal><span lang=EN-US>In general, it is assumed that most doctors
-will be able to do all the procedures referred to. If an individual is not
-experienced, then they can ask the consultants in the department for help. </span></p>
-<p class=MsoNormal><span lang=EN-US>Some specific procedures are not included
-as guidelines, but as formal SOPs. These are usually those that are necessary
-for research patients or that need standardized approaches. The latest version
-of each of these has been placed in a folder alongside the guidelines.</span></p>
-<p class=MsoNormal><span lang=EN-US>The guidelines provide support to nurses
-who see patients and prescribe as well as to doctors – including guidance on
-when patients should be referred from the care of a nurse to a doctor. </span></p>
-<h2><span lang=EN-US>Controlling guidelines</span></h2>
-<p class=MsoNormal><span lang=EN-US>Please note that the guidelines are only controlled
-when they are viewed online. Any printed version is by definition uncontrolled
-and may not be the latest version. </span></p>
-<p class=MsoNormal><span lang=EN-US>All SOPs are only controlled when viewed on
-sharepoint (although in practice, as soon as they are updated the version in
-the guidelines’ folder is also updated). </span></p>
-<h2><span lang=EN-US>App</span></h2>
-<p class=MsoNormal><span lang=EN-US>These guidelines are also available in app
-form for mobile phones. </span></p>
-<span lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
-clear=all style='page-break-before:always'>
-</span>
-<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
-lang=EN-US style='font-size:12.0pt'>&nbsp;</span></b></p>
-<h2><span lang=EN-US>Abbreviations</span></h2>
-<div>
-  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=595
- style='width:446.55pt;border-collapse:collapse'>
- <tr style='height:15.0pt'>
-  <td width=104 nowrap valign=bottom style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;
-  height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>ºC</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Degrees Celsius</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>µIU</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Micro-international
-  unit</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>µmol</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Micromole</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>ABM</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Acute bacterial
-  meningitis</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>ACEi</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Angiotensin
-  converting enzyme inhibitor</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>ACS</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Acute coronary
-  syndrome</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>ACTH</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Adreno-corticotropic
-  hormone</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>AF</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Atrial fibrillation</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>AFB</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Acid fast bacilli</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>AFP</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Alpha-fetoprotein</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>AKI</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Acute kidney injury</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>ALT</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Alanine
-  aminotransferase</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>AM</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Acute mastoiditis</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>AMI</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Acute myocardial
-  infarction</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 valign=top style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;
-  height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>AMPLE</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Allergies,
-  medications, past medical history / pregnancy, last eaten, events</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>AOM</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Acute otitis media</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>APTT</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Activated partial
-  thromboplastin time</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>ARBs</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Angiotensin receptor
-  blockers</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>ARF</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Acute rheumatic fever</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>ART</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Anti-retroviral
-  therapy</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>ASD</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Atrial septal defect</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>AST</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Aspartate
-  aminotransferase</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>AVSD</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Atrioventricular
-  septal defect</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>BD</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Twice per day</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>BMI </span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Body mass index</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>BNF</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>British National
-  Formulary</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>BP</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Blood pressure</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>CCB</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Calcium channel
-  blocker</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>CCHD</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Cyanotic congenital
-  heart disease</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>CD4</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Cluster differentiation
-  4</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>CHD</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Congenital heart
-  disease</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>CHF</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Congestive heart
-  failure</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>CKD</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Chronic kidney
-  disease</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>CKD-EPI</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Chronic kidney
-  disease – epidemiology collaboration</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Cl</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Chloride</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>CK</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Creatinine kinase</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>CKMB</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black;background:white'>Creatine
-  kinase Muscle Brain</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>CLD</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Chronic liver disease</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>CM</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Cryptococcal
-  meningitis</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>CMV</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Cytomegalovirus</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>COPD</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Chronic obstructive
-  pulmonary disease</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>CP</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Cerebral palsy</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Cr</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Creatinine</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>CRP</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>C-reactive protein</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>CSD</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Clinical services
-  department</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>CSF</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Cerebrospinal fluid</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>CT</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Computed tomography</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>CXR</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Chest X-ray</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>DCT</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Direct Coombs test</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>DD</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Developmental delay</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>DIP</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Distal
-  interphalangeal joints</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>DKA</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Diabetic ketoacidosis</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>dl</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>decilitre</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>DM</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Diabetes mellitus</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Dr</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Doctor</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>DSM-IV</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Diagnostic and
-  statistical manual of mental disorders – 4<sup>th</sup> edition</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>DTs</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Delirium tremens</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>DVT</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Deep vein thrombosis</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>ECG</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Electrocardiogram</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>ECHO</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Echocardiogram</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>EDTA</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Ethylenediamine
-  tetraacetic acid (anticoagulant)</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>EEG</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Electroencephalogram</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>EFSTH</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Edward Francis Small teaching
-  hospital</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>eGFR</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Estimated glomerular
-  filtration rate</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>EMRS</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Electronic medical
-  record system</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>ENT</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Ear, nose and throat</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>ESR</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Erythrocyte
-  sedimentation rate</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>F75</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Formula 75 – WHO
-  formula for malnutrition with 75 kCal/100ml</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>F100</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Formula 100 – WHO
-  formula for malnutrition with 100 kCal/100ml</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>FBC</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Full blood count</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>FBS</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Fasting blood sugar</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>FSGS</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Focal segmental
-  glomerulosclerosis</span></p>
-  </td>
- </tr>
- <tr style='height:18.75pt'>
-  <td width=104 nowrap valign=top style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;
-  height:18.75pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
-  lang=EN-US style='color:black'>(f)T<sub>4</sub></span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:18.75pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>(Free) thyroxine</span></p>
-  </td>
- </tr>
- <tr style='height:18.75pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:18.75pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>(f)T<sub>3</sub></span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:18.75pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>(Free)
-  triiodothyronine</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>g</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Gram(s)</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>GAS</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Group A streptococcus</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>GCS</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Glasgow coma scale</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>GDM</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Gestational diabetes
-  mellitus</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>GFR</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Glomerular filtration
-  rate</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>GI</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Gastrointestinal</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>GORD</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Gastro-oesophageal
-  reflux disease</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>HAV</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Hepatitis A virus</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Hb </span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Haemoglobin</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>HbA1c</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Haemoglobin A1c</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 valign=top style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;
-  height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>HACEK</span></p>
-  </td>
-  <td width=491 valign=top style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;
-  height:15.0pt'>
-  <p class=MsoNormal><i><span lang=EN-US style='color:black'>Haemophilus
-  aphrophilus, Actinobacillus actinomycetemcomitans , Cardiobacterium hominis,
-  Eikenella corrodens, Kingella kingae</span></i></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>HBsAg</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Hepatitis B surface
-  antigen</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>HBV</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Hepatitis B virus</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>HCC</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Hepatocellular
-  carcinoma</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>HCG</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Human chorionic gonadotropin</span></p>
-  </td>
- </tr>
- <tr style='height:18.75pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:18.75pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>HCO<sub>3</sub></span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:18.75pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Bicarbonate</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>HCV</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Hepatitis C virus</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>HDL</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>High density
-  lipoprotein</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>HDU</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>High dependency unit</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>HELLP</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Haemolysis, elevated
-  liver enzymes, low platelet count</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>HHS</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Hyperglycaemic
-  hyperosmolar state</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Hib</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><i><span lang=EN-US style='color:black'>Haemophillus
-  influenzae b</span></i></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>HIV</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Human
-  immunodeficiency virus</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>HP / H pylori</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Helicobacter pylori</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>HR</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Heart rate</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>hr</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Hour</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>HSV</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Herpes simplex virus</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>HTN</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Hypertension</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Hz </span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Hertz</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>ICP</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Intracranial pressure</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>IE</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Infective
-  endocarditis</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>im</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Intramuscular</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>INR</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>International
-  normalised ratio</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>ITU</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Intensive therapy
-  unit</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>IV</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Intravenous</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>K </span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Potassium</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>kg</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Kilogram</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>l</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Litre</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>LA</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Left atrium</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>LBP</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Lower back pain</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>LFTs</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Liver function tests</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>LGV</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Lymphogranuloma
-  venereum</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>LP</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Lumbar puncture</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>L-R</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Left to right</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>LRI</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Lower respiratory
-  infection</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>LV</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Left ventricle</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>MC&amp;S</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Microscopy, culture
-  and sensitivities</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>MCD</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Minimal change
-  disease</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>mcg</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Microgram</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>MCV</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Mean cell volume</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>MEWS</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>MRC early warning
-  score</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>mEq</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Milliequivalent</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>mg</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Milligrams</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>ml</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Millilitres</span></p>
-  </td>
- </tr>
- <tr style='height:16.5pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:16.5pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>mm<sup>3</sup></span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:16.5pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Millimetre cubed</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>mmHg</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Milimetres of mercury</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>mmol</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Millimole</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>mOsm</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Milliosmole</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>MPS</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Mucopolysaccharidoses</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>MR</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Mitral regurgitation</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>MRC</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Medical research
-  council</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>MRI</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Magnetic resonance
-  imaging</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>M</span><span
-  lang=EN-US style='color:black'>RSA</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>M</span><span
-  lang=EN-US style='color:black'>ethicillin-resistant <i>staphylococcus aureus</i></span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>MST</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Morphine slow release
-  tablets</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>MUAC</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Mid upper arm
-  circumference</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Na</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Sodium</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>NPO</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Nil per oral</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>NS</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Nephrotic syndrome</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>NSAIDs</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Non-steroidal
-  anti-inflammatory drugs</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>NSTEMI</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Non-ST elevation
-  myocardial infarction</span></p>
-  </td>
- </tr>
- <tr style='height:18.75pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:18.75pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>O<sub>2</sub></span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:18.75pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Oxygen</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>OA</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Osteoarthritis</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>OCP </span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Oral contraceptive
-  pill</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>OD</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Once per day</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>OM</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Osteomyelitis</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>OM</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Otitis media</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>OME</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Otitis media with
-  effusion</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>OPD </span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Outpatient department</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>P</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Plasmodium</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>PA</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Pulmonary artery</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>PCR</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Polymerase chain
-  reaction</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>PCV</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Packed cell volume</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>PDA</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Patent ductus
-  arteriosus</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>PE</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Pulmonary embolism</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>PEFR</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Peak expiratory flow
-  rate</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>PID</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Pelvic inflammatory
-  disease</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>PIP</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Proximal
-  interphalangeal joints</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>PO</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Per oral</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>PR</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Per rectum</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>PR</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Pulse rate</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>PRN</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>As required</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>PS</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Pulmonary stenosis</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>PSA</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Prostate specific
-  antigen</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>PUD</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Peptic ulcer disease</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>QDS</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Four times per day</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>QRISK</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Q research
-  cardiovascular risk score</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>qSOFA</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Quick sequential
-  organ failure assessment score</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>RDT</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Rapid diagnostic test
-  (for malaria)</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>RF</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Rheumatoid factor</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>RHD</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Rheumatic heart
-  disease</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>RNA</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Ribonucleic acid</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>ROSIER</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Recognition of stroke
-  in the emergency room</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>RPR</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Rapid plasmin reagent</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>RR</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Respiratory rate</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>RTA</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Road traffic accident</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>RTUF</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Ready to use food</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>RVOTO</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Right ventricular
-  outflow tract obstruction</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>SA</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Septic arthritis</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>SAAG</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Serum ascites albumin
-  gradient</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>SAH</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Subarachnoid
-  haemorrhage</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>SBP</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Spontaneous bacterial
-  peritonitis</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>sc</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Subcutaneous</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>SCORTEN</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Severity of illness
-  score for toxic epidermal necrolysis</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>SIADH</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Syndrome of
-  inappropriate anti-diuretic hormone</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>SJS</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Stevens-Johnson
-  syndrome</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>SLE</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Systemic lupus erythematosus</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>SOP</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Standard operating
-  procedure</span></p>
-  </td>
- </tr>
- <tr style='height:18.75pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:18.75pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>SpO<sub>2</sub></span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:18.75pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Oxygen saturations</span></p>
-  </td>
- </tr>
- <tr style='height:18.75pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:18.75pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>SSRI</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:18.75pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Selective serotonin
-  reuptake inhibitor</span></p>
-  </td>
- </tr>
- <tr style='height:18.75pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:18.75pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Stat</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:18.75pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Statim
-  (Instantly/Immediately)</span></p>
-  </td>
- </tr>
- <tr style='height:18.75pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:18.75pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>STEMI</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:18.75pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>ST elevation
-  myocardial infarction</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>STI</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Sexually transmitted
-  infection</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>SZREC</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Sheikh Zayed regional
-  eyecare centre</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>T or Temp</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Temperature</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>TB</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Tuberculosis</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>TB4 </span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Tuberculosis
-  combination tablets with 4 drugs</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>TBW</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Total body water</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>TDD</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Total daily dose</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>TDS</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Three times per day</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>TEN</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Toxic epidermal
-  necrolysis</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>TM</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Tympanic membrane</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>TOF</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Tetralogy of Fallot</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>TPHA</span></p>
-  </td>
-  <td width=491 nowrap valign=bottom style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;
-  height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Treponema pallidum
-  hemagglutination assay</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>TSH</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Thyroid-stimulating
-  hormone</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>U</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Units</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>UA</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Unstable angina</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>U&amp;Es </span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Urea and electrolytes</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>UK</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>United Kingdom</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>URTIs</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Upper respiratory
-  tract infections</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>US</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Ultrasound</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>UTI</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Urinary tract
-  infection</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>VDRL</span></p>
-  </td>
-  <td width=491 nowrap valign=bottom style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;
-  height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Venereal disease
-  research laboratory test</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>VLCFA</span></p>
-  </td>
-  <td width=491 nowrap valign=bottom style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;
-  height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Very long chain fatty
-  acids</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>VSD</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Ventricular septal
-  defect</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>WHO </span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>World health
-  organisation</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>WHZ</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>Weight for height Z
-  score</span></p>
-  </td>
- </tr>
- <tr style='height:15.0pt'>
-  <td width=104 style='width:78.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>XR</span></p>
-  </td>
-  <td width=491 style='width:13.0cm;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt'>
-  <p class=MsoNormal><span lang=EN-US style='color:black'>X-ray</span></p>
-  </td>
- </tr>
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+<script src="myScript.js"></script><link rel="stylesheet" href="myStyle.css"></head>
+<body> <div w3-include-html="panel.html"></div> <script> includeHTML(); </script>
+<article class="markdown-body">
+<h1 id="introduction-to-clinical-services-department-csd-guidelines">Introduction to Clinical Services Department (CSD) guidelines</h1>
+<h2 id="introduction">Introduction</h2>
+<h2 id="csd-has-produced-a-set-of-guidelines-to-be-used-in-the-department-with-the-aim-of-standardizing-care-to-ensure-we-are-making-the-best-use-of-the-resources-and-facilities-available-to-us-and-to-help-new-doctors-and-nurses-settle-in.">CSD has produced a set of guidelines to be used in the department with the aim of standardizing care to ensure we are making the best use of the resources and facilities available to us and to help new doctors and nurses settle in.</h2>
+<p>This introductory document outlines some of the approaches that have been taken and lists abbreviations used in the guidelines</p>
+<h2 id="general-approach">General approach</h2>
+<p>As far as possible, CSD guidelines recommend the use of investigations and drugs available within the department. Where something is temporarily unavailable, it will have been included as if it were available.</p>
+<p>Exceptions to this include:</p>
+<ul>
+<li><div data-custom-style="List Paragraph">
+<p>investigations which are available in country</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>drugs which have a good evidence base and are easily accessible in country</p>
+</div></li>
+<li><div data-custom-style="List Paragraph">
+<p>emergency interventions which are last ditch attempts to save a life and which might be available depending on the skill of the doctor on duty.</p>
+</div></li>
+</ul>
+<p>In general, it is assumed that most doctors will be able to do all the procedures referred to. If an individual is not experienced, then they can ask the consultants in the department for help.</p>
+<p>Some specific procedures are not included as guidelines, but as formal SOPs. These are usually those that are necessary for research patients or that need standardized approaches. The latest version of each of these has been placed in a folder alongside the guidelines.</p>
+<p>The guidelines provide support to nurses who see patients and prescribe as well as to doctors – including guidance on when patients should be referred from the care of a nurse to a doctor.</p>
+<h2 id="controlling-guidelines">Controlling guidelines</h2>
+<p>Please note that the guidelines are only controlled when they are viewed online. Any printed version is by definition uncontrolled and may not be the latest version.</p>
+<p>All SOPs are only controlled when viewed on sharepoint (although in practice, as soon as they are updated the version in the guidelines’ folder is also updated).</p>
+<h2 id="app">App</h2>
+<p>These guidelines are also available in app form for mobile phones.</p>
+<h2 id="abbreviations">Abbreviations</h2>
+<table>
+<thead>
+<tr class="header">
+<th>ºC</th>
+<th>Degrees Celsius</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>µIU</td>
+<td>Micro-international unit</td>
+</tr>
+<tr class="even">
+<td>µmol</td>
+<td>Micromole</td>
+</tr>
+<tr class="odd">
+<td>ABM</td>
+<td>Acute bacterial meningitis</td>
+</tr>
+<tr class="even">
+<td>ACEi</td>
+<td>Angiotensin converting enzyme inhibitor</td>
+</tr>
+<tr class="odd">
+<td>ACS</td>
+<td>Acute coronary syndrome</td>
+</tr>
+<tr class="even">
+<td>ACTH</td>
+<td>Adreno-corticotropic hormone</td>
+</tr>
+<tr class="odd">
+<td>AF</td>
+<td>Atrial fibrillation</td>
+</tr>
+<tr class="even">
+<td>AFB</td>
+<td>Acid fast bacilli</td>
+</tr>
+<tr class="odd">
+<td>AFP</td>
+<td>Alpha-fetoprotein</td>
+</tr>
+<tr class="even">
+<td>AKI</td>
+<td>Acute kidney injury</td>
+</tr>
+<tr class="odd">
+<td>ALT</td>
+<td>Alanine aminotransferase</td>
+</tr>
+<tr class="even">
+<td>AM</td>
+<td>Acute mastoiditis</td>
+</tr>
+<tr class="odd">
+<td>AMI</td>
+<td>Acute myocardial infarction</td>
+</tr>
+<tr class="even">
+<td>AMPLE</td>
+<td>Allergies, medications, past medical history / pregnancy, last eaten, events</td>
+</tr>
+<tr class="odd">
+<td>AOM</td>
+<td>Acute otitis media</td>
+</tr>
+<tr class="even">
+<td>APTT</td>
+<td>Activated partial thromboplastin time</td>
+</tr>
+<tr class="odd">
+<td>ARBs</td>
+<td>Angiotensin receptor blockers</td>
+</tr>
+<tr class="even">
+<td>ARF</td>
+<td>Acute rheumatic fever</td>
+</tr>
+<tr class="odd">
+<td>ART</td>
+<td>Anti-retroviral therapy</td>
+</tr>
+<tr class="even">
+<td>ASD</td>
+<td>Atrial septal defect</td>
+</tr>
+<tr class="odd">
+<td>AST</td>
+<td>Aspartate aminotransferase</td>
+</tr>
+<tr class="even">
+<td>AVSD</td>
+<td>Atrioventricular septal defect</td>
+</tr>
+<tr class="odd">
+<td>BD</td>
+<td>Twice per day</td>
+</tr>
+<tr class="even">
+<td>BMI</td>
+<td>Body mass index</td>
+</tr>
+<tr class="odd">
+<td>BNF</td>
+<td>British National Formulary</td>
+</tr>
+<tr class="even">
+<td>BP</td>
+<td>Blood pressure</td>
+</tr>
+<tr class="odd">
+<td>CCB</td>
+<td>Calcium channel blocker</td>
+</tr>
+<tr class="even">
+<td>CCHD</td>
+<td>Cyanotic congenital heart disease</td>
+</tr>
+<tr class="odd">
+<td>CD4</td>
+<td>Cluster differentiation 4</td>
+</tr>
+<tr class="even">
+<td>CHD</td>
+<td>Congenital heart disease</td>
+</tr>
+<tr class="odd">
+<td>CHF</td>
+<td>Congestive heart failure</td>
+</tr>
+<tr class="even">
+<td>CKD</td>
+<td>Chronic kidney disease</td>
+</tr>
+<tr class="odd">
+<td>CKD-EPI</td>
+<td>Chronic kidney disease – epidemiology collaboration</td>
+</tr>
+<tr class="even">
+<td>Cl</td>
+<td>Chloride</td>
+</tr>
+<tr class="odd">
+<td>CK</td>
+<td>Creatinine kinase</td>
+</tr>
+<tr class="even">
+<td>CKMB</td>
+<td>Creatine kinase Muscle Brain</td>
+</tr>
+<tr class="odd">
+<td>CLD</td>
+<td>Chronic liver disease</td>
+</tr>
+<tr class="even">
+<td>CM</td>
+<td>Cryptococcal meningitis</td>
+</tr>
+<tr class="odd">
+<td>CMV</td>
+<td>Cytomegalovirus</td>
+</tr>
+<tr class="even">
+<td>COPD</td>
+<td>Chronic obstructive pulmonary disease</td>
+</tr>
+<tr class="odd">
+<td>CP</td>
+<td>Cerebral palsy</td>
+</tr>
+<tr class="even">
+<td>Cr</td>
+<td>Creatinine</td>
+</tr>
+<tr class="odd">
+<td>CRP</td>
+<td>C-reactive protein</td>
+</tr>
+<tr class="even">
+<td>CSD</td>
+<td>Clinical services department</td>
+</tr>
+<tr class="odd">
+<td>CSF</td>
+<td>Cerebrospinal fluid</td>
+</tr>
+<tr class="even">
+<td>CT</td>
+<td>Computed tomography</td>
+</tr>
+<tr class="odd">
+<td>CXR</td>
+<td>Chest X-ray</td>
+</tr>
+<tr class="even">
+<td>DCT</td>
+<td>Direct Coombs test</td>
+</tr>
+<tr class="odd">
+<td>DD</td>
+<td>Developmental delay</td>
+</tr>
+<tr class="even">
+<td>DIP</td>
+<td>Distal interphalangeal joints</td>
+</tr>
+<tr class="odd">
+<td>DKA</td>
+<td>Diabetic ketoacidosis</td>
+</tr>
+<tr class="even">
+<td>dl</td>
+<td>decilitre</td>
+</tr>
+<tr class="odd">
+<td>DM</td>
+<td>Diabetes mellitus</td>
+</tr>
+<tr class="even">
+<td>Dr</td>
+<td>Doctor</td>
+</tr>
+<tr class="odd">
+<td>DSM-IV</td>
+<td>Diagnostic and statistical manual of mental disorders – 4<sup>th</sup> edition</td>
+</tr>
+<tr class="even">
+<td>DTs</td>
+<td>Delirium tremens</td>
+</tr>
+<tr class="odd">
+<td>DVT</td>
+<td>Deep vein thrombosis</td>
+</tr>
+<tr class="even">
+<td>ECG</td>
+<td>Electrocardiogram</td>
+</tr>
+<tr class="odd">
+<td>ECHO</td>
+<td>Echocardiogram</td>
+</tr>
+<tr class="even">
+<td>EDTA</td>
+<td>Ethylenediamine tetraacetic acid (anticoagulant)</td>
+</tr>
+<tr class="odd">
+<td>EEG</td>
+<td>Electroencephalogram</td>
+</tr>
+<tr class="even">
+<td>EFSTH</td>
+<td>Edward Francis Small teaching hospital</td>
+</tr>
+<tr class="odd">
+<td>eGFR</td>
+<td>Estimated glomerular filtration rate</td>
+</tr>
+<tr class="even">
+<td>EMRS</td>
+<td>Electronic medical record system</td>
+</tr>
+<tr class="odd">
+<td>ENT</td>
+<td>Ear, nose and throat</td>
+</tr>
+<tr class="even">
+<td>ESR</td>
+<td>Erythrocyte sedimentation rate</td>
+</tr>
+<tr class="odd">
+<td>F75</td>
+<td>Formula 75 – WHO formula for malnutrition with 75 kCal/100ml</td>
+</tr>
+<tr class="even">
+<td>F100</td>
+<td>Formula 100 – WHO formula for malnutrition with 100 kCal/100ml</td>
+</tr>
+<tr class="odd">
+<td>FBC</td>
+<td>Full blood count</td>
+</tr>
+<tr class="even">
+<td>FBS</td>
+<td>Fasting blood sugar</td>
+</tr>
+<tr class="odd">
+<td>FSGS</td>
+<td>Focal segmental glomerulosclerosis</td>
+</tr>
+<tr class="even">
+<td>(f)T<sub>4</sub></td>
+<td>(Free) thyroxine</td>
+</tr>
+<tr class="odd">
+<td>(f)T<sub>3</sub></td>
+<td>(Free) triiodothyronine</td>
+</tr>
+<tr class="even">
+<td>g</td>
+<td>Gram(s)</td>
+</tr>
+<tr class="odd">
+<td>GAS</td>
+<td>Group A streptococcus</td>
+</tr>
+<tr class="even">
+<td>GCS</td>
+<td>Glasgow coma scale</td>
+</tr>
+<tr class="odd">
+<td>GDM</td>
+<td>Gestational diabetes mellitus</td>
+</tr>
+<tr class="even">
+<td>GFR</td>
+<td>Glomerular filtration rate</td>
+</tr>
+<tr class="odd">
+<td>GI</td>
+<td>Gastrointestinal</td>
+</tr>
+<tr class="even">
+<td>GORD</td>
+<td>Gastro-oesophageal reflux disease</td>
+</tr>
+<tr class="odd">
+<td>HAV</td>
+<td>Hepatitis A virus</td>
+</tr>
+<tr class="even">
+<td>Hb</td>
+<td>Haemoglobin</td>
+</tr>
+<tr class="odd">
+<td>HbA1c</td>
+<td>Haemoglobin A1c</td>
+</tr>
+<tr class="even">
+<td>HACEK</td>
+<td><em>Haemophilus aphrophilus, Actinobacillus actinomycetemcomitans , Cardiobacterium hominis, Eikenella corrodens, Kingella kingae</em></td>
+</tr>
+<tr class="odd">
+<td>HBsAg</td>
+<td>Hepatitis B surface antigen</td>
+</tr>
+<tr class="even">
+<td>HBV</td>
+<td>Hepatitis B virus</td>
+</tr>
+<tr class="odd">
+<td>HCC</td>
+<td>Hepatocellular carcinoma</td>
+</tr>
+<tr class="even">
+<td>HCG</td>
+<td>Human chorionic gonadotropin</td>
+</tr>
+<tr class="odd">
+<td>HCO<sub>3</sub></td>
+<td>Bicarbonate</td>
+</tr>
+<tr class="even">
+<td>HCV</td>
+<td>Hepatitis C virus</td>
+</tr>
+<tr class="odd">
+<td>HDL</td>
+<td>High density lipoprotein</td>
+</tr>
+<tr class="even">
+<td>HDU</td>
+<td>High dependency unit</td>
+</tr>
+<tr class="odd">
+<td>HELLP</td>
+<td>Haemolysis, elevated liver enzymes, low platelet count</td>
+</tr>
+<tr class="even">
+<td>HHS</td>
+<td>Hyperglycaemic hyperosmolar state</td>
+</tr>
+<tr class="odd">
+<td>Hib</td>
+<td><em>Haemophillus influenzae b</em></td>
+</tr>
+<tr class="even">
+<td>HIV</td>
+<td>Human immunodeficiency virus</td>
+</tr>
+<tr class="odd">
+<td>HP / H pylori</td>
+<td>Helicobacter pylori</td>
+</tr>
+<tr class="even">
+<td>HR</td>
+<td>Heart rate</td>
+</tr>
+<tr class="odd">
+<td>hr</td>
+<td>Hour</td>
+</tr>
+<tr class="even">
+<td>HSV</td>
+<td>Herpes simplex virus</td>
+</tr>
+<tr class="odd">
+<td>HTN</td>
+<td>Hypertension</td>
+</tr>
+<tr class="even">
+<td>Hz</td>
+<td>Hertz</td>
+</tr>
+<tr class="odd">
+<td>ICP</td>
+<td>Intracranial pressure</td>
+</tr>
+<tr class="even">
+<td>IE</td>
+<td>Infective endocarditis</td>
+</tr>
+<tr class="odd">
+<td>im</td>
+<td>Intramuscular</td>
+</tr>
+<tr class="even">
+<td>INR</td>
+<td>International normalised ratio</td>
+</tr>
+<tr class="odd">
+<td>ITU</td>
+<td>Intensive therapy unit</td>
+</tr>
+<tr class="even">
+<td>IV</td>
+<td>Intravenous</td>
+</tr>
+<tr class="odd">
+<td>K</td>
+<td>Potassium</td>
+</tr>
+<tr class="even">
+<td>kg</td>
+<td>Kilogram</td>
+</tr>
+<tr class="odd">
+<td>l</td>
+<td>Litre</td>
+</tr>
+<tr class="even">
+<td>LA</td>
+<td>Left atrium</td>
+</tr>
+<tr class="odd">
+<td>LBP</td>
+<td>Lower back pain</td>
+</tr>
+<tr class="even">
+<td>LFTs</td>
+<td>Liver function tests</td>
+</tr>
+<tr class="odd">
+<td>LGV</td>
+<td>Lymphogranuloma venereum</td>
+</tr>
+<tr class="even">
+<td>LP</td>
+<td>Lumbar puncture</td>
+</tr>
+<tr class="odd">
+<td>L-R</td>
+<td>Left to right</td>
+</tr>
+<tr class="even">
+<td>LRI</td>
+<td>Lower respiratory infection</td>
+</tr>
+<tr class="odd">
+<td>LV</td>
+<td>Left ventricle</td>
+</tr>
+<tr class="even">
+<td>MC&amp;S</td>
+<td>Microscopy, culture and sensitivities</td>
+</tr>
+<tr class="odd">
+<td>MCD</td>
+<td>Minimal change disease</td>
+</tr>
+<tr class="even">
+<td>mcg</td>
+<td>Microgram</td>
+</tr>
+<tr class="odd">
+<td>MCV</td>
+<td>Mean cell volume</td>
+</tr>
+<tr class="even">
+<td>MEWS</td>
+<td>MRC early warning score</td>
+</tr>
+<tr class="odd">
+<td>mEq</td>
+<td>Milliequivalent</td>
+</tr>
+<tr class="even">
+<td>mg</td>
+<td>Milligrams</td>
+</tr>
+<tr class="odd">
+<td>ml</td>
+<td>Millilitres</td>
+</tr>
+<tr class="even">
+<td>mm<sup>3</sup></td>
+<td>Millimetre cubed</td>
+</tr>
+<tr class="odd">
+<td>mmHg</td>
+<td>Milimetres of mercury</td>
+</tr>
+<tr class="even">
+<td>mmol</td>
+<td>Millimole</td>
+</tr>
+<tr class="odd">
+<td>mOsm</td>
+<td>Milliosmole</td>
+</tr>
+<tr class="even">
+<td>MPS</td>
+<td>Mucopolysaccharidoses</td>
+</tr>
+<tr class="odd">
+<td>MR</td>
+<td>Mitral regurgitation</td>
+</tr>
+<tr class="even">
+<td>MRC</td>
+<td>Medical research council</td>
+</tr>
+<tr class="odd">
+<td>MRI</td>
+<td>Magnetic resonance imaging</td>
+</tr>
+<tr class="even">
+<td>MRSA</td>
+<td>Methicillin-resistant <em>staphylococcus aureus</em></td>
+</tr>
+<tr class="odd">
+<td>MST</td>
+<td>Morphine slow release tablets</td>
+</tr>
+<tr class="even">
+<td>MUAC</td>
+<td>Mid upper arm circumference</td>
+</tr>
+<tr class="odd">
+<td>Na</td>
+<td>Sodium</td>
+</tr>
+<tr class="even">
+<td>NPO</td>
+<td>Nil per oral</td>
+</tr>
+<tr class="odd">
+<td>NS</td>
+<td>Nephrotic syndrome</td>
+</tr>
+<tr class="even">
+<td>NSAIDs</td>
+<td>Non-steroidal anti-inflammatory drugs</td>
+</tr>
+<tr class="odd">
+<td>NSTEMI</td>
+<td>Non-ST elevation myocardial infarction</td>
+</tr>
+<tr class="even">
+<td>O<sub>2</sub></td>
+<td>Oxygen</td>
+</tr>
+<tr class="odd">
+<td>OA</td>
+<td>Osteoarthritis</td>
+</tr>
+<tr class="even">
+<td>OCP</td>
+<td>Oral contraceptive pill</td>
+</tr>
+<tr class="odd">
+<td>OD</td>
+<td>Once per day</td>
+</tr>
+<tr class="even">
+<td>OM</td>
+<td>Osteomyelitis</td>
+</tr>
+<tr class="odd">
+<td>OM</td>
+<td>Otitis media</td>
+</tr>
+<tr class="even">
+<td>OME</td>
+<td>Otitis media with effusion</td>
+</tr>
+<tr class="odd">
+<td>OPD</td>
+<td>Outpatient department</td>
+</tr>
+<tr class="even">
+<td>P</td>
+<td>Plasmodium</td>
+</tr>
+<tr class="odd">
+<td>PA</td>
+<td>Pulmonary artery</td>
+</tr>
+<tr class="even">
+<td>PCR</td>
+<td>Polymerase chain reaction</td>
+</tr>
+<tr class="odd">
+<td>PCV</td>
+<td>Packed cell volume</td>
+</tr>
+<tr class="even">
+<td>PDA</td>
+<td>Patent ductus arteriosus</td>
+</tr>
+<tr class="odd">
+<td>PE</td>
+<td>Pulmonary embolism</td>
+</tr>
+<tr class="even">
+<td>PEFR</td>
+<td>Peak expiratory flow rate</td>
+</tr>
+<tr class="odd">
+<td>PID</td>
+<td>Pelvic inflammatory disease</td>
+</tr>
+<tr class="even">
+<td>PIP</td>
+<td>Proximal interphalangeal joints</td>
+</tr>
+<tr class="odd">
+<td>PO</td>
+<td>Per oral</td>
+</tr>
+<tr class="even">
+<td>PR</td>
+<td>Per rectum</td>
+</tr>
+<tr class="odd">
+<td>PR</td>
+<td>Pulse rate</td>
+</tr>
+<tr class="even">
+<td>PRN</td>
+<td>As required</td>
+</tr>
+<tr class="odd">
+<td>PS</td>
+<td>Pulmonary stenosis</td>
+</tr>
+<tr class="even">
+<td>PSA</td>
+<td>Prostate specific antigen</td>
+</tr>
+<tr class="odd">
+<td>PUD</td>
+<td>Peptic ulcer disease</td>
+</tr>
+<tr class="even">
+<td>QDS</td>
+<td>Four times per day</td>
+</tr>
+<tr class="odd">
+<td>QRISK</td>
+<td>Q research cardiovascular risk score</td>
+</tr>
+<tr class="even">
+<td>qSOFA</td>
+<td>Quick sequential organ failure assessment score</td>
+</tr>
+<tr class="odd">
+<td>RDT</td>
+<td>Rapid diagnostic test (for malaria)</td>
+</tr>
+<tr class="even">
+<td>RF</td>
+<td>Rheumatoid factor</td>
+</tr>
+<tr class="odd">
+<td>RHD</td>
+<td>Rheumatic heart disease</td>
+</tr>
+<tr class="even">
+<td>RNA</td>
+<td>Ribonucleic acid</td>
+</tr>
+<tr class="odd">
+<td>ROSIER</td>
+<td>Recognition of stroke in the emergency room</td>
+</tr>
+<tr class="even">
+<td>RPR</td>
+<td>Rapid plasmin reagent</td>
+</tr>
+<tr class="odd">
+<td>RR</td>
+<td>Respiratory rate</td>
+</tr>
+<tr class="even">
+<td>RTA</td>
+<td>Road traffic accident</td>
+</tr>
+<tr class="odd">
+<td>RTUF</td>
+<td>Ready to use food</td>
+</tr>
+<tr class="even">
+<td>RVOTO</td>
+<td>Right ventricular outflow tract obstruction</td>
+</tr>
+<tr class="odd">
+<td>SA</td>
+<td>Septic arthritis</td>
+</tr>
+<tr class="even">
+<td>SAAG</td>
+<td>Serum ascites albumin gradient</td>
+</tr>
+<tr class="odd">
+<td>SAH</td>
+<td>Subarachnoid haemorrhage</td>
+</tr>
+<tr class="even">
+<td>SBP</td>
+<td>Spontaneous bacterial peritonitis</td>
+</tr>
+<tr class="odd">
+<td>sc</td>
+<td>Subcutaneous</td>
+</tr>
+<tr class="even">
+<td>SCORTEN</td>
+<td>Severity of illness score for toxic epidermal necrolysis</td>
+</tr>
+<tr class="odd">
+<td>SIADH</td>
+<td>Syndrome of inappropriate anti-diuretic hormone</td>
+</tr>
+<tr class="even">
+<td>SJS</td>
+<td>Stevens-Johnson syndrome</td>
+</tr>
+<tr class="odd">
+<td>SLE</td>
+<td>Systemic lupus erythematosus</td>
+</tr>
+<tr class="even">
+<td>SOP</td>
+<td>Standard operating procedure</td>
+</tr>
+<tr class="odd">
+<td>SpO<sub>2</sub></td>
+<td>Oxygen saturations</td>
+</tr>
+<tr class="even">
+<td>SSRI</td>
+<td>Selective serotonin reuptake inhibitor</td>
+</tr>
+<tr class="odd">
+<td>Stat</td>
+<td>Statim (Instantly/Immediately)</td>
+</tr>
+<tr class="even">
+<td>STEMI</td>
+<td>ST elevation myocardial infarction</td>
+</tr>
+<tr class="odd">
+<td>STI</td>
+<td>Sexually transmitted infection</td>
+</tr>
+<tr class="even">
+<td>SZREC</td>
+<td>Sheikh Zayed regional eyecare centre</td>
+</tr>
+<tr class="odd">
+<td>T or Temp</td>
+<td>Temperature</td>
+</tr>
+<tr class="even">
+<td>TB</td>
+<td>Tuberculosis</td>
+</tr>
+<tr class="odd">
+<td>TB4</td>
+<td>Tuberculosis combination tablets with 4 drugs</td>
+</tr>
+<tr class="even">
+<td>TBW</td>
+<td>Total body water</td>
+</tr>
+<tr class="odd">
+<td>TDD</td>
+<td>Total daily dose</td>
+</tr>
+<tr class="even">
+<td>TDS</td>
+<td>Three times per day</td>
+</tr>
+<tr class="odd">
+<td>TEN</td>
+<td>Toxic epidermal necrolysis</td>
+</tr>
+<tr class="even">
+<td>TM</td>
+<td>Tympanic membrane</td>
+</tr>
+<tr class="odd">
+<td>TOF</td>
+<td>Tetralogy of Fallot</td>
+</tr>
+<tr class="even">
+<td>TPHA</td>
+<td>Treponema pallidum hemagglutination assay</td>
+</tr>
+<tr class="odd">
+<td>TSH</td>
+<td>Thyroid-stimulating hormone</td>
+</tr>
+<tr class="even">
+<td>U</td>
+<td>Units</td>
+</tr>
+<tr class="odd">
+<td>UA</td>
+<td>Unstable angina</td>
+</tr>
+<tr class="even">
+<td>U&amp;Es</td>
+<td>Urea and electrolytes</td>
+</tr>
+<tr class="odd">
+<td>UK</td>
+<td>United Kingdom</td>
+</tr>
+<tr class="even">
+<td>URTIs</td>
+<td>Upper respiratory tract infections</td>
+</tr>
+<tr class="odd">
+<td>US</td>
+<td>Ultrasound</td>
+</tr>
+<tr class="even">
+<td>UTI</td>
+<td>Urinary tract infection</td>
+</tr>
+<tr class="odd">
+<td>VDRL</td>
+<td>Venereal disease research laboratory test</td>
+</tr>
+<tr class="even">
+<td>VLCFA</td>
+<td>Very long chain fatty acids</td>
+</tr>
+<tr class="odd">
+<td>VSD</td>
+<td>Ventricular septal defect</td>
+</tr>
+<tr class="even">
+<td>WHO</td>
+<td>World health organisation</td>
+</tr>
+<tr class="odd">
+<td>WHZ</td>
+<td>Weight for height Z score</td>
+</tr>
+<tr class="even">
+<td>XR</td>
+<td>X-ray</td>
+</tr>
+</tbody>
 </table>
-</div>
-<span lang=EN-US style='font-size:11.0pt;font-family:"Arial","sans-serif"'><br
-clear=all style='page-break-before:always'>
-</span>
-<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
-lang=EN-US>&nbsp;</span></p>
-<div>
-  <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
- style='border-collapse:collapse;border:none'>
- <tr style='height:1.0pt'>
-  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
-  lang=EN-US>Written by:</span></b></p>
-  </td>
-  <td width=241 valign=bottom style='width:181.1pt;border:solid windowtext 1.0pt;
-  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
-  lang=EN-US>Name: Karen Forrest</span></p>
-  </td>
-  <td width=191 valign=bottom style='width:143.45pt;border:solid windowtext 1.0pt;
-  border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
-  lang=EN-US>Date: 31 May 2019</span></p>
-  </td>
- </tr>
- <tr style='height:1.0pt'>
-  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
-  lang=EN-US>Reviewed by:</span></b></p>
-  </td>
-  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
-  lang=EN-US>Name: Fatai Akemokwe</span></p>
-  </td>
-  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
-  lang=EN-US>Date: 31 May 2019 </span></p>
-  </td>
- </tr>
- <tr style='height:1.0pt'>
-  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
-  lang=EN-US>Version:</span></b></p>
-  </td>
-  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
-  lang=EN-US>Change history:</span></b></p>
-  </td>
-  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
-  lang=EN-US>Review due date:</span></b></p>
-  </td>
- </tr>
- <tr style='height:1.0pt'>
-  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
-  lang=EN-US>1.0</span></p>
-  </td>
-  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
-  lang=EN-US>New document</span></p>
-  </td>
-  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
-  lang=EN-US>31 July 2020</span></p>
-  </td>
- </tr>
- <tr style='height:1.0pt'>
-  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
-  lang=EN-US>2.0</span></p>
-  </td>
-  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
-  lang=EN-US>Updated with extra abbreviations and existence of mobile app</span></p>
-  </td>
-  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
-  lang=EN-US>31 May 2021</span></p>
-  </td>
- </tr>
- <tr style='height:1.0pt'>
-  <td width=143 valign=bottom style='width:106.95pt;border:solid windowtext 1.0pt;
-  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
-  lang=EN-US>Review Comments (<i>if applicable)</i></span></p>
-  </td>
-  <td width=241 valign=bottom style='width:181.1pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
-  lang=EN-US>&nbsp;</span></p>
-  </td>
-  <td width=191 valign=bottom style='width:143.45pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  padding:0cm 5.4pt 0cm 5.4pt;height:1.0pt'>
-  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><span
-  lang=EN-US>&nbsp;</span></b></p>
-  </td>
- </tr>
+<table>
+<thead>
+<tr class="header">
+<th><strong>Written by:</strong></th>
+<th>Name: Karen Forrest</th>
+<th>Date: 31 May 2019</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Reviewed by:</strong></td>
+<td>Name:</td>
+<td>Date:</td>
+</tr>
+<tr class="even">
+<td><strong>Version:</strong></td>
+<td><strong>Change history:</strong></td>
+<td><strong>Review due date:</strong></td>
+</tr>
+<tr class="odd">
+<td>1.0</td>
+<td>New document</td>
+<td>31 July 2020</td>
+</tr>
+<tr class="even">
+<td>2.0</td>
+<td>Updated with extra abbreviations and existence of mobile app</td>
+<td>31 May 2021</td>
+</tr>
+<tr class="odd">
+<td>Review Comments (<em>if applicable)</em></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
 </table>
-</div>
-<p class=MsoNormal><span style='color:black'>&nbsp;</span></p>
-
-
-</div>
-</div>
-<script src="manup.js"></script>	
+</article>
 </body>
 </html>
