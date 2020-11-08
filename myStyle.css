@@ -99,7 +99,6 @@ article {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
   top: 0;
   background-color: #111;
   overflow-x: hidden;
@@ -108,11 +107,13 @@ article {
 }
 
 .sidenav {
-   position-left: 0;
+   left: 0;
+   z-index: 1;
 }
 
 .sidenav2 {
    right: 0;
+   z-index: -1;
 }
 
 .sidenav, .sidenav2 h1 {
