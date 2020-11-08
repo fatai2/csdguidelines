@@ -90,6 +90,7 @@ article {
 .header-button2 {
     float:right;
     right: 0.4em;
+    padding-right:10px
 }
 
 .sidenav, .sidenav2 {
