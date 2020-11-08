@@ -34,6 +34,7 @@ article {
 
 .navbar {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   background-color: #f1f1f1;
