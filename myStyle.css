@@ -13,9 +13,11 @@
     margin: 0.24em;
     top: auto;
     bottom: 0.24em;
-    background-color: f1f1f1;
+    background-color: white;
     color: black;
-    border: 2px solid #f1f1f1 /* Grey*/
+    border: 2px solid #f1f1f1; /* Grey*/
+    padding: 8px 8px 8px 8px;
+  	text-decoration: none;
 }
 
 .footer-button-left {
