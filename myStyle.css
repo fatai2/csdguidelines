@@ -152,7 +152,7 @@ article {
   color: #f1f1f1;
 }
 
-.sidenav .closebtn {
+.sidenav, .sidenav2 .closebtn {
   position: absolute;
   top: 0;
   right: 25px;
