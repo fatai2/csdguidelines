@@ -85,6 +85,14 @@ article {
   box-shadow: inset 0px 8px 48px #ddd;
 }
 
+.header-button1 {
+  left: 0.4em;
+}
+
+.header-button2 {
+  right: 0.4em;
+}
+
 .sidenav, .sidenav2 {
   height: 100%;
   width: 0;
