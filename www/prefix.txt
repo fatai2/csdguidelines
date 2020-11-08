@@ -2,7 +2,7 @@
 <html manifest="manifest.manifest">
 	<div class="navbar">
 		<span class="header-button1" onclick="openNav()">&#9776;</span>
-		<img src="https://i0.wp.com/www.mrc.gm/wp-content/uploads/2018/07/Logo-small.png?fit=260%2C56&ssl=1" style="float:left;" width="260" height="56" alt="MRC Unit The Gambia at LSHTM Logo" srcset="https://i0.wp.com/www.mrc.gm/wp-content/uploads/2018/07/Logo-small.png?fit=260%2C56&ssl=1 2x">
+		<img src="https://i0.wp.com/www.mrc.gm/wp-content/uploads/2018/07/Logo-small.png?fit=260%2C56&ssl=1" alt="MRC Unit The Gambia at LSHTM Logo" srcset="https://i0.wp.com/www.mrc.gm/wp-content/uploads/2018/07/Logo-small.png?fit=260%2C56&ssl=1 2x">
 		<h2 style="float:left;">CSD Guidelines</h2>
 		<span class="header-button2" onclick="openNav2()">&#8505;</span>		  	
 	</div>
