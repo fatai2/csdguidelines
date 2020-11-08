@@ -31,6 +31,19 @@ article {
     right: 0.4em;
 }
 
+.header-button {
+    font-size:30px;
+    cursor:pointer;
+    float:left;
+    left: 0.4em;
+    margin: 0.24em;
+    background-color: black;
+    color: white;
+    border: 2px solid #f1f1f1; /* Grey*/
+    padding: 8px 8px 8px 8px;
+  	text-decoration: none;
+}
+
 .navbar {
   overflow: hidden;
   background-color: #f1f1f1;
