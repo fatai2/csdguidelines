@@ -73,10 +73,10 @@ article {
   background: #fff;
   border-top: 2px solid #ddd;
   position: absolute;
-  top: -18px;
-  left: -18px;
-  bottom: -18px;
-  right: -18px;
+  top: -0.12em;
+  left: -0.12em;
+  bottom: -0.12em;
+  right: -0.12em;
   z-index: -1;
   border-radius: 50%;
   box-shadow: inset 0px 8px 48px #ddd;
@@ -85,12 +85,13 @@ article {
 .header-button1 {
     float:left;
     left: 0.4em;
+    padding: 4px;
 }
 
 .header-button2 {
     float:right;
     right: 0.4em;
-    padding-right:10px
+    padding: 4px;
 }
 
 .sidenav, .sidenav2 {
