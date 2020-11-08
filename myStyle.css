@@ -1,3 +1,7 @@
+body { 
+  top: 4.5em;
+}
+
 #mySearch {
   width: 100%;
   font-size: 18px;
