@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html manifest="manifest.manifest">
 	<div class="navbar">
-		<span style="font-size:30px;cursor:pointer;float:left;" onclick="openNav()">&#9776;</span>
+		<span class="header-button" onclick="openNav()">&#9776; Choose Guideline...</span>
 		<img src="https://i0.wp.com/www.mrc.gm/wp-content/uploads/2018/07/Logo-small.png?fit=260%2C56&ssl=1" style="float:left;" width="260" height="56" alt="MRC Unit The Gambia at LSHTM Logo" srcset="https://i0.wp.com/www.mrc.gm/wp-content/uploads/2018/07/Logo-small.png?fit=260%2C56&ssl=1 2x">
 		<h2 style="float:left;">CSD Guidelines</h2>
 		<span style="font-size:30px;cursor:pointer;float:right;padding-right:10px;" onclick="openNav2()">&#9432;</span>		  	
