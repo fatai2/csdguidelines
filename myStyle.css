@@ -38,6 +38,7 @@ article {
   align-items: center;
   background-color: #f1f1f1;
   position: fixed; /* Set the navbar to fixed position */
+  position-left: 0;
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
   height:4em;
@@ -106,7 +107,7 @@ article {
 }
 
 .sidenav {
-   left: 0;
+   position-left: 0;
 }
 
 .sidenav2 {
