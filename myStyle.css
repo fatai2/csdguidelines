@@ -25,10 +25,11 @@
           box-shadow: inset 0px 8px 48px #ddd;
       }
 	.btn {
-      border: none; /* Remove borders */
-      font-size: 1em;
-      color: #a7a7a7;
-    }
+		border: none; /* Remove borders */
+	      	font-size: 1em;
+	      	color: #a7a7a7;
+		border-radius: 50%;
+	 }
     
     .btn:hover{
         text-decoration: none;
