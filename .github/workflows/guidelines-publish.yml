@@ -21,7 +21,7 @@ jobs:
           find . -name '*.html' -exec sed -i -e 's|</head>|\<script\ src\=\"myScript.js\"\>\</script\>\<link rel\=\"stylesheet\"\ href\=\"myStyle.css\"\>\</head\>|g' -e 's|<body>|<body>\ \<div w3-include-html\=\"panel.html\"\>\</div\>\ \<script\>\ includeHTML\(\)\;\ \</script\>|g' {} \;
           cat prefix.txt filelist3.txt postfix.txt > panel.html
           cp Introduction_and_abbreviations_MeG-CLS-047.html index.html
-          find . -name 'index.html' -exec sed -i -e 's|</head>|\<script\ src\=\"ManUp.js\"\>\</script\>\<link rel\=\"manifest\"\ href\=\"manifest.json\"\>\</head\>|g'
+          sed -i -e 's|</head>|\<script\ src\=\"ManUp.js\"\>\</script\>\<link rel\=\"manifest\"\ href\=\"manifest.json\"\>\</head\>|g' index.html
           mv *.html ..
         shell: bash
       - name: Commit files  # transfer the new html files back into the repository
