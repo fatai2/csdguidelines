@@ -7,6 +7,7 @@
 <li> <a href="Bone_and_joint_infections_guidelines_MeG-CLS-050.html"> Bone and joint infections guidelines </a></li>
 <li> <a href="Bronchiolitis_MeG-CLS-069.html"> Bronchiolitis </a></li>
 <li> <a href="COPD_MeG-CLS-032.html"> COPD </a></li>
+<li> <a href="COVID-19_Admission_MeG-CLS-093.html"> COVID-19 Admission </a></li>
 <li> <a href="COVID-19_Adults_with_mild_or_moderate_COVID-19_MeG-CLS-083.html"> COVID-19 Adults with mild or moderate COVID-19 </a></li>
 <li> <a href="COVID-19_Adults_with_severe_COVID-19_v2.0_MeG-CLS-084.html"> COVID-19 Adults with severe COVID-19 v2.0 </a></li>
 <li> <a href="COVID-19_Allocation_of_Resources_MeG-CLS-090.html"> COVID-19 Allocation of Resources </a></li>

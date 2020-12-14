@@ -7,6 +7,7 @@
 <li> <a href="Bone_and_joint_infections_guidelines_MeG-CLS-050.html">
 <li> <a href="Bronchiolitis_MeG-CLS-069.html">
 <li> <a href="COPD_MeG-CLS-032.html">
+<li> <a href="COVID-19_Admission_MeG-CLS-093.html">
 <li> <a href="COVID-19_Adults_with_mild_or_moderate_COVID-19_MeG-CLS-083.html">
 <li> <a href="COVID-19_Adults_with_severe_COVID-19_v2.0_MeG-CLS-084.html">
 <li> <a href="COVID-19_Allocation_of_Resources_MeG-CLS-090.html">

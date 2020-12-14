@@ -7,6 +7,7 @@ Asthma </a></li>
 Bone and joint infections guidelines </a></li>
 Bronchiolitis </a></li>
 COPD </a></li>
+COVID-19 Admission </a></li>
 COVID-19 Adults with mild or moderate COVID-19 </a></li>
 COVID-19 Adults with severe COVID-19 v2.0 </a></li>
 COVID-19 Allocation of Resources </a></li>
