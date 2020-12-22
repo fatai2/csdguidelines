@@ -1,9 +1,11 @@
 Acute kidney injury </a></li>
 Acute rheumatic fever  </a></li>
 Anaemia in adults </a></li>
+Anaemia in children </a></li>
 Animal bites </a></li>
 Anticoagulation </a></li>
-Asthma </a></li>
+Ascites </a></li>
+Asthma v3.0 </a></li>
 Bone and joint infections guidelines </a></li>
 Bronchiolitis </a></li>
 COPD </a></li>
@@ -18,7 +20,9 @@ COVID-19 Going to and from work </a></li>
 COVID-19 Infection in Pregnancy </a></li>
 COVID-19 Neonates born to mothers with confirmed or suspected infection </a></li>
 COVID-19 Palliative care v2.0 </a></li>
+COVID-19 Quarantine </a></li>
 COVID-19 Testing for staff and isolations v2.0 </a></li>
+CPAP for babies </a></li>
 Cellulitis </a></li>
 Chest pain and Acute Coronary Syndrome </a></li>
 Chronic kidney disease </a></li>
@@ -35,20 +39,23 @@ Ear pain </a></li>
 Endoscopy indications </a></li>
 Epiglottitis </a></li>
 Epilepsy </a></li>
+Fluid management </a></li>
 Fungal Skin Infections </a></li>
 Gastroenteritis </a></li>
 General Body Pain  v2.1 </a></li>
 HHS v1.1 </a></li>
 HIV  v3.0 </a></li>
 Headache  v2.0 </a></li>
-Heart failure adults </a></li>
+Heart failure adults v2.0 </a></li>
 Hepatitis B and Fibroscan </a></li>
 Hypertension v3.0 </a></li>
+Hypertensive Emergencies </a></li>
 Hyperthyroidism and goitre  v3.0 </a></li>
 Hypocalcaemia and hypercalcaemia </a></li>
 Hypokalaemia, hyperkalaemia, hypomagnesaemia </a></li>
 Hyponatraemia and hypernatraemia </a></li>
 Hypothyroidism </a></li>
+Infant feeding </a></li>
 Infective Endocarditis </a></li>
 Inflammatory arthritis and connective tissue disease  v2.0 </a></li>
 Intestinal helminths  v3.0 </a></li>
@@ -67,6 +74,7 @@ Oxygen therapy and CPAP in adults </a></li>
 Palliative Care  </a></li>
 Rectal prolapse v3.0 </a></li>
 Red eye </a></li>
+Reportable Diseases </a></li>
 Rheumatic heart disease </a></li>
 STI </a></li>
 Scabies  </a></li>
